@@ -421,6 +421,8 @@
   font-weight: 600;
   margin: 0;
   text-align: start;
+  display: flex;
+  align-items: center;
 }
 
 .footer-value__point span {
