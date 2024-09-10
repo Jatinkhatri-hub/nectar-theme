@@ -212,6 +212,11 @@
   border-radius: 4px;
 }
 
+.package__badge {
+  position: absolute;
+  
+}
+
 .radio__package-box {
   position: absolute;
   left: 10px;
