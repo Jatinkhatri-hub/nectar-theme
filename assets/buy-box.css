@@ -298,7 +298,8 @@
   align-items: center;
   justify-content: center;
   padding-top: 6px;
-  padding-bottom: ;
+  padding-bottom: 20px;
+  border-bottom: ;
 }
 
 .gift-wrapper__title {
