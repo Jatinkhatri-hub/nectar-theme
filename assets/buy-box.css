@@ -36,5 +36,5 @@
 
 .input__tab-btn:checked + .buy-box__lable {
   background: white;
-  
+  color: #0D3063;
 }
