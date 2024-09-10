@@ -172,5 +172,7 @@
 
 .details-header p {
   font-family: 'Poppins', system-ui;
-  fon
+  font-weight: 600;
+  font-style: italic;
+  
 }
