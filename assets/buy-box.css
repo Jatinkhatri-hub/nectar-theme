@@ -1,3 +1,5 @@
 .tabs {
-  
+  display: flex;
+  flex-wrap: wrap;
+  max-width: ;
 }
