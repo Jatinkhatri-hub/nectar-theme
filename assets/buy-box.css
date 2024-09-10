@@ -452,5 +452,7 @@
   font-size: 13px;
   font-weight: 700;
   display: flex;
-  flex-direction: ;
+  align-items: center;
+  justify-content: center;
+  
 }
