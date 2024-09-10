@@ -53,4 +53,4 @@
   order: 99;
 }
 
-.input__tab-btn:
+.input__tab-btn:checked + .buy-box__lable + pa
