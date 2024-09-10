@@ -33,3 +33,5 @@
 .input__tab-btn:focus + .buy-box__lable {
   z-index: 1;
 }
+
+.input__tab-btn:checked + .la
