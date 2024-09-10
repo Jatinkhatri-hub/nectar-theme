@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     for(i = 0; i < buyBox.length; i++) {
       buyBox[i].className = buyBox[i].className.replace("active", "");
     }
-    document.getElementById(buyOption).style.d
+    document.getElementById(buyOption).style.display = "flex";
+    e.
   }
 
 });
