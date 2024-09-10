@@ -272,13 +272,14 @@
   font-weight: 500;
   color: #0D3063;
   margin: 0;
-  font-
+  font-family: 'Poppins';
 }
 
 .package-discount span {
   font-size: 12px;
   font-weight: 700;
   margin: 0;
+  font-family: 'Poppins';
 }
 
 .packet-individual {
