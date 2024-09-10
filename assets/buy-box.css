@@ -394,6 +394,7 @@
   border-radius: 10px;
   padding-inline: 10px;
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 .footer__icon-wrapper {
