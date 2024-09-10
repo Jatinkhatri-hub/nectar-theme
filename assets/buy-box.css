@@ -406,6 +406,7 @@
   padding-block: 7px;
   font-size: 11px;
   color: #0D3063;
+  text-align: start;
 }
 
 .congrats-text span {
