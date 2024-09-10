@@ -399,7 +399,7 @@
   color: #0D3063;
 }
 
-.congrats-text p {
+.congrats-text span {
   font-family: 'Poppins';
-  font-weight: ;
+  font-weight: 700;
 }
