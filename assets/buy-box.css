@@ -22,4 +22,6 @@
   transition: background 0.1s, color 0.1s;
 }
 
-.buy-box__lable:hover
+.buy-box__lable:hover {
+  
+}
