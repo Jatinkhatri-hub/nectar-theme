@@ -237,4 +237,6 @@
   margin: 0;
 }
 
-.package-details
+.package-individual {
+  font-size: 11.2;
+}
