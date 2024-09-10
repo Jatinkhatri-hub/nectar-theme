@@ -326,7 +326,8 @@
 
 
 .free-shipping__wrapper {
-  display: ;
+  display: flex;
+  
 }
 
 .image-wrapper {
