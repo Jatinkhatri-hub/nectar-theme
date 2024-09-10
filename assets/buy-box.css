@@ -203,7 +203,9 @@
   margin-block: 10px;
   padding-block: 10px;
   display: flex;
-  flex-direction: ;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap
 }
 
 .details__package-box {
