@@ -27,7 +27,7 @@
 }
 
 .buy-box__lable:active {
-  background: #CBE5FF;
+  background: white;
 }
 
 .input__tab-btn:focus + .buy-box__lable {
