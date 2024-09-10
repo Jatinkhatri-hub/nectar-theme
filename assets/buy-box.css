@@ -45,5 +45,6 @@
 
 .panel {
   display: none;
-  padding: 
+  padding: 6px 10px;
+  background: white;
 }
