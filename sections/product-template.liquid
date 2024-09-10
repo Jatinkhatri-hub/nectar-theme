@@ -1,5 +1,5 @@
 {{ 'buy-box.css' |  asset_url |  stylesheet_tag}}
-<script src="{{ buy-box.js }}">
+<script src="{{ buy-box.js |  asset_url |  script_tag }}
 
 <div class="product-template__container page-width"
   id="ProductSection-{{ section.id }}"
