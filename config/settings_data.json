@@ -1,1 +1,2003 @@
-{"current":{"color_text":"#142444","color_body_text":"#142444","color_sale_text":"#142444","color_button":"#f65636","color_button_text":"#fff","color_small_button_text_border":"#3d4246","color_text_field_text":"#142444","color_text_field_border":"#142444","color_text_field":"#fff","color_image_overlay_text":"#fff","color_image_overlay":"#3d4246","image_overlay_opacity":40,"color_borders":"#142444","color_body_bg":"#fff","type_header_font":"work_sans_n6","type_header_base_size":26,"type_base_font":"lora_n4","type_base_size":18,"predictive_search_enabled":true,"predictive_search_show_vendor":false,"predictive_search_show_price":false,"share_image":"","share_facebook":true,"share_twitter":true,"share_pinterest":true,"social_twitter_link":"#","social_facebook_link":"#","social_pinterest_link":"","social_instagram_link":"#","social_tumblr_link":"","social_snapchat_link":"#","social_youtube_link":"","social_vimeo_link":"","favicon":"","enable_ajax":true,"checkout_header_image":"","checkout_logo_image":"","checkout_logo_position":"left","checkout_logo_size":"medium","checkout_body_background_image":"","checkout_body_background_color":"#fff","checkout_input_background_color_mode":"white","checkout_sidebar_background_image":"","checkout_sidebar_background_color":"#fafafa","checkout_heading_font":"-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'","checkout_body_font":"-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'","checkout_accent_color":"#197bbd","checkout_button_color":"#197bbd","checkout_error_color":"#e32c2b","sections":{"header":{"type":"header","settings":{"align_logo":"left","logo":"shopify:\/\/shop_images\/nectar-logo.png","logo_max_width":135,"main_linklist":"main-menu","message":false,"home_page_only":false,"message_text":"Announce something here","message_link":"","color_bg":"#7796a8","color_text":"#ffffff"}},"footer":{"type":"footer","settings":{"show_payment_icons":false,"color_footer_bg":"#ffffff","color_footer_text":"#142444","show_locale_selector":true,"show_currency_selector":true,"menu_1_title":"Shop","menu1":"shop","menu_2_title":"About","menu2":"about","newsletter_title":"Stay Connected","newsletter_text":"Keep up to date on new products, promotions, and helpful info on how to stay hydrated and healthy."}},"1581101332389":{"type":"mirgo-color-banner","settings":{"hero_size":"hero_large","title":"<p>Hydration For<\/p>","description":"\"Afternoon Slumps\", \"Groggy Mornings\", \"Foggy Brains\"","button_label_1":"Shop Now","button_url_1":"shopify:\/\/products\/essential-daily-hydration","button_label_2":"","button_url_2":"","image_background":"shopify:\/\/shop_images\/Hero_image_9f59e820-491e-4ffe-9d66-e39374dc466a.jpg","image_background_mob":"shopify:\/\/shop_images\/Mobile_Hero_Image.jpg","color_background":"#7bbafa","font_color":"#ffffff"}},"1581344582062":{"type":"mirgo-icon-home","blocks":{"1581344645796":{"type":"image","settings":{"title_icon":"Natural Energy","icon":"shopify:\/\/shop_images\/natural_energy_193a84b8-bb1d-4ab3-9bb4-e8fb9a622e4b.png"}},"1581344673149":{"type":"image","settings":{"title_icon":"Boosted Focus","icon":"shopify:\/\/shop_images\/boosted_focus_67ebb971-32a2-4679-8101-229f0d46b65d.png"}},"1581344754684":{"type":"image","settings":{"title_icon":"Improved Mood","icon":"shopify:\/\/shop_images\/boosted_mood.png"}},"1581344763764":{"type":"image","settings":{"title_icon":"Strengthened Immunity","icon":"shopify:\/\/shop_images\/immunity.png"}}},"block_order":["1581344645796","1581344673149","1581344754684","1581344763764"],"settings":{"title":"Staying hydrated is hard. Enter Nectar  —  an all-natural hydration mix designed for daily use.","description":""}},"1581347333318":{"type":"mirgo-column-blocks-home","blocks":{"1581347351526":{"type":"left_image","settings":{"r_title":"We Let the Science Speak","r_desc":"<p>You've probably heard dehydration is bad for you. Yet, studies show 75% of us are Chronically Dehydrated, resulting in:<\/p>","r_list":"<ul class=\"cross\">\n<li>Fatigue and Lethargy <i>(afternoon slump)<\/i>\n<\/li>\n<li>Mood Disturbance <i>(I just can't)<\/i>\n<\/li>\n<li>Dry and Flushed Skin <i>(no glow)<\/i>\n<\/li>\n<li>Slowed Metabolism <i>(weight gain)<\/i>\n<\/li>\n<\/ul>","r_button":"Meet your body's new best friend","r_link":"\/products\/essential-daily-hydration","r_image":"shopify:\/\/shop_images\/ezgif.com-gif-maker_1_720x_3c22d6dc-3f95-45b7-a535-4e6c28668f5b.gif"}},"1585148629254":{"type":"right_image","settings":{"l_title":"Put Your Water to Work","l_desc":"<p>When you're dehydrated, your body needs more than just plain water. Nectar uses the highest quality, research backed electrolytes to help you get more from your water, hydrating you as efficiently as possible.<\/p>","l_list":"<ul class=\"check\">\n<li>2-3x more hydrating than water alone<\/li>\n<li>Only the essentials, none of the B.S.<\/li>\n<li>Zero Sugar, Zero Calories<\/li>\n<\/ul>","l_button":"Explore our ingredients","l_link":"\/products\/essential-daily-hydration#nectar-ingredients","l_image":"shopify:\/\/shop_images\/Homepage_Image_2.jpg"}},"f75ad222-75e3-4104-9879-19f48643f04b":{"type":"left_image","settings":{"r_title":"Make Hydration a Habit","r_desc":"<p>We get it — subscriptions are scary. But, we want to make proper hydration part of your daily routine. Not feeling it? Cancel any time.<\/p>","r_list":"<ul class=\"checkmark-orange\">\n<li>Free shipping<\/li>\n<li>Control your delivery date<\/li>\n<li>Quick and easy cancellation<\/li>\n<li>Unhappy? It's on us <\/li>\n<\/ul>","r_button":"Shop Now","r_link":"\/products\/essential-daily-hydration","r_image":"shopify:\/\/shop_images\/Homepage_Image_3.jpg"}}},"block_order":["1581347351526","1585148629254","f75ad222-75e3-4104-9879-19f48643f04b"],"settings":{}},"1581351803382":{"type":"mirgo-section-full-height-text","disabled":true,"settings":{"title":"Make Hydration a Habit","desc":"<p>We get it — subscriptions are scary. But, we want to make proper hydration part of your daily routine. Not feeling it? Cancel any time.<\/p>","list":"<ul class=\"check\">\n<li>Free shipping<\/li>\n<li>Control your delivery date<\/li>\n<li>Quick and easy cancellation<\/li>\n<li>Unhappy? It's on us <\/li>\n<\/ul>","image_background":"shopify:\/\/shop_images\/testimonial-placeholder.png","color_background":"#666666","font_color":"#ffffff"}},"1581430463040":{"type":"mirgo-social-media-banner","blocks":{"1581430511190":{"type":"text","settings":{"button_label":"Send Via Email","button_link":"#"}},"1581430529555":{"type":"text","settings":{"button_label":"Send in Messenger","button_link":"#"}},"1581430537979":{"type":"text","settings":{"button_label":"Post to Twitter","button_link":"#"}},"1581430544634":{"type":"text","settings":{"button_label":"Get a Share Link","button_link":"#"}}},"block_order":["1581430511190","1581430529555","1581430537979","1581430544634"],"disabled":true,"settings":{"title":"Wellness Should be Shared<br>Give $15 — Get $15","desc":"<p>Send a friend $15 off their ﬁrst order <br\/>and earn $15 in Nectar credit!<\/p>","background":"shopify:\/\/shop_images\/background-social-new.png"}},"product-template":{"type":"product-template","settings":{"show_quantity_selector":false,"show_variant_labels":true,"show_vendor":false,"enable_payment_button":false,"show_share_buttons":false,"media_size":"medium","enable_image_zoom":false,"enable_video_looping":false,"hydration_details":"A clean, daily hydration mix optimized to hydrate you faster and more efficiently than water alone. No Sugar. No Calories. Simply Refreshing.","hydration_howto":"We recommend drinking Nectar in the morning to give the day your best shot. Simply mix one packet of Nectar with water (our suggested serving size is 16oz) and you’re good to go.","energy_details":"A clean, daily energy booster made with 75mg of Organic Caffeine, Pure Vitamin B12 and over 600mg of Electrolytes. No Sugar. No Calories. Simply Refreshing.","energy_howto":"We recommend drinking Nectar as a health coffee, pre-workout and energy drink alternative. Simply mix one packet of Nectar with water (suggested serving size is 16oz) and you’re good to go."}},"product-recommendations":{"type":"product-recommendations","settings":{"show_product_recommendations":true,"heading":"You may also like","show_vendor":false}},"mirgo-icon-product":{"type":"mirgo-icon-product","blocks":{"1581546308094":{"type":"icon","settings":{"title_icon":"Zero Calories & Sugar Free","icon":"shopify:\/\/shop_images\/zero-blue.png"}},"1581546365309":{"type":"icon","settings":{"title_icon":"All Natural & Vegan","icon":"shopify:\/\/shop_images\/natural.png"}},"1581546391956":{"type":"icon","settings":{"title_icon":"Non-GMO","icon":"shopify:\/\/shop_images\/thicker-no-filler_8a5613bc-261b-4550-8008-435ba5222cde.png"}},"1581546413106":{"type":"icon","settings":{"title_icon":"No Synthetic Fillers","icon":"shopify:\/\/shop_images\/thicker-no-filler.png"}},"1584466671017":{"type":"icon","settings":{"title_icon":"Made in the USA","icon":"shopify:\/\/shop_images\/usa-bluepng.png"}}},"block_order":["1581546308094","1581546365309","1581546391956","1581546413106","1584466671017"],"settings":{"title":"","description":""}},"mirgo-column-block-product":{"type":"mirgo-column-block-product","blocks":{"1581546663607":{"type":"left_image","settings":{"r_title":"Feeling thirsty?","r_desc":"<p>Let’s face it, you probably aren’t running a marathon everyday (even though it may feel like it). However, you don’t need to be sweating it out to be dehydrated. In fact, most daily habits - think your morning Americano and that SoulCycle class - contribute to dehydration. <\/p>","r_list":"","r_button":"","r_link":"","r_image":"shopify:\/\/shop_images\/Asset_2.png","r_image_text":""}},"1581546666620":{"type":"right_image","settings":{"l_title":"Hydration: A Balancing Act","l_desc":"<p>We’re not trying to give water a bad rap, but plain ‘ole H2O isn’t as hydrating as you think it is. Your body requires a delicate balance of ﬂuids and electrolytes to perform at its best. Mixed with a glass of water, the medical grade electrolytes in Nectar boost the absorption of your water to hydrate you as quickly and efﬁciently as possible. <\/p>","l_list":"","l_button":"","l_link":"","l_image":"shopify:\/\/shop_images\/ezgif.com-gif-maker_2.gif","l_image_text":""}}},"block_order":["1581546663607","1581546666620"],"settings":{}},"collection-template":{"type":"collection-template","settings":{"layout":"grid","grid":2,"rows":2,"show_collection_image":true,"show_vendor":false,"sort_enable":false,"tags_enable":false}},"mirgo-product-ingredient-grid":{"type":"mirgo-product-ingredient-grid","blocks":{"1581608995186":{"type":"text","settings":{"icons":"shopify:\/\/shop_images\/potassium_ddd8e59d-1191-40d0-bd62-2dd7922e7a7f.png","grid_title":"Potassium","grid_desc":"<p>Prevents Muscle Cramps<\/p>"}},"1581609229325":{"type":"text","settings":{"icons":"shopify:\/\/shop_images\/calcium_c9587915-c29e-48e8-bdb8-71a73aa5f362.png","grid_title":"Calcium","grid_desc":"<p>Regulates Heart Rhythm<\/p>"}},"1581609247639":{"type":"text","settings":{"icons":"shopify:\/\/shop_images\/magnesium_d07ddfc7-89ef-4409-9d93-d5e4265f6a12.png","grid_title":"Magnesium","grid_desc":"<p>Drives Energy Creation<\/p>"}},"1581609261072":{"type":"text","settings":{"icons":"shopify:\/\/shop_images\/sodium-chloride_bf2e9d2e-b28a-44ea-a38f-518360aed43f.png","grid_title":"Sodium Chloride","grid_desc":"<p>Maintains Fluid Balance<\/p>"}},"1581609278045":{"type":"text","settings":{"icons":"shopify:\/\/shop_images\/crystalized-lemon_56408567-8a11-4658-b486-53ade020137e.png","grid_title":"Organic Fruit","grid_desc":"<p>Refreshing Taste<\/p>"}},"1581609293620":{"type":"text","settings":{"icons":"shopify:\/\/shop_images\/organic-stevia_a024bb44-8a3a-4dae-9c66-6b64e1908b82.png","grid_title":"Organic Stevia","grid_desc":"<p>Light Sweetener<\/p>"}}},"block_order":["1581608995186","1581609229325","1581609247639","1581609261072","1581609278045","1581609293620"],"settings":{"title":"Six Essential Ingredients","desc":"<p>Sugar Free. Calorie Free. Refreshingly Simple.<\/p>","btn_label":"View Supplement Facts","m_title":"Six Essential Ingredients","m_desc":"<p>Most electrolyte drinks are packed with unnecessary ingredients including sugar. Nectar contains only what you need, in bioavailable forms your body can actually use.<\/p>"}},"mirgo-product-collapse-details":{"type":"mirgo-product-collapse-details","blocks":{"1581613610416":{"type":"text","settings":{"collapse_title":"Do I need Nectar?","collapse_desc":"<p>Studies show that 3 out of 4 people suffer from chronic dehydration. Many of the symptoms we overlook as byproducts of our busy lifestyles - fatigue, brain fog, feeling down. Adding Nectar to your daily routine helps you make the most of your water, keeping you hydrated and feeling your best.<\/p>"}},"1581613631077":{"type":"text","settings":{"collapse_title":"How long will it take me to feel a difference?","collapse_desc":"<p>Nectar starts working immediately after consumption to hydrate you as efficiently as possible. Depending on how chronically dehydrated you are, it can take up to a week of daily use to start fully feeling the benefits - increased energy levels, mental clarity and improved mood.<\/p>"}},"1581613642007":{"type":"text","settings":{"collapse_title":"Does rapid hydration require sugar?","collapse_desc":"<p>Most other hydration powder companies developed their formula based on the World Health Organization’s “Oral Rehydration Solution.” This formula was developed for individuals suffering “life threatening diarrhoeal dehydration.” Odds are, if you’re on a computer, you’re not experiencing this level of near-death dehydration and malnourishment, and you likely never will. Sugar is one of the most prevalent ingredients in the average diet. Nectar’s proprietary formula relies on replenishing what we are not getting on a daily basis from the food we already eat. Don’t let companies who aren’t willing to spend the money on organic Stevia fool you with their “science” - they’re just looking to save money.<\/p>"}},"1581613653418":{"type":"text","settings":{"collapse_title":"What if I don't like Nectar?","collapse_desc":"<p>We want you to be happy and feel a difference with our product. If you end up not liking Nectar, we&#x27;ll refund your first order in full. No questions asked. Please reach out to us at <a href=\"mailto:help@drinknectar.co\">help@drinknectar.co<\/a> if you have any issues.<\/p>"}}},"block_order":["1581613610416","1581613631077","1581613642007","1581613653418"],"settings":{"title":"You’ve Got Questions, We’ve Got Answers","desc":"<p>You’re putting this in your body - skepticism is encouraged.<\/p>","btn_label":"More Answers On Our FAQ Page","btn_link":"#"}},"mirgo-nectar-scientist-team":{"type":"mirgo-nectar-scientist-team","blocks":{"1581618959502":{"type":"text","settings":{"team_id":"shopify:\/\/shop_images\/Rachel.png","team_title":"RACHEL P.","team_position":"<p>Cellular Biologist<\/p>"}},"1581619014046":{"type":"text","settings":{"team_id":"shopify:\/\/shop_images\/Zach_copy.png","team_title":"ZACH H. MD","team_position":"<p>Physician<\/p>"}}},"block_order":["1581618959502","1581619014046"],"settings":{"title":"Nectar’s Scientists","desc":""}},"mirgo-newsletter-inner-pages":{"type":"mirgo-newsletter-inner-pages","settings":{"section_title":"Subscribe to our newsletter","subheading":"<p>A short sentence describing what someone will receive by subscribing<\/p>","color_background":"#edf4fe","show_background":true}},"mirgo-color-banner":{"type":"mirgo-color-banner","settings":{"hero_size":"hero_small","title":"<p>You Have Questions, We Have Answers<\/p>","description":"","button_label_1":"","button_url_1":"","button_label_2":"","button_url_2":"","image_background":"","color_background":"#666666","font_color":"#fff"}},"mirgo-faq":{"type":"mirgo-faq","blocks":{"1583363170731":{"type":"text","settings":{"collapse_title":"What is Nectar?","collapse_desc":"<p>Nectar is a clean, rapid hydration mix designed to be taken daily. The product is made with medical-grade electrolytes to boost the absorption of your water in order to hydrate you as quickly and efficiently as possible.<\/p>"}},"1583363195570":{"type":"text","settings":{"collapse_title":"How can I tell if I need Nectar?","collapse_desc":"<p>Studies show that 3 out of 4 people suffer from chronic dehydration. Many of the symptoms we overlook as byproducts of our busy lifestyles - fatigue, brain fog, feeling down. Adding Nectar to your daily routine helps you make the most of the water you drink, keeping you hydrated and feeling your best.<\/p>"}},"1583365916950":{"type":"text","settings":{"collapse_title":"When should I drink Nectar?","collapse_desc":"<p>We recommend drinking Nectar first thing in the morning to help replenish the electrolytes lost during sleep. However, Nectar can be taken more than once a day based on your lifestyle.<\/p>"}},"1583365942541":{"type":"text","settings":{"collapse_title":"How long will it take me to feel a difference?","collapse_desc":"<p>Nectar starts working immediately after consumption to rehydrate you. Depending on how chronically dehydrated you are, it can take up to a week of daily use to start fully feeling the benefits - increased energy levels, mental clarity and improved mood<\/p>"}},"1599229099549":{"type":"text","settings":{"collapse_title":"What if I don’t like Nectar?","collapse_desc":"<p>We want you to be happy and feel a difference with our product. If you end up not liking Nectar, we'll refund your first order in full. No questions asked. Please reach out to us at <a href=\"mailto:help@drinknectar.co\">hi@drinknectar.co<\/a> if you have any issues.<\/p>"}}},"block_order":["1583363170731","1583363195570","1583365916950","1583365942541","1599229099549"],"settings":{}},"mirgo-faq-2":{"type":"mirgo-faq-2","blocks":{"1583365978110":{"type":"text","settings":{"collapse_title":"How do I know if I'm dehydrated?","collapse_desc":"<p>The symptoms of dehydration include fatigue, thirst, depressed mood, dry skin, headaches, cramping, anxiety and decreased urine output. Oftentimes, thirst is confused with hunger - but your body is actually craving fluids, not food.<\/p>"}},"1583366000667":{"type":"text","settings":{"collapse_title":"What causes dehydration?","collapse_desc":"<p>Dehydration occurs when your body is lacking the fluids and electrolytes essential to perform its normal functions. Dehydration can be caused by your normal daily habits including caffeine, work, exercise, alcohol, medications and even sleep.<\/p>"}},"1583366015449":{"type":"text","settings":{"collapse_title":"Why is staying hydrated important?","collapse_desc":"<p>Over half of your body is made of water and studies show that even a 1% fluid loss causes a number of dehydration symptoms. Simply put, every cell, tissue, and organ in your body needs electrolytes and water to work properly.<\/p>"}},"1583366028151":{"type":"text","settings":{"collapse_title":"What are electrolytes and why do I need them?","collapse_desc":"<p>Electrolytes are electrically charged minerals that conduct electrical impulses throughout the body. Electrolytes are found in the bloodstream and are vital to many key functions in the body such as maintaining fluid balance, creating energy, preventing muscle cramps, regulating heart rhythm and rebuilding damaged tissue. The primary electrolytes found in Nectar are potassium and magnesium. These two electrolytes are the key to why Nectar is so effective at helping your body absorb water.<\/p>"}},"1583366044891":{"type":"text","settings":{"collapse_title":"Does rapid hydration require sugar?","collapse_desc":"<p>Most other hydration powder companies developed their formula based on the World Health Organization’s “Oral Rehydration Solution.” This formula was developed for individuals suffering “life threatening diarrhoeal dehydration.” Odds are, if you’re on a computer, you’re not experiencing this level of near-death dehydration and malnourishment, and you likely never will. Sugar is one of the most prevalent ingredients in the average diet. Nectar’s proprietary formula relies on replenishing what we are not getting on a daily basis from the food we already eat. Don’t let companies who aren’t willing to spend the money on organic stevia fool you with their “science” - they’re just looking to save money.<\/p>"}},"1599233199210":{"type":"text","settings":{"collapse_title":"Why does Nectar have lower sodium and higher potassium and magnesium?","collapse_desc":"<p>When it comes to hydration, potassium and magnesium are both essential electrolytes. Through your body’s Sodium-Potassium Pump, your cells are constantly pumping out sodium and pumping in potassium, maintaining fluid balance. In your kidneys, the organs responsible for maintaining electrolyte concentrations, magnesium is essential to storing potassium. When magnesium levels are optimal, your kidneys are able to retain higher levels of electrolytes, keeping you hydrated. Unless you’re running a marathon and losing a substantial amount of sodium through sweat, you don’t need all of the sodium found in other hydration products. <\/p>"}}},"block_order":["1583365978110","1583366000667","1583366015449","1583366028151","1583366044891","1599233199210"],"settings":{}},"mirgo-faq-3":{"type":"mirgo-faq-3","blocks":{"1583366059753":{"type":"text","settings":{"collapse_title":"How does my subscription work?","collapse_desc":"<p>We started Nectar to make hydration simple and easy. When you subscribe, we will send you a new supply (30 sticks) of Nectar each month. Don’t worry - we’ll email you a couple days before your subscription renews in case you want to change your delivery date or pause \/ cancel your subscription. All of these changes can be made at any time through your account page.<\/p>"}},"1583366076110":{"type":"text","settings":{"collapse_title":"What is your Risk-Free guarantee and how does it work?","collapse_desc":"<p>We want you to be happy and feel a difference with our product. If you end up not liking Nectar, we&#x27;ll refund your first order in full. No questions asked. Please reach out to us at <a href=\"mailto:help@drinknectar.co\">help@drinknectar.co<\/a> if you have any issues.<\/p>"}},"1583366086465":{"type":"text","settings":{"collapse_title":"Where do I adjust my subscription settings?","collapse_desc":"<p>You are able to change your subscription settings right from your account page. You can rush or delay an order, adjust your quantity, change your shipping address or payment method and cancel your subscription all in one place.<\/p>"}},"1583366106475":{"type":"text","settings":{"collapse_title":"When will my credit card or Paypal account be charged?","collapse_desc":"<p>You will be charged 24 hours before your next order. Don’t worry, we will email you a couple of days ahead of time to let you know your order is reviewing.<\/p>"}}},"block_order":["1583366059753","1583366076110","1583366086465","1583366106475"],"settings":{}},"mirgo-faq-hero":{"type":"mirgo-faq-hero","settings":{"hero_size":"hero_small","title":"You Have Questions, We Have Answers","description":"We get it. You should know what you're putting into your body. Ask away. Our team of experts is here to help.","image_background":"shopify:\/\/shop_images\/Learn_FAQ_banner_Image.jpg","color_background":"#666666","font_color":"#ffffff"}},"mirgo-faq-4":{"type":"mirgo-faq-4","blocks":{"1583445887785":{"type":"text","settings":{"collapse_title":"How do I use Nectar?","collapse_desc":"<p>Simply mix, shake or stir Nectar with 16 oz. of water and enjoy! You can always add more or less water depending on your taste preferences.<\/p>"}},"1583445918690":{"type":"text","settings":{"collapse_title":"Does Nectar contain any sugar, caffeine, stimulants, artificial sweeteners, colorants or fillers?","collapse_desc":"<p>No - and it never will! Nectar contains only what you need, in bioavailable forms your body can actually use.<\/p>"}},"1583445923800":{"type":"text","settings":{"collapse_title":"What is Organic Stevia?","collapse_desc":"<p>Stevia is a plant that produces an extract that is nearly 350 times sweeter than sugar. Stevia is NOT an artificial sweetener - it is a plant! Nectar uses only ethically sourced organic Stevia. The leaves are picked by hand, then dried naturally using sunlight and fresh air to yield a deliciously sweet and smooth-tasting zero-calorie sweetener.<\/p>"}},"1583445928918":{"type":"text","settings":{"collapse_title":"What is Crystalized Lemon?","collapse_desc":"<p>Our fresh lemon flavor is made from a patented recipe that crystallizes the lemon’s oils and juices, locking in a fresh-squeezed lemon taste. No “natural flavors” here!<\/p>"}},"1599231524661":{"type":"text","settings":{"collapse_title":"Is Nectar good for Keto and low carb diets?","collapse_desc":"<p>If you’re low carb, you know that sugary drinks won’t cut it. Nectar not only has zero carbs, but is the perfect replenisher for the electrolytes lost from keto.<\/p>"}}},"block_order":["1583445887785","1583445918690","1583445923800","1583445928918","1599231524661"],"settings":{}},"mirgo-contact-hero":{"type":"mirgo-contact-hero","settings":{"hero_size":"hero_small","title":"Get in Touch","description":"","color_background":"#7bbafa","font_color":"#ffffff"}},"contact-info":{"type":"contact-info","settings":{"header_1":"DM Us","header_1_info":"@HiNectar","info_1_url":"https:\/\/instagram.com\/hinectar","header_2":"Email Us","header_2_info":"Hi@Drinknectar.co","info_2_url":"mailto:Hi@Drinknectar.co","header_3":"Mail Us","header_3_info":"Nectar<br>\n2745 Laguna Street<br>\nSan Francisco, CA 94123"}},"blog-template":{"type":"blog-template","settings":{"layout":"grid","blog_show_author":false,"blog_show_date":false}},"mirgo-blog-hero":{"type":"mirgo-blog-hero","settings":{"hero_size":"hero_small","title":"Essential Reading","description":"The more you know...","image_background":"shopify:\/\/shop_images\/Learn_FAQ_banner_Image.jpg","color_background":"#666666","font_color":"#ffffff"}},"mirgo-login-banner":{"type":"mirgo-login-banner","settings":{"color_background":"#7bbafa","font_color":"#142444"}},"newsletter":{"type":"newsletter","settings":{"section_title":"Stay Connected","subheading":"<p>Keep up to date on new products, promotions, and helpful info on how to stay hydrated and healthy.<\/p>","color_background":"#edf4fe","show_background":true}},"mirgo-register-banner":{"type":"mirgo-register-banner","settings":{"color_background":"#7bbafa","font_color":"#ffffff"}},"1584469777527":{"type":"quotes","blocks":{"1584469777527-0":{"type":"quote","settings":{"quote":"<p>“I take Nectar every morning to start my day feeling energized.”<\/p>","author":"Jenny N.","author_title":"Pilates Instructor & Engineer","quote_image":"shopify:\/\/shop_images\/Jenny_RP.jpg"}},"1584469777527-1":{"type":"quote","settings":{"quote":"<p>“Nectar is a game changer for staying focused &amp; energized.”<\/p>","author":"Sahil R.","author_title":"Finance & Partnerships","quote_image":"shopify:\/\/shop_images\/Sahil_RP.jpg"}},"1590589357498":{"type":"quote","settings":{"quote":"<p>&quot;As a new mom, Nectar has been an amazing addition to my daily routine.&quot;<\/p>","author":"Mallory E.","author_title":"Boss Mom","quote_image":"shopify:\/\/shop_images\/Mallory_RP.jpg"}},"1584469777527-2":{"type":"quote","settings":{"quote":"<p> “I love that it’s all natural and zero calorie - it tastes amazing.”<\/p>","author":"April Y.","author_title":"Product Manager","quote_image":"shopify:\/\/shop_images\/April_RP.jpg"}},"1584469793331":{"type":"quote","settings":{"quote":"<p>“I never relized dehydration was causing my lethargy until I tried Nectar.”<\/p>","author":"Dan S.","author_title":"Lawyer","quote_image":"shopify:\/\/shop_images\/Dan_RP.jpg"}},"1588708081449":{"type":"quote","settings":{"quote":"<p>“Nectar has become a staple amongst my friend group.”<\/p>","author":"Emily Q.","author_title":"Developer","quote_image":"shopify:\/\/shop_images\/Emily_RP.jpg"}}},"block_order":["1584469777527-0","1584469777527-1","1590589357498","1584469777527-2","1584469793331","1588708081449"],"settings":{"title":"Real Ingredients, Real Reviews","desc":"<p>Hear what Nectar users are saying.<\/p>"}},"mirgo-mission-hero":{"type":"mirgo-mission-hero","settings":{"hero_size":"hero_small","title":"Hi, We're Nectar","description":"","color_background":"#666666","image_background":"shopify:\/\/shop_images\/Mission_Banner.jpg","font_color":"#ffffff"}},"mirgo-mission-header":{"type":"mirgo-mission-header","settings":{"title":"We believe that hydration is the superpower that charges everything people do.","description":""}},"mirgo-mission-content":{"type":"mirgo-mission-content","blocks":{"1584475180555":{"type":"left_image","settings":{"r_title":"So, we created Nectar.","r_desc":"<p>For years, I wondered what was causing my constant feelings of lethargy and fatigue. Diet, exercise, sleep schedule – I tried changing it all to no avail. After a trip to my primary care physician and a full blood panel, the answer became clear – I was chronically dehydrated. At the request of my Doctor, I began testing a number of hydration products. However, I quickly realized none fit my health-conscious lifestyle (low sugar, zero calorie and low sodium). I immediately knew I could create something better that was actually good for the body and set out to create Nectar.<br\/><\/p>","r_list":"","r_button":"","r_link":"","r_image":"shopify:\/\/shop_images\/Nectar_Mission_Image.jpg"}}},"block_order":["1584475180555"],"settings":{}},"mirgo-mission-values":{"type":"mirgo-mission-values","blocks":{"1584475616854":{"type":"text","settings":{"value_number":"01","grid_title":"Transparency","grid_desc":"<p>We have a deep-rooted desire to approach our customers with honesty.  We are transparent in who we are, why we started and what we hope to achieve. We believe that what you put into your body matters. We put our values, ingredients, science, and story upfront and in the light because we want to be a brand that you can trust. <\/p>"}},"1584475623573":{"type":"text","settings":{"value_number":"02","grid_title":"Simplicity","grid_desc":"<p>We’ve made everything about Nectar as simple as possible. In our own lives, we discovered simplicity is where we find happiness.  Whether you are simplifying your lifestyle, your career, or what you put in your body, we wanted to make a product that could be an easy addition to a healthy lifestyle. <\/p>"}},"1584475626459":{"type":"text","settings":{"value_number":"03","grid_title":"Compassion","grid_desc":"<p>Nectar was created to help you feel your best, and we made it for everybody.  No matter where you are in your health and wellness journey, we want to be an additional step towards a healthier you.  Helping people realize that they are capable of achieving anything they set out to do is what really excites us.<\/p>"}},"1584475627651":{"type":"text","settings":{"value_number":"04","grid_title":"Partnership","grid_desc":"<p>We are a brand that is dedicated to putting people and their health first.  We understand that health and wellness is a lifelong journey and that it takes support in order to achieve our goals.  Our vision is to build deep connections with people that help them thrive. <\/p>"}}},"block_order":["1584475616854","1584475623573","1584475626459","1584475627651"],"settings":{"title":"Our Guiding Values"}},"mirgo-mission-banner":{"type":"mirgo-mission-banner","settings":{"title":"Wellness Should Be Shared","desc":"<p>We donate a portion of every sale to initiatives that help improve the health and wellness of low-income communities. Our vision is to build lasting connections with these organizations so that we can meaningfuly impact lives. <\/p>","button":"Learn More","link":"#","image_background":"shopify:\/\/shop_images\/Mission_Bottom_Banner.png","color_background":"#666666","font_color":"#ffffff"}},"free-trial-landing-hero":{"type":"free-trial-landing-hero","settings":{"hero_size":"hero_large","title":"<p>Science Backed Hydration<\/p>","description":"2-3x as hydrating as water alone without the sugar or fillers.","button_label_1":"Try Nectar Free","button_url_1":"#","button_label_2":"","button_url_2":"","image_background":"","color_background":"#666666","font_color":"#fff"}},"free-trial-landing-icons":{"type":"free-trial-landing-icons","blocks":{"1587413157428":{"type":"image","settings":{"title_icon":"Natural Energy","icon":"shopify:\/\/shop_images\/natural_energy_193a84b8-bb1d-4ab3-9bb4-e8fb9a622e4b.png"}},"1587413160192":{"type":"image","settings":{"title_icon":"Boosted <br>Focus","icon":"shopify:\/\/shop_images\/boosted_focus_67ebb971-32a2-4679-8101-229f0d46b65d.png"}},"1587413168290":{"type":"image","settings":{"title_icon":"Improved Mood","icon":"shopify:\/\/shop_images\/boosted_mood.png"}},"1587413174227":{"type":"image","settings":{"title_icon":"Glowing <br>Complexion","icon":"shopify:\/\/shop_images\/glowing_complextion.png"}},"1588868463302":{"type":"image","settings":{"title_icon":"Strengthened<br> Immunity","icon":"shopify:\/\/shop_images\/immunity.png"}},"1588868484209":{"type":"image","settings":{"title_icon":"Increased <br>Metabolism","icon":"shopify:\/\/shop_images\/metabolism.png"}}},"block_order":["1587413157428","1587413160192","1587413168290","1587413174227","1588868463302","1588868484209"],"settings":{"title":"Chances Are You're Dehydrated","description":"<p>Studies show 3 out of 4 people are chronically dehydrated. That’s why we created Nectar, an all natural rapid hydration mix designed to be taken daily. Made with only the essentials and no sugar, Nectar is optimized to hydrate you faster and more efficiently than water alone. It’s refreshingly simple.<\/p>"}},"free-trial-landing-blocks":{"type":"free-trial-landing-blocks","blocks":{"1587413236153":{"type":"left_image","settings":{"r_title":"Put Your Water to Work","r_desc":"<p>When you&#x27;re dehydrated, your body needs more than just plain water. Nectar uses the highest quality, research backed electrolytes to help you get more from your water, hydrating you as efficiently as possible.<\/p>","r_list":"<ul class=\"check\">\n<li>2-3x more hydrating than water alone<\/li>\n<li>Only the essentials, none of the B.S.<\/li>\n<li>Zero Sugar, Zero Calories<\/li>\n<\/ul>","r_button":"Meet our ingredients","r_link":"#","r_image":"shopify:\/\/shop_images\/testimonial-placeholder.png"}}},"block_order":["1587413236153"],"settings":{}},"free-trial-landing-large-hero":{"type":"free-trial-landing-large-hero","settings":{"title":"Make Hydration a Habit","desc":"<p>We get it&nbsp;&mdash; subscriptions are scary. But, we want to make proper hydration part of your daily routine. Not feeling it? Cancel any time.<\/p>","list":"<ul class=\"check\">\n<li>Free shipping<\/li>\n<li>Control your delivery date<\/li>\n<li>Quick and easy cancellation<\/li>\n<li>Unhappy? It's on us <\/li>\n<\/ul>","button":"Hydrate your life","link":"#","attachment":"","image_background":"shopify:\/\/shop_images\/testimonial-placeholder.png","color_background":"#666666","font_color":"#fff"}},"free-trial-landing-quotes":{"type":"free-trial-landing-quotes","blocks":{"1587414057651":{"type":"quote","settings":{"quote":"<p>\"After adding Nectar to my morning routine, my skin is glowing!\"<\/p>","author":"Sarah H.","author_title":"Registered Dietician","quote_image":"shopify:\/\/shop_images\/profile-male-circle2-512.png"}},"1587414079465":{"type":"quote","settings":{"quote":"<p>\"After adding Nectar to my morning routine, my skin is glowing!\"<\/p>","author":"Sarah H.","author_title":"Registered Dietician","quote_image":"shopify:\/\/shop_images\/profile-male-circle2-512.png"}},"1587414095371":{"type":"quote","settings":{"quote":"<p>\"After adding Nectar to my morning routine, my skin is glowing!\"<\/p>","author":"Sarah H.","author_title":"Registered Dietician","quote_image":"shopify:\/\/shop_images\/profile-male-circle2-512.png"}}},"block_order":["1587414057651","1587414079465","1587414095371"],"settings":{"title":"Real Ingredients, Real Reviews","desc":"<p>Hear what Nectar users are saying.<\/p>"}},"free-trial-landing-referral":{"type":"free-trial-landing-referral","settings":{"title":"We Do Fun Things","desc":"<p>Connect with us&nbsp;<a href=\"\/admin\/themes\/86690463803\/editor\" title=\"#\">@nectar<\/a><\/p>","background":""}},"free-trial-landing-social":{"type":"free-trial-landing-social","settings":{"title":"Twitter and Instagram","desc":""}},"mirgo-social-home":{"type":"mirgo-social-home","blocks":{"1587414304475":{"type":"instagram","settings":{"username":"bluedrygoods","access-token":""}}},"block_order":["1587414304475"],"settings":{"title":"We Do Fun Things","desc":"<p>Connect with us&nbsp;<a href=\"\/admin\/themes\/86690463803\/editor\" title=\"#\">@nectar<\/a><\/p>"}},"free-trial-header":{"type":"free-trial-header","settings":{"align_logo":"left","logo":"shopify:\/\/shop_images\/nectar-logo.png","logo_max_width":135,"main_linklist":"","message":false,"home_page_only":false,"message_text":"Announce something here","message_link":"","color_bg":"#7796a8","color_text":"#fff"}},"free-trial-product-icons":{"type":"free-trial-product-icons","blocks":{"1587586225826":{"type":"image","settings":{"title_icon":"Enjoy a week of Nectar","icon":"shopify:\/\/shop_images\/crystalized-lemon_56408567-8a11-4658-b486-53ade020137e.png"}},"1587586234257":{"type":"image","settings":{"title_icon":"Don’t leave us hangin’","icon":"shopify:\/\/shop_images\/organic-stevia_a024bb44-8a3a-4dae-9c66-6b64e1908b82.png"}},"1587586239156":{"type":"image","settings":{"title_icon":"Join the Hydration Gang","icon":"shopify:\/\/shop_images\/sodium-chloride_bf2e9d2e-b28a-44ea-a38f-518360aed43f.png"}}},"block_order":["1587586225826","1587586234257","1587586239156"],"settings":{"title":"Make Hydration a Habit","description":"<p>We love Nectar and know you will too. That&rsquo;s why we want to give you a chance to try Nectar completely risk free.<\/p>"}},"free-trial-product-hero":{"type":"free-trial-product-hero","settings":{"hero_size":"hero_small","title":"Hydration Starter Pack","description":"7 Stick Trial | Free <br>\njust cover $3.94 shipping","button":"I want Hydration","color_background":"#89baf5","font_color":"#ffffff"}},"product-comparisons":{"type":"product-comparisons","settings":{}},"free-trial-habit":{"type":"free-trial-habit","blocks":{"1588869129933":{"type":"image","settings":{"title_icon":"Enjoy a week of Nectar","icon":"shopify:\/\/shop_images\/calendar.png"}},"1588869144998":{"type":"image","settings":{"title_icon":"Don’t leave us hangin’","icon":"shopify:\/\/shop_images\/phone.png"}},"1588869158358":{"type":"image","settings":{"title_icon":"Join the Hydration Gang","icon":"shopify:\/\/shop_images\/calendar.png"}}},"block_order":["1588869129933","1588869144998","1588869158358"],"settings":{"title":"Make Hydration a Habit","description":"<p>We love Nectar and know you will too. That’s why we want to give you a chance to try a week of Nectar completely risk free.<\/p>"}},"free-trial-landing-icons-2":{"type":"free-trial-landing-icons-2","blocks":{"1588873660401":{"type":"image","settings":{"title_icon":"Zero Calories & Sugar Free","icon":"shopify:\/\/shop_images\/zero-blue.png"}},"1588873682343":{"type":"image","settings":{"title_icon":"All Natural & <br>Vegan","icon":"shopify:\/\/shop_images\/natural.png"}},"1588873706615":{"type":"image","settings":{"title_icon":"Non-GMO","icon":"shopify:\/\/shop_images\/thicker-no-filler_8a5613bc-261b-4550-8008-435ba5222cde.png"}},"1588873715242":{"type":"image","settings":{"title_icon":"No Synthetic <br>Fillers","icon":"shopify:\/\/shop_images\/thicker-no-filler.png"}},"1588873729311":{"type":"image","settings":{"title_icon":"Made in <br>USA","icon":"shopify:\/\/shop_images\/usa-bluepng.png"}}},"block_order":["1588873660401","1588873682343","1588873706615","1588873715242","1588873729311"],"settings":{"title":"Hydration You’ll Feel Good About","description":""}},"product-reviews":{"type":"product-reviews","settings":{"review-type1":"We Get a Lot of Love","review-title1":"My New Daily Ritual","review-content1":"While I was skeptical of trying a hydration powder (why not just drink more water), Nectar has quickly become a part of my daily routine. Drinking enough water is difficult and I immeidatley feel a boost of energy and focus after a Nectar. On top of that, I love that the product has no sugar and the ingredients are all natural and clean.","review-type2":"But Can’t Please Everyone","review-title2":"Still Trying it Out","review-content2":"I am currently on month two of Nectar and have noticed a number of benefits, but am unsure if it’s because I’m drinking more water. Compared to the other hydration powders I’ve tried (Liquid IV and Hydrant), I am much happier and will continue taking Nectar daily."}},"go-cart":{"type":"go-cart","settings":{}},"16122818940ea34481":{"type":"conjured-referrals","settings":{"title":"Wellness Should be Shared<br>Give $15 — Get $15","desc":"<p>Send a friend $15 off their ﬁrst order <br\/>and earn $15 in Nectar credit!<\/p>","background":"shopify:\/\/shop_images\/background-social-new.png"}},"mirgo-icon-home":{"type":"mirgo-icon-home","blocks":{"3e3cb73a-a8e2-4d19-a3d1-2d4eb857efec":{"type":"image","settings":{"title_icon":"Natural Energy","icon":"shopify:\/\/shop_images\/natural_energy_193a84b8-bb1d-4ab3-9bb4-e8fb9a622e4b.png"}},"dc7527e7-43e9-480c-b578-580dae880b3a":{"type":"image","settings":{"title_icon":"Boosted Focus","icon":"shopify:\/\/shop_images\/boosted_focus_67ebb971-32a2-4679-8101-229f0d46b65d.png"}},"5df50ea0-3e95-4e21-8dde-ce68a496f76a":{"type":"image","settings":{"title_icon":"Improved Mood","icon":"shopify:\/\/shop_images\/boosted_mood.png"}},"b199bb79-1a83-4c20-a2d9-a706af2e5efb":{"type":"image","settings":{"title_icon":"Strengthened Immunity","icon":"shopify:\/\/shop_images\/immunity.png"}}},"block_order":["3e3cb73a-a8e2-4d19-a3d1-2d4eb857efec","dc7527e7-43e9-480c-b578-580dae880b3a","5df50ea0-3e95-4e21-8dde-ce68a496f76a","b199bb79-1a83-4c20-a2d9-a706af2e5efb"],"settings":{"title":"Staying hydrated is hard. That’s why we created Nectar - a clean rapid hydration mix.","description":""}},"mirgo-column-blocks-home":{"type":"mirgo-column-blocks-home","blocks":{"a3744fc1-458c-4e93-9238-2537e27f43f3":{"type":"left_image","settings":{"r_title":"We Let the Science Speak","r_desc":"<p>You&#x27;ve probably heard dehydration is bad for you. Yet, studies show 75% of us are Chronically Dehydrated, resulting in:<\/p>","r_list":"<ul class=\"cross\">\n<li>Fatigue and Lethargy <i>(the afternoon slump)<\/i>\n<\/li>\n<li>Mood Disturbance <i>(I just can't)<\/i>\n<\/li>\n<li>Dry and Flushed Skin <i>(no glow)<\/i>\n<\/li>\n<li>Slowed Metabolism <i>(weight gain)<\/i>\n<\/li>\n<\/ul>","r_button":"Try Nectar, Risk-Free","r_link":"#top","r_image":"shopify:\/\/shop_images\/ezgif.com-gif-maker_1.gif"}},"f049f8f6-e87b-4a62-8bf4-76d44267bcc9":{"type":"right_image","settings":{"l_title":"Put Your Water to Work","l_desc":"<p>When you&#x27;re dehydrated, your body needs more than just plain water. Nectar uses the highest quality, research backed electrolytes to help you get more from your water, hydrating you as efficiently as possible.<\/p>","l_list":"<ul class=\"check\">\n<li>2-3x more hydrating than water alone<\/li>\n<li>Only the essentials, none of the B.S.<\/li>\n<li>Zero Sugar, Zero Calories<\/li>\n<\/ul>","l_button":"Try Nectar, Risk-Free","l_link":"#top","l_image":"shopify:\/\/shop_images\/Homepage_Image_2.jpg"}}},"block_order":["a3744fc1-458c-4e93-9238-2537e27f43f3","f049f8f6-e87b-4a62-8bf4-76d44267bcc9"],"settings":{}},"16129840686cb184ec":{"type":"mirgo-ig-home","blocks":{"16129840686cb184ec-0":{"type":"photo","settings":{"ig_link":"","ig_photo":"shopify:\/\/shop_images\/1.png"}},"a1d05ec7-42dc-4f34-9a6a-828ee6b0a4f3":{"type":"photo","settings":{"ig_link":"","ig_photo":"shopify:\/\/shop_images\/2.jpg"}},"1f57eaf6-1d51-490d-b0a1-bdb682783ae9":{"type":"photo","settings":{"ig_link":"","ig_photo":"shopify:\/\/shop_images\/3.jpg"}},"7305d3a2-1443-4e92-bd34-a262bc728c3a":{"type":"photo","settings":{"ig_link":"","ig_photo":"shopify:\/\/shop_images\/4.png"}}},"block_order":["16129840686cb184ec-0","a1d05ec7-42dc-4f34-9a6a-828ee6b0a4f3","1f57eaf6-1d51-490d-b0a1-bdb682783ae9","7305d3a2-1443-4e92-bd34-a262bc728c3a"],"settings":{"title":"We Do Fun Things","desc":"<p>Connect with us <a href=\"https:\/\/www.instagram.com\/HiNectar\/\" title=\"https:\/\/www.instagram.com\/HiNectar\/\" target=\"_blank\">@HiNectar<\/a><\/p>"}},"starter-kit-landing-hero":{"type":"starter-kit-landing-hero","settings":{"hero_size":"hero_small","title":"Hydration Starter Pack","description":"<ul>\n<li>18 Packets in Flavor of Your Choice<\/li>\n<li>Risk Free & Happiness Guaranteed<\/li>\n<li>Everyday Free Shipping<\/li>\n<\/ul>","button":"$15 - Try Nectar","color_background":"#cfe4fb","font_color":"#142444"}},"energy-icons":{"type":"energy-icons","blocks":{"f1f8d0d2-ee57-4a02-b48c-27fd685078b8":{"type":"icon","settings":{"title_icon":"Zero Calories & Sugar Free","icon":"shopify:\/\/shop_images\/zero-blue_320x_af109816-d67a-4776-951f-fc4d8ea24418.png"}},"29c337db-ab0f-4a42-b05f-fe88632651d7":{"type":"icon","settings":{"title_icon":"All Natural & Vegan","icon":"shopify:\/\/shop_images\/natural_320x_e8c1bdc2-465d-41f3-85be-819a2b38222c.png"}},"567cec3c-ced8-4ad7-af90-60cb8afc4b71":{"type":"icon","settings":{"title_icon":"Non-GMO","icon":"shopify:\/\/shop_images\/thicker-no-filler_320x_a9996f4d-f29d-41d5-b5ed-ce4390e0f58e.png"}},"e867e240-ba9d-4929-9b6b-4f1f77ea0e7d":{"type":"icon","settings":{"title_icon":"No Synthetic Fillers","icon":"shopify:\/\/shop_images\/thicker-no-filler_320x_ddc3b4df-ac61-43eb-b050-61c0495dc25e.png"}},"c963a992-75cc-4675-b8eb-e1ef5fb285b3":{"type":"icon","settings":{"title_icon":"Made in the USA","icon":"shopify:\/\/shop_images\/usa-bluepng_320x_ce89ec76-f73f-4e21-9c16-c09e9fefb582.png"}}},"block_order":["f1f8d0d2-ee57-4a02-b48c-27fd685078b8","29c337db-ab0f-4a42-b05f-fe88632651d7","567cec3c-ced8-4ad7-af90-60cb8afc4b71","e867e240-ba9d-4929-9b6b-4f1f77ea0e7d","c963a992-75cc-4675-b8eb-e1ef5fb285b3"],"settings":{"title":"","description":""}},"energy-columns":{"type":"energy-columns","blocks":{"0752293a-fc23-4362-8949-fed3e729f624":{"type":"left_image","settings":{"r_title":"Your Daily Boost","r_desc":"<p>Looking to jump-start your day or an afternoon pick-me-up? Put those unhealthy energy drinks, pre-workout an sodas aside. Made with 75mg of Organic Caffeine, Pure Vitamin B12 and over 600mg of Electrolytes, Nectar’s proprietary formula provides lasting energy while keeping you hydrated. <\/p>","r_list":"","r_button":"","r_link":"","r_image":"shopify:\/\/shop_images\/Frame_171_1.jpg","r_image_text":""}},"0c050bd5-2ace-416e-b448-e389a17bdb3d":{"type":"right_image","settings":{"l_title":"Hydration: A Balancing Act","l_desc":"<p>We’re not trying to give water a bad rap, but plain ‘ole H2O isn’t as hydrating as you think it is. Your body requires a delicate balance of ﬂuids and electrolytes to perform at its best. Mixed with a glass of water, the medical grade electrolytes in Nectar boost the absorption of your water to hydrate you as quickly and efﬁciently as possible. <\/p>","l_list":"","l_button":"","l_link":"","l_image":"shopify:\/\/shop_images\/ezgif.com-gif-maker_2.gif","l_image_text":""}}},"block_order":["0752293a-fc23-4362-8949-fed3e729f624","0c050bd5-2ace-416e-b448-e389a17bdb3d"],"settings":{}},"energy-ingredients":{"type":"energy-ingredients","blocks":{"74b86bfc-e104-4262-8e23-b6afabce5d7f":{"type":"text","settings":{"icons":"shopify:\/\/shop_images\/caffeine_1_a67387bc-ebcf-4ca0-9e7b-847a336885bb.png","grid_title":"Organic Caffeine","grid_desc":"<p>Provides Lasting Energy<\/p>","energy":true}},"5e5af9cd-dd94-44d9-b010-88fce719e371":{"type":"text","settings":{"icons":"shopify:\/\/shop_images\/potassium_e9e20491-9320-43e4-90b9-d6fa1a1cce48.png","grid_title":"Potassium","grid_desc":"<p>Prevents Muscle Cramps<\/p>","energy":false}},"1b0b62b9-0779-4a0c-b97e-d9c9937dd14d":{"type":"text","settings":{"icons":"shopify:\/\/shop_images\/calcium_8663f21f-5767-4eef-bb6a-b5d898461a99.png","grid_title":"Calcium","grid_desc":"<p>Regulates Heart Rhythm<\/p>","energy":false}},"c92a2a7a-e555-494e-ab9b-52ea1396c395":{"type":"text","settings":{"icons":"shopify:\/\/shop_images\/magnesium_503347ff-f025-42c5-a544-783cfc7be69d.png","grid_title":"Magnesium","grid_desc":"<p>Drives Energy Creation<\/p>","energy":false}},"dc9b3fac-1bb3-4ecf-83b5-16aaa6f47e99":{"type":"text","settings":{"icons":"shopify:\/\/shop_images\/B12_1.png","grid_title":"Vitamin B12","grid_desc":"<p>Enhances Focus & Mood<\/p>","energy":true}},"87f0d46e-5a2d-405f-8d18-5499541868eb":{"type":"text","settings":{"icons":"shopify:\/\/shop_images\/sodium-chloride_4994f325-9d29-48d5-bd1a-e8b500ef7403.png","grid_title":"Sodium Chloride","grid_desc":"<p>Maintains Fluid Balance<\/p>","energy":false}},"49638403-9e8c-403c-9583-96e7e76b641e":{"type":"text","settings":{"icons":"shopify:\/\/shop_images\/crystalized-lemon_3bfa5bab-fa6b-40c1-a3a7-414aa98d8b62.png","grid_title":"Organic Fruit","grid_desc":"<p>Refreshing Taste<\/p>","energy":false}},"1a5e554a-5c41-4f8c-8723-55352cfac4cb":{"type":"text","settings":{"icons":"shopify:\/\/shop_images\/organic-stevia_2454a1a7-e7dd-46ca-947c-75d8422d6907.png","grid_title":"Organic Stevia","grid_desc":"<p>Light Sweetener<\/p>","energy":false}}},"block_order":["74b86bfc-e104-4262-8e23-b6afabce5d7f","5e5af9cd-dd94-44d9-b010-88fce719e371","1b0b62b9-0779-4a0c-b97e-d9c9937dd14d","c92a2a7a-e555-494e-ab9b-52ea1396c395","dc9b3fac-1bb3-4ecf-83b5-16aaa6f47e99","87f0d46e-5a2d-405f-8d18-5499541868eb","49638403-9e8c-403c-9583-96e7e76b641e","1a5e554a-5c41-4f8c-8723-55352cfac4cb"],"settings":{"title":"Eight Essential Ingredients","desc":"<p>Sugar Free. Calorie Free. Refreshingly Simple.<\/p>","btn_label":"View Supplement Facts","m_title":"Supplement Facts","m_desc":"<p>Supplement Facts<\/p>"}},"energy-faq":{"type":"energy-faq","blocks":{"631d4144-9949-4c8c-871a-4d10daeab319":{"type":"text","settings":{"collapse_title":"Do I need Nectar?","collapse_desc":"<p>Studies show that 3 out of 4 people suffer from chronic dehydration. Many of the symptoms we overlook as byproducts of our busy lifestyles - fatigue, brain fog, feeling down. Adding Nectar to your daily routine helps you make the most of your water, keeping you hydrated and feeling your best.<\/p>"}},"3e5776d1-b052-4586-8b27-b94508bb033e":{"type":"text","settings":{"collapse_title":"How long will it take me to feel a difference?","collapse_desc":"<p>Nectar starts working immediately after consumption to hydrate you as efficiently as possible. Depending on how chronically dehydrated you are, it can take up to a week of daily use to start fully feeling the benefits - increased energy levels, mental clarity and improved mood.<\/p>"}},"3ddb168c-1ada-4b5b-a50c-cafbbb9a606a":{"type":"text","settings":{"collapse_title":"Does rapid hydration require sugar?","collapse_desc":"<p>Most other hydration powder companies developed their formula based on the World Health Organization’s “Oral Rehydration Solution.” This formula was developed for individuals suffering “life threatening diarrhoeal dehydration.” Odds are, if you’re on a computer, you’re not experiencing this level of near-death dehydration and malnourishment, and you likely never will. Sugar is one of the most prevalent ingredients in the average diet. Nectar’s proprietary formula relies on replenishing what we are not getting on a daily basis from the food we already eat. Don’t let companies who aren’t willing to spend the money on organic Stevia fool you with their “science” - they’re just looking to save money.<\/p>"}},"66ddb4ef-71a8-40dd-854b-e193a9340cca":{"type":"text","settings":{"collapse_title":"What if I don't like Nectar?","collapse_desc":"<p>We want you to be happy and feel a difference with our product. If you end up not liking Nectar, we'll refund your first order in full. No questions asked. Please reach out to us at <a href=\"mailto:help@drinknectar.co\">help@drinknectar.co<\/a> if you have any issues.<\/p>"}}},"block_order":["631d4144-9949-4c8c-871a-4d10daeab319","3e5776d1-b052-4586-8b27-b94508bb033e","3ddb168c-1ada-4b5b-a50c-cafbbb9a606a","66ddb4ef-71a8-40dd-854b-e193a9340cca"],"settings":{"title":"You’ve Got Questions, We’ve Got Answers","desc":"<p>You’re putting this in your body - skepticism is encouraged.<\/p>","btn_label":"","btn_link":""}},"storetasker-section":{"type":"storetasker-section","settings":{"hero_size":"hero_small","title":"","description":"","button":"","color_background":"#ffffff","font_color":"#fff"}}},"content_for_index":["1581101332389","1581344582062","1581347333318","1581351803382","1584469777527","1581430463040","16122818940ea34481","16129840686cb184ec"],"blocks":{"855628211100114053":{"type":"shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507","disabled":false,"settings":{}},"14952540001915115444":{"type":"shopify:\/\/apps\/upcart-cart-drawer\/blocks\/app-embed\/af3da5fb-f5f7-40ec-8273-41bf50059d4b","disabled":false,"settings":{}}}},"presets":{"Default":{"color_text":"#3d4246","color_body_text":"#69727b","color_sale_text":"#557B97","color_borders":"#e8e9eb","color_button":"#557B97","color_button_text":"#fff","color_small_button_text_border":"#3d4246","color_text_field":"#fff","color_text_field_text":"#000","color_text_field_border":"#949494","color_image_overlay_text":"#fff","color_image_overlay":"#3d4246","image_overlay_opacity":40,"color_body_bg":"#fff","type_header_font":"work_sans_n6","type_header_base_size":26,"type_base_font":"work_sans_n4","type_base_size":16,"share_facebook":true,"share_twitter":true,"share_pinterest":true,"sections":{"header":{"type":"header","settings":{}},"hero":{"type":"hero","settings":{"text_size":"large"}},"slideshow":{"type":"slideshow","blocks":{"slideshow-0":{"type":"image","settings":{}},"slideshow-1":{"type":"image","settings":{}}},"block_order":["slideshow-0","slideshow-1"],"settings":{}},"featured-collections":{"type":"collection","settings":{"collection":"frontpage"}},"feature-row":{"type":"feature-row","settings":{}}},"content_for_index":["hero","featured-collections","feature-row","slideshow"]},"Light":{"color_text":"#162950","color_body_text":"#6d6d6d","color_sale_text":"#DA2F0C","color_borders":"#e4e4e4","color_button":"#DA2F0C","color_button_text":"#ffffff","color_small_button_text_border":"#162950","color_text_field":"#ffffff","color_text_field_text":"#162950","color_text_field_border":"#909090","color_image_overlay_text":"#ffffff","color_image_overlay":"#3d3d3d","image_overlay_opacity":40,"color_body_bg":"#f8f8f8","type_header_font":"muli_n6","type_header_base_size":26,"type_base_font":"muli_n4","type_base_size":18,"share_facebook":true,"share_twitter":true,"share_pinterest":true,"social_twitter_link":"","social_facebook_link":"","social_pinterest_link":"","social_instagram_link":"","social_tumblr_link":"","social_snapchat_link":"","social_youtube_link":"","social_vimeo_link":"","favicon":"","checkout_header_image":"","checkout_logo_image":"","checkout_logo_position":"left","checkout_logo_size":"small","checkout_body_background_image":"","checkout_body_background_color":"#ffffff","checkout_input_background_color_mode":"white","checkout_sidebar_background_image":"","checkout_sidebar_background_color":"#e8f3f6","checkout_heading_font":"Roboto","checkout_body_font":"Source Sans Pro","checkout_accent_color":"#1990c6","checkout_button_color":"#23314e","checkout_error_color":"#ff6d6d","sections":{"header":{"type":"header","settings":{"align_logo":"left","logo":"","logo_max_width":135,"main_linklist":"main-menu","message":true,"color_bg":"#162950","color_text":"#ffffff"}},"hero":{"type":"hero","settings":{"alignment":"center","hero_size":"x-large","text_size":"large"}},"slideshow":{"type":"slideshow","blocks":{"slideshow-0":{"type":"image","settings":{"image":"","alignment":"center center"}},"1492095993817":{"type":"image","settings":{"image":"","alignment":"center"}}},"block_order":["slideshow-0","1492095993817"],"settings":{"slideshow_height":"medium","text_size":"medium","autorotate":false,"autorotate_speed":5}},"featured-collections":{"type":"collection","settings":{"grid":3,"rows":1,"show_vendor":true,"show_view_all":true}},"product-template":{"type":"product-template","settings":{"show_quantity_selector":false,"show_variant_labels":true,"show_vendor":false,"show_share_buttons":true,"media_size":"medium","enable_image_zoom":true,"enable_video_looping":false}},"collection-template":{"type":"collection-template","settings":{"layout":"grid","grid":2,"rows":2,"show_collection_image":true,"show_vendor":false,"sort_enable":true,"tags_enable":true}},"1492033809691":{"type":"map","settings":{}},"1492033877875":{"type":"quotes","blocks":{"1492033877875-0":{"type":"quote","settings":{}}},"block_order":["1492033877875-0"],"settings":{}},"1492033924902":{"type":"custom-content","blocks":{"1492033924902-0":{"type":"text","settings":{"width":"100%","alignment":"center","align_text":"center"}}},"block_order":["1492033924902-0"],"settings":{"title":""}},"1492096252560":{"type":"collection-list","blocks":{"1492096252560-0":{"type":"featured_collection","settings":{}},"1492096252560-1":{"type":"featured_collection","settings":{}},"1492096252560-2":{"type":"featured_collection","settings":{}}},"block_order":["1492096252560-0","1492096252560-1","1492096252560-2"],"settings":{"grid":3}},"blog-template":{"type":"blog-template","settings":{"layout":"grid","blog_show_author":true,"blog_show_date":false}},"article-template":{"type":"article-template","settings":{"blog_show_author":true,"blog_show_date":true,"show_share_buttons":true}},"cart-template":{"type":"cart-template","settings":{"cart_notes_enable":false}}},"content_for_index":["hero","featured-collections","slideshow","1492033924902","1492096252560","1492033877875","1492033809691"]}}}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "current": {
+    "color_text": "#142444",
+    "color_body_text": "#142444",
+    "color_sale_text": "#142444",
+    "color_button": "#f65636",
+    "color_button_text": "#fff",
+    "color_small_button_text_border": "#3d4246",
+    "color_text_field_text": "#142444",
+    "color_text_field_border": "#142444",
+    "color_text_field": "#fff",
+    "color_image_overlay_text": "#fff",
+    "color_image_overlay": "#3d4246",
+    "image_overlay_opacity": 40,
+    "color_borders": "#142444",
+    "color_body_bg": "#fff",
+    "type_header_font": "work_sans_n6",
+    "type_header_base_size": 26,
+    "type_base_font": "lora_n4",
+    "type_base_size": 18,
+    "predictive_search_enabled": true,
+    "predictive_search_show_vendor": false,
+    "predictive_search_show_price": false,
+    "share_image": "",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_twitter_link": "#",
+    "social_facebook_link": "#",
+    "social_pinterest_link": "",
+    "social_instagram_link": "#",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "#",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "favicon": "",
+    "enable_ajax": true,
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#197bbd",
+    "checkout_button_color": "#197bbd",
+    "checkout_error_color": "#e32c2b",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "left",
+          "logo_max_width": 135,
+          "main_linklist": "main-menu",
+          "message": false,
+          "home_page_only": false,
+          "message_text": "Announce something here",
+          "message_link": "",
+          "color_bg": "#7796a8",
+          "color_text": "#ffffff"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "show_payment_icons": false,
+          "color_footer_bg": "#ffffff",
+          "color_footer_text": "#142444",
+          "show_locale_selector": true,
+          "show_currency_selector": true,
+          "menu_1_title": "Shop",
+          "menu1": "",
+          "menu_2_title": "About",
+          "menu2": "",
+          "newsletter_title": "Stay Connected",
+          "newsletter_text": "Keep up to date on new products, promotions, and helpful info on how to stay hydrated and healthy."
+        }
+      },
+      "1581101332389": {
+        "type": "mirgo-color-banner",
+        "settings": {
+          "hero_size": "hero_large",
+          "title": "<p>Hydration For<\/p>",
+          "description": "\"Afternoon Slumps\", \"Groggy Mornings\", \"Foggy Brains\"",
+          "button_label_1": "Shop Now",
+          "button_url_1": "shopify:\/\/products\/essential-daily-energy",
+          "button_label_2": "",
+          "button_url_2": "",
+          "color_background": "#7bbafa",
+          "font_color": "#ffffff"
+        }
+      },
+      "1581344582062": {
+        "type": "mirgo-icon-home",
+        "blocks": {
+          "1581344645796": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Natural Energy"
+            }
+          },
+          "1581344673149": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Boosted Focus"
+            }
+          },
+          "1581344754684": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Improved Mood"
+            }
+          },
+          "1581344763764": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Strengthened Immunity"
+            }
+          }
+        },
+        "block_order": [
+          "1581344645796",
+          "1581344673149",
+          "1581344754684",
+          "1581344763764"
+        ],
+        "settings": {
+          "title": "Staying hydrated is hard. Enter Nectar  —  an all-natural hydration mix designed for daily use.",
+          "description": ""
+        }
+      },
+      "1581347333318": {
+        "type": "mirgo-column-blocks-home",
+        "blocks": {
+          "1581347351526": {
+            "type": "left_image",
+            "settings": {
+              "r_title": "We Let the Science Speak",
+              "r_desc": "<p>You've probably heard dehydration is bad for you. Yet, studies show 75% of us are Chronically Dehydrated, resulting in:<\/p>",
+              "r_list": "<ul class=\"cross\">\n<li>Fatigue and Lethargy <i>(afternoon slump)<\/i>\n<\/li>\n<li>Mood Disturbance <i>(I just can't)<\/i>\n<\/li>\n<li>Dry and Flushed Skin <i>(no glow)<\/i>\n<\/li>\n<li>Slowed Metabolism <i>(weight gain)<\/i>\n<\/li>\n<\/ul>",
+              "r_button": "Meet your body's new best friend",
+              "r_link": "\/products\/essential-daily-hydration"
+            }
+          },
+          "1585148629254": {
+            "type": "right_image",
+            "settings": {
+              "l_title": "Put Your Water to Work",
+              "l_desc": "<p>When you're dehydrated, your body needs more than just plain water. Nectar uses the highest quality, research backed electrolytes to help you get more from your water, hydrating you as efficiently as possible.<\/p>",
+              "l_list": "<ul class=\"check\">\n<li>2-3x more hydrating than water alone<\/li>\n<li>Only the essentials, none of the B.S.<\/li>\n<li>Zero Sugar, Zero Calories<\/li>\n<\/ul>",
+              "l_button": "Explore our ingredients",
+              "l_link": "\/products\/essential-daily-hydration#nectar-ingredients"
+            }
+          },
+          "f75ad222-75e3-4104-9879-19f48643f04b": {
+            "type": "left_image",
+            "settings": {
+              "r_title": "Make Hydration a Habit",
+              "r_desc": "<p>We get it — subscriptions are scary. But, we want to make proper hydration part of your daily routine. Not feeling it? Cancel any time.<\/p>",
+              "r_list": "<ul class=\"checkmark-orange\">\n<li>Free shipping<\/li>\n<li>Control your delivery date<\/li>\n<li>Quick and easy cancellation<\/li>\n<li>Unhappy? It's on us <\/li>\n<\/ul>",
+              "r_button": "Shop Now",
+              "r_link": "\/products\/essential-daily-hydration"
+            }
+          }
+        },
+        "block_order": [
+          "1581347351526",
+          "1585148629254",
+          "f75ad222-75e3-4104-9879-19f48643f04b"
+        ],
+        "settings": {
+        }
+      },
+      "1581351803382": {
+        "type": "mirgo-section-full-height-text",
+        "disabled": true,
+        "settings": {
+          "title": "Make Hydration a Habit",
+          "desc": "<p>We get it — subscriptions are scary. But, we want to make proper hydration part of your daily routine. Not feeling it? Cancel any time.<\/p>",
+          "list": "<ul class=\"check\">\n<li>Free shipping<\/li>\n<li>Control your delivery date<\/li>\n<li>Quick and easy cancellation<\/li>\n<li>Unhappy? It's on us <\/li>\n<\/ul>",
+          "color_background": "#666666",
+          "font_color": "#ffffff"
+        }
+      },
+      "1581430463040": {
+        "type": "mirgo-social-media-banner",
+        "blocks": {
+          "1581430511190": {
+            "type": "text",
+            "settings": {
+              "button_label": "Send Via Email",
+              "button_link": "#"
+            }
+          },
+          "1581430529555": {
+            "type": "text",
+            "settings": {
+              "button_label": "Send in Messenger",
+              "button_link": "#"
+            }
+          },
+          "1581430537979": {
+            "type": "text",
+            "settings": {
+              "button_label": "Post to Twitter",
+              "button_link": "#"
+            }
+          },
+          "1581430544634": {
+            "type": "text",
+            "settings": {
+              "button_label": "Get a Share Link",
+              "button_link": "#"
+            }
+          }
+        },
+        "block_order": [
+          "1581430511190",
+          "1581430529555",
+          "1581430537979",
+          "1581430544634"
+        ],
+        "disabled": true,
+        "settings": {
+          "title": "Wellness Should be Shared<br>Give $15 — Get $15",
+          "desc": "<p>Send a friend $15 off their ﬁrst order <br\/>and earn $15 in Nectar credit!<\/p>"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_quantity_selector": false,
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_payment_button": false,
+          "show_share_buttons": false,
+          "media_size": "medium",
+          "enable_image_zoom": false,
+          "enable_video_looping": false,
+          "hydration_details": "A clean, daily hydration mix optimized to hydrate you faster and more efficiently than water alone. No Sugar. No Calories. Simply Refreshing.",
+          "hydration_howto": "We recommend drinking Nectar in the morning to give the day your best shot. Simply mix one packet of Nectar with water (our suggested serving size is 16oz) and you’re good to go.",
+          "energy_details": "A clean, daily energy booster made with 75mg of Organic Caffeine, Pure Vitamin B12 and over 600mg of Electrolytes. No Sugar. No Calories. Simply Refreshing.",
+          "energy_howto": "We recommend drinking Nectar as a health coffee, pre-workout and energy drink alternative. Simply mix one packet of Nectar with water (suggested serving size is 16oz) and you’re good to go."
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "You may also like",
+          "show_vendor": false
+        }
+      },
+      "mirgo-icon-product": {
+        "type": "mirgo-icon-product",
+        "blocks": {
+          "1581546308094": {
+            "type": "icon",
+            "settings": {
+              "title_icon": "Zero Calories & Sugar Free",
+              "icon": "shopify:\/\/shop_images\/zero-blue.png"
+            }
+          },
+          "1581546365309": {
+            "type": "icon",
+            "settings": {
+              "title_icon": "All Natural & Vegan",
+              "icon": "shopify:\/\/shop_images\/natural.png"
+            }
+          },
+          "1581546391956": {
+            "type": "icon",
+            "settings": {
+              "title_icon": "Non-GMO",
+              "icon": "shopify:\/\/shop_images\/thicker-no-filler_8a5613bc-261b-4550-8008-435ba5222cde.png"
+            }
+          },
+          "1581546413106": {
+            "type": "icon",
+            "settings": {
+              "title_icon": "No Synthetic Fillers",
+              "icon": "shopify:\/\/shop_images\/thicker-no-filler.png"
+            }
+          },
+          "1584466671017": {
+            "type": "icon",
+            "settings": {
+              "title_icon": "Made in the USA",
+              "icon": "shopify:\/\/shop_images\/usa-bluepng.png"
+            }
+          }
+        },
+        "block_order": [
+          "1581546308094",
+          "1581546365309",
+          "1581546391956",
+          "1581546413106",
+          "1584466671017"
+        ],
+        "settings": {
+          "title": "",
+          "description": ""
+        }
+      },
+      "mirgo-column-block-product": {
+        "type": "mirgo-column-block-product",
+        "blocks": {
+          "1581546663607": {
+            "type": "left_image",
+            "settings": {
+              "r_title": "Feeling thirsty?",
+              "r_desc": "<p>Let’s face it, you probably aren’t running a marathon everyday (even though it may feel like it). However, you don’t need to be sweating it out to be dehydrated. In fact, most daily habits - think your morning Americano and that SoulCycle class - contribute to dehydration. <\/p>",
+              "r_list": "",
+              "r_button": "",
+              "r_link": "",
+              "r_image": "shopify:\/\/shop_images\/Asset_2.png",
+              "r_image_text": ""
+            }
+          },
+          "1581546666620": {
+            "type": "right_image",
+            "settings": {
+              "l_title": "Hydration: A Balancing Act",
+              "l_desc": "<p>We’re not trying to give water a bad rap, but plain ‘ole H2O isn’t as hydrating as you think it is. Your body requires a delicate balance of ﬂuids and electrolytes to perform at its best. Mixed with a glass of water, the medical grade electrolytes in Nectar boost the absorption of your water to hydrate you as quickly and efﬁciently as possible. <\/p>",
+              "l_list": "",
+              "l_button": "",
+              "l_link": "",
+              "l_image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_2.gif",
+              "l_image_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "1581546663607",
+          "1581546666620"
+        ],
+        "settings": {
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": 2,
+          "rows": 2,
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": false,
+          "tags_enable": false
+        }
+      },
+      "mirgo-product-ingredient-grid": {
+        "type": "mirgo-product-ingredient-grid",
+        "blocks": {
+          "1581608995186": {
+            "type": "text",
+            "settings": {
+              "icons": "shopify:\/\/shop_images\/potassium_ddd8e59d-1191-40d0-bd62-2dd7922e7a7f.png",
+              "grid_title": "Potassium",
+              "grid_desc": "<p>Prevents Muscle Cramps<\/p>"
+            }
+          },
+          "1581609229325": {
+            "type": "text",
+            "settings": {
+              "icons": "shopify:\/\/shop_images\/calcium_c9587915-c29e-48e8-bdb8-71a73aa5f362.png",
+              "grid_title": "Calcium",
+              "grid_desc": "<p>Regulates Heart Rhythm<\/p>"
+            }
+          },
+          "1581609247639": {
+            "type": "text",
+            "settings": {
+              "icons": "shopify:\/\/shop_images\/magnesium_d07ddfc7-89ef-4409-9d93-d5e4265f6a12.png",
+              "grid_title": "Magnesium",
+              "grid_desc": "<p>Drives Energy Creation<\/p>"
+            }
+          },
+          "1581609261072": {
+            "type": "text",
+            "settings": {
+              "icons": "shopify:\/\/shop_images\/sodium-chloride_bf2e9d2e-b28a-44ea-a38f-518360aed43f.png",
+              "grid_title": "Sodium Chloride",
+              "grid_desc": "<p>Maintains Fluid Balance<\/p>"
+            }
+          },
+          "1581609278045": {
+            "type": "text",
+            "settings": {
+              "icons": "shopify:\/\/shop_images\/crystalized-lemon_56408567-8a11-4658-b486-53ade020137e.png",
+              "grid_title": "Organic Fruit",
+              "grid_desc": "<p>Refreshing Taste<\/p>"
+            }
+          },
+          "1581609293620": {
+            "type": "text",
+            "settings": {
+              "icons": "shopify:\/\/shop_images\/organic-stevia_a024bb44-8a3a-4dae-9c66-6b64e1908b82.png",
+              "grid_title": "Organic Stevia",
+              "grid_desc": "<p>Light Sweetener<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1581608995186",
+          "1581609229325",
+          "1581609247639",
+          "1581609261072",
+          "1581609278045",
+          "1581609293620"
+        ],
+        "settings": {
+          "title": "Six Essential Ingredients",
+          "desc": "<p>Sugar Free. Calorie Free. Refreshingly Simple.<\/p>",
+          "btn_label": "View Supplement Facts",
+          "m_title": "Six Essential Ingredients",
+          "m_desc": "<p>Most electrolyte drinks are packed with unnecessary ingredients including sugar. Nectar contains only what you need, in bioavailable forms your body can actually use.<\/p>"
+        }
+      },
+      "mirgo-product-collapse-details": {
+        "type": "mirgo-product-collapse-details",
+        "blocks": {
+          "1581613610416": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "Do I need Nectar?",
+              "collapse_desc": "<p>Studies show that 3 out of 4 people suffer from chronic dehydration. Many of the symptoms we overlook as byproducts of our busy lifestyles - fatigue, brain fog, feeling down. Adding Nectar to your daily routine helps you make the most of your water, keeping you hydrated and feeling your best.<\/p>"
+            }
+          },
+          "1581613631077": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "How long will it take me to feel a difference?",
+              "collapse_desc": "<p>Nectar starts working immediately after consumption to hydrate you as efficiently as possible. Depending on how chronically dehydrated you are, it can take up to a week of daily use to start fully feeling the benefits - increased energy levels, mental clarity and improved mood.<\/p>"
+            }
+          },
+          "1581613642007": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "Does rapid hydration require sugar?",
+              "collapse_desc": "<p>Most other hydration powder companies developed their formula based on the World Health Organization’s “Oral Rehydration Solution.” This formula was developed for individuals suffering “life threatening diarrhoeal dehydration.” Odds are, if you’re on a computer, you’re not experiencing this level of near-death dehydration and malnourishment, and you likely never will. Sugar is one of the most prevalent ingredients in the average diet. Nectar’s proprietary formula relies on replenishing what we are not getting on a daily basis from the food we already eat. Don’t let companies who aren’t willing to spend the money on organic Stevia fool you with their “science” - they’re just looking to save money.<\/p>"
+            }
+          },
+          "1581613653418": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "What if I don't like Nectar?",
+              "collapse_desc": "<p>We want you to be happy and feel a difference with our product. If you end up not liking Nectar, we&#x27;ll refund your first order in full. No questions asked. Please reach out to us at <a href=\"mailto:help@drinknectar.co\">help@drinknectar.co<\/a> if you have any issues.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1581613610416",
+          "1581613631077",
+          "1581613642007",
+          "1581613653418"
+        ],
+        "settings": {
+          "title": "You’ve Got Questions, We’ve Got Answers",
+          "desc": "<p>You’re putting this in your body - skepticism is encouraged.<\/p>",
+          "btn_label": "More Answers On Our FAQ Page",
+          "btn_link": "#"
+        }
+      },
+      "mirgo-nectar-scientist-team": {
+        "type": "mirgo-nectar-scientist-team",
+        "blocks": {
+          "1581618959502": {
+            "type": "text",
+            "settings": {
+              "team_id": "shopify:\/\/shop_images\/Rachel.png",
+              "team_title": "RACHEL P.",
+              "team_position": "<p>Cellular Biologist<\/p>"
+            }
+          },
+          "1581619014046": {
+            "type": "text",
+            "settings": {
+              "team_id": "shopify:\/\/shop_images\/Zach_copy.png",
+              "team_title": "ZACH H. MD",
+              "team_position": "<p>Physician<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1581618959502",
+          "1581619014046"
+        ],
+        "settings": {
+          "title": "Nectar’s Scientists",
+          "desc": ""
+        }
+      },
+      "mirgo-newsletter-inner-pages": {
+        "type": "mirgo-newsletter-inner-pages",
+        "settings": {
+          "section_title": "Subscribe to our newsletter",
+          "subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>",
+          "color_background": "#edf4fe",
+          "show_background": true
+        }
+      },
+      "mirgo-color-banner": {
+        "type": "mirgo-color-banner",
+        "settings": {
+          "hero_size": "hero_small",
+          "title": "<p>You Have Questions, We Have Answers<\/p>",
+          "description": "",
+          "button_label_1": "",
+          "button_url_1": "",
+          "button_label_2": "",
+          "button_url_2": "",
+          "image_background": "",
+          "color_background": "#666666",
+          "font_color": "#fff"
+        }
+      },
+      "mirgo-faq": {
+        "type": "mirgo-faq",
+        "blocks": {
+          "1583363170731": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "What is Nectar?",
+              "collapse_desc": "<p>Nectar is a clean, rapid hydration mix designed to be taken daily. The product is made with medical-grade electrolytes to boost the absorption of your water in order to hydrate you as quickly and efficiently as possible.<\/p>"
+            }
+          },
+          "1583363195570": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "How can I tell if I need Nectar?",
+              "collapse_desc": "<p>Studies show that 3 out of 4 people suffer from chronic dehydration. Many of the symptoms we overlook as byproducts of our busy lifestyles - fatigue, brain fog, feeling down. Adding Nectar to your daily routine helps you make the most of the water you drink, keeping you hydrated and feeling your best.<\/p>"
+            }
+          },
+          "1583365916950": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "When should I drink Nectar?",
+              "collapse_desc": "<p>We recommend drinking Nectar first thing in the morning to help replenish the electrolytes lost during sleep. However, Nectar can be taken more than once a day based on your lifestyle.<\/p>"
+            }
+          },
+          "1583365942541": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "How long will it take me to feel a difference?",
+              "collapse_desc": "<p>Nectar starts working immediately after consumption to rehydrate you. Depending on how chronically dehydrated you are, it can take up to a week of daily use to start fully feeling the benefits - increased energy levels, mental clarity and improved mood<\/p>"
+            }
+          },
+          "1599229099549": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "What if I don’t like Nectar?",
+              "collapse_desc": "<p>We want you to be happy and feel a difference with our product. If you end up not liking Nectar, we'll refund your first order in full. No questions asked. Please reach out to us at <a href=\"mailto:help@drinknectar.co\">hi@drinknectar.co<\/a> if you have any issues.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1583363170731",
+          "1583363195570",
+          "1583365916950",
+          "1583365942541",
+          "1599229099549"
+        ],
+        "settings": {
+        }
+      },
+      "mirgo-faq-2": {
+        "type": "mirgo-faq-2",
+        "blocks": {
+          "1583365978110": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "How do I know if I'm dehydrated?",
+              "collapse_desc": "<p>The symptoms of dehydration include fatigue, thirst, depressed mood, dry skin, headaches, cramping, anxiety and decreased urine output. Oftentimes, thirst is confused with hunger - but your body is actually craving fluids, not food.<\/p>"
+            }
+          },
+          "1583366000667": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "What causes dehydration?",
+              "collapse_desc": "<p>Dehydration occurs when your body is lacking the fluids and electrolytes essential to perform its normal functions. Dehydration can be caused by your normal daily habits including caffeine, work, exercise, alcohol, medications and even sleep.<\/p>"
+            }
+          },
+          "1583366015449": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "Why is staying hydrated important?",
+              "collapse_desc": "<p>Over half of your body is made of water and studies show that even a 1% fluid loss causes a number of dehydration symptoms. Simply put, every cell, tissue, and organ in your body needs electrolytes and water to work properly.<\/p>"
+            }
+          },
+          "1583366028151": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "What are electrolytes and why do I need them?",
+              "collapse_desc": "<p>Electrolytes are electrically charged minerals that conduct electrical impulses throughout the body. Electrolytes are found in the bloodstream and are vital to many key functions in the body such as maintaining fluid balance, creating energy, preventing muscle cramps, regulating heart rhythm and rebuilding damaged tissue. The primary electrolytes found in Nectar are potassium and magnesium. These two electrolytes are the key to why Nectar is so effective at helping your body absorb water.<\/p>"
+            }
+          },
+          "1583366044891": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "Does rapid hydration require sugar?",
+              "collapse_desc": "<p>Most other hydration powder companies developed their formula based on the World Health Organization’s “Oral Rehydration Solution.” This formula was developed for individuals suffering “life threatening diarrhoeal dehydration.” Odds are, if you’re on a computer, you’re not experiencing this level of near-death dehydration and malnourishment, and you likely never will. Sugar is one of the most prevalent ingredients in the average diet. Nectar’s proprietary formula relies on replenishing what we are not getting on a daily basis from the food we already eat. Don’t let companies who aren’t willing to spend the money on organic stevia fool you with their “science” - they’re just looking to save money.<\/p>"
+            }
+          },
+          "1599233199210": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "Why does Nectar have lower sodium and higher potassium and magnesium?",
+              "collapse_desc": "<p>When it comes to hydration, potassium and magnesium are both essential electrolytes. Through your body’s Sodium-Potassium Pump, your cells are constantly pumping out sodium and pumping in potassium, maintaining fluid balance. In your kidneys, the organs responsible for maintaining electrolyte concentrations, magnesium is essential to storing potassium. When magnesium levels are optimal, your kidneys are able to retain higher levels of electrolytes, keeping you hydrated. Unless you’re running a marathon and losing a substantial amount of sodium through sweat, you don’t need all of the sodium found in other hydration products. <\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1583365978110",
+          "1583366000667",
+          "1583366015449",
+          "1583366028151",
+          "1583366044891",
+          "1599233199210"
+        ],
+        "settings": {
+        }
+      },
+      "mirgo-faq-3": {
+        "type": "mirgo-faq-3",
+        "blocks": {
+          "1583366059753": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "How does my subscription work?",
+              "collapse_desc": "<p>We started Nectar to make hydration simple and easy. When you subscribe, we will send you a new supply (30 sticks) of Nectar each month. Don’t worry - we’ll email you a couple days before your subscription renews in case you want to change your delivery date or pause \/ cancel your subscription. All of these changes can be made at any time through your account page.<\/p>"
+            }
+          },
+          "1583366076110": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "What is your Risk-Free guarantee and how does it work?",
+              "collapse_desc": "<p>We want you to be happy and feel a difference with our product. If you end up not liking Nectar, we&#x27;ll refund your first order in full. No questions asked. Please reach out to us at <a href=\"mailto:help@drinknectar.co\">help@drinknectar.co<\/a> if you have any issues.<\/p>"
+            }
+          },
+          "1583366086465": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "Where do I adjust my subscription settings?",
+              "collapse_desc": "<p>You are able to change your subscription settings right from your account page. You can rush or delay an order, adjust your quantity, change your shipping address or payment method and cancel your subscription all in one place.<\/p>"
+            }
+          },
+          "1583366106475": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "When will my credit card or Paypal account be charged?",
+              "collapse_desc": "<p>You will be charged 24 hours before your next order. Don’t worry, we will email you a couple of days ahead of time to let you know your order is reviewing.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1583366059753",
+          "1583366076110",
+          "1583366086465",
+          "1583366106475"
+        ],
+        "settings": {
+        }
+      },
+      "mirgo-faq-hero": {
+        "type": "mirgo-faq-hero",
+        "settings": {
+          "hero_size": "hero_small",
+          "title": "You Have Questions, We Have Answers",
+          "description": "We get it. You should know what you're putting into your body. Ask away. Our team of experts is here to help.",
+          "image_background": "shopify:\/\/shop_images\/Learn_FAQ_banner_Image.jpg",
+          "color_background": "#666666",
+          "font_color": "#ffffff"
+        }
+      },
+      "mirgo-faq-4": {
+        "type": "mirgo-faq-4",
+        "blocks": {
+          "1583445887785": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "How do I use Nectar?",
+              "collapse_desc": "<p>Simply mix, shake or stir Nectar with 16 oz. of water and enjoy! You can always add more or less water depending on your taste preferences.<\/p>"
+            }
+          },
+          "1583445918690": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "Does Nectar contain any sugar, caffeine, stimulants, artificial sweeteners, colorants or fillers?",
+              "collapse_desc": "<p>No - and it never will! Nectar contains only what you need, in bioavailable forms your body can actually use.<\/p>"
+            }
+          },
+          "1583445923800": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "What is Organic Stevia?",
+              "collapse_desc": "<p>Stevia is a plant that produces an extract that is nearly 350 times sweeter than sugar. Stevia is NOT an artificial sweetener - it is a plant! Nectar uses only ethically sourced organic Stevia. The leaves are picked by hand, then dried naturally using sunlight and fresh air to yield a deliciously sweet and smooth-tasting zero-calorie sweetener.<\/p>"
+            }
+          },
+          "1583445928918": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "What is Crystalized Lemon?",
+              "collapse_desc": "<p>Our fresh lemon flavor is made from a patented recipe that crystallizes the lemon’s oils and juices, locking in a fresh-squeezed lemon taste. No “natural flavors” here!<\/p>"
+            }
+          },
+          "1599231524661": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "Is Nectar good for Keto and low carb diets?",
+              "collapse_desc": "<p>If you’re low carb, you know that sugary drinks won’t cut it. Nectar not only has zero carbs, but is the perfect replenisher for the electrolytes lost from keto.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1583445887785",
+          "1583445918690",
+          "1583445923800",
+          "1583445928918",
+          "1599231524661"
+        ],
+        "settings": {
+        }
+      },
+      "mirgo-contact-hero": {
+        "type": "mirgo-contact-hero",
+        "settings": {
+          "hero_size": "hero_small",
+          "title": "Get in Touch",
+          "description": "",
+          "color_background": "#7bbafa",
+          "font_color": "#ffffff"
+        }
+      },
+      "contact-info": {
+        "type": "contact-info",
+        "settings": {
+          "header_1": "DM Us",
+          "header_1_info": "@HiNectar",
+          "info_1_url": "https:\/\/instagram.com\/hinectar",
+          "header_2": "Email Us",
+          "header_2_info": "Hi@Drinknectar.co",
+          "info_2_url": "mailto:Hi@Drinknectar.co",
+          "header_3": "Mail Us",
+          "header_3_info": "Nectar<br>\n2745 Laguna Street<br>\nSan Francisco, CA 94123"
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "layout": "grid",
+          "blog_show_author": false,
+          "blog_show_date": false
+        }
+      },
+      "mirgo-blog-hero": {
+        "type": "mirgo-blog-hero",
+        "settings": {
+          "hero_size": "hero_small",
+          "title": "Essential Reading",
+          "description": "The more you know...",
+          "image_background": "shopify:\/\/shop_images\/Learn_FAQ_banner_Image.jpg",
+          "color_background": "#666666",
+          "font_color": "#ffffff"
+        }
+      },
+      "mirgo-login-banner": {
+        "type": "mirgo-login-banner",
+        "settings": {
+          "color_background": "#7bbafa",
+          "font_color": "#142444"
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "settings": {
+          "section_title": "Stay Connected",
+          "subheading": "<p>Keep up to date on new products, promotions, and helpful info on how to stay hydrated and healthy.<\/p>",
+          "color_background": "#edf4fe",
+          "show_background": true
+        }
+      },
+      "mirgo-register-banner": {
+        "type": "mirgo-register-banner",
+        "settings": {
+          "color_background": "#7bbafa",
+          "font_color": "#ffffff"
+        }
+      },
+      "1584469777527": {
+        "type": "quotes",
+        "blocks": {
+          "1584469777527-0": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>“I take Nectar every morning to start my day feeling energized.”<\/p>",
+              "author": "Jenny N.",
+              "author_title": "Pilates Instructor & Engineer"
+            }
+          },
+          "1584469777527-1": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>“Nectar is a game changer for staying focused &amp; energized.”<\/p>",
+              "author": "Sahil R.",
+              "author_title": "Finance & Partnerships"
+            }
+          },
+          "1590589357498": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>&quot;As a new mom, Nectar has been an amazing addition to my daily routine.&quot;<\/p>",
+              "author": "Mallory E.",
+              "author_title": "Boss Mom"
+            }
+          },
+          "1584469777527-2": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p> “I love that it’s all natural and zero calorie - it tastes amazing.”<\/p>",
+              "author": "April Y.",
+              "author_title": "Product Manager"
+            }
+          },
+          "1584469793331": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>“I never relized dehydration was causing my lethargy until I tried Nectar.”<\/p>",
+              "author": "Dan S.",
+              "author_title": "Lawyer"
+            }
+          },
+          "1588708081449": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>“Nectar has become a staple amongst my friend group.”<\/p>",
+              "author": "Emily Q.",
+              "author_title": "Developer"
+            }
+          }
+        },
+        "block_order": [
+          "1584469777527-0",
+          "1584469777527-1",
+          "1590589357498",
+          "1584469777527-2",
+          "1584469793331",
+          "1588708081449"
+        ],
+        "settings": {
+          "title": "Real Ingredients, Real Reviews",
+          "desc": "<p>Hear what Nectar users are saying.<\/p>"
+        }
+      },
+      "mirgo-mission-hero": {
+        "type": "mirgo-mission-hero",
+        "settings": {
+          "hero_size": "hero_small",
+          "title": "Hi, We're Nectar",
+          "description": "",
+          "color_background": "#666666",
+          "image_background": "shopify:\/\/shop_images\/Mission_Banner.jpg",
+          "font_color": "#ffffff"
+        }
+      },
+      "mirgo-mission-header": {
+        "type": "mirgo-mission-header",
+        "settings": {
+          "title": "We believe that hydration is the superpower that charges everything people do.",
+          "description": ""
+        }
+      },
+      "mirgo-mission-content": {
+        "type": "mirgo-mission-content",
+        "blocks": {
+          "1584475180555": {
+            "type": "left_image",
+            "settings": {
+              "r_title": "So, we created Nectar.",
+              "r_desc": "<p>For years, I wondered what was causing my constant feelings of lethargy and fatigue. Diet, exercise, sleep schedule – I tried changing it all to no avail. After a trip to my primary care physician and a full blood panel, the answer became clear – I was chronically dehydrated. At the request of my Doctor, I began testing a number of hydration products. However, I quickly realized none fit my health-conscious lifestyle (low sugar, zero calorie and low sodium). I immediately knew I could create something better that was actually good for the body and set out to create Nectar.<br\/><\/p>",
+              "r_list": "",
+              "r_button": "",
+              "r_link": "",
+              "r_image": "shopify:\/\/shop_images\/Nectar_Mission_Image.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1584475180555"
+        ],
+        "settings": {
+        }
+      },
+      "mirgo-mission-values": {
+        "type": "mirgo-mission-values",
+        "blocks": {
+          "1584475616854": {
+            "type": "text",
+            "settings": {
+              "value_number": "01",
+              "grid_title": "Transparency",
+              "grid_desc": "<p>We have a deep-rooted desire to approach our customers with honesty.  We are transparent in who we are, why we started and what we hope to achieve. We believe that what you put into your body matters. We put our values, ingredients, science, and story upfront and in the light because we want to be a brand that you can trust. <\/p>"
+            }
+          },
+          "1584475623573": {
+            "type": "text",
+            "settings": {
+              "value_number": "02",
+              "grid_title": "Simplicity",
+              "grid_desc": "<p>We’ve made everything about Nectar as simple as possible. In our own lives, we discovered simplicity is where we find happiness.  Whether you are simplifying your lifestyle, your career, or what you put in your body, we wanted to make a product that could be an easy addition to a healthy lifestyle. <\/p>"
+            }
+          },
+          "1584475626459": {
+            "type": "text",
+            "settings": {
+              "value_number": "03",
+              "grid_title": "Compassion",
+              "grid_desc": "<p>Nectar was created to help you feel your best, and we made it for everybody.  No matter where you are in your health and wellness journey, we want to be an additional step towards a healthier you.  Helping people realize that they are capable of achieving anything they set out to do is what really excites us.<\/p>"
+            }
+          },
+          "1584475627651": {
+            "type": "text",
+            "settings": {
+              "value_number": "04",
+              "grid_title": "Partnership",
+              "grid_desc": "<p>We are a brand that is dedicated to putting people and their health first.  We understand that health and wellness is a lifelong journey and that it takes support in order to achieve our goals.  Our vision is to build deep connections with people that help them thrive. <\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1584475616854",
+          "1584475623573",
+          "1584475626459",
+          "1584475627651"
+        ],
+        "settings": {
+          "title": "Our Guiding Values"
+        }
+      },
+      "mirgo-mission-banner": {
+        "type": "mirgo-mission-banner",
+        "settings": {
+          "title": "Wellness Should Be Shared",
+          "desc": "<p>We donate a portion of every sale to initiatives that help improve the health and wellness of low-income communities. Our vision is to build lasting connections with these organizations so that we can meaningfuly impact lives. <\/p>",
+          "button": "Learn More",
+          "link": "#",
+          "image_background": "shopify:\/\/shop_images\/Mission_Bottom_Banner.png",
+          "color_background": "#666666",
+          "font_color": "#ffffff"
+        }
+      },
+      "free-trial-landing-hero": {
+        "type": "free-trial-landing-hero",
+        "settings": {
+          "hero_size": "hero_large",
+          "title": "<p>Science Backed Hydration<\/p>",
+          "description": "2-3x as hydrating as water alone without the sugar or fillers.",
+          "button_label_1": "Try Nectar Free",
+          "button_url_1": "#",
+          "button_label_2": "",
+          "button_url_2": "",
+          "image_background": "",
+          "color_background": "#666666",
+          "font_color": "#fff"
+        }
+      },
+      "free-trial-landing-icons": {
+        "type": "free-trial-landing-icons",
+        "blocks": {
+          "1587413157428": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Natural Energy",
+              "icon": "shopify:\/\/shop_images\/natural_energy_193a84b8-bb1d-4ab3-9bb4-e8fb9a622e4b.png"
+            }
+          },
+          "1587413160192": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Boosted <br>Focus",
+              "icon": "shopify:\/\/shop_images\/boosted_focus_67ebb971-32a2-4679-8101-229f0d46b65d.png"
+            }
+          },
+          "1587413168290": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Improved Mood",
+              "icon": "shopify:\/\/shop_images\/boosted_mood.png"
+            }
+          },
+          "1587413174227": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Glowing <br>Complexion",
+              "icon": "shopify:\/\/shop_images\/glowing_complextion.png"
+            }
+          },
+          "1588868463302": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Strengthened<br> Immunity",
+              "icon": "shopify:\/\/shop_images\/immunity.png"
+            }
+          },
+          "1588868484209": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Increased <br>Metabolism",
+              "icon": "shopify:\/\/shop_images\/metabolism.png"
+            }
+          }
+        },
+        "block_order": [
+          "1587413157428",
+          "1587413160192",
+          "1587413168290",
+          "1587413174227",
+          "1588868463302",
+          "1588868484209"
+        ],
+        "settings": {
+          "title": "Chances Are You're Dehydrated",
+          "description": "<p>Studies show 3 out of 4 people are chronically dehydrated. That’s why we created Nectar, an all natural rapid hydration mix designed to be taken daily. Made with only the essentials and no sugar, Nectar is optimized to hydrate you faster and more efficiently than water alone. It’s refreshingly simple.<\/p>"
+        }
+      },
+      "free-trial-landing-blocks": {
+        "type": "free-trial-landing-blocks",
+        "blocks": {
+          "1587413236153": {
+            "type": "left_image",
+            "settings": {
+              "r_title": "Put Your Water to Work",
+              "r_desc": "<p>When you&#x27;re dehydrated, your body needs more than just plain water. Nectar uses the highest quality, research backed electrolytes to help you get more from your water, hydrating you as efficiently as possible.<\/p>",
+              "r_list": "<ul class=\"check\">\n<li>2-3x more hydrating than water alone<\/li>\n<li>Only the essentials, none of the B.S.<\/li>\n<li>Zero Sugar, Zero Calories<\/li>\n<\/ul>",
+              "r_button": "Meet our ingredients",
+              "r_link": "#",
+              "r_image": "shopify:\/\/shop_images\/testimonial-placeholder.png"
+            }
+          }
+        },
+        "block_order": [
+          "1587413236153"
+        ],
+        "settings": {
+        }
+      },
+      "free-trial-landing-large-hero": {
+        "type": "free-trial-landing-large-hero",
+        "settings": {
+          "title": "Make Hydration a Habit",
+          "desc": "<p>We get it&nbsp;&mdash; subscriptions are scary. But, we want to make proper hydration part of your daily routine. Not feeling it? Cancel any time.<\/p>",
+          "list": "<ul class=\"check\">\n<li>Free shipping<\/li>\n<li>Control your delivery date<\/li>\n<li>Quick and easy cancellation<\/li>\n<li>Unhappy? It's on us <\/li>\n<\/ul>",
+          "button": "Hydrate your life",
+          "link": "#",
+          "attachment": "",
+          "image_background": "shopify:\/\/shop_images\/testimonial-placeholder.png",
+          "color_background": "#666666",
+          "font_color": "#fff"
+        }
+      },
+      "free-trial-landing-quotes": {
+        "type": "free-trial-landing-quotes",
+        "blocks": {
+          "1587414057651": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>\"After adding Nectar to my morning routine, my skin is glowing!\"<\/p>",
+              "author": "Sarah H.",
+              "author_title": "Registered Dietician",
+              "quote_image": "shopify:\/\/shop_images\/profile-male-circle2-512.png"
+            }
+          },
+          "1587414079465": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>\"After adding Nectar to my morning routine, my skin is glowing!\"<\/p>",
+              "author": "Sarah H.",
+              "author_title": "Registered Dietician",
+              "quote_image": "shopify:\/\/shop_images\/profile-male-circle2-512.png"
+            }
+          },
+          "1587414095371": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>\"After adding Nectar to my morning routine, my skin is glowing!\"<\/p>",
+              "author": "Sarah H.",
+              "author_title": "Registered Dietician",
+              "quote_image": "shopify:\/\/shop_images\/profile-male-circle2-512.png"
+            }
+          }
+        },
+        "block_order": [
+          "1587414057651",
+          "1587414079465",
+          "1587414095371"
+        ],
+        "settings": {
+          "title": "Real Ingredients, Real Reviews",
+          "desc": "<p>Hear what Nectar users are saying.<\/p>"
+        }
+      },
+      "free-trial-landing-referral": {
+        "type": "free-trial-landing-referral",
+        "settings": {
+          "title": "We Do Fun Things",
+          "desc": "<p>Connect with us&nbsp;<a href=\"\/admin\/themes\/86690463803\/editor\" title=\"#\">@nectar<\/a><\/p>",
+          "background": ""
+        }
+      },
+      "free-trial-landing-social": {
+        "type": "free-trial-landing-social",
+        "settings": {
+          "title": "Twitter and Instagram",
+          "desc": ""
+        }
+      },
+      "mirgo-social-home": {
+        "type": "mirgo-social-home",
+        "blocks": {
+          "1587414304475": {
+            "type": "instagram",
+            "settings": {
+              "username": "bluedrygoods",
+              "access-token": ""
+            }
+          }
+        },
+        "block_order": [
+          "1587414304475"
+        ],
+        "settings": {
+          "title": "We Do Fun Things",
+          "desc": "<p>Connect with us&nbsp;<a href=\"\/admin\/themes\/86690463803\/editor\" title=\"#\">@nectar<\/a><\/p>"
+        }
+      },
+      "free-trial-header": {
+        "type": "free-trial-header",
+        "settings": {
+          "align_logo": "left",
+          "logo": "shopify:\/\/shop_images\/nectar-logo.png",
+          "logo_max_width": 135,
+          "main_linklist": "",
+          "message": false,
+          "home_page_only": false,
+          "message_text": "Announce something here",
+          "message_link": "",
+          "color_bg": "#7796a8",
+          "color_text": "#fff"
+        }
+      },
+      "free-trial-product-icons": {
+        "type": "free-trial-product-icons",
+        "blocks": {
+          "1587586225826": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Enjoy a week of Nectar",
+              "icon": "shopify:\/\/shop_images\/crystalized-lemon_56408567-8a11-4658-b486-53ade020137e.png"
+            }
+          },
+          "1587586234257": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Don’t leave us hangin’",
+              "icon": "shopify:\/\/shop_images\/organic-stevia_a024bb44-8a3a-4dae-9c66-6b64e1908b82.png"
+            }
+          },
+          "1587586239156": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Join the Hydration Gang",
+              "icon": "shopify:\/\/shop_images\/sodium-chloride_bf2e9d2e-b28a-44ea-a38f-518360aed43f.png"
+            }
+          }
+        },
+        "block_order": [
+          "1587586225826",
+          "1587586234257",
+          "1587586239156"
+        ],
+        "settings": {
+          "title": "Make Hydration a Habit",
+          "description": "<p>We love Nectar and know you will too. That&rsquo;s why we want to give you a chance to try Nectar completely risk free.<\/p>"
+        }
+      },
+      "free-trial-product-hero": {
+        "type": "free-trial-product-hero",
+        "settings": {
+          "hero_size": "hero_small",
+          "title": "Hydration Starter Pack",
+          "description": "7 Stick Trial | Free <br>\njust cover $3.94 shipping",
+          "button": "I want Hydration",
+          "color_background": "#89baf5",
+          "font_color": "#ffffff"
+        }
+      },
+      "product-comparisons": {
+        "type": "product-comparisons",
+        "settings": {
+        }
+      },
+      "free-trial-habit": {
+        "type": "free-trial-habit",
+        "blocks": {
+          "1588869129933": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Enjoy a week of Nectar",
+              "icon": "shopify:\/\/shop_images\/calendar.png"
+            }
+          },
+          "1588869144998": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Don’t leave us hangin’",
+              "icon": "shopify:\/\/shop_images\/phone.png"
+            }
+          },
+          "1588869158358": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Join the Hydration Gang",
+              "icon": "shopify:\/\/shop_images\/calendar.png"
+            }
+          }
+        },
+        "block_order": [
+          "1588869129933",
+          "1588869144998",
+          "1588869158358"
+        ],
+        "settings": {
+          "title": "Make Hydration a Habit",
+          "description": "<p>We love Nectar and know you will too. That’s why we want to give you a chance to try a week of Nectar completely risk free.<\/p>"
+        }
+      },
+      "free-trial-landing-icons-2": {
+        "type": "free-trial-landing-icons-2",
+        "blocks": {
+          "1588873660401": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Zero Calories & Sugar Free",
+              "icon": "shopify:\/\/shop_images\/zero-blue.png"
+            }
+          },
+          "1588873682343": {
+            "type": "image",
+            "settings": {
+              "title_icon": "All Natural & <br>Vegan",
+              "icon": "shopify:\/\/shop_images\/natural.png"
+            }
+          },
+          "1588873706615": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Non-GMO",
+              "icon": "shopify:\/\/shop_images\/thicker-no-filler_8a5613bc-261b-4550-8008-435ba5222cde.png"
+            }
+          },
+          "1588873715242": {
+            "type": "image",
+            "settings": {
+              "title_icon": "No Synthetic <br>Fillers",
+              "icon": "shopify:\/\/shop_images\/thicker-no-filler.png"
+            }
+          },
+          "1588873729311": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Made in <br>USA",
+              "icon": "shopify:\/\/shop_images\/usa-bluepng.png"
+            }
+          }
+        },
+        "block_order": [
+          "1588873660401",
+          "1588873682343",
+          "1588873706615",
+          "1588873715242",
+          "1588873729311"
+        ],
+        "settings": {
+          "title": "Hydration You’ll Feel Good About",
+          "description": ""
+        }
+      },
+      "product-reviews": {
+        "type": "product-reviews",
+        "settings": {
+          "review-type1": "We Get a Lot of Love",
+          "review-title1": "My New Daily Ritual",
+          "review-content1": "While I was skeptical of trying a hydration powder (why not just drink more water), Nectar has quickly become a part of my daily routine. Drinking enough water is difficult and I immeidatley feel a boost of energy and focus after a Nectar. On top of that, I love that the product has no sugar and the ingredients are all natural and clean.",
+          "review-type2": "But Can’t Please Everyone",
+          "review-title2": "Still Trying it Out",
+          "review-content2": "I am currently on month two of Nectar and have noticed a number of benefits, but am unsure if it’s because I’m drinking more water. Compared to the other hydration powders I’ve tried (Liquid IV and Hydrant), I am much happier and will continue taking Nectar daily."
+        }
+      },
+      "go-cart": {
+        "type": "go-cart",
+        "settings": {
+        }
+      },
+      "16122818940ea34481": {
+        "type": "conjured-referrals",
+        "settings": {
+          "title": "Wellness Should be Shared<br>Give $15 — Get $15",
+          "desc": "<p>Send a friend $15 off their ﬁrst order <br\/>and earn $15 in Nectar credit!<\/p>"
+        }
+      },
+      "mirgo-icon-home": {
+        "type": "mirgo-icon-home",
+        "blocks": {
+          "3e3cb73a-a8e2-4d19-a3d1-2d4eb857efec": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Natural Energy",
+              "icon": "shopify:\/\/shop_images\/natural_energy_193a84b8-bb1d-4ab3-9bb4-e8fb9a622e4b.png"
+            }
+          },
+          "dc7527e7-43e9-480c-b578-580dae880b3a": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Boosted Focus",
+              "icon": "shopify:\/\/shop_images\/boosted_focus_67ebb971-32a2-4679-8101-229f0d46b65d.png"
+            }
+          },
+          "5df50ea0-3e95-4e21-8dde-ce68a496f76a": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Improved Mood",
+              "icon": "shopify:\/\/shop_images\/boosted_mood.png"
+            }
+          },
+          "b199bb79-1a83-4c20-a2d9-a706af2e5efb": {
+            "type": "image",
+            "settings": {
+              "title_icon": "Strengthened Immunity",
+              "icon": "shopify:\/\/shop_images\/immunity.png"
+            }
+          }
+        },
+        "block_order": [
+          "3e3cb73a-a8e2-4d19-a3d1-2d4eb857efec",
+          "dc7527e7-43e9-480c-b578-580dae880b3a",
+          "5df50ea0-3e95-4e21-8dde-ce68a496f76a",
+          "b199bb79-1a83-4c20-a2d9-a706af2e5efb"
+        ],
+        "settings": {
+          "title": "Staying hydrated is hard. That’s why we created Nectar - a clean rapid hydration mix.",
+          "description": ""
+        }
+      },
+      "mirgo-column-blocks-home": {
+        "type": "mirgo-column-blocks-home",
+        "blocks": {
+          "a3744fc1-458c-4e93-9238-2537e27f43f3": {
+            "type": "left_image",
+            "settings": {
+              "r_title": "We Let the Science Speak",
+              "r_desc": "<p>You&#x27;ve probably heard dehydration is bad for you. Yet, studies show 75% of us are Chronically Dehydrated, resulting in:<\/p>",
+              "r_list": "<ul class=\"cross\">\n<li>Fatigue and Lethargy <i>(the afternoon slump)<\/i>\n<\/li>\n<li>Mood Disturbance <i>(I just can't)<\/i>\n<\/li>\n<li>Dry and Flushed Skin <i>(no glow)<\/i>\n<\/li>\n<li>Slowed Metabolism <i>(weight gain)<\/i>\n<\/li>\n<\/ul>",
+              "r_button": "Try Nectar, Risk-Free",
+              "r_link": "#top",
+              "r_image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_1.gif"
+            }
+          },
+          "f049f8f6-e87b-4a62-8bf4-76d44267bcc9": {
+            "type": "right_image",
+            "settings": {
+              "l_title": "Put Your Water to Work",
+              "l_desc": "<p>When you&#x27;re dehydrated, your body needs more than just plain water. Nectar uses the highest quality, research backed electrolytes to help you get more from your water, hydrating you as efficiently as possible.<\/p>",
+              "l_list": "<ul class=\"check\">\n<li>2-3x more hydrating than water alone<\/li>\n<li>Only the essentials, none of the B.S.<\/li>\n<li>Zero Sugar, Zero Calories<\/li>\n<\/ul>",
+              "l_button": "Try Nectar, Risk-Free",
+              "l_link": "#top",
+              "l_image": "shopify:\/\/shop_images\/Homepage_Image_2.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "a3744fc1-458c-4e93-9238-2537e27f43f3",
+          "f049f8f6-e87b-4a62-8bf4-76d44267bcc9"
+        ],
+        "settings": {
+        }
+      },
+      "16129840686cb184ec": {
+        "type": "mirgo-ig-home",
+        "blocks": {
+          "16129840686cb184ec-0": {
+            "type": "photo",
+            "settings": {
+              "ig_link": ""
+            }
+          },
+          "a1d05ec7-42dc-4f34-9a6a-828ee6b0a4f3": {
+            "type": "photo",
+            "settings": {
+              "ig_link": ""
+            }
+          },
+          "1f57eaf6-1d51-490d-b0a1-bdb682783ae9": {
+            "type": "photo",
+            "settings": {
+              "ig_link": "",
+              "ig_photo": "shopify:\/\/shop_images\/3.jpg"
+            }
+          },
+          "7305d3a2-1443-4e92-bd34-a262bc728c3a": {
+            "type": "photo",
+            "settings": {
+              "ig_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "16129840686cb184ec-0",
+          "a1d05ec7-42dc-4f34-9a6a-828ee6b0a4f3",
+          "1f57eaf6-1d51-490d-b0a1-bdb682783ae9",
+          "7305d3a2-1443-4e92-bd34-a262bc728c3a"
+        ],
+        "settings": {
+          "title": "We Do Fun Things",
+          "desc": "<p>Connect with us <a href=\"https:\/\/www.instagram.com\/HiNectar\/\" title=\"https:\/\/www.instagram.com\/HiNectar\/\" target=\"_blank\">@HiNectar<\/a><\/p>"
+        }
+      },
+      "starter-kit-landing-hero": {
+        "type": "starter-kit-landing-hero",
+        "settings": {
+          "hero_size": "hero_small",
+          "title": "Hydration Starter Pack",
+          "description": "<ul>\n<li>18 Packets in Flavor of Your Choice<\/li>\n<li>Risk Free & Happiness Guaranteed<\/li>\n<li>Everyday Free Shipping<\/li>\n<\/ul>",
+          "button": "$15 - Try Nectar",
+          "color_background": "#cfe4fb",
+          "font_color": "#142444"
+        }
+      },
+      "energy-icons": {
+        "type": "energy-icons",
+        "blocks": {
+          "f1f8d0d2-ee57-4a02-b48c-27fd685078b8": {
+            "type": "icon",
+            "settings": {
+              "title_icon": "Zero Calories & Sugar Free",
+              "icon": "shopify:\/\/shop_images\/zero-blue_320x_af109816-d67a-4776-951f-fc4d8ea24418.png"
+            }
+          },
+          "29c337db-ab0f-4a42-b05f-fe88632651d7": {
+            "type": "icon",
+            "settings": {
+              "title_icon": "All Natural & Vegan",
+              "icon": "shopify:\/\/shop_images\/natural_320x_e8c1bdc2-465d-41f3-85be-819a2b38222c.png"
+            }
+          },
+          "567cec3c-ced8-4ad7-af90-60cb8afc4b71": {
+            "type": "icon",
+            "settings": {
+              "title_icon": "Non-GMO",
+              "icon": "shopify:\/\/shop_images\/thicker-no-filler_320x_a9996f4d-f29d-41d5-b5ed-ce4390e0f58e.png"
+            }
+          },
+          "e867e240-ba9d-4929-9b6b-4f1f77ea0e7d": {
+            "type": "icon",
+            "settings": {
+              "title_icon": "No Synthetic Fillers",
+              "icon": "shopify:\/\/shop_images\/thicker-no-filler_320x_ddc3b4df-ac61-43eb-b050-61c0495dc25e.png"
+            }
+          },
+          "c963a992-75cc-4675-b8eb-e1ef5fb285b3": {
+            "type": "icon",
+            "settings": {
+              "title_icon": "Made in the USA",
+              "icon": "shopify:\/\/shop_images\/usa-bluepng_320x_ce89ec76-f73f-4e21-9c16-c09e9fefb582.png"
+            }
+          }
+        },
+        "block_order": [
+          "f1f8d0d2-ee57-4a02-b48c-27fd685078b8",
+          "29c337db-ab0f-4a42-b05f-fe88632651d7",
+          "567cec3c-ced8-4ad7-af90-60cb8afc4b71",
+          "e867e240-ba9d-4929-9b6b-4f1f77ea0e7d",
+          "c963a992-75cc-4675-b8eb-e1ef5fb285b3"
+        ],
+        "settings": {
+          "title": "",
+          "description": ""
+        }
+      },
+      "energy-columns": {
+        "type": "energy-columns",
+        "blocks": {
+          "0752293a-fc23-4362-8949-fed3e729f624": {
+            "type": "left_image",
+            "settings": {
+              "r_title": "Your Daily Boost",
+              "r_desc": "<p>Looking to jump-start your day or an afternoon pick-me-up? Put those unhealthy energy drinks, pre-workout an sodas aside. Made with 75mg of Organic Caffeine, Pure Vitamin B12 and over 600mg of Electrolytes, Nectar’s proprietary formula provides lasting energy while keeping you hydrated. <\/p>",
+              "r_list": "",
+              "r_button": "",
+              "r_link": "",
+              "r_image": "shopify:\/\/shop_images\/Frame_171_1.jpg",
+              "r_image_text": ""
+            }
+          },
+          "0c050bd5-2ace-416e-b448-e389a17bdb3d": {
+            "type": "right_image",
+            "settings": {
+              "l_title": "Hydration: A Balancing Act",
+              "l_desc": "<p>We’re not trying to give water a bad rap, but plain ‘ole H2O isn’t as hydrating as you think it is. Your body requires a delicate balance of ﬂuids and electrolytes to perform at its best. Mixed with a glass of water, the medical grade electrolytes in Nectar boost the absorption of your water to hydrate you as quickly and efﬁciently as possible. <\/p>",
+              "l_list": "",
+              "l_button": "",
+              "l_link": "",
+              "l_image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_2.gif",
+              "l_image_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "0752293a-fc23-4362-8949-fed3e729f624",
+          "0c050bd5-2ace-416e-b448-e389a17bdb3d"
+        ],
+        "settings": {
+        }
+      },
+      "energy-ingredients": {
+        "type": "energy-ingredients",
+        "blocks": {
+          "74b86bfc-e104-4262-8e23-b6afabce5d7f": {
+            "type": "text",
+            "settings": {
+              "icons": "shopify:\/\/shop_images\/caffeine_1_a67387bc-ebcf-4ca0-9e7b-847a336885bb.png",
+              "grid_title": "Organic Caffeine",
+              "grid_desc": "<p>Provides Lasting Energy<\/p>",
+              "energy": true
+            }
+          },
+          "5e5af9cd-dd94-44d9-b010-88fce719e371": {
+            "type": "text",
+            "settings": {
+              "icons": "shopify:\/\/shop_images\/potassium_e9e20491-9320-43e4-90b9-d6fa1a1cce48.png",
+              "grid_title": "Potassium",
+              "grid_desc": "<p>Prevents Muscle Cramps<\/p>",
+              "energy": false
+            }
+          },
+          "1b0b62b9-0779-4a0c-b97e-d9c9937dd14d": {
+            "type": "text",
+            "settings": {
+              "icons": "shopify:\/\/shop_images\/calcium_8663f21f-5767-4eef-bb6a-b5d898461a99.png",
+              "grid_title": "Calcium",
+              "grid_desc": "<p>Regulates Heart Rhythm<\/p>",
+              "energy": false
+            }
+          },
+          "c92a2a7a-e555-494e-ab9b-52ea1396c395": {
+            "type": "text",
+            "settings": {
+              "icons": "shopify:\/\/shop_images\/magnesium_503347ff-f025-42c5-a544-783cfc7be69d.png",
+              "grid_title": "Magnesium",
+              "grid_desc": "<p>Drives Energy Creation<\/p>",
+              "energy": false
+            }
+          },
+          "dc9b3fac-1bb3-4ecf-83b5-16aaa6f47e99": {
+            "type": "text",
+            "settings": {
+              "icons": "shopify:\/\/shop_images\/B12_1.png",
+              "grid_title": "Vitamin B12",
+              "grid_desc": "<p>Enhances Focus & Mood<\/p>",
+              "energy": true
+            }
+          },
+          "87f0d46e-5a2d-405f-8d18-5499541868eb": {
+            "type": "text",
+            "settings": {
+              "icons": "shopify:\/\/shop_images\/sodium-chloride_4994f325-9d29-48d5-bd1a-e8b500ef7403.png",
+              "grid_title": "Sodium Chloride",
+              "grid_desc": "<p>Maintains Fluid Balance<\/p>",
+              "energy": false
+            }
+          },
+          "49638403-9e8c-403c-9583-96e7e76b641e": {
+            "type": "text",
+            "settings": {
+              "icons": "shopify:\/\/shop_images\/crystalized-lemon_3bfa5bab-fa6b-40c1-a3a7-414aa98d8b62.png",
+              "grid_title": "Organic Fruit",
+              "grid_desc": "<p>Refreshing Taste<\/p>",
+              "energy": false
+            }
+          },
+          "1a5e554a-5c41-4f8c-8723-55352cfac4cb": {
+            "type": "text",
+            "settings": {
+              "icons": "shopify:\/\/shop_images\/organic-stevia_2454a1a7-e7dd-46ca-947c-75d8422d6907.png",
+              "grid_title": "Organic Stevia",
+              "grid_desc": "<p>Light Sweetener<\/p>",
+              "energy": false
+            }
+          }
+        },
+        "block_order": [
+          "74b86bfc-e104-4262-8e23-b6afabce5d7f",
+          "5e5af9cd-dd94-44d9-b010-88fce719e371",
+          "1b0b62b9-0779-4a0c-b97e-d9c9937dd14d",
+          "c92a2a7a-e555-494e-ab9b-52ea1396c395",
+          "dc9b3fac-1bb3-4ecf-83b5-16aaa6f47e99",
+          "87f0d46e-5a2d-405f-8d18-5499541868eb",
+          "49638403-9e8c-403c-9583-96e7e76b641e",
+          "1a5e554a-5c41-4f8c-8723-55352cfac4cb"
+        ],
+        "settings": {
+          "title": "Eight Essential Ingredients",
+          "desc": "<p>Sugar Free. Calorie Free. Refreshingly Simple.<\/p>",
+          "btn_label": "View Supplement Facts",
+          "m_title": "Supplement Facts",
+          "m_desc": "<p>Supplement Facts<\/p>"
+        }
+      },
+      "energy-faq": {
+        "type": "energy-faq",
+        "blocks": {
+          "631d4144-9949-4c8c-871a-4d10daeab319": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "Do I need Nectar?",
+              "collapse_desc": "<p>Studies show that 3 out of 4 people suffer from chronic dehydration. Many of the symptoms we overlook as byproducts of our busy lifestyles - fatigue, brain fog, feeling down. Adding Nectar to your daily routine helps you make the most of your water, keeping you hydrated and feeling your best.<\/p>"
+            }
+          },
+          "3e5776d1-b052-4586-8b27-b94508bb033e": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "How long will it take me to feel a difference?",
+              "collapse_desc": "<p>Nectar starts working immediately after consumption to hydrate you as efficiently as possible. Depending on how chronically dehydrated you are, it can take up to a week of daily use to start fully feeling the benefits - increased energy levels, mental clarity and improved mood.<\/p>"
+            }
+          },
+          "3ddb168c-1ada-4b5b-a50c-cafbbb9a606a": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "Does rapid hydration require sugar?",
+              "collapse_desc": "<p>Most other hydration powder companies developed their formula based on the World Health Organization’s “Oral Rehydration Solution.” This formula was developed for individuals suffering “life threatening diarrhoeal dehydration.” Odds are, if you’re on a computer, you’re not experiencing this level of near-death dehydration and malnourishment, and you likely never will. Sugar is one of the most prevalent ingredients in the average diet. Nectar’s proprietary formula relies on replenishing what we are not getting on a daily basis from the food we already eat. Don’t let companies who aren’t willing to spend the money on organic Stevia fool you with their “science” - they’re just looking to save money.<\/p>"
+            }
+          },
+          "66ddb4ef-71a8-40dd-854b-e193a9340cca": {
+            "type": "text",
+            "settings": {
+              "collapse_title": "What if I don't like Nectar?",
+              "collapse_desc": "<p>We want you to be happy and feel a difference with our product. If you end up not liking Nectar, we'll refund your first order in full. No questions asked. Please reach out to us at <a href=\"mailto:help@drinknectar.co\">help@drinknectar.co<\/a> if you have any issues.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "631d4144-9949-4c8c-871a-4d10daeab319",
+          "3e5776d1-b052-4586-8b27-b94508bb033e",
+          "3ddb168c-1ada-4b5b-a50c-cafbbb9a606a",
+          "66ddb4ef-71a8-40dd-854b-e193a9340cca"
+        ],
+        "settings": {
+          "title": "You’ve Got Questions, We’ve Got Answers",
+          "desc": "<p>You’re putting this in your body - skepticism is encouraged.<\/p>",
+          "btn_label": "",
+          "btn_link": ""
+        }
+      },
+      "storetasker-section": {
+        "type": "storetasker-section",
+        "settings": {
+          "hero_size": "hero_small",
+          "title": "",
+          "description": "",
+          "button": "",
+          "color_background": "#ffffff",
+          "font_color": "#fff"
+        }
+      }
+    },
+    "content_for_index": [
+      "1581101332389",
+      "1581344582062",
+      "1581347333318",
+      "1581351803382",
+      "1584469777527",
+      "1581430463040",
+      "16122818940ea34481",
+      "16129840686cb184ec"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "color_text": "#3d4246",
+      "color_body_text": "#69727b",
+      "color_sale_text": "#557B97",
+      "color_borders": "#e8e9eb",
+      "color_button": "#557B97",
+      "color_button_text": "#fff",
+      "color_small_button_text_border": "#3d4246",
+      "color_text_field": "#fff",
+      "color_text_field_text": "#000",
+      "color_text_field_border": "#949494",
+      "color_image_overlay_text": "#fff",
+      "color_image_overlay": "#3d4246",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#fff",
+      "type_header_font": "work_sans_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "work_sans_n4",
+      "type_base_size": 16,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+              }
+            },
+            "slideshow-1": {
+              "type": "image",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
+          "settings": {
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "feature-row",
+        "slideshow"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#6d6d6d",
+      "color_sale_text": "#DA2F0C",
+      "color_borders": "#e4e4e4",
+      "color_button": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "color_small_button_text_border": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_text_field_border": "#909090",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#f8f8f8",
+      "type_header_font": "muli_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "muli_n4",
+      "type_base_size": 18,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": 135,
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "slideshow_height": "medium",
+            "text_size": "medium",
+            "autorotate": false,
+            "autorotate_speed": 5
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_variant_labels": true,
+            "show_vendor": false,
+            "show_share_buttons": true,
+            "media_size": "medium",
+            "enable_image_zoom": true,
+            "enable_video_looping": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": 2,
+            "rows": 2,
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {
+          }
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {
+          }
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}
