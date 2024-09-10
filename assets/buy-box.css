@@ -394,6 +394,13 @@
   padding-inline: 10px;
 }
 
+.footer__icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+
+
 .congrats-text {
   padding-block: 7px;
   font-size: 11px;
