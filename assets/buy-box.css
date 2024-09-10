@@ -361,7 +361,7 @@
   color: #0D3063;
 }
 
-.free-shipping__wrapper {
+.free-bottle__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -382,4 +382,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.nectar-bottle-img {
+  width: ;
 }
