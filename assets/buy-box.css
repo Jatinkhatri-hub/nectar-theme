@@ -331,7 +331,7 @@
   align-items: center;
   position: absolute;
   flex-direction: column;
-  top: 10px;
+  top: 20px;
   bottom: 0;
   left: 60px;
   gap: 4px;
@@ -367,7 +367,7 @@
   align-items: center;
   position: absolute;
   flex-direction: column;
-  top: 10px;
+  top: 20px;
   bottom: 0;
   right: 0;
   gap: 4px;
