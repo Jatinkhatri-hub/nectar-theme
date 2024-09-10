@@ -202,8 +202,8 @@
 }
 
 .details__package-selector {
-  margin-block: 10px;
-  padding-block: 10px;
+  margin-top: 10px;
+  padding-top: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
