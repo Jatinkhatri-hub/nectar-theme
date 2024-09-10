@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     for(i = 0; i < buyBox.length; i++) {
       buyBox[i].className = buyBox[i].className.replace("active", "");
     }
-    document.ge
+    document.getElementById(city)
   }
 
 });
