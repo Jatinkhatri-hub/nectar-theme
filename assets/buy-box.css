@@ -147,6 +147,8 @@
 .tab-button.active {
   background-color: white;
   color: #0D3063;
+  font-family: "Poppins", system-ui;
+  font-weight: ;
 }
 
 /* Tab content styling */
