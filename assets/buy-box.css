@@ -30,4 +30,6 @@
   background: #CBE5FF;
 }
 
-.input__tab-btn:focus + .
+.input__tab-btn:focus + .buy-box__lable {
+  z-index: 1;
+}
