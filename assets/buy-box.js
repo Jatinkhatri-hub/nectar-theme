@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  const openbu
+  const openBuybox(e) {
+    let 
+  }
 
 });
