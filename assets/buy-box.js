@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
       buyBox[i].className = buyBox[i].className.replace("active", "");
     }
     document.getElementById(buyOption).style.display = "flex";
-    e.
+    e.currentTarget.className += "active";
   }
 
 });
