@@ -117,7 +117,7 @@
   border: 1px solid #0D3063;
   border-radius: 10px;
   overflow: hidden;
-  font-family: 'Poppins', st;
+  font-family: 'Poppins', system-ui;
 }
 
 .tab-menu {
@@ -188,6 +188,7 @@
 
 .details__total-price {
   font-size: 12px;
+  font-weight: ;
   
 }
 
