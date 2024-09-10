@@ -202,6 +202,8 @@
 .details__package-selector {
   margin-block: 10px;
   padding-block: 10px;
+  display: flex;
+  flex-direction: ;
 }
 
 .details__package-box {
