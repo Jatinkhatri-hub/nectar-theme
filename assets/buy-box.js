@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     for(i = 0; i < buyBoxDetails.length; i++) {
       buyBoxDetails[i].style.display = "none";
     }
-    buyBox = document.get
+    buyBox = document.querySelector('buy')
   }
 
 });
