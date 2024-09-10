@@ -206,4 +206,7 @@
 }
 
 
-.
+.package-details {
+  display: flex;
+  flex-direction: ;
+}
