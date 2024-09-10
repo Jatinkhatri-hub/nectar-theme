@@ -311,7 +311,7 @@
 }
 
 .gift-progress-bar__wrapper {
-  position: ;
+  position: relative;
 } 
 
 
@@ -330,6 +330,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
+  flex-direction: column;
 }
 
 .image-wrapper {
