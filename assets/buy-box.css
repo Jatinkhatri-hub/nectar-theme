@@ -300,4 +300,7 @@
 .gift-wrapper__title {
   color: #0D3063;
   font-family: 'Poppins';
+  font-size: 11px;
+  font-weight: 600;
+  
 }
