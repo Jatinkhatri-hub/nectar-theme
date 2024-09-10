@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
       buyBoxDetails[i].style.display = "none";
     }
     buyBox = document.querySelector('.buy-box__btn');
-    for(i = 0; )
+    for(i = 0; i < buyBox)
   }
 
 });
