@@ -219,7 +219,8 @@
   right: 0;
   background: #00A039;
   color: white;
-  
+  font-weight: 700;
+  font-size: 1;
 }
 
 .radio__package-box {
