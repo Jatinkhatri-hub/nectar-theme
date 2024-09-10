@@ -208,12 +208,13 @@
   width: 155px;
   height: 63px;
   position: relative;
+  border-radius: ;
 }
 
 .radio__package-box {
   position: absolute;
-  left: 10;
-  top: 50%;
+  left: 0;
+  top: 0;
 
 }
 
