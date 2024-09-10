@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  const openBuybox(e) => {
+  function openBuybox(e, sub) => {
     let i, buyBoxDetails, buyBox;
     buyBoxDetails = document.querySelector('.buy-box__details');
     for(i = 0; i < buyBoxDetails.length; i++) {
