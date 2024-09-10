@@ -360,3 +360,26 @@
   font-weight: 500;
   color: #0D3063;
 }
+
+.free-shipping__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  top: 10px;
+  bottom: 0;
+  left: 60px;
+  gap: 4px;
+}
+
+.image-wrapper {
+  width: 100px;
+  height: 80px;
+  background-color: #E8FFE3;
+  border-radius: 6.5px;
+  border: 0.5px solid #0D3063;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
