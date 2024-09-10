@@ -369,7 +369,7 @@
   flex-direction: column;
   top: 10px;
   bottom: 0;
-  left: 60px;
+  right: 0;
   gap: 4px;
 }
 
