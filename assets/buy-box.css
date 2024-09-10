@@ -431,7 +431,7 @@
 .footer-value__point span {
   display: flex;
   align-items: center;
-  
+  font-weight: 600;
 }
 
 .footer-value__point span svg {
@@ -439,5 +439,5 @@
 }
 
 .details__footer:last-child {
-  font-weight: ;
+  font-weight: 300;
 }
