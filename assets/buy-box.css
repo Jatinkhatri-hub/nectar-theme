@@ -208,7 +208,8 @@
   width: 155px;
   height: 63px;
   position: relative;
-  border-radius: .55px solid #B3B3B3;
+  border: .55px solid #B3B3B3;
+  border-radius: 4px;
 }
 
 .radio__package-box {
