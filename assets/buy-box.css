@@ -386,10 +386,10 @@
   padding: 10px;
 }
 
-.details__footer-congratss {
+.details__footer-congrats {
   display: flex;
   flex-direction: row;
   background-color: #E8FFE3;
   border-radius: 10px;
-  
+
 }
