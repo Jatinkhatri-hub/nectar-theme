@@ -34,6 +34,7 @@
   z-index: 1;
 }
 
-.input__tab-btn:checked + .lable {
+.input__tab-btn:checked + .buy-box__lable {
   background: white;
+  
 }
