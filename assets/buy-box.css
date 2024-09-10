@@ -331,6 +331,9 @@
   background-color: #E8FFE3;
   border-radius: 6.5px;
   border: 0.5 solid #0D3063;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .free-shipping-img {
