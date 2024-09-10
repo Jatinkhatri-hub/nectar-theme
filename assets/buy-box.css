@@ -417,5 +417,6 @@
 
 .footer-value__point {
   font-size: 12px;
-  font
+  font-family: 'Poppins';
+  font-weight: 600;
 }
