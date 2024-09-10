@@ -442,4 +442,6 @@
   font-weight: 300;
 }
 
-
+.sub-and-save__btn {
+  width: 85vh;
+}
