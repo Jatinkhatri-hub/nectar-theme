@@ -50,5 +50,7 @@
 }
 
 .panel {
-  order: ;
+  order: 99;
 }
+
+.input__tab-btn:
