@@ -34,4 +34,6 @@
   z-index: 1;
 }
 
-.input__tab-btn:checked + .la
+.input__tab-btn:checked + .lable {
+  background: ;
+}
