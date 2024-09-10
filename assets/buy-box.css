@@ -314,5 +314,7 @@
 
 
 .progressBar {
-  height: ;
+  height: 14px;
+  width: 100%;
+  border: 0.5px;
 }
