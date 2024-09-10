@@ -455,6 +455,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  font-family: 'Poppins';
 }
 
 .icon-gift {
