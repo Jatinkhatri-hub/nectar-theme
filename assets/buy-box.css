@@ -2,6 +2,8 @@
 
 .buy-box__wrapper {
   max-width: 615px;
+  display: flex;
+  flex-direction: column;
   
 }
 
