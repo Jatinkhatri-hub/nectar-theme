@@ -234,5 +234,7 @@
 .package-discount span {
   font-size: 12px;
   font-weight: 700;
-  
+  margin: 0;
 }
+
+.package-details
