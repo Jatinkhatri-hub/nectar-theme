@@ -431,9 +431,11 @@
 .footer-value__point span {
   display: flex;
   align-items: center;
-  font
+  
 }
 
 .footer-value__point span svg {
   margin-right: 7px;
 }
+
+.footer-value__point:la
