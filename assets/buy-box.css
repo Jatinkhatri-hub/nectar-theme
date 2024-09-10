@@ -292,5 +292,5 @@
 
 .details__gift-wrapper {
   display: flex;
-  flex-wrap: w;
+  flex-direction: column;
 }
