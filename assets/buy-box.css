@@ -431,3 +431,6 @@
   align-items: center;
 }
 
+.footer-value__point span svg {
+  margin-right: 7px;
+}
