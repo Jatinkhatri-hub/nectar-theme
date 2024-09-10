@@ -192,6 +192,7 @@
   font-weight: 400;
   color: #0000008F;
   text-decoration: line-through;
+  font-family: 'Poppins';
 }
 
 .details__discounted-price {
