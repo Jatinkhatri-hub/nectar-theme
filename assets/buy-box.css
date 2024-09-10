@@ -203,10 +203,13 @@
 .details__package-box {
   display: flex;
   flex-direction: row;
+  
 }
 
 
 .package-details {
   display: flex;
-  flex-direction: ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
