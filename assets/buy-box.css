@@ -222,7 +222,8 @@
   font-weight: 700;
   font-size: 12.6px;
   width: max-content;
-  padding: 
+  padding: 1px 10px;
+  border-radius: ;
 }
 
 .radio__package-box {
