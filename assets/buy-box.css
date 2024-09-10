@@ -4,13 +4,14 @@
   max-width: 615px;
   display: flex;
   flex-direction: column;
-  
+
 }
 
 .tab-menu {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .tab-button {
