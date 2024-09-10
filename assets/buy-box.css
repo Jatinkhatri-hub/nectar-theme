@@ -383,7 +383,7 @@
 }
 
 .details__footer {
-  padding: 10px;
+  padding-block: 10px;
 }
 
 .details__footer-congrats {
