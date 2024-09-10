@@ -207,7 +207,10 @@
   align-items: center;
   width: 155px;
   height: 63px;
+  position: relative;
 }
+
+
 
 
 .package-details {
