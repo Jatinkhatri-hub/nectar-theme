@@ -1,0 +1,88 @@
+{% section 'mirgo-contact-hero' %}
+
+<div class="page-width contact-margin-bottom">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+      
+       {% section 'contact-info' %}
+     
+    <div class="contact-form form-vertical">
+        {%- assign formId = 'ContactForm' -%}
+        {% form 'contact', id: formId %}
+          {% include 'form-status', form: form, form_id: formId %}
+
+          <div class="grid grid--half-gutters">
+            <div class="grid__item medium-up--one-half">
+              <label for="{{ formId }}-name"></label>
+              <input type="text" id="{{ formId }}-name" name="contact[{{ 'contact.form.name' | t }}]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="Name">
+            </div>
+            <div class="grid__item medium-up--one-half">
+              <label for="{{ formId }}-email"></span></label>
+              <input
+                type="email"
+                id="{{ formId }}-email"
+                name="contact[email]"
+                placeholder="Email"
+                autocorrect="off"
+                autocapitalize="off"
+                value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                aria-required="true"
+                {%- if form.errors contains 'email' -%}
+                  class="input--error"
+                  aria-invalid="true"
+                  aria-describedby="{{ formId }}-email-error"
+                {%- endif -%}
+                >
+              {%- if form.errors contains 'email' -%}
+                <span id="{{ formId}}-email-error" class="input-error-message">
+                  <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+                  {% include 'icon-error' %}
+                  <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+                </span>
+              {%- endif -%}
+            </div>
+          </div>
+
+          <label for="{{ formId }}-phone"></label>
+          <input type="tel" id="{{ formId }}-phone" name="contact[{{ 'contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="Phone Number">
+
+          <label for="{{ formId }}-message"></label>
+          <textarea rows="10" placeholder="Message" id="{{ formId }}-message" name="contact[{{ 'contact.form.message' | t }}]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+
+      <center><input type="submit" class="btn" value="{{ 'contact.form.submit' | t }}"></center>
+
+        {% endform %}
+      </div>
+     
+    </div>
+  </div>
+    
+</div>
+
+<style>
+  
+    body:not(.template-index) #PageContainer .main-content{
+    padding-top: 0px !important;
+  }
+    
+  .rte {
+  	margin-bottom: 80px !important;
+  }
+  
+   @media (max-width: 767px) { 
+    .rte {	
+      margin-bottom: 24px !important;
+    }
+    }
+  
+  .btn-dark {
+    border-color: #89baf5;
+    color: #89baf5;
+    background: transparent;
+    background-color: transparent;
+    
+ .btn:not([disabled]):hover {
+    	background-color: #89baf5 !important;
+    }  
+    
+</style>

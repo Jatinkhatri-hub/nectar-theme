@@ -1,0 +1,95 @@
+/*   .alchemy-reset .alchemy-rte h1 {
+    font-size: 1.944em !important;
+    font-family: Poppins, sans-serif !important;
+    font-weight: 700 !important;
+    line-height: 55px !important;
+  }
+  .alchemy-reset .alchemy-rte h3 {
+    font-size: 1.444em !important;
+    font-weight: 600 !important;
+    line-height: 30px !important;
+  }
+
+body #PageContainer {
+  padding-top: 20px;
+}
+
+.ship {
+    font-size: 0.9rem !important;
+    font-weight: 700;
+    margin: 15px 0 !important;
+  }
+
+ @media (max-width: 1320px) {
+   #MainProductContainer {
+     justify-content: center !important;
+   }
+   #ProductImageCarousel {     
+   }
+
+   #ProductDetailContainer {
+     max-width: 70% !important;     
+   }
+ }
+
+@media (max-width: 799px) {
+  .alchemy-reset .alchemy-rte h1 {
+    font-size: 1.8em !important;
+  }  
+}
+
+@media (max-width: 710px) {
+  .alchemy-reset .alchemy-rte h1 {
+    font-size: 1.4em !important;
+  }
+
+  .alchemy-reset .alchemy-rte h3 {
+    font-size: 1.1em !important;
+  }
+
+  #camparisan-table div p{
+    font-size: 12px !important;
+  }  
+}
+
+@media (max-width: 640px) {
+  #ProductDetailContainer {
+     max-width: 80vw !important;     
+   }
+
+  #replo-header {
+    width: 100vw !important;
+  }
+  
+  #replo-header div {
+    width: auto !important;
+  }
+
+  .ship {
+    font-size: 0.7rem !important;
+    margin: 10px 0 !important;
+  }
+
+  .alchemy-reset .alchemy-rte p {
+    font-size: 0.8em !important;
+  }
+
+  #camparisan-table div p {
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width:470px) {
+
+
+  .alchemy-reset .alchemy-rte h1 {
+    font-size: 1.1em !important;
+  }
+
+  .alchemy-reset .alchemy-rte h3 {
+    font-size: 0.9em !important;
+  }
+
+   
+  
+} */

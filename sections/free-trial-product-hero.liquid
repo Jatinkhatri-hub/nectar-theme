@@ -1,0 +1,182 @@
+
+<div class="section-container {% if section.settings.hero_size == 'hero_small' %}hero-small{% endif %} {% if section.settings.hero_size == 'hero_large' %}hero-large{% endif %}">
+  <div class="page-width">
+    <div class="starter-flex">
+      <div class="starter-left">
+        <img src="https://cdn.shopify.com/s/files/1/0309/2257/1835/files/Starter_Pack.png?v=1613593384">
+      </div>
+      
+      <div class="starter-right">
+        <div class="right-details">
+      {% if section.settings.title != blank %}
+      <h1 class="h2 product-single__title">{{ section.settings.title }}</h1>
+      {% endif %}
+        <div class="sub-prices">
+        <h3 class="try-nectar">Try Nectar, Risk-Free</h3>
+          <div class="starter-prices"><h3 class="price-now">$15</h3><h3 class="price-before">$25</h3></div>
+        </div>
+      {% if section.settings.description != blank %}
+      <p class="faq-hero-text">
+        {{ section.settings.description }}
+      </p>
+      {% if section.settings.button != blank or section.settings.link %}
+                <div class="hydration-button">
+                <a class="btn btn-white" href="#">{{ section.settings.button }}</a>
+                </div>
+                {% endif %}
+      {% endif %}
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% if section.settings.color_background != blank %}
+<style>
+  .mirgo-banner-color {
+    background-color: {{ section.settings.color_background }};
+  }
+  {% if section.settings.image_background != blank %}
+  .mirgo-banner-color {
+    background-image: url({{ section.settings.image_background | img_url: '2000x' }});
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  {% endif %}
+  .mirgo-banner-color h1,
+  .mirgo-banner-color h2,
+  .mirgo-banner-color h3,
+  .mirgo-banner-color h4,
+  .mirgo-banner-color h5,
+  .mirgo-banner-color p {
+  	color: {{ section.settings.font_color }};
+  }
+  
+  
+  .starter-flex {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .starter-left {
+    width: 50%;
+    padding: 25px;
+  }
+  
+  .starter-right {
+    width: 50%
+  }
+  
+  .starter-right h3 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .product-single__title {
+    text-align: left;
+  }
+  
+  .right-details {
+    padding: 80px;
+  }
+  
+  .sub-prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+  
+  .try-nectar {
+    width: 50%;
+  }
+  
+  .nectar-prices {
+    width: 50%;
+  }
+  
+  .price-now, .price-before {
+    display: inline-block;
+  }
+  
+  .price-now {
+    margin-right: 15px;
+  }
+  
+  
+</style>
+
+{% endif %}
+{% schema %}
+  {
+    "name": "Free Trial Hero",
+	"class": "mirgo-banner-color box-layout",
+    "settings": [
+		{
+			"type":		"header",
+			"content":	"Content"
+		},
+{
+   "type": "select",
+   "id": "hero_size",
+   "options": [
+      { "value": "hero_small", "label": "Smaller"},
+      { "value": "hero_large", "label": "Larger"}
+   ],
+   "label": "Hero Size (Height)"
+},
+		{
+			"type":		"text",
+			"id":		"title",
+			"label":	"Title"
+		},
+		{
+			"type":		"textarea",
+			"id":		"description",
+			"label":	"Description"
+		},
+		{
+			"type": "text",
+			"id": "button",
+			"label": "Button Text"
+		},
+		{
+			"type":		"header",
+			"content":	"Background"
+		},
+		{
+            "type": 	"color",
+            "id": 		"color_background",
+            "label": 	"Background Color",
+            "default": 	"#edf4fe"
+        },
+		{
+            "type": 	"image_picker",
+            "id": 		"image_background",
+            "label": 	"Background Image"
+        },
+		{
+			"type":		"header",
+			"content":	"Font Color"
+		},
+		{
+            "type": 	"color",
+            "id": 		"font_color",
+            "label": 	"Font Color",
+            "default": 	"#fff"
+        }
+	],
+	"presets":	[
+		{
+			"name":		"Free Trial Hero",
+			"category":	"Custom Sections"
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

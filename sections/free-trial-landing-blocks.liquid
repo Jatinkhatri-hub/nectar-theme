@@ -1,0 +1,194 @@
+{% if blocks.size != 0 %}
+<div class="section-container">
+  <div class="page-width">
+    <div class="section-content">
+      <div class="grid-blocks">
+        {% for block in section.blocks %}
+        {% if block.type == 'left_image' %}
+        <div class="grid-items--section left-data">
+          <div class="grid-inner-items">
+            <div class="grid-items-columns grid-img-cols">
+              <div class="grid-image-blocks">
+                <img src="{{ block.settings.r_image | img_url: "720x" }}">
+              </div>
+            </div>
+            <div class="grid-items-columns">
+              <div class="grid-text-blocks">
+                {% if block.settings.r_title != blank %}
+                <h2>{{ block.settings.r_title }}</h2>
+                {% endif %}
+                {% if block.settings.r_desc != blank %}
+                {{ block.settings.r_desc }}
+                {% endif %}
+                {% if block.settings.r_list != blank %}
+                {{ block.settings.r_list }}
+                {% endif %}
+                {% if block.settings.r_button != blank or block.settings.r_link %}
+                <a class="link_underline" href="{{ block.settings.r_link }}">{{ block.settings.r_button }}</a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+        {% elsif block.type == 'right_image' %}
+        <div class="grid-items--section right-data">
+          <div class="grid-inner-items">
+            <div class="grid-items-columns">
+              <div class="grid-text-blocks">
+                {% if block.settings.l_title != blank %}
+                <h2>{{ block.settings.l_title }}</h2>
+                {% endif %}
+                {% if block.settings.l_desc != blank %}
+                {{ block.settings.l_desc }}
+                {% endif %}
+                {% if block.settings.l_list != blank %}
+                {{ block.settings.l_list }}
+                {% endif %}
+                {% if block.settings.l_button != blank or block.settings.l_link %}
+                <a class="link_underline" href="{{ block.settings.l_link }}">{{ block.settings.l_button }}</a>
+                {% endif %}
+              </div>
+            </div>
+            <div class="grid-items-columns grid-img-cols">
+              <div class="grid-image-blocks">
+                <img src="{{ block.settings.l_image | img_url: "720x" }}">
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  
+  
+  </script>
+{% endif %}
+
+
+{% schema %}
+  {
+    "name": 	"Mirgo Animation Blocks",
+    "class": 	"mirgo-animation-blocks",
+    "max_blocks": 2,
+    "settings": [
+        {
+            "type":     "header",
+            "content":  "Header"
+        }
+    ],
+    "blocks": [
+        {
+          "type": "left_image",
+          "name": "Left Image",
+          "settings": [
+            {
+                "type":     "header",
+                "content":  "Right Content"
+            },
+			{
+				"type":		"text",
+				"id":		"r_title",
+				"label":	"Title"
+			},
+			{
+				"type":		"richtext",
+				"id":		"r_desc",
+				"label":	"Description"
+			},
+			{
+				"type":		"html",
+				"id":		"r_list",
+				"label":	"List Item"
+			},
+			{
+                "type":     "header",
+                "content":  "Button"
+            },
+			{
+				"type":		"text",
+				"id":		"r_button",
+				"label":	"Label"
+			},
+			{
+				"type":		"text",
+				"id":		"r_link",
+				"label":	"Link"
+			},
+			{
+                "type":     "header",
+                "content":  "Main Image"
+            },
+			{
+				"type":		"image_picker",
+				"id":		"r_image",
+				"label":	"Image"
+			}
+          ]
+        },
+        {
+            "type": "right_image",
+            "name": "Right Image",
+            "settings": [
+              {
+                "type":     "header",
+                "content":  "Left Content"
+              },
+              {
+                  "type":	"text",
+                  "id":		"l_title",
+                  "label":	"Title"
+              },
+              {
+                  "type":	"richtext",
+                  "id":		"l_desc",
+                  "label":	"Description"
+              },
+              {
+                  "type":	"html",
+                  "id":		"l_list",
+                  "label":	"List Item"
+              },
+              {
+                  "type":     "header",
+                  "content":  "Button"
+              },
+              {
+                  "type":	"text",
+                  "id":		"l_button",
+                  "label":	"Label"
+              },
+              {
+                  "type":	"text",
+                  "id":		"l_link",
+                  "label":	"Link"
+              },
+              {
+                  "type":     "header",
+                  "content":  "Main Image"
+              },
+              {
+                  "type":	"image_picker",
+                  "id":		"l_image",
+                  "label":	"Image"
+              }
+           ]
+        }
+    ],
+    "presets": [
+      {
+        "name":     "Mirgo Animation Blocks",
+        "category": "text"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

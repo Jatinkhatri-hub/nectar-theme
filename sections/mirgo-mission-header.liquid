@@ -1,0 +1,42 @@
+<div class="section-container">
+  <div class="page-width">
+    <div class="section-content">
+      <div class="section-header">
+        {% if section.settings.title != blank %}
+        <h3>{{ section.settings.title }}</h3>
+        {% endif %}
+        {% if section.settings.description != blank %}
+        {{ section.settings.description }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Mission Header",
+	"class": "mirgo-icon-home",
+    "settings": [
+		{
+			"type":		"header",
+			"content":	"Header Content"
+		},
+		{
+			"type":		"text",
+			"id":		"title",
+			"label":	"Title"
+		},
+		{
+			"type":		"richtext",
+			"id":		"description",
+			"label":	"Description"
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

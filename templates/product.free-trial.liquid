@@ -1,0 +1,209 @@
+{% section 'free-trial-product-hero' %}
+
+{% section 'free-trial-landing-icons' %}
+
+{% section 'free-trial-landing-blocks' %}
+
+{% section 'free-trial-habit' %}
+
+{% section 'free-trial-landing-icons-2' %}
+
+{% section 'product-reviews' %}
+  
+{% include 'free-trial-CTA' %}
+
+
+
+
+<script>
+  // Override default values of shop.strings for each template.
+  // Alternate product templates can change values of
+  // add to cart button, sold out, and unavailable states here.
+  theme.productStrings = {
+    addToCart: {{ 'products.product.add_to_cart' | t | json }},
+    soldOut: {{ 'products.product.sold_out' | t | json }},
+    unavailable: {{ 'products.product.unavailable' | t | json }}
+  }
+</script>
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": {{ product.title | json }},
+  "url": {{ shop.url | append: product.url | json }},
+  {%- if product.featured_media -%}
+    {%- assign media_size = product.featured_media.preview_image.width | append: 'x' -%}
+    "image": [
+      {{ product.featured_media | img_url: media_size | prepend: "https:" | json }}
+    ],
+  {%- endif -%}
+  "description": {{ product.description | strip_html | json }},
+  {%- if current_variant.sku != blank -%}
+    "sku": {{ current_variant.sku | json }},
+  {%- endif -%}
+  "brand": {
+    "@type": "Thing",
+    "name": {{ product.vendor | json }}
+  },
+  "offers": [
+    {%- for variant in product.variants -%}
+      {
+        "@type" : "Offer",
+        {%- if variant.sku != blank -%}
+          "sku": {{ variant.sku | json }},
+        {%- endif -%}
+        "availability" : "http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
+        "price" : {{ variant.price | divided_by: 100.00 | json }},
+        "priceCurrency" : {{ cart.currency.iso_code | json }},
+        "url" : {{ shop.url | append: variant.url | json }}
+      }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+}
+</script>
+
+<style>
+  
+  .main-content {
+    padding-top: 0px !important;
+  }
+  
+  .icon-section-header h3 {
+  	font-size: 30px !important;
+  }
+ 
+   .habit-section-header h3 {
+  	font-size: 40px !important;
+  }
+  
+  #shopify-section-free-trial-landing-blocks .grid-items--section {
+  	margin-bottom: 0 !important;
+  }
+  
+  	#shopify-section-free-trial-landing-icons-2 {
+  	margin-top: 0 !important;
+  }	
+  
+  #shopify-section-free-trial-landing-icons-2 h3 {
+  	font-size: 40px !important;
+  }
+  
+  .icon-section-header, .habit-section-header p {
+  	text-align: center;
+    width: 78%;
+    margin: 0 auto;
+  }
+  
+  .habit-section .grid-inner-container h5 {
+  	font-size: 18px !important;
+    margin-bottom: 10px !important;
+    margin-top: 25px !important;
+  }
+  
+  .habit-section .grid-inner-container p {
+  	font-size: 16px !important;
+    line-height: 22px !important;
+  }
+   .habit-section {
+  	margin: 0 !important;
+  }
+  
+  .habit-section .section-container {
+  	background-color: #cfe4fb;
+    margin-top: -7px;
+  }
+  
+  .habit-section .grid-inner-container img {
+  	max-width: 100px !important;
+    max-height: unset !important;
+    min-height: auto !important;
+    
+  }
+  
+  .habit-section .grid-content {
+  	max-width: 100% !important;
+  }
+  
+  .habit-section .grid-content .grid-items {
+  	max-width: 345px !important;
+    text-align: center;
+  }
+  
+   @media (max-width: 767px) {
+  .top-icon-section .grid-content .grid-items {
+  	width: 50% !important;
+  }
+  
+  .top-icon-section .grid-inner-container img {
+  	margin: 0 auto !important;
+    margin-bottom: 5px !important;
+  }
+  
+  .top-icon-section .grid-inner-container {
+  	display: block !important;
+  }
+  
+  .top-icon-section .grid-inner-container h5 {
+  	text-align: center !important;
+  }
+    
+    .icon-section-header h3 {
+    	text-align: center !important;
+    }
+    
+    .icon-section-header, .habit-section-header p {
+    	width: 100%;
+    }
+     
+     .icon-section-header h3 {
+     	font-size: 22px !important;
+      	font-family: "value-bold", sans-serif;
+     }
+    
+    .habit-section-header h3 {
+    	font-size: 22px !important;
+      	font-family: "value-bold", sans-serif;
+     	line-height: 2rem !important;
+      	text-align: center !important;
+    }
+    
+    .habit-section .grid-items:not(:last-child) {
+    	padding-bottom: 32px !important;
+    }
+    
+    .habit-section .grid-items:last-child {
+    	padding-bottom: 10px !important;
+    }
+    
+    .habit-section .grid-items .grid-inner-container {
+    	flex-direction: column !important;
+    }
+    
+    .habit-section .grid-inner-container img {
+    	max-width: 50px !important;
+    }
+     
+     #shopify-section-free-trial-landing-icons-2 h3 {
+     	font-family: "value-bold", sans-serif;
+       	font-size: 22px !important;
+     }
+  }
+  
+  @media (min-width: 901px) {
+.mirgo-icon-home .section-container .page-width .section-content .section-main-content .grid-content {
+    max-width: 85%;
+}
+  }
+  
+  @media (max-width: 749px) {
+.template-product .main-content {
+    padding-top: 0px !important;
+}
+  }
+  
+  
+ 
+</style>

@@ -1,0 +1,42 @@
+.header-subscription-add-to-cart {
+  .recharge-price-suffix-subscription {
+    display: inline;
+  }
+  .recharge-price-suffix-one-time {
+    display: none;
+  }
+}
+.header-onetime-add-to-cart {
+  .recharge-price-suffix-subscription {
+    display: none;
+  }
+  .recharge-price-suffix-one-time {
+    display: inline;
+  }
+}
+.header-additional-atc {
+  .product-form__cart-submit-orange {
+    width: auto;
+  }
+}
+
+.product-card {
+  .btn.hidden {
+    display: none;
+  }
+  .product-variant-select-a {
+    margin-bottom: 25px;
+  }
+  .purchase-option-wrapper {
+    text-align: left;
+  }
+  .product-card-purchase-options {
+    height: 60px;
+    margin-bottom: 25px;
+    label {
+      font-family: "value-medium",sans-serif;
+      font-size: 17px;
+      color: #142444!important;
+    }
+  }
+}

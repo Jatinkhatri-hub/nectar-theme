@@ -1,0 +1,86 @@
+<div class="section-container">
+  <div class="page-width">
+    <div class="section-content">
+      {% if section.settings.title != blank or section.settings.desc != blank %}
+      <div class="section-header-content">
+        <h2>{{ section.settings.title }}</h2>
+      </div>
+      {% endif %}
+      {% if section.blocks.size > 0 %}
+      <div class="section-grid">
+        <div class="grid-flex swiper-container">
+          <div class="grid-row swiper-wrapper">
+            {% for block in section.blocks %}
+            <div class="grid-column swiper-slide">
+              {% if block.settings.value_number != blank  %}
+              <div class="grid-values">
+                <span class="value-number">{{ block.settings.value_number }}</span>
+              </div>
+              {% endif %}
+              {% if block.settings.grid_title != blank or block.settings.grid_desc != blank  %}
+              <div class="grid-details">
+                <h3>{{ block.settings.grid_title }}</h3>
+               {{ block.settings.grid_desc }}
+              </div>
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Mission Values",
+	"class": "mirgo_ingredient_grid",
+	"max_blocks": 6,
+    "settings": [
+		{
+            "type":		"header",
+            "content":	"Grid Header"
+        },
+        {
+            "type":		"text",
+            "id":		"title",
+            "label":	"Title"
+        }
+	],
+	"blocks":	[
+		{
+          "type":	"text",
+          "name":	"Mission Values",
+          "settings":	[
+              {
+                  "type":		"header",
+                  "content":	"Grid Details"
+              },
+              {
+                  "type":	"text",
+                  "id":		"value_number",
+                  "label":	"Value Number"
+              },
+              {
+                  "type":	"text",
+                  "id":		"grid_title",
+                  "label":	"Title"
+              },
+              {
+                  "type":	"richtext",
+                  "id":		"grid_desc",
+                  "label":	"Description"
+              }
+          ]
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

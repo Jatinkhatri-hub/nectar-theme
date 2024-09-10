@@ -1,0 +1,110 @@
+<div class="section-container">
+  <div class="page-width">
+    <div class="section-content">
+      <div class="section-grid">
+        <div class="items-grid">
+          <div class="items-text">
+            {% if section.settings.title != blank %}
+            <h2>{{ section.settings.title }}</h2>
+            {% endif %}
+            {% if section.settings.desc != blank %}
+            {{ section.settings.desc }}
+            {% endif %}
+          </div>
+        </div>
+        <div class="items-grid">
+          <div class="items-button">
+
+            {% for block in section.blocks %}
+            <div class="items-button-details">
+              <a href="{{ block.settings.button_link }}" class="btn btn-social 
+                                                                {% if block.settings.button_label contains 'Messenger' %}Messenger{% endif %}
+                                                                {% if block.settings.button_label contains 'mail' %}mail{% endif %}
+                                                                {% if block.settings.button_label contains 'Twitter' %}twitter{% endif %}
+                                                                {% if block.settings.button_label contains 'Link' %}link{% endif %}">
+                {% if block.settings.button_label contains 'Messenger' %}<img src="https://cdn.shopify.com/s/files/1/0309/2257/1835/files/messenger.png?v=1581437843">{% endif %}
+                {% if block.settings.button_label contains 'mail' %}<img src="https://cdn.shopify.com/s/files/1/0309/2257/1835/files/mail.png?v=1581437843">{% endif %}
+                {% if block.settings.button_label contains 'Twitter' %}<img src="https://cdn.shopify.com/s/files/1/0309/2257/1835/files/twitter.png?v=1581437843">{% endif %}
+                {% if block.settings.button_label contains 'Link' %}<img src="https://cdn.shopify.com/s/files/1/0309/2257/1835/files/share.png?v=1581437843">{% endif %}
+                {{ block.settings.button_label }}
+              </a>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .mirgo-social-media-banner {
+    background-image: url({{ section.settings.background | img_url: '1920x' }});
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+</style>
+{% schema %}
+  {
+    "name": "Mirgo Social Media Banner",
+	"class":"mirgo-social-media-banner",
+    "settings": [
+		{
+          "type":		"header",
+          "content":	"Header Content"
+		},
+		{
+			"type":		"text",
+			"id":		"title",
+			"label":	"Title"
+		},
+		{
+			"type":		"richtext",
+			"id":		"desc",
+			"label":	"Description"
+		},
+		{
+          	"type":		"header",
+          	"content":	"Background Section"
+		},
+		{
+			"type":		"image_picker",
+			"id":		"background",
+			"label":	"Background Image"
+		}
+	],
+	"blocks":	[
+		{
+			"type":	"text",
+			"name":	"Social",
+			"settings":	[
+				{
+                    "type":		"header",
+                    "content":	"Social Media Content"
+                },
+                {
+                    "type":		"text",
+                    "id":		"button_label",
+                    "label":	"Button Label"
+                },
+				{
+                    "type":		"text",
+                    "id":		"button_link",
+                    "label":	"Button Link"
+                }
+			]
+		}
+	],
+	"presets":	[
+		{
+			"name":		"Mirgo Social Media Banner",
+			"category":	"Text"
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,169 @@
+{%- style -%}
+  {% assign cart_popup_box_shadow = settings.color_borders | color_modify: 'alpha', 0.5 %}
+
+  .cart-popup {
+    box-shadow: 1px 1px 10px 2px {{ cart_popup_box_shadow }};
+  }
+{%- endstyle -%}
+<div class="cart-item-count">
+  <span></span>
+</div>
+<div class="cart-popup-wrapper cart-popup-wrapper--hidden" role="dialog" aria-modal="true" aria-labelledby="CartPopupHeading" data-cart-popup-wrapper>
+  <div class="cart-popup" data-cart-popup tabindex="-1">
+    <div class="cart-popup__header">
+      <h2 id="CartPopupHeading" class="cart-popup__heading">My Cart</h2>
+      <h3 class="cart-popup__sub_header">Everyday Free Shipping</h3>
+      <button class="cart-popup__close" aria-label="{{ 'general.accessibility.close_modal' | t }}" data-cart-popup-close>{% include 'icon-close' %}</button>
+    </div>
+    
+    <div class="mini-cart-item-wrapper">
+
+        {% for item in cart.items %}
+
+        {%- comment -%}Bold:PO 2.0 - Hybrid Input{%- endcomment -%}
+        {%- if item.properties._boldBuilderId  and item.properties._boldVariantIds == null -%}
+        <input type="hidden" name="updates[]" id="updates_{{- item.key -}}" class="bold_hidden_input cart__product-qty"
+            value="{{- item.quantity -}}" min="0" data-id="{{- item.key -}}">
+        {%- continue -%}
+        {%- endif -%}
+
+
+        {%- assign item_has_discounts = false -%}
+        {%- if item.line_level_discount_allocations.size > 0 -%}
+        {%- assign item_has_discounts = true -%}
+        {%- endif -%}
+
+        <article class="mini-cart-item" data-variant="{{ item.variant.id }}" data-url="{{ item.url }}"
+                 data-title="{{ item.product.title }}">
+          <div class="remove_prod">
+            <input type="button" value="x" class="remove_mini_items">
+          </div>
+          <div class="mini-cart-item-image">
+            <div class="cart__image-wrapper">
+              <img class="cart__image{% if item.image == null %} hide{% endif %}" src="{{ item | img_url: 'x190' }}" alt="{{ item.image.alt | escape }}" data-cart-item-image>
+            </div>
+          </div>
+
+          <div class="mini-cart-item-details">
+            <p class="mini-cart-item-title">
+              <a href="{{ item.url }}">
+                {{ item.product.title }}
+                {% unless item.variant.title == 'Default Title' %}({{ item.variant.title }}){% endunless %}
+              </a>
+            </p>
+
+            <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_properties"
+                  style="display:none !important;"></span> {% if item.properties %}
+            {% for property in item.properties %}
+            {%- if property.first.first == '_' -%}{%- continue -%}{%- endif -%}
+            {% unless property.last == blank or property.first contains '_bold'  %}
+            <p class="mini-cart-item-property">
+              <span class="property-label">{{ property.first }}:</span>
+              {% if property.last contains '/uploads/' %}
+              <a class="property-image" href="{{ property.last }}">{{ property.last | split: '/' | last }}</a>
+              {% elsif property.last contains '' %}
+              {% else %}
+              <span class="property-value">{{ property.last }}</span> {% endif %}
+            </p>
+            {% endunless %}
+
+            {% endfor %}
+            {% endif %}
+
+
+            <div class="mini-cart-qty">
+              <input type='button' value='-' class='qtyminus' field='quantity' />
+              <input type='text' data-cart-popup-cart-quantity name='quantity' value='{{ item.quantity }}' class='qty' />
+              <input type='button' value='+' class='qtyplus' field='quantity' />
+            </div>
+
+          </div>
+            <div class="mini-cart-price-row">
+
+                {%- if item_has_discounts -%}
+                <s class="original-price">
+                    <span class="money">{{ item.original_price | money }}</span>
+                </s>
+                {%- endif -%}
+                <p class="mini-cart-item-price">
+                    <span class="final-price money">{{ item.final_price | money }}</span>
+                </p>
+
+                {%- if item_has_discounts -%}
+                <ul class="cart-item-discounts">
+                    {% for discount_allocation in item.line_level_discount_allocations %}
+                    <li class="cart-item-discount">
+                        {% include 'icons', id: 'sale-tag' %}
+                        {{ discount_allocation.discount_application.title }}
+                        (-<span class="money">{{ discount_allocation.amount | money }}</span>)
+                    </li>
+                    {% endfor %}
+                </ul>
+                {%- endif -%}
+            </div>
+        </article>
+        {% endfor %}
+
+    </div>
+    {% comment %}
+    <div class="cart-popup-item">
+      <div class="cart-popup-item__image-wrapper hide" data-cart-popup-image-wrapper>
+        <div class="cart-popup-item__image cart-popup-item__image--placeholder" data-cart-popup-image-placeholder>
+          <div data-placeholder-size></div>
+          <div class="placeholder-background placeholder-background--animation"></div>
+        </div>
+      </div>
+      <div class="cart-popup-item__description">
+        <div>
+          <div class="cart-popup-item__title" data-cart-popup-title></div>
+          <ul class="product-details" aria-label="{{ 'cart.popup.product_details' | t }}" data-cart-popup-product-details></ul>
+        </div>
+        <div class="cart-popup-item__quantity">
+          <span class="visually-hidden" data-cart-popup-quantity-label></span>
+          <span aria-hidden="true">{{ 'cart.popup.quantity' | t }}:</span>
+          <span aria-hidden="true" data-cart-popup-quantity></span>
+        </div>
+      </div>
+    </div>
+    {% endcomment %}
+    <div class="mini-cart-bottom">
+      <div class="mini-cart-footer {% if cart.item_count == 0 %}hide{% else %}show{% endif %}">
+        <div class="mini-cart-footer-header">
+          {% comment %}
+          {%- for discount in cart.cart_level_discount_applications -%}
+          <span class="subtotal-row">
+            <span class="cart-discount-title cart-subtotal-group">
+              {%- include 'icons', id: 'sale-tag' -%}
+              {{- discount.title | strip -}}
+            </span>
+            <span class="cart-subtotal-group discount-value price">
+              -<span class="money">{{ discount.total_allocated_amount | money }}</span>
+            </span>
+          </span>
+          {%- endfor -%}
+          {% endcomment %}
+          <span class="subtotal-row">
+            <span class="cart-subtotal cart-subtotal-group">Subtotal</span>
+            <span class="money cart-subtotal-group price" data-total-price>{{ cart.total_price | money }}</span>
+          </span>
+        </div>
+
+      </div>
+
+      <form action="{{ routes.cart_url }}" method="POST">
+        <button class="cart-popup__cta-link btn btn--secondary-accent" type="submit" name="checkout">
+          <span>Checkout</span>
+        </button>
+      </form>
+      {% if additional_checkout_buttons %}
+      <div class="button-dynamic-container">
+        <div class="additional-checkout-buttons">{{ content_for_additional_checkout_buttons }}</div>
+      </div>
+      {% endif %}
+      <div class="cart-popup__notes">
+        <span>Free Shipping with all orders. Taxes applied at checkout</span>
+      </div>
+    </div>
+  </div>
+</div>
+

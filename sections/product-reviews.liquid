@@ -1,0 +1,89 @@
+<div class="reviews-container">
+ 
+  <div class="page-width">
+    
+   <div class="review-header section-header-content">
+        <h2>We Keep it Real</h2>
+        <span class="header-stars jdgm-rev__rating" data-score="5" tabindex="0" aria-label="5 star review"> <a class="jdgm-star jdgm--on"></a><a class="jdgm-star jdgm--on"></a><a class="jdgm-star jdgm--on"></a><a class="jdgm-star jdgm--on"></a><a class="jdgm-star jdgm--on"></a> </span>
+     <span class="header-rating">4.8 out of 5.0 stars</span>
+        
+      </div>
+    
+    <div class="reviews-content">
+      <div class="review-1">
+        <h3>{{ section.settings.review-type1 }}</h3>
+        <div class="feat-star-review">
+          <span class="jdgm-rev__rating" data-score="5" tabindex="0" aria-label="5 star review"> <a class="jdgm-star jdgm--on"></a><a class="jdgm-star jdgm--on"></a><a class="jdgm-star jdgm--on"></a><a class="jdgm-star jdgm--on"></a><a class="jdgm-star jdgm--on"></a> </span>
+        </div>
+        <h4>{{ section.settings.review-title1 }}</h4>
+        <p>{{ section.settings.review-content1 }}</p>
+      </div>
+      <div class="line"></div>
+      <div class="review-2">
+        <h3>{{ section.settings.review-type2 }}</h3>
+                <div class="feat-star-review">
+          <span class="jdgm-rev__rating" data-score="3" tabindex="0" aria-label="3 star review"> <a class="jdgm-star jdgm--on"></a><a class="jdgm-star jdgm--on"></a><a class="jdgm-star jdgm--on"></a><a class="jdgm-star jdgm--off"></a><a class="jdgm-star jdgm--off"></a> </span>
+        </div>
+        <h4>{{ section.settings.review-title2 }}</h4>
+        <p>{{ section.settings.review-content2 }}</p>
+      </div>
+    </div>
+    
+    <div class="judgme-reviews">
+    {% assign product = all_products["essential-daily-hydration"] %}
+    {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: false, product: product %}
+    </div>
+    
+    
+    
+    
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Product Reviews",
+    "settings": [
+		{
+			"type": "header",
+			"content": "Featured Reviews"
+		},
+		{
+			"type": "text",
+			"id": "review-type1",
+			"label": "Review Type"
+		},
+		{
+			"type": "text",
+			"id": "review-title1",
+			"label": "Review Title"
+		},
+		{
+			"type": "textarea",
+			"id": "review-content1",
+			"label": "Review Content"
+		},
+		{
+			"type": "text",
+			"id": "review-type2",
+			"label": "Review Type"
+		},
+		{
+			"type": "text",
+			"id": "review-title2",
+			"label": "Review Title"
+		},
+		{
+			"type": "textarea",
+			"id": "review-content2",
+			"label": "Review Content"
+		}
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

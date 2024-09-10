@@ -1,0 +1,82 @@
+ <div class="rte contact-rte">
+          
+          <div class="contact-container border-left">
+          <h2 class="contact-h2">{{ section.settings.header_1 }}</h2>
+            <p class="contact-p"><a href="{{ section.settings.info_1_url }}">{{ section.settings.header_1_info }}</a></p>
+          </div>
+          
+          <div class="contact-container border-left">
+           <h2 class="contact-h2">{{ section.settings.header_2 }}</h2>
+            <p class="contact-p"><a href="{{ section.settings.info_2_url }}">{{ section.settings.header_2_info }}</a></p>
+          </div>
+          
+          <div class="contact-container border-l-r">
+          <h2 class="contact-h2">{{ section.settings.header_3 }}</h2>
+            <p class="contact-p">{{ section.settings.header_3_info }}</p>
+          </div>
+           
+        </div>
+
+{% schema %}
+  {
+    "name": "Contact Info",
+    "settings": [
+  {
+	"type": "header",
+	"content": "Contact Information"
+  },
+  {
+	"type": "text",
+	"id": "header_1",
+	"label": "Header Title",
+	"default": "Support"
+  },
+  {
+	"type": "textarea",
+	"id": "header_1_info",
+	"label": "Content",
+	"default": "555-555-5555"
+  },
+  {	
+	"type": "url",
+	"id": "info_1_url",
+	"label": "URL"
+  },
+  {
+	"type": "text",
+	"id": "header_2",
+	"label": "Header Title",
+	"default": "Email Us"
+  },
+  {
+	"type": "textarea",
+	"id": "header_2_info",
+	"label": "Content",
+	"default": "support@nectar.co"
+  },
+  {	
+	"type": "url",
+	"id": "info_2_url",
+	"label": "URL"
+  },
+  {
+	"type": "text",
+	"id": "header_3",
+	"label": "Header Title",
+	"default": "Mail Us"
+  },
+  {
+	"type": "textarea",
+	"id": "header_3_info",
+	"label": "Content",
+	"default": "123 Union St <br> San Francisco, CA 94123"
+  }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,131 @@
+<div class="page-width">
+  <div class="section-header text-center">
+    <h1 class="h2 product-single__title account-title">{{ 'customer.account.title' | t }}</h1>
+    {{ 'layout.customer.log_out' | t | customer_logout_link }}
+  </div>
+
+  <div class="grid myaccount">
+    <div class="grid__item myaccount__order-history">
+      <h2>{{ 'customer.orders.title' | t }}</h2>
+
+      {% paginate customer.orders by 20 %}
+        {% if customer.orders.size != 0 %}
+
+          <table class="responsive-table">
+            <thead>
+              <tr>
+                <th scope="col">{{ 'customer.orders.order_number' | t }}</th>
+                <th scope="col">{{ 'customer.orders.date' | t }}</th>
+                <th scope="col">{{ 'customer.orders.payment_status' | t }}</th>
+                <th scope="col">{{ 'customer.orders.fulfillment_status' | t }}</th>
+                <th scope="col">{{ 'customer.orders.total' | t }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for order in customer.orders %}
+                <tr class="table-section">
+                  <th data-label="{{ 'customer.orders.order_number' | t }}" scope="row">
+                    <a href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">{{ order.name }}</a>
+                  </th>
+                  <td data-label="{{ 'customer.orders.date' | t }}">{{ order.created_at | time_tag: format: 'date' }}</td>
+                  <td data-label="{{ 'customer.orders.payment_status' | t }}">{{ order.financial_status_label }}</td>
+                  <td data-label="{{ 'customer.orders.fulfillment_status' | t }}">{{ order.fulfillment_status_label }}</td>
+                  <td data-label="{{ 'customer.orders.total' | t }}">{{ order.total_price | money }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+
+        {% else %}
+
+          <p>{{ 'customer.orders.none' | t }}</p>
+
+        {% endif %}
+        {%- if paginate.pages > 1 -%}
+          {% include 'pagination', paginate: paginate %}
+        {%- endif -%}
+      {% endpaginate %}
+    </div>
+    <div class="grid__item myaccount__account-details">
+      <h2>{{ 'customer.account.details' | t }}</h2>
+
+      {{ customer.default_address | format_address }}
+
+      <p><a href="{{ routes.account_addresses_url }}" class="a-underline">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a></p>
+      <p id="rc_link_container">
+          <a  href="/a/account/login" class="btn">Manage Subscriptions</a> 
+      </p>
+    </div>
+  </div>
+</div>
+
+<style>
+  
+  #shopify-section-footer {
+  	margin-top: 120px;
+  }
+  .section-header {
+  	margin-top: 55px;
+  }
+  
+  h2 {
+  	font-size: 1.4em;
+  }
+  
+  
+  th {
+  	font-family: "value-medium", sans-serif;
+    text-transform: uppercase;
+  }
+  
+  td {
+  	font-family: "Lora", serif;
+  }
+  
+  th, td {
+  	border: 1px solid #142444;
+  }
+  
+  #customer_logout_link, .a-underline {
+  	border-bottom: 1px solid currentColor;
+  }
+  
+  
+  @media only screen and (max-width: 749px) {
+   .responsive-table th::before , .responsive-table td::before{
+    	font-family: "value-medium", sans-serif;
+    	text-transform: uppercase;
+      	font-size: 16px;
+    }
+    
+    
+    .responsive-table th, .responsive-table td {
+      padding: 10px;
+      font-size: 16px;
+ 	  border: 1px solid #f4f4f4;
+      
+    }
+    
+    tr.table-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: 1px solid #142444;
+}
+    
+     .account-title {
+  		padding-top: 20px;
+  }
+ 
+    .myaccount__order-history h2 {
+    	font-size: 22px;
+    	margin: 0;
+    }
+    
+    .myaccount__account-details h2 {
+    	font-size: 22px;
+    }
+  }
+  
+
+</style>  

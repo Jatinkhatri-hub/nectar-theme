@@ -1,0 +1,106 @@
+<div class="section-container {% if section.settings.hero_size == 'hero_small' %}hero-small{% endif %} {% if section.settings.hero_size == 'hero_large' %}hero-large{% endif %}">
+  <div class="page-width">
+    <div class="section-content">
+      {% if section.settings.title != blank %}
+      <h1 class="h2 product-single__title">{{ section.settings.title }}</h1>
+      {% endif %}
+      {% if section.settings.description != blank %}
+      <p class="faq-hero-text">
+        {{ section.settings.description }}
+      </p>
+      {% endif %}
+      
+    </div>
+  </div>
+</div>
+{% if section.settings.color_background != blank %}
+<style>
+  .mirgo-banner-color {
+    background-color: {{ section.settings.color_background }};
+  }
+  {% if section.settings.image_background != blank %}
+  .mirgo-banner-color {
+    background-image: url({{ section.settings.image_background | img_url: '2000x' }});
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  {% endif %}
+  .mirgo-banner-color h1,
+  .mirgo-banner-color h2,
+  .mirgo-banner-color h3,
+  .mirgo-banner-color h4,
+  .mirgo-banner-color h5,
+  .mirgo-banner-color p {
+  	color: {{ section.settings.font_color }};
+  }
+</style>
+
+{% endif %}
+{% schema %}
+  {
+    "name": "FAQ Hero",
+	"class": "mirgo-banner-color box-layout",
+    "settings": [
+		{
+			"type":		"header",
+			"content":	"Content"
+		},
+{
+   "type": "select",
+   "id": "hero_size",
+   "options": [
+      { "value": "hero_small", "label": "Smaller"},
+      { "value": "hero_large", "label": "Larger"}
+   ],
+   "label": "Hero Size (Height)"
+},
+		{
+			"type":		"text",
+			"id":		"title",
+			"label":	"Title"
+		},
+		{
+			"type":		"textarea",
+			"id":		"description",
+			"label":	"Description"
+		},
+		{
+			"type":		"header",
+			"content":	"Background"
+		},
+		{
+            "type": 	"image_picker",
+            "id": 		"image_background",
+            "label": 	"Background Image"
+        },
+		{
+            "type": 	"color",
+            "id": 		"color_background",
+            "label": 	"Background Color",
+            "default": 	"#edf4fe"
+        },
+		{
+			"type":		"header",
+			"content":	"Font Color"
+		},
+		{
+            "type": 	"color",
+            "id": 		"font_color",
+            "label": 	"Font Color",
+            "default": 	"#fff"
+        }
+	],
+	"presets":	[
+		{
+			"name":		"FAQ Hero",
+			"category":	"Custom Sections"
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,92 @@
+<div class="section-container">
+  <div class="page-width">
+    <div class="section-content">
+      {% if section.settings.title != blank or section.settings.desc != blank %}
+      <div class="section-header-content">
+        <h2>{{ section.settings.title }}</h2>
+        {{ section.settings.desc }}
+      </div>
+      {% endif %}
+    </div>
+    {% if section.blocks.size > 0 %}
+    <div class="section-team-container">
+      <div class="section-team-row">
+        {% for block in section.blocks %}
+        <div class="section-team-column">
+          {% if block.settings.team_id != blank %}
+          <div class="team-img">
+            <div class="aspect">
+              <img src="{{ block.settings.team_id | img_url: "480x" }}">
+            </div>
+          </div>
+          {% endif %}
+          {% if block.settings.team_title != blank %}
+          <h5>{{ block.settings.team_title }}</h5>
+          {% endif %}
+          {% if block.settings.team_position != blank %}
+          {{ block.settings.team_position }}
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+    
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Mirgo Science Team",
+	"class": "mirgo-science-team",
+    "settings": [
+		{
+          "type":		"header",
+          "content":	"Collapse header"
+        },
+        {
+          "type":		"text",
+          "id":			"title",
+          "label":		"Title"
+        },
+        {
+          "type":		"richtext",
+          "id":			"desc",
+          "label":		"Description"
+        }
+	],
+	"blocks":	[
+		{
+			"type":	"text",
+			"name":	"Collapse",
+			"settings":	[
+				{
+					"type":		"header",
+					"content":	"Collapse Block"
+				},
+				{
+					"type":		"image_picker",
+					"id":		"team_id",
+					"label":	"Team Headshot"
+				},
+				{
+					"type":		"text",
+					"id":		"team_title",
+					"label":	"Team Name"
+				},
+				{
+					"type":		"richtext",
+					"id":		"team_position",
+					"label":	"Team Position"
+				}
+			]
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

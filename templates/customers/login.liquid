@@ -1,0 +1,128 @@
+{% section 'mirgo-login-banner' %}
+
+
+<style>
+  
+  .mirgo-banner-color .section-container {
+  	height: 90vh;
+  }
+  
+  .login-box {
+  	padding: 70px;
+    background: #fff;
+    width: 35%;
+  }
+  
+  #LoginHeading {
+  	color: #142445;
+  }
+  
+  .grid__item[class*="--push"] {
+  	margin: 0 auto;
+    width: 70%;
+    padding-left: 0;
+    position: unset;
+    float: unset;
+  }
+  
+  body:not(.template-index) #PageContainer .main-content {
+  	padding-top: 0;
+  }
+  
+  input#CustomerEmail, input#CustomerPassword {
+    padding: 18px 18px;
+    background-color: #f7f7f7;
+    border: none;
+    font-family: "value-medium", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+  }
+  
+  input#CustomerEmail {
+  	margin-top: 50px;
+  }
+  
+   input#CustomerEmail::placeholder, input#CustomerPassword::placeholder {
+  	color: #142444;
+    text-transform: uppercase;
+     font-family: "value-bold";
+  }
+  
+  input.btn {
+  	background-color: #cfe3fb;
+    border: #cfe3fb;
+  }
+  
+  #RecoverPassword {
+  	font-size: 16px;
+    font-family: "value-medium", sans-serif;
+  } 
+  
+ a.hydration-link {
+    text-decoration: underline;
+}
+  
+    #RecoverEmail {
+    padding: 18px 18px;
+    background-color: #f7f7f7;
+    border: none;
+    font-family: "value-medium", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+      margin-top: 25px;
+    }
+  
+  #RecoverEmail::placeholder {
+  	color: #142444;
+    text-transform: uppercase;
+     font-family: "value-bold";
+  }
+  
+  
+  @media (max-width: 1024px) {
+    .mirgo-banner-color .section-container {
+    	height: 650px;
+    }
+    
+    .login-box {
+    	width: 70%;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .login-box {
+    	padding: 40px 20px;
+    }
+  }
+  
+   @media (min-width: 1441px) {
+    .login-box {
+    	padding: 70px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+  .mirgo-banner-color .section-container {
+    height: 600px;
+  	} 
+    
+    
+    #LoginHeading {
+    	font-size: 24px;
+      	font-family: "value-bold", san-serif;
+    }
+    
+    .login-box {
+    width: 90%;
+    padding: 2.5rem 1.25rem;
+  }
+    
+     .grid__item[class*="--push"] {
+    width: 90%;
+  	}
+  }
+</style>  
+
+

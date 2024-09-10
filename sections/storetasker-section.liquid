@@ -1,0 +1,140 @@
+<div class="starter-flex">
+  <!--
+    <div class="starter-left">
+      <img src="https://cdn.shopify.com/s/files/1/0309/2257/1835/files/starter-pack-img.png?v=1618943800" class="product-img">
+    </div>
+  -->
+
+  <div class="starter-right">
+    <div class="right-details">
+      {% render 'bundle-builder' %}
+    </div>
+  </div>
+</div>
+{% if section.settings.color_background != blank %}
+  <style>
+      .starter-flex {
+        display: flex;
+        width: 100%;
+        gap: 1rem;
+      }
+
+      .starter-left {
+        width: 50%;
+        padding: 10px !important;
+      }
+
+      .starter-right {
+        width: 100% !important;
+        padding: 0px 0px !important;
+      }
+      .box-layout {
+          margin-left: 0px !important;
+          margin-right: 0px !important;
+      }
+
+    /*   @media (max-width: 767px)  */
+
+      @media (max-width: 1199px) {
+        .right-details {
+          padding:0;
+        }
+      }
+      @media (max-width: 767px) {
+        .mirgo-icon-home .section-container .page-width .section-content .section-main-content .grid-content {
+           justify-content: center;
+         }
+        .starter-flex {
+          display:block;
+        }
+        .starter-left,
+        .starter-right {
+          width:100%;
+        }
+        .product-variant-select-a {
+          margin: 20px auto;
+        }
+        .btn.product-form__cart-submit {
+          margin:0 auto;
+          max-width:312px;
+          width:100%;
+        }
+        .starter-left {
+          padding: 0px;
+        }
+      }
+  </style>
+{% endif %}
+{% schema %}
+  {
+    "name": "Storetasker-Section",
+	"class": "mirgo-banner-color box-layout",
+    "settings": [
+		{
+			"type":		"header",
+			"content":	"Content"
+		},
+{
+   "type": "select",
+   "id": "hero_size",
+   "options": [
+      { "value": "hero_small", "label": "Smaller"},
+      { "value": "hero_large", "label": "Larger"}
+   ],
+   "label": "Hero Size (Height)"
+},
+		{
+			"type":		"text",
+			"id":		"title",
+			"label":	"Title"
+		},
+		{
+			"type":		"textarea",
+			"id":		"description",
+			"label":	"Description"
+		},
+		{
+			"type": "text",
+			"id": "button",
+			"label": "Button Text"
+		},
+		{
+			"type":		"header",
+			"content":	"Background"
+		},
+		{
+            "type": 	"color",
+            "id": 		"color_background",
+            "label": 	"Background Color",
+            "default": 	"#edf4fe"
+        },
+		{
+            "type": 	"image_picker",
+            "id": 		"image_background",
+            "label": 	"Background Image"
+        },
+		{
+			"type":		"header",
+			"content":	"Font Color"
+		},
+		{
+            "type": 	"color",
+            "id": 		"font_color",
+            "label": 	"Font Color",
+            "default": 	"#fff"
+        }
+	],
+	"presets":	[
+		{
+			"name":		"Free Trial Hero",
+			"category":	"Custom Sections"
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

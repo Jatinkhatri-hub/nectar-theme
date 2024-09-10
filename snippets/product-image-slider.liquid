@@ -1,0 +1,41 @@
+{% assign pmedia = product.media %}
+{% for variant in product.variants %}
+  <div id="{{ variant.image.alt | remove: ' hidden-product-page' }}" class="{% if forloop.index == 1 %} active {% endif %} slider-wrap-container">
+    <div class="swiper-container swipe1">
+      <div class="swiper-wrapper">
+        {% for media in pmedia %}
+          {% if variant.image.alt contains media.alt or media.alt contains 'no_variant' %}
+            {% unless media.alt contains 'hidden-product-page' %}
+              <div class="swiper-slide">
+                {% include 'media', media: media, featured_media: featured_media, height: height, enable_image_zoom: enable_image_zoom, image_zoom_size: product_image_zoom_size, image_scale: product_image_scale %}
+              </div>
+            {% endunless %}
+          {% endif %}
+        {% endfor %}
+      </div>
+       <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+{% endfor %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.swipe1', {
+      direction: 'horizontal',
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  });
+</script>

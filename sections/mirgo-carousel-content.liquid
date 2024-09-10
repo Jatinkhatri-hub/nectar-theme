@@ -1,0 +1,158 @@
+<div class="section-container">
+  <div class="page-width">
+    <div class="section-content">
+      {% if section.settings.title != blank or section.settings.desc != blank %}
+      <div class="section-header-content">
+        <h2>{{ section.settings.title }}</h2>
+        {{ section.settings.desc }}
+      </div>
+      {% endif %}
+     
+      <div class="flex">
+        <div class="swiper-group-left">
+          
+          <div class="slide-text-container">
+            {% for block in section.blocks %}
+              <div class="slide-text slide-text-{{ forloop.index }} {% if forloop.index == 1 %} active {% endif %}" >
+                {% if block.settings.block_title != blank %}
+                <h3>{{ block.settings.block_title }}</h3>
+                {% endif %}
+                <div class="slide-data-text">
+                  {% if block.settings.block_name != blank %}
+                  <h4 class="slide-name">{{ block.settings.block_name }}</h4>
+                  {% endif %}
+                  {% if block.settings.block_position != blank %}
+                  <p>{{ block.settings.block_position }}</p>
+                </div>
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+          
+          <div class="swiper-main-slide">
+            <div class="swiper-container gallery-top start_1" data-start="1">
+              <div class="swiper-wrapper" >
+                {% for block in section.blocks %}
+                <div class="swiper-slide" data-slide-count="{{ forloop.index }}">
+                  <div class="slide-block">
+                    <div class="slide-container-image">
+                      <div class="slide-image">
+                        <img src="{{ block.settings.block_image | img_url: "767x" }}">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-group-right">
+          <div class="swiper-container gallery-top start_2" data-start="2">
+            <div class="swiper-wrapper">
+              {% for block in section.blocks %}
+              <div class="swiper-slide">
+                <div class="slide-block">
+                  <div class="slide-container-image">
+                    <div class="slide-image">
+                      <img src="{{ block.settings.block_image | img_url: "767x" }}">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="swiper-container gallery-top start_3" data-start="3">
+            <div class="swiper-wrapper">
+              {% for block in section.blocks %}
+              <div class="swiper-slide">
+                <div class="slide-block">
+                  <div class="slide-container-image">
+                    <div class="slide-image">
+                      <img src="{{ block.settings.block_image | img_url: "767x" }}">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="navigation-swiper">
+            <div class="swiper-button-next"><i class="fa fa-arrow-right"></i></div>
+            <div class="swiper-button-prev"><i class="fa fa-arrow-left"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+ 
+</script>
+{% schema %}
+  {
+    "name": "Mirgo Carousel Content",
+	"class":"mirgo-carousel-content",
+    "settings": [
+		{
+			"type":		"header",
+			"content":	"Header Content"
+		},
+		{
+			"type":		"richtext",
+			"id":		"title",
+			"label":	"Title"
+		},
+		{
+			"type":		"richtext",
+			"id":		"desc",
+			"label":	"Description"
+		}
+	],
+		"blocks":	[
+		{
+			"type": "image",
+        	"name": "block_image",
+			"settings":	[
+				{
+                    "type":		"text",
+                    "id":		"block_title",
+                    "label":	"Title"
+                },
+				{
+                    "type":		"text",
+                    "id":		"block_name",
+                    "label":	"Name"
+                },
+				{
+                    "type":		"text",
+                    "id":		"block_position",
+                    "label":	"Position"
+                },
+				{
+					"type":		"header",
+					"content":	"Image"
+				},
+				{
+                    "type":		"image_picker",
+                    "id":		"block_image",
+                    "label":	"Image"
+                }
+			]
+		}	
+	],
+	"presets":	[
+		{
+			"name":		"Mirgo Carousel Content",
+			"category":	"Image"
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

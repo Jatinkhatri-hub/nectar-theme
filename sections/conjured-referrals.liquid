@@ -1,0 +1,81 @@
+
+<div class="section-container">
+  <div class="page-width">
+    <div class="section-content">
+      <div class="section-grid">
+        <div class="items-grid conjured-left">
+          <div class="items-text">
+            <h2>{{ section.settings.title }}</h2>
+			{{ section.settings.desc }}
+          </div>
+        </div>
+        <div class="items-grid conjured-right">
+          <div class="items-button">
+
+
+            <div class="items-button-details">
+              
+<script async src="https://app.conjured.co/shopify/referral/widget.js?shop=nectar-fullwell.myshopify.com&cmp=4474"></script><div id="conjured_referral"></div>
+          
+            </div>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .mirgo-social-media-banner {
+    background-image: url({{ section.settings.background | img_url: '1920x' }});
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+</style>
+
+
+
+{% schema %}
+  {
+    "name": "Mirgo Social Media Banner",
+	"class":"mirgo-social-media-banner",
+    "settings": [
+		{
+          "type":		"header",
+          "content":	"Header Content"
+		},
+		{
+			"type":		"text",
+			"id":		"title",
+			"label":	"Title"
+		},
+		{
+			"type":		"richtext",
+			"id":		"desc",
+			"label":	"Description"
+		},
+		{
+          	"type":		"header",
+          	"content":	"Background Section"
+		},
+		{
+			"type":		"image_picker",
+			"id":		"background",
+			"label":	"Background Image"
+		}
+	],
+	"presets":	[
+		{
+			"name":		"Conjured Referrals",
+			"category":	"Text"
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

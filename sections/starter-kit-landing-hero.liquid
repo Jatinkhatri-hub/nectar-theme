@@ -1,0 +1,301 @@
+
+
+<div class="product-template__container page-width"
+  id="ProductSection-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="product"
+  data-enable-history-state="true"
+  data-ajax-enabled="true"
+>
+<div id="try-nectar" class="section-container {% if section.settings.hero_size == 'hero_small' %}hero-small{% endif %} {% if section.settings.hero_size == 'hero_large' %}hero-large{% endif %}">
+  <div class="page-width">
+    <div class="starter-flex">
+      <div class="starter-left">
+        {% if section.settings.title != blank %}
+      <h2 class="h2 mobile product-single__title" style="display:none;">{{ section.settings.title }}</h1>
+      {% endif %}
+        <img src="https://cdn.shopify.com/s/files/1/0309/2257/1835/files/starter-pack-img.png?v=1618943800" class="product-img">
+      </div>
+      
+      <div class="starter-right">
+        <div class="right-details">
+          <div class="product-toggle-content active">
+      {% if section.settings.title != blank %}
+      <h1 class="h2 product-single__title">{{ section.settings.title }}</h1>
+      {% endif %}
+        <div class="sub-prices">
+        <h3 class="try-nectar">Try Nectar, Risk-Free</h3>
+          <div class="starter-prices"><h3 class="price-before">$25</h3><h3 class="price-now">$15 (Save 40%)</h3></div>
+        </div>
+
+          {% capture form_classes -%}
+            product-form product-form-{{ section.id }}
+          {%- endcapture %}
+          
+           {% capture productid %}add-to-cart-{{ product.handle }}-{{ collection.handle }}-{{ section.id }}{% endcapture %}
+          {% form 'product', product, data-productid: product.id, id: productid, class: form_classes, novalidate: 'novalidate', data-product-form: '' %}
+
+            <input type="hidden" id="product-variant-id-holder" name="id" value="{{ product.variants[0].id }}">
+            {% comment %} <input type="hidden" name="quantity" value="1"> {% endcomment %}
+  
+          <div class="flavor-bar product-variant-select-a" style="display: none !important;">
+            <label>Flavor:</label>
+            <div class="product-variant-select-ul product-single_option-selector">
+              <ul>
+                {% for variant in product.variants %}
+                <li id="{{ variant.id }}" data-value="{{variant.option1}}-{{variant.option2}}" data-image="{{ variant.image | img_url: 'master' }}" data-img-slide="{{ variant.image.alt | remove: ' hidden-product-page' }}" class="{{ variant.title | handleize }} {% if forloop.index == 1 %} active {% endif %}">
+                  <span id="{{ variant.title | handleize }}" class="circle-color-swatches"></span>
+                  {{ variant.title }}  {%- if variant.available == filter_value %} - {{ 'products.product.sold_out' | t }}{% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+
+            <div class="product-variant-select-drop-toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                <g id="Group_30" data-name="Group 30" transform="translate(-1644 -769)">
+                  <path id="Polygon_1" data-name="Polygon 1" d="M8.856.542a1,1,0,0,1,1.288,0L16.9,6.235A1,1,0,0,1,16.26,8H2.74A1,1,0,0,1,2.1,6.235Z" transform="translate(1675 796) rotate(180)"></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+            
+          {% for product_option in product.options_with_values %}
+          	{% if product_option.name == "Flavor" %}
+              <div class="product-flavor_dropdown">
+                <label>{{product_option.name}}:</label>
+                <div class="product-variant-select-ul_flavor">
+                  <ul>
+                    {% for value in product_option.values %}
+                    <li data-option="{{value}}" class="{% if forloop.index == 1 %} active {% endif %}">
+                      <span id="{{ value | handleize }}" class="circle-color-swatches"></span>
+                      {{value}}
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+
+                <div class="product-variant-select-drop-toggle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                    <g id="Group_30" data-name="Group 30" transform="translate(-1644 -769)">
+                      <path id="Polygon_1" data-name="Polygon 1" d="M8.856.542a1,1,0,0,1,1.288,0L16.9,6.235A1,1,0,0,1,16.26,8H2.74A1,1,0,0,1,2.1,6.235Z" transform="translate(1675 796) rotate(180)"></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+          	{% else %}
+          	  <div class="product_swatches_row product-{{product_option.name}}_selectors">
+                {% for value in product_option.values %}
+                <label data-value="{{value}}" class="option-selector{% if forloop.index == 1 %} active{% endif %}">{{value}}</label>
+                {% endfor %}            	
+              </div>
+          	{% endif %}
+          {% endfor %}
+
+          {% render 'skio-plan-picker', start_onetime: false, onetime_first: false, product: product, form_id: productid, hidden: true %}
+          
+
+            {% if section.settings.description != blank %}
+              {{ product.description }}
+            {% endif %}
+
+          <div class="product-form__item product-form__item--submit">
+
+            <button type="submit" name="add"
+              aria-label="{{ 'products.product.add_to_cart' | t }}"
+              class="btn subscription-add-to-cart js-go-cart-add-to-cart product-form__cart-submit"
+              data-add-to-cart>
+              <span class="product__price" data-add-to-cart-text skio-external-price>
+                $15
+              </span>
+              <span>- Try Nectar</span>
+              <span class="hide" data-loader>
+                {% include 'icon-spinner' %}
+              </span>
+            </button>
+          </div>
+
+
+          {% endform %}
+          
+      
+          
+          <div class="product-sub-details">
+            *In 21 days, we'll text you about starting a monthly subscription (30 day supply) of Nectar. Don't worry, you can cancel or update your preferences at any time.
+          </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<style>
+.subscription-add-to-cart span {pointer-events: none;}
+</style>
+
+{% if section.settings.color_background != blank %}
+<style>
+  #MainContent {
+    margin-top: 85px;
+  }
+  .mirgo-banner-color {
+    background-color: {{ section.settings.color_background }};
+  }
+  {% if section.settings.image_background != blank %}
+  .mirgo-banner-color {
+    background-image: url({{ section.settings.image_background | img_url: '2000x' }});
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  {% endif %}
+  .mirgo-banner-color h1,
+  .mirgo-banner-color h2,
+  .mirgo-banner-color h3,
+  .mirgo-banner-color h4,
+  .mirgo-banner-color h5,
+  .mirgo-banner-color p {
+  	color: {{ section.settings.font_color }};
+  }
+  
+  .flavor-bar {
+    margin: 4px 0px 20px 0px !important;
+  }
+  
+  
+  .starter-flex {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .starter-left {
+    width: 50%;
+    padding: 25px;
+  }
+  
+  .starter-right {
+    width: 50%
+  }
+  
+  .starter-right h3 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "value-regular" !important;
+  }
+  
+  .product-single__title {
+    text-align: left;
+  }
+  
+  .right-details {
+    padding: 80px;
+  }
+  
+  .sub-prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+  
+  .try-nectar {
+    width: 50%;
+  }
+  
+  .nectar-prices {
+    width: 50%;
+  }
+  
+  .price-now, .price-before {
+    display: inline-block;
+  }
+  
+  .price-now {
+    margin-right: 15px;
+  }
+  
+  .product-sub-details {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 13px;
+    color: #142444;
+    font-style: italic;
+  }
+  
+</style>
+
+
+{% endif %}
+{% schema %}
+  {
+    "name": "Free Trial Hero",
+	"class": "mirgo-banner-color box-layout",
+    "settings": [
+		{
+			"type":		"header",
+			"content":	"Content"
+		},
+{
+   "type": "select",
+   "id": "hero_size",
+   "options": [
+      { "value": "hero_small", "label": "Smaller"},
+      { "value": "hero_large", "label": "Larger"}
+   ],
+   "label": "Hero Size (Height)"
+},
+		{
+			"type":		"text",
+			"id":		"title",
+			"label":	"Title"
+		},
+		{
+			"type":		"textarea",
+			"id":		"description",
+			"label":	"Description"
+		},
+		{
+			"type": "text",
+			"id": "button",
+			"label": "Button Text"
+		},
+		{
+			"type":		"header",
+			"content":	"Background"
+		},
+		{
+            "type": 	"color",
+            "id": 		"color_background",
+            "label": 	"Background Color",
+            "default": 	"#edf4fe"
+        },
+		{
+            "type": 	"image_picker",
+            "id": 		"image_background",
+            "label": 	"Background Image"
+        },
+		{
+			"type":		"header",
+			"content":	"Font Color"
+		},
+		{
+            "type": 	"color",
+            "id": 		"font_color",
+            "label": 	"Font Color",
+            "default": 	"#fff"
+        }
+	],
+	"presets":	[
+		{
+			"name":		"Free Trial Hero",
+			"category":	"Custom Sections"
+		}
+	]
+  }
+{% endschema %}
+
+
+
+

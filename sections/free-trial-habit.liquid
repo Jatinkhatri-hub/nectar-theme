@@ -1,0 +1,86 @@
+<div class="section-container">
+  <div class="page-width">
+    <div class="section-content">
+      <div class="section-header">
+        {% if section.settings.title != blank %}
+        <h3>{{ section.settings.title }}</h3>
+        {% endif %}
+        {% if section.settings.description != blank %}
+        {{ section.settings.description }}
+        {% endif %}
+      </div>
+      <div class="section-main-content">
+        <div class="grid-content">
+          {% for block in section.blocks %}
+          <div class="grid-items">
+            <div class="grid-inner-container">
+              {% if block.settings.icon != blank or block.settings.title_icon != blank %}
+              <img src="{{ block.settings.icon | img_url: "320x" }}">
+              <h5>{{ block.settings.title_icon }}</h5>
+              {% endif %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Section name",
+	"class": "mirgo-icon-home",
+    "settings": [
+		{
+			"type":		"header",
+			"content":	"Header Content"
+		},
+		{
+			"type":		"text",
+			"id":		"title",
+			"label":	"Title"
+		},
+		{
+			"type":		"richtext",
+			"id":		"description",
+			"label":	"Description"
+		}
+	],
+	"blocks": [
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+			  "type":	"header",
+			  "content":"Icons"
+          },
+		  {
+              "type":	"text",
+              "id":		"title_icon",
+              "label":	"Title"
+          },
+          {
+              "type":	"image_picker",
+              "id":		"icon",
+              "label":	"Image"
+          }
+        ]
+      }
+    ],
+	"presets":	[
+		{
+			"name":		"Icon Home",
+			"category":	"Image"
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

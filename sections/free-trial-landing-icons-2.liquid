@@ -1,0 +1,91 @@
+<div id="trial-svg">
+<svg viewBox="0 0 1921 273" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 56.6017L80 80.646C160 104.69 320 152.779 480 164.801C640 176.823 800 152.779 960 116.712C1120 80.646 1280 32.5575 1440 14.5243C1600 -3.50891 1757.5 -4.95143 1840 14.5243C1922.5 34 1920 34 1920 34V273H1840C1760 273 1600 273 1440 273C1280 273 1120 273 960 273C800 273 640 273 480 273C320 273 160 273 80 273H0V56.6017Z" fill="#CFE4FB"/>
+</svg>
+  
+</div>
+
+<div class="section-container">
+  <div class="page-width">
+    <div class="section-content">
+      <div class="section-header">
+        {% if section.settings.title != blank %}
+        <h3>{{ section.settings.title }}</h3>
+        {% endif %}
+        {% if section.settings.description != blank %}
+        {{ section.settings.description }}
+        {% endif %}
+      </div>
+      <div class="section-main-content top-icon-section">
+        <div class="grid-content">
+          {% for block in section.blocks %}
+          <div class="grid-items">
+            <div class="grid-inner-container">
+              {% if block.settings.icon != blank or block.settings.title_icon != blank %}
+              <img src="{{ block.settings.icon | img_url: "320x" }}">
+              <h5>{{ block.settings.title_icon }}</h5>
+              {% endif %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Section name",
+	"class": "wave-icons mirgo-icon-home",
+    "settings": [
+		{
+			"type":		"header",
+			"content":	"Header Content"
+		},
+		{
+			"type":		"text",
+			"id":		"title",
+			"label":	"Title"
+		},
+		{
+			"type":		"richtext",
+			"id":		"description",
+			"label":	"Description"
+		}
+	],
+	"blocks": [
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+			  "type":	"header",
+			  "content":"Icons"
+          },
+		  {
+              "type":	"text",
+              "id":		"title_icon",
+              "label":	"Title"
+          },
+          {
+              "type":	"image_picker",
+              "id":		"icon",
+              "label":	"Image"
+          }
+        ]
+      }
+    ],
+	"presets":	[
+		{
+			"name":		"Icon Home",
+			"category":	"Image"
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

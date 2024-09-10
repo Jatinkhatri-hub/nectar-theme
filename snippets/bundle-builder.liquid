@@ -1,0 +1,814 @@
+<div class="bundle_products">
+  {% for i in (1..4) %}
+  <ul class="bundle-item-list"> 
+    {% for product in collections.mybundle.products %}
+    <li class="bundle-item">
+      <div class="pouch-selected">
+        <span>POUCH {{ i }} {% if i == 2 %}<span style="color:#81D879;">(+$10.50 SAVINGS)</span> {% endif %}{% if i == 3 %}<span style="color:#81D879;">(+$21.00 SAVINGS)</span> {% endif %}{% if i == 4 %}<span style="color:#81D879;">(+$42.00 SAVINGS)</span> {% endif %}</span>
+      </div>
+      <div class="product_content{{ i }}">
+        {% capture productid %}add-to-cart-{{ product.handle }}-{{ collection.handle }}-{{ section.id }}-{{ i }}{% endcapture %}
+        {% form 'product', product, data-productid: product.id, id: productid, class: form_classes, novalidate: 'novalidate', data-product-form: '' %}
+      <div>
+        <div {% if i == 1 or i == 2 %}style="opacity:0.5;margin:auto;width:47%;margin-top:12px;"{% else %}style="opacity:1;margin:auto;width:47%;margin-top:12px;"{% endif %} class="bundle-wrapper-{{ i }}" class="img{{ i }}">
+        <img src="https://cdn.shopify.com/s/files/1/0309/2257/1835/products/Variety30.png?v=1683551069" class="product-img{{ i }}">           
+        </div>
+          <div class="flavor-bar product-variant-select-a" style="display:none">
+            <label>Flavor:</label>
+            <div class="product-variant-select-ul product-single_option-selector">
+              <ul>
+                {% for variant in product.variants %}
+                <li id="{{ variant.id }}" price ="{{ variant.price }}" compare-price ="{{ variant.compare_at_price }}" data-value="{{variant.option1}}-{{variant.option2}}" data-image{{ i }}="{{ variant.image | img_url: 'master' }}" data-img-slide="{{ variant.image.alt | remove: ' hidden-product-page' }}" class="{{ variant.title | handleize }} {% if forloop.index == 1 %} active {% endif %}">
+                  <span id="{{ variant.title | handleize }}" class="circle-color-swatches"></span>
+                  {{ variant.title }}  {%- if variant.available == filter_value %} - {{ 'products.product.sold_out' | t }}{% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+
+            
+            <div class="product-variant-select-drop-toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                <g id="Group_30" data-name="Group 30" transform="translate(-1644 -769)">
+                  <path id="Polygon_1" data-name="Polygon 1" d="M8.856.542a1,1,0,0,1,1.288,0L16.9,6.235A1,1,0,0,1,16.26,8H2.74A1,1,0,0,1,2.1,6.235Z" transform="translate(1675 796) rotate(180)"></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+            
+          {% for product_option in product.options_with_values %}
+          	{% if product_option.name == "Flavor" %}
+              <div class="product-flavor-container">
+              <span class="product-flavor">Flavor:</span>
+              <div class="product-flavor_dropdown{{ i }}" id="product-flavor_dropdown{{ i }}">
+                <label style="display:none"></label>
+                <div class="product-variant-select-ul_flavor">
+                  <ul>
+                    {% for value in product_option.values %}
+                    <li data-option="{{value}}" class="{% if forloop.index == 1 %} active {% endif %}">
+                      <span id="{{ value | handleize }}" class="circle-color-swatches"></span>
+                      {{value}}
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+
+                <div class="product-variant-select-drop-toggle">
+                  <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.87365 4.86255C4.76905 4.95132 4.63672 5 4.5 5C4.36328 5 4.23095 4.95132 4.12635 4.86255L0.206539 1.53244C0.115664 1.45531 0.0504607 1.35191 0.019739 1.23623C-0.0109826 1.12054 -0.00574206 0.998131 0.0347517 0.885542C0.0752455 0.772954 0.149041 0.675609 0.24617 0.60666C0.343298 0.537711 0.459076 0.500481 0.577865 0.5L8.42214 0.5C8.54092 0.500481 8.6567 0.537711 8.75383 0.60666C8.85096 0.675609 8.92475 0.772954 8.96525 0.885542C9.00574 0.998131 9.01098 1.12054 8.98026 1.23623C8.94954 1.35191 8.88434 1.45531 8.79346 1.53244L4.87365 4.86255Z" fill="black"/>
+</svg>
+
+                </div>
+              </div>
+              </div>
+          	{% else %}
+
+              <div {% if i == 1 or i == 2 %}style="opacity:0.5;"{% else %}style="opacity:1;"{% endif %} class="bundle-wrapper2-{{ i }} product-goal-container" >
+               <span class="product-goal">Goal:</span>
+          	  <div class="product_swatches_row{{ i }} product-{{product_option.name}}_selectors" id="product_swatches_row{{i}}">
+                {% for value in product_option.values %}
+                <label data-value="{{value}}" class="option-selector{% if forloop.index == 1 %} active {% endif %}">{{value}}</label>
+                {% endfor %}            	
+              </div>
+              </div>
+              
+          	{% endif %}
+          {% endfor %}
+          </div>
+          
+          
+          <input type="hidden" id="product-variant-id-holder" name="id" value="{{ product.variants[0].id }}">
+          <input type="hidden" name="quantity" value="1">
+          <input type="hidden" name="disable-drawer" id="disable-drawer" value="1">
+          <input type="hidden" name="temp-price" value="{{ product.price }}" id="temp-price">
+  
+          <div class="btn-container">
+    <button id="down" class="button-selected quantitybutton quantitybutton{{ i }} button1" {% if i == 1 or i == 2 %}style="display: flex;"{% else %}style="display: none;"{% endif %}><svg width="12" height="12" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 3L3.92985 5.44154C3.96958 5.47465 4.028 5.472 4.06457 5.43543L8.5 1" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M1 7.22222L4.53303 9.94833C4.57169 9.97816 4.62624 9.97571 4.66206 9.94253L10 5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+CONFIRMED</button>
+            <p id="myNumber{{i}}" class="paragraph{{ i }}" style="display:none">{% if i == 1 or i == 2 %}1{% else %}0{% endif %}</p>
+            <button id="up"  class="button-selected quantitybutton quantitybutton{{ i }} button2" {% if i == 1 or i == 2 %}style="display: none;"{% else %}style="display: flex;"{% endif %}>CONFIRM</button>
+</div>
+  
+          {% endform %} 
+      </div>
+      
+    </li> 
+    
+    {% endfor %} 
+  </ul>
+<!-- #bundle Products -->
+
+      <script>
+document.addEventListener("DOMContentLoaded", function() {
+  var confirmBtn = document.querySelector(".button1.quantitybutton{{ i }}");
+  var confirmedBtn = document.querySelector(".button2.quantitybutton{{ i }}");
+  var bwrapper1 = document.querySelector('.bundle-wrapper-{{ i }}');
+  var bwrapper2 = document.querySelector('.bundle-wrapper2-{{ i }}');
+
+  confirmBtn.addEventListener("click", function() {
+    confirmBtn.style.display = "none";
+    confirmedBtn.style.display = "flex";
+    bwrapper1.style.opacity = 1;
+    bwrapper2.style.opacity = 1;
+  });
+
+  confirmedBtn.addEventListener("click", function() {
+    confirmBtn.style.display = "flex";
+    confirmedBtn.style.display = "none";
+    bwrapper1.style.opacity = 0.5;
+    bwrapper2.style.opacity = 0.5;
+  });
+  setTimeout(function(){
+    document.querySelector('.product_swatches_row2 label:last-child').click();
+    document.querySelector('.product_swatches_row4 label:last-child').click()
+  },2000)
+});
+</script>
+<style>
+  .bundle_products {
+      margin-top: 0rem;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      color: #01162E !important;
+        flex-wrap: wrap;
+    justify-content: center;
+    font-family: Poppins;
+  }
+  p {
+      margin: 0 0 0 !important;
+  }
+    ol, ul {
+    padding-left: 0;
+}
+  p, span {
+      line-height: unset !important;
+  }
+  body, input, textarea, button, select, .disclosure__toggle {
+      line-height: unset !important;
+  }
+/*   .product-description{{i}} {
+      font-size: 14.5px;
+      text-align: center;
+      padding: 5px;
+      line-height: normal;
+      margin-bottom:0 !important;
+      max-width: 350px;
+  }  */
+
+    ul.bundle-item-list {
+    width: 48%;
+}
+
+  .bundle_products li.bundle-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      border: 2px solid #0D2445;
+      border-radius: .5rem;
+      width: 100%;
+      height: fit-content;
+  }
+    
+  .bundle_products li.bundle-item .img{{ i }} {
+      width: 47% !important;
+      margin-top: 12px !important;
+  }
+  .bundle_products li.bundle-item .product_content{{ i }} {
+    width: 100%;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+  }
+  .button-selected.button2 {
+    background-color: #7BBAFA;
+}
+
+    .button-selected {
+    width: 100%;
+    height: 42px;
+    background-color: #81D879;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border: 0 !important;
+      border-radius: 0 0 5px 5px;
+      border-top: 1px solid #000 !important;
+      margin-top: 8px;
+}
+
+  .product-flavor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+   span.product-flavor {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    align-self: center;
+}
+
+.product-goal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+  span.product-goal {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    align-self: center;
+}
+
+  .pouch-selected {
+    width: 100%;
+    background-color: #142444;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    border-radius: 4px 4px 0 0;
+}
+
+  .pouch-selected > span {
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 20px !important;
+    text-transform: uppercase;
+}
+/*   .quantitybutton {
+    background-color: #D9D9D9;
+    color: #000;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 5rem;
+  }
+  .quantitybutton.active {
+    background-color: #000;
+    color: #fff;
+  } */
+  .product_swatches_row{{i}} {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .product_swatches_row{{i}} .option-selector { 
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 6px 24px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #01162E;
+  }
+
+
+  .product_swatches_row{{i}} .option-selector.active {
+    border: 2px solid #01162E; 
+    background: #9ACCFF !important;
+  }
+
+  .product-flavor_dropdown{{ i }} {
+    position: relative;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    cursor: pointer;
+    width: 100%;
+    height: 36px;
+    display: flex;
+        align-items: center;
+    flex-direction: row;
+    }
+
+/*   .product-flavor_dropdown{{ i }} label {
+    display: block;
+    background: #f7f7f7;
+    color: #142444;
+    width: 75px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 40px 0 0 40px; } */
+
+  .product-flavor_dropdown{{ i }} ul {
+    position: absolute;
+    display: block;
+    width: 100%;
+    border-radius: 40px;
+    top: 2px;
+    right: 0;
+  }
+
+  .product-flavor_dropdown{{ i }} ul.active {
+    z-index: 22;
+    border-radius: 4px;
+    border: 1px dashed #000000;
+  }
+
+  .product-flavor_dropdown{{ i }} .product-variant-select-drop-toggle {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1; }
+
+  .product-flavor_dropdown{{ i }} ul li {
+    display: none;
+    padding: 10px;
+    text-align: left; }
+
+  .product-flavor_dropdown{{ i }} ul.active li {
+    display: flex;
+    background: #fff;
+    cursor: pointer; }
+
+  .product-flavor_dropdown{{ i }} ul li.active {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;}
+
+  .product-flavor_dropdown{{ i }} .circle-color-swatches {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background: #fff;
+    vertical-align: middle; 
+  }
+  .product-flavor_dropdown{{ i }} .circle-color-swatches#fresh-lemon {
+      background: #FAED27; 
+  }
+  .product-flavor_dropdown{{ i }} .circle-color-swatches#wild-berry {
+      background: #7A0540; 
+  }
+  .product-flavor_dropdown{{ i }} .circle-color-swatches#sunrise-orange {
+      background: #FF6700; 
+  }
+  .product-flavor_dropdown{{ i }} .circle-color-swatches#cherry-pomegranate {
+      background: #D3226D; 
+  }
+  .product-flavor_dropdown{{ i }} .circle-color-swatches#strawberry-lemonade {
+      background: #FB63A3; 
+  }
+  .product-flavor_dropdown{{ i }} .circle-color-swatches#watermelon {
+      background: #FF0400; 
+  }
+  .product-flavor_dropdown{{ i }} .circle-color-swatches#variety-pack {
+      background-image: url("https://cdn.shopify.com/s/files/1/0309/2257/1835/files/Mask_Group.png?v=1617746674");
+      background-size: cover; 
+  }
+  @media (max-width: 767px) {
+
+  
+    ul.bundle-item-list {
+    width: 47%;
+}
+
+      .product-flavor_dropdown{{ i }} {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    height: 36px;
+    }
+
+       span.product-flavor {
+    font-size: 12px;
+}
+
+       .button-selected {
+    width: 100%;
+    height: 32px;
+            font-size: 12px;
+      line-height: 24px;
+       }
+
+      .pouch-selected {
+    padding: 2px 0;
+   
+}
+      .pouch-selected > span {
+    font-size: 10px;
+}
+      span.product-goal {
+    font-size: 12px;
+}
+
+     .product_swatches_row{{i}} .option-selector { 
+    padding: 2px 12px;
+    font-size: 10px;
+     }
+    
+    .product_swatches_row{{i}} .option-selector {
+/*       margin-right: 5px; */
+    }
+
+    .product-flavor_dropdown{{i}} {
+      margin: 0 !important;
+      font-size: 11px;
+  }
+
+    .product-flavor_dropdown{{i}} ul li.active {
+      padding: 6px 12px;
+  }
+    .product-flavor_dropdown{{ i }} label {
+      width: 60px;
+    }
+  .product-flavor_dropdown{{ i }} ul {
+      width: 100%;
+    }
+    .product-flavor_dropdown{{ i }} .circle-color-swatches {
+      width:12px;
+      height: 12px;
+    }
+    .product-flavor_dropdown{{ i }} .product-variant-select-drop-toggle {
+top: 6px;
+    }
+  }
+  .hydration-button {
+    display: flex;
+  }
+
+  @media (max-width: 640px) {
+    .product-flavor_dropdown{{ i }} {
+/*       font-size: 12px; */
+    }
+    .product-flavor-container {
+    padding: 0 10px;
+}
+
+    .product-goal-container {
+    padding: 0 10px;
+}
+    
+      .product-flavor_dropdown{{ i }} .product-variant-select-drop-toggle {
+    top: 6px;
+  }
+    
+  }
+
+  @media (max-width: 540px) {
+    .product_swatches_row{{i}} .option-selector {
+/*       width:120px; */
+    }
+
+    .product-description{{i}} {
+      font-size: 12px;
+    }
+    
+  }
+
+   @media (max-width: 440px) {
+      .product_swatches_row{{i}} .option-selector {
+/*       width:100px; */
+    }
+
+     .product_swatches_row{{i}} label {
+       font-size: 0.7em;
+     }
+
+     .product-flavor_dropdown{{i}} ul li.active {
+       padding: 6px !important;
+     }
+
+     .product-flavor_dropdown{{i}} {
+       font-size: 10px;
+     }
+   }
+
+  @media (max-width: 380px) {
+
+    .bundle_products {
+    gap: 12px;
+}
+
+  .pouch-selected > span {
+    font-size: 8px;
+  }
+    
+      .product_swatches_row{{i}} .option-selector {
+/*       width:80px; */
+    }
+     
+     .product-description{{i}} {
+      font-size: 10px;
+    }
+
+    .product-flavor_dropdown{{i}} ul li.active {
+       padding: 5px !important;
+     }
+
+  .product-flavor_dropdown{{i}} label {
+    width: 45px;
+  }
+
+/*     .product-flavor_dropdown{{i}} ul {
+      width: calc(100% - 45px);
+    }
+
+    .product-flavor_dropdown{{i}} .product-variant-select-drop-toggle {
+      right: -5px;
+     
+    } */
+
+/*     .product-flavor_dropdown{{i}} .product-variant-select-drop-toggle svg{
+     height:35px;
+      width:35px;
+    }
+ */
+    
+   }
+  
+  
+</style>
+{% endfor %}
+
+<div class="hydration-button">
+    <div class="savings-display-conatiner">
+      <div class="total-quantity">
+        <span class="total-bags"><span style="color:#52B24A;" class="total-bags-qty">2</span> Bags</span>
+        <span class="extra-notes">Expect to stay completely energized and hydrated for *insert time period*</span>
+      </div>
+      <div class="total-prices-add">
+        <div class="total-price-container">
+          <span class="total-saved-price">$<span class="total-value-sum">59.50</span></span>
+          <span class="total-original-price">$<span class="total-compare-sum">70.00</span></span>
+        </div>
+         <div>
+           <span class="total-difference">You Save $<span class="total-save-qty">10.50</span></span>
+         </div>
+      </div>
+    </div>
+    <div style="display:none !important;" class="saving-price active" id="savingprice">
+      <p class="save">You are saving <span id="saved">0</span></p>
+      <p class="total-price">Only $<span id="perItem_saved">30</span>/each</p>
+    </div>
+
+   <div class="saving-price" id="shippingprice">
+      <span class="ship">30 Day Money Back Guarantee | Free Shipping </span>
+      </div>
+    <button class="checkout_btn-starterpack btn product-form__cart-submit btn-white" id="addtoCart">
+      Start your hydration habit
+    </button>
+
+</div>
+
+<style>
+  
+  .total-bags {
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 28px;
+  }
+
+  .total-quantity {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+  
+  .hydration-button {
+    display: flex;
+    flex-direction: column !important;
+    width: 100%;
+  }
+
+  .total-price-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 4px;
+}
+
+  .savings-display-conatiner {
+    display:flex;
+    border: 1px dashed #000;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #fff;
+    align-items: center;
+    margin-bottom: 20px;
+    column-gap: 4px;
+    justify-content: space-between;
+  }
+
+  span.total-difference {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 9px;
+line-height: 10px;
+color: #FFFFFF;
+background: #D21919;
+border-radius: 100px;
+    height: 16px;
+}
+
+span.extra-notes {
+    font-size: 9px;
+    line-height: 14px !important;
+    font-weight: 300;
+    font-family: 'Poppins';
+}
+
+span.total-original-price {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 24px;
+    text-decoration-line: line-through;
+    color: #676767;
+}
+
+  span.total-saved-price {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #D53647;
+}
+  
+  a#cartbtn, div.cartbtn, button#addtoCart {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    flex-direction: column;
+}
+
+    span.cartbt-inner {
+    font-family: 'Poppins' !important;
+font-style: normal;
+font-weight: 400 !important;
+font-size: 8px !important;
+line-height: 11px !important;
+
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase !important;
+
+color: #FFFFFF !important;
+}
+
+  div#addtoCart, button#addtoCart {
+    background: #01162E;
+    border-radius: 10000px !important;
+    height: 66px !important;
+    display: flex;
+    align-items: center;
+    margin: 4px 0;
+}
+  
+  #perItem_saved {
+    font-size: 13px !important;
+    line-height: unset !important;
+  }
+  .saving-price {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 11px !important;
+display: flex;
+align-items: center;
+text-align: center;
+    justify-content: center;
+    margin-bottom: 4px;
+color: #0D2445;
+
+  }
+  .saving-price.active {
+    display:none !important;
+  }
+  .total-price {
+    font-size: 12.5px !important;
+    margin-bottom: 0 !important;
+  }
+  .save {
+    font-weight: bold;
+    color: #0BC01D;
+    line-height: unset !important;
+    margin-bottom: 0 !important;
+  }
+  .checkout_btn-starterpack a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .checkout_btn-starterpack a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  .checkout_btn-starterpack {
+    display: flex;
+    justify-content: space-around;
+  }
+  .cart-price-before {
+    text-decoration-line: line-through;
+    font-size: 14.5px;
+  }
+  .cart-prices p {
+    display: inline;
+    color: #fff;
+    margin: 0rem 1rem;
+  }
+  .cart-prices.active {
+    display: none !important;
+  }
+
+  
+  @media (max-width: 767px) {
+    
+span.total-original-price {
+    font-size: 16px;
+}
+    
+  span.total-saved-price {
+    font-size: 15px;
+}
+
+   span.cartbt-inner {
+font-size: 10px !important;
+line-height: 11px !important;
+   }
+
+    .total-bags {
+font-size: 19px;
+line-height: 28px;
+  }
+     a#cartbtn, div.cartbtn, button#addtoCart {
+    font-size: 14px;
+    line-height: 21px;
+}
+    .hydration-button {
+      width: 100%;
+    }
+    .checkout_btn-starterpack a {
+      font-size: 14px;
+    }
+    .cart-prices p {
+      margin: 0rem .2rem;
+    }
+    .total-price {
+      font-size: 11px !important;
+    }
+    .save {
+      font-size: 13.5px !important;
+    }
+  }
+</style>

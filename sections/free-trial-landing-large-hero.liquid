@@ -1,0 +1,192 @@
+<div class="section-container">
+  <div class="page-width">
+    <div class="section-content">
+      <div class="grid-blocks">
+        <div class="grid-items--section left-data">
+          <div class="grid-inner-items">
+            <div class="grid-items-columns">
+              <div class="blank-spacing">
+                <div class="empty-space"></div>
+              </div>
+            </div>
+            <div class="grid-items-columns">
+              <div class="grid-text-blocks">
+                <div class="hydration-mobile">
+                  <img src="{{ section.settings.image_background | img_url: '2000x' }}">
+                </div>
+                {% if section.settings.title != blank %}
+                <h2>{{ section.settings.title }}</h2>
+                {% endif %}
+                {% if section.settings.desc != blank %}
+                {{ section.settings.desc }}
+                {% endif %}
+                {% if section.settings.list != blank %}
+                {{ section.settings.list }}
+                {% endif %}
+                {% if section.settings.button != blank or section.settings.link %}
+                <div class="hydration-button">
+                <a class="btn btn-white" href="{{ section.settings.link }}">{{ section.settings.button }}</a>
+                </div>
+                {% endif %}
+                {% if section.settings.button != blank or section.settings.link %}
+                <div class="hydration-button-mobile">
+                <a class="btn btn-dark" href="{{ section.settings.link }}">{{ section.settings.button }}</a>
+                </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% if section.settings.attachment != blank %}
+    <div class="attachment-logo">
+      <img src="{{ section.settings.attachment | img_url: "320x" }}">
+    </div>
+    {% endif %}
+  </div>
+</div>
+<style>
+  .mirgo-full-height {
+    background-color: {{ section.settings.color_background }};
+  }
+  {% if section.settings.image_background != blank %}
+  .mirgo-full-height {
+    background-image: url({{ section.settings.image_background | img_url: '2000x' }});
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  {% endif %}
+  .mirgo-full-height p,
+  .mirgo-full-height h2,
+  .mirgo-full-height li {
+    color: {{ section.settings.font_color }};
+  }
+  .mirgo-full-height li:before {
+    border-color: {{ section.settings.font_color }};
+  }
+  
+  .hydration-mobile {
+    display: none;
+  }
+  
+  .hydration-button-mobile {
+    display: none;
+  }
+  
+    
+  @media (max-width: 767px) {
+    .mirgo-full-height {
+    background-color: #ffffff;
+    background-image: none;
+  }
+    
+      .mirgo-full-height p,
+  .mirgo-full-height h2,
+  .mirgo-full-height li {
+    color: #142444;
+  }
+    
+    .hydration-mobile {
+      display: block;
+    }
+    
+    .hydration-button {
+      display: none;
+    }
+    
+    .hydration-button-mobile {
+      display: block;
+    }
+  }
+  
+</style>
+{% schema %}
+  {
+    "name": "Mirgo Full Height",
+	"class":"mirgo-full-height box-layout",
+    "settings": [
+		{
+          "type":     "header",
+          "content":  "Right Content"
+        },
+        {
+          "type":	"text",
+          "id":		"title",
+          "label":	"Title"
+        },
+        {
+          "type":	"richtext",
+          "id":		"desc",
+          "label":	"Description"
+        },
+        {
+          "type":	"html",
+          "id":		"list",
+          "label":	"List Item"
+        },
+        {
+          "type":     "header",
+          "content":  "Button"
+        },
+        {
+          "type":	"text",
+          "id":		"button",
+          "label":	"Label"
+        },
+        {
+          "type":	"text",
+          "id":		"link",
+          "label":	"Link"
+        },
+		{
+			"type":	"header",
+			"content":	"Attachment Logo"
+		},
+		{
+          "type":	"image_picker",
+          "id":		"attachment",
+          "label":	"Image"
+        },
+		{
+			"type":		"header",
+			"content":	"Background"
+		},
+		{
+            "type": 	"image_picker",
+            "id": 		"image_background",
+            "label": 	"Background Image"
+        },
+		{
+            "type": 	"color",
+            "id": 		"color_background",
+            "label": 	"Background Color",
+            "default": 	"#edf4fe"
+        },
+		{
+			"type":		"header",
+			"content":	"Font Color"
+		},
+		{
+            "type": 	"color",
+            "id": 		"font_color",
+            "label": 	"Font Color",
+            "default": 	"#fff"
+        }
+
+	],
+	"presets":	[
+		{
+			"name":		"Mirgo Full Height",
+			"category":	"Text"
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

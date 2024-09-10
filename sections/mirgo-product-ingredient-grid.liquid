@@ -1,0 +1,150 @@
+<div id="nectar-ingredients">
+<div id="trial-svg">
+  {% comment %}<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#cfe4fb" fill-opacity="1" d="M0,96L80,122.7C160,149,320,203,480,197.3C640,192,800,128,960,96C1120,64,1280,64,1360,64L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>{% endcomment %}
+<svg viewBox="0 0 1921 273" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 56.6017L80 80.646C160 104.69 320 152.779 480 164.801C640 176.823 800 152.779 960 116.712C1120 80.646 1280 32.5575 1440 14.5243C1600 -3.50891 1757.5 -4.95143 1840 14.5243C1922.5 34 1920 34 1920 34V273H1840C1760 273 1600 273 1440 273C1280 273 1120 273 960 273C800 273 640 273 480 273C320 273 160 273 80 273H0V56.6017Z" fill="#CFE4FB"/>
+</svg>
+  
+</div>
+<div class="section-container" id="ingredients">
+  <div class="page-width">
+    <div class="section-content">
+      {% if section.settings.title != blank or section.settings.desc != blank %}
+      <div class="section-header-content">
+        <h2>{{ section.settings.title }}</h2>
+        {{ section.settings.desc }}
+      </div>
+      {% endif %}
+      {% if section.blocks.size > 0 %}
+      <div class="section-grid">
+        <div class="grid-flex swiper-container">
+          <div class="grid-row swiper-wrapper">
+            {% for block in section.blocks %}
+            <div class="grid-column swiper-slide">
+              {% if block.settings.icons != blank  %}
+              <div class="grid-icons">
+                <img src="{{ block.settings.icons | img_url: "master" }}">
+              </div>
+              {% endif %}
+              {% if block.settings.grid_title != blank or block.settings.grid_desc != blank  %}
+              <div class="grid-details">
+                <h3>{{ block.settings.grid_title }}</h3>
+               {{ block.settings.grid_desc }}
+              </div>
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      {% endif %}
+      {% if section.settings.btn_label != blank %}
+      <div class="section-button">
+        <a href="javascript:void(0)" class="link_underline btn-trigger-modal-ing">{{ section.settings.btn_label }}</a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  {% if section.settings.m_title != blank and section.settings.m_desc %}
+  <div class="modal--details">
+    <div class="close">
+          <a href="javascript:void(0)" class="close-content"></a>
+        </div>
+    <img src="https://cdn.shopify.com/s/files/1/0309/2257/1835/files/View_Supplement_Facts.jpg?v=1614379863">
+    {% comment %}
+    <div class="modal--container">
+      <div class="modal--header">
+        <h4>{{ section.settings.m_title }}</h4>
+        <div class="close">
+          <a href="javascript:void(0)" class="close-content"></a>
+        </div>
+      </div>
+      <div class="modal--content">
+        {{ section.settings.m_desc }}
+      </div>
+    </div>
+    {% endcomment %}
+  </div>
+  {% endif %}
+</div>
+</div>
+{% schema %}
+  {
+    "name": "Mirgo Ingredient Grid",
+	"class": "mirgo_ingredient_grid",
+	"max_blocks": 6,
+    "settings": [
+		{
+            "type":		"header",
+            "content":	"Grid Header"
+        },
+        {
+            "type":		"text",
+            "id":		"title",
+            "label":	"Title"
+        },
+        {
+            "type":		"richtext",
+            "id":		"desc",
+            "label":	"Description"
+        },
+		{
+            "type":		"header",
+            "content":	"Buttons"
+        },
+        {
+            "type":		"text",
+            "id":		"btn_label",
+            "label":	"Label"
+        },
+		{
+            "type":		"header",
+            "content":	"Modal Content"
+        },
+		{
+            "type":		"text",
+            "id":		"m_title",
+            "label":	"Title"
+        },
+        {
+            "type":		"richtext",
+            "id":		"m_desc",
+            "label":	"Description"
+        }
+	],
+	"blocks":	[
+		{
+          "type":	"text",
+          "name":	"ingredient",
+          "settings":	[
+              {
+                  "type":		"header",
+                  "content":	"Grid Details"
+              },
+              {
+                  "type":	"image_picker",
+                  "id":		"icons",
+                  "label":	"Icons"
+              },
+              {
+                  "type":	"text",
+                  "id":		"grid_title",
+                  "label":	"Title"
+              },
+              {
+                  "type":	"richtext",
+                  "id":		"grid_desc",
+                  "label":	"Description"
+              }
+          ]
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

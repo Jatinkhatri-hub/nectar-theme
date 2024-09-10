@@ -1,0 +1,727 @@
+{%- assign social_icons = false -%}
+{%- assign inline_list = false -%}
+{%- assign locale_selector = false -%}
+{%- assign currency_selector = false -%}
+{%- assign show_payment_icons = false -%}
+{%- assign show_selectors = false -%}
+
+{%- if section.settings.show_currency_selector and shop.enabled_currencies.size > 1 -%}
+  {%- assign currency_selector = true -%}
+{%- endif -%}
+
+{%- if section.settings.show_locale_selector and shop.enabled_locales.size > 1 -%}
+  {%- assign locale_selector = true -%}
+{%- endif -%}
+
+{%- if section.settings.show_payment_icons -%}
+  {%- unless shop.enabled_payment_types == empty -%}
+    {%- assign show_payment_icons = true -%}
+  {%- endunless -%}
+{%- endif -%}
+
+{%- if currency_selector or locale_selector -%}
+  {%- assign show_selectors = true -%}
+{%- endif -%}
+
+{%- if
+  settings.social_twitter_link != blank
+  or settings.social_facebook_link != blank
+  or settings.social_pinterest_link != blank
+  or settings.social_instagram_link != blank
+  or settings.social_tumblr_link != blank
+  or settings.social_snapchat_link != blank
+  or settings.social_youtube_link != blank
+  or settings.social_vimeo_link != blank
+  or request.page_type == 'article'
+  or request.page_type == 'blog'
+-%}
+  {%- assign social_icons = true -%}
+{%- endif -%}
+
+{%- assign payment_width_class = "one-half" -%}
+{%- if show_selectors -%}
+  {%- unless social_icons -%}
+    {%- assign payment_width_class = "" -%}
+  {%- endunless -%}
+{%- endif -%}
+
+{%- assign copyright_show_class = "medium-up--hide" -%}
+{%- if social_icons -%}
+  {%- unless show_selectors -%}
+    {%- assign copyright_show_class = "" -%}
+  {%- endunless -%}
+{%- endif -%}
+
+
+{% comment %} Create an appropriate hover color based on text color and brightness {% endcomment %}
+{%- assign footer_text_color = section.settings.color_footer_text -%}
+{%- assign footer_text_color_brightness = section.settings.color_footer_text | color_brightness -%}
+{%- if footer_text_color_brightness <= 26 -%}
+  {%- assign footer_text_color_hover = footer_text_color | color_lighten: 25 -%}
+{%- elsif footer_text_color_brightness <= 65 -%}
+  {%- assign footer_text_color_hover = footer_text_color | color_lighten: 15 -%}
+{%- else -%}
+  {%- assign footer_text_color_hover = footer_text_color | color_darken: 10 -%}
+{%- endif -%}
+
+<style>
+  .site-footer__hr {
+    border-bottom: 1px solid {{ section.settings.color_footer_bg | color_darken: 10 }};
+  }
+
+  .site-footer p,
+  .site-footer__linklist-item a,
+  .site-footer__rte a,
+  .site-footer h4,
+  .site-footer small,
+  .site-footer__copyright-content a,
+  .site-footer__newsletter-error,
+  .site-footer__social-icons .social-icons__link {
+    color: {{ section.settings.color_footer_text }};
+  }
+
+  .site-footer {
+    color: {{ section.settings.color_footer_text }};
+    background-color: {{ section.settings.color_footer_bg }};
+  }
+
+  .site-footer__rte a {
+    border-bottom: 1px solid {{ section.settings.color_footer_text }};
+  }
+
+  .site-footer__rte a:hover,
+  .site-footer__linklist-item a:hover,
+  .site-footer__copyright-content a:hover {
+    color: {{ footer_text_color_hover }};
+    border-bottom: 1px solid {{ footer_text_color_hover }};
+  }
+
+  .site-footer__social-icons .social-icons__link:hover {
+    color: {{ footer_text_color_hover }};
+  }
+</style>
+
+
+{%- capture payment_icon_markup -%}
+  {%- if show_payment_icons -%}
+    <div class="grid__item site-footer__payment-icons">
+      <span class="visually-hidden">{{ 'general.payment.method' | t }}</span>
+      <ul class="payment-icons list--inline site-footer__icon-list">
+        {%- for type in shop.enabled_payment_types -%}
+          <li class="payment-icon">
+            {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  {%- endif -%}
+{%- endcapture -%}
+
+
+
+<div class="top-hz-line"></div>
+<footer class="site-footer" role="contentinfo" data-section-id="{{ section.id }}" data-section-type="footer-section">
+  <div class="page-width">
+    <div class="site-footer__content">
+      
+      <!-- Start of Mobile Newsletter Section -->
+            <div class="site-footer__item site-footer__item--one-quarter site-footer-newsletter__one-half newsletter-mobile">
+<div class="site-footer__item-inner site-footer__item-inner--newsletter">
+  	<div class="flex-box">
+      <div class="flex-item">
+        {%- if section.settings.newsletter_title -%}
+              <p class="h4">{{ section.settings.newsletter_title | escape }}</p>
+            {%- endif -%}
+        <div class="flex-item-2">
+             <p class="newsletter-sub">{{ section.settings.newsletter_text }}</p>
+      </div>
+                <div class="site-footer__newsletter">
+                  {%- assign formId = 'ContactFooter' -%}
+                  {% form 'customer', id: formId, novalidate: 'novalidate' %}
+                    {%- if form.posted_successfully? -%}
+                      <p class="form-message form-message--success" tabindex="-1" data-form-status>
+                        {{ 'general.newsletter_form.confirmation' | t }}
+                      </p>
+                    {%- endif -%}
+                    <input type="hidden" name="contact[tags]" value="newsletter">
+                    <div class="input-group {% if form.errors %} input-group--error{% endif %}">
+                      <input type="email"
+                        name="contact[email]"
+                        id="{{ formId }}-email"
+                        class="input-group__field newsletter__input{% if form.errors %} input--error{% endif %}"
+                        value="{{ form.email }}"
+                        placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
+                        aria-label="{{ 'general.newsletter_form.email_placeholder' | t }}"
+                        aria-required="true"
+                        required
+                        autocorrect="off"
+                        autocapitalize="off"
+                        {% if form.errors %}
+                          aria-invalid="true"
+                          aria-describedby="{{ formId }}-email-error"
+                          data-form-status
+                        {% endif %}>
+                      
+                      <span class="input-group__btn">
+                        <button type="submit" class="btn newsletter__submit" name="commit" id="Subscribe">
+                          <span class="fa fa-arrow-right"></span>
+                        </button>
+                      </span>
+                    </div>
+                    {% if form.errors contains 'email' %}
+                      <span id="{{ formId }}-email-error" class="input-error-message">
+                        <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+                        {% include 'icon-error' %}
+                        <span class="site-footer__newsletter-error">{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+                      </span>
+                    {% endif %}
+                  {% endform %}
+                 
+                </div>
+   <div class="connected-icons">
+    
+    {%- assign socials = "Facebook Twitter Pinterest Instagram Tumblr Snapchat YouTube Vimeo" | split: ' ' -%}
+ {%- if social_icons -%}
+          <ul class="list--inline site-footer__social-icons social-icons site-footer__icon-list">
+            {%- for social in socials -%}
+              {%- assign social_link = social | prepend: 'social_' | append: '_link' | downcase -%}
+              {%- assign icon_link = social | prepend: 'icon-' | downcase -%}
+              {%- if settings[social_link] != blank -%}
+                <li class="social-icons__item">
+                  <a class="social-icons__link" href="{{ settings[social_link] | escape }}" aria-describedby="a11y-external-message">
+                    {%- include icon_link -%}
+                    <span class="icon__fallback-text">{{ social }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+            {%- endfor -%}
+
+            {%- if request.page_type == 'blog' or request.page_type == 'article' -%}
+              <li>
+                <a class="social-icons__link" href="{{ shop.url }}{{ blog.url }}.atom">
+                  {% include 'icon-rss' %}
+                  <span class="icon__fallback-text">RSS</span>
+                </a>
+              </li>
+            {%- endif -%}
+          </ul>  
+                {%- endif -%}
+        </div>
+     </div>
+  </div>
+  
+  <div class="hz-line newsletter-mobile"></div>  
+        </div>       
+      </div>
+     
+
+      
+      <!-- End of Mobile Newsletter Section -->
+
+<div class="site-footer__item site-footer__item--one-quarter">
+  <div class="site-footer__item-inner site-footer__item-inner--link_list">
+            {%- if section.settings.menu_1_title -%}
+              <p class="h4">{{ section.settings.menu_1_title | escape }}</p>
+            {%- endif -%}
+      {%- assign footer_linklist = section.settings.menu1 -%}
+                  <ul class="site-footer__linklist
+                            {% if inline_list %}list--inline{% endif %}">
+                    {%- for link in linklists[footer_linklist].links -%}
+                      <li class="site-footer__linklist-item">
+                        <a href="{{ link.url }}"
+                          {% if link.current %} aria-current="page"{% endif %}
+                        >
+                          {{ link.title | escape }}
+                        </a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+      </div>
+      </div>
+      
+      <div class="site-footer__item site-footer__item--one-quarter">
+        <div class="site-footer__item-inner site-footer__item-inner--link_list">
+      
+       {%- if section.settings.menu_2_title -%}
+              <p class="h4">{{ section.settings.menu_2_title | escape }}</p>
+            {%- endif -%}
+      {%- assign footer_linklist = section.settings.menu2 -%}
+                  <ul class="site-footer__linklist
+                            {% if inline_list %}list--inline{% endif %}">
+                    {%- for link in linklists[footer_linklist].links -%}
+                      <li class="site-footer__linklist-item">
+                        <a href="{{ link.url }}"
+                          {% if link.current %} aria-current="page"{% endif %}
+                        >
+                          {{ link.title | escape }}
+                        </a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+      </div>
+      </div>
+      
+      <div class="site-footer__item site-footer__item--one-quarter site-footer-newsletter__one-half newsletter-desktop">
+<div class="site-footer__item-inner site-footer__item-inner--newsletter">
+        {%- if section.settings.newsletter_title -%}
+              <p class="h4">{{ section.settings.newsletter_title | escape }}</p>
+            {%- endif -%}
+             <p class="newsletter-sub">{{ section.settings.newsletter_text }}</p>
+                <div class="site-footer__newsletter">
+                  {%- assign formId = 'ContactFooter' -%}
+                  {% form 'customer', id: formId, novalidate: 'novalidate' %}
+                 
+                  
+                    <input type="hidden" name="contact[tags]" value="newsletter">
+                    <div class="input-group {% if form.errors %} input-group--error{% endif %}">
+                      <input type="email"
+                        name="contact[email]"
+                        id="{{ formId }}-email"
+                        class="input-group__field newsletter__input{% if form.errors %} input--error{% endif %}"
+                        value="{{ form.email }}"
+                        placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
+                        aria-label="{{ 'general.newsletter_form.email_placeholder' | t }}"
+                        aria-required="true"
+                        required
+                        autocorrect="off"
+                        autocapitalize="off"
+                        {% if form.errors %}
+                          aria-invalid="true"
+                          aria-describedby="{{ formId }}-email-error"
+                          data-form-status
+                        {% endif %}>
+                      
+                      <span class="input-group__btn">
+                        <button type="submit" class="btn newsletter__submit" name="commit" id="Subscribe">
+                          <span class="fa fa-arrow-right"></span>
+                        </button>
+                      </span>
+                    </div>
+                  
+                  {%- if form.posted_successfully? -%}
+                      <p class="form-message form-message--success" tabindex="-1" data-form-status>
+                        {{ 'general.newsletter_form.confirmation' | t }}
+                      </p>
+                  
+                  <style>
+                    .input-group {
+                      display: none !important;
+                    }
+                  </style>
+                    
+                  
+                    {%- endif -%}
+                  
+                  
+                    {% if form.errors contains 'email' %}
+                      <span id="{{ formId }}-email-error" class="input-error-message">
+                        <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+                        {% include 'icon-error' %}
+                        <span class="site-footer__newsletter-error">{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+                      </span>
+                    {% endif %}
+                  {% endform %}
+                </div>
+  <div class="connected-icons">
+    
+    {%- assign socials = "Facebook Twitter Pinterest Instagram Tumblr Snapchat YouTube Vimeo" | split: ' ' -%}
+ {%- if social_icons -%}
+          <ul class="list--inline site-footer__social-icons social-icons site-footer__icon-list">
+            {%- for social in socials -%}
+              {%- assign social_link = social | prepend: 'social_' | append: '_link' | downcase -%}
+              {%- assign icon_link = social | prepend: 'icon-' | downcase -%}
+              {%- if settings[social_link] != blank -%}
+                <li class="social-icons__item">
+                  <a class="social-icons__link" href="{{ settings[social_link] | escape }}" aria-describedby="a11y-external-message">
+                    {%- include icon_link -%}
+                    <span class="icon__fallback-text">{{ social }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+            {%- endfor -%}
+
+            {%- if request.page_type == 'blog' or request.page_type == 'article' -%}
+              <li>
+                <a class="social-icons__link" href="{{ shop.url }}{{ blog.url }}.atom">
+                  {% include 'icon-rss' %}
+                  <span class="icon__fallback-text">RSS</span>
+                </a>
+              </li>
+            {%- endif -%}
+          </ul>  
+                {%- endif -%}
+    
+  </div>
+  
+  
+  
+        </div>
+      </div>
+            
+
+
+          </div>
+
+        </div>
+
+  <div class="desktop-hz-bottom newsletter-desktop"></div>
+
+  <div class="page-width">
+
+    <div class="bottom-footer">
+      
+      <div class="bottom-logo">
+        <img src="https://cdn.shopify.com/s/files/1/0309/2257/1835/files/nectar-logo_360x.png?v=1584644635" class="logo">
+        <div class="bottom-copyright">© 2020 Nectar. All Rights Reserved.</div>
+      </div>
+      
+      <div class="bottom-disclaimer">
+<p>*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease.</p>
+      </div>
+      
+    </div>
+    
+  </div>
+
+</footer>
+
+
+
+{% schema %}
+{
+  "name": {
+    "da": "Sidefod",
+    "de": "Fußzeile",
+    "en": "Footer",
+    "es": "Pie de página",
+    "fi": "Alatunniste",
+    "fr": "Pied de page",
+    "hi": "फुटर",
+    "it": "Footer",
+    "ja": "フッター",
+    "ko": "바닥글",
+    "ms": "Pengaki",
+    "nb": "Footer",
+    "nl": "Voettekst",
+    "pt-BR": "Rodapé",
+    "pt-PT": "Rodapé",
+    "sv": "Sidfot",
+    "th": "ส่วนท้าย",
+    "zh-CN": "页脚",
+    "zh-TW": "頁尾"
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": {
+        "da": "Betalingsmetoder",
+        "de": "Zahlungsarten",
+        "en": "Payment methods",
+        "es": "Métodos de pago",
+        "fi": "Maksutavat",
+        "fr": "Moyens de paiement",
+        "hi": "भुगतान की विधियां",
+        "it": "Metodi di pagamento",
+        "ja": "決済方法",
+        "ko": "결제 방법",
+        "ms": "Kaedah bayaran",
+        "nb": "Betalingsmetoder",
+        "nl": "Betaalmethoden",
+        "pt-BR": "Formas de pagamento",
+        "pt-PT": "Métodos de Pagamento",
+        "sv": "Betalningsmetoder",
+        "th": "วิธีการชำระเงิน",
+        "zh-CN": "支付方式",
+        "zh-TW": "付款方式"
+      }
+    },
+    {
+      "type": "checkbox",
+      "id": "show_payment_icons",
+      "label": {
+        "da": "Vis betalingsikoner",
+        "de": "Zahlungs-Buttons anzeigen",
+        "en": "Show payment icons",
+        "es": "Mostrar iconos de pago",
+        "fi": "Näytä maksukuvakkeet",
+        "fr": "Afficher les icônes de paiement",
+        "hi": "भुगतान आइकन दिखाएं",
+        "it": "Mostra le icone di pagamento",
+        "ja": "支払いアイコンを表示する",
+        "ko": "결제 아이콘 표시",
+        "ms": "Tunjukkan ikon pembayaran",
+        "nb": "Vis betalingsikoner",
+        "nl": "Betalingspictogrammen weergeven",
+        "pt-BR": "Exibir ícones de pagamento",
+        "pt-PT": "Mostrar ícones de pagamento",
+        "sv": "Visa betalningsikoner",
+        "th": "แสดงไอคอนการชำระเงิน",
+        "zh-CN": "显示付款图标",
+        "zh-TW": "顯示付款圖示"
+      },
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": {
+        "da": "Farve",
+        "de": "Farbe",
+        "en": "Color",
+        "es": "Color",
+        "fi": "Väri",
+        "fr": "Couleur",
+        "hi": "रंग",
+        "it": "Colore",
+        "ja": "色",
+        "ko": "색상",
+        "ms": "Warna",
+        "nb": "Farge",
+        "nl": "Kleur",
+        "pt-BR": "Cor",
+        "pt-PT": "Cor",
+        "sv": "Färg",
+        "th": "สี",
+        "zh-CN": "颜色",
+        "zh-TW": "顏色"
+      }
+    },
+    {
+      "type": "color",
+      "id": "color_footer_bg",
+      "label": {
+        "da": "Baggrund",
+        "de": "Hintergrundfarbe",
+        "en": "Background",
+        "es": "Fondo",
+        "fi": "Tausta",
+        "fr": "Couleur de fond",
+        "hi": "पृष्ठभूमि",
+        "it": "Sfondo",
+        "ja": "背景",
+        "ko": "배경",
+        "ms": "Latar belakang",
+        "nb": "Bakgrunn",
+        "nl": "Achtergrond",
+        "pt-BR": "Plano de fundo",
+        "pt-PT": "Fundo",
+        "sv": "Bakgrund",
+        "th": "พื้นหลัง",
+        "zh-CN": "背景",
+        "zh-TW": "背景"
+      },
+      "default": "#F5F5F5"
+    },
+    {
+      "type": "color",
+      "id": "color_footer_text",
+      "label": {
+        "da": "Tekst",
+        "de": "Text",
+        "en": "Text",
+        "es": "Texto",
+        "fi": "Teksti",
+        "fr": "Texte",
+        "hi": "टेक्स्ट",
+        "it": "Testo",
+        "ja": "テキスト",
+        "ko": "텍스트",
+        "ms": "Teks",
+        "nb": "Tekst",
+        "nl": "Tekst",
+        "pt-BR": "Texto",
+        "pt-PT": "Texto",
+        "sv": "Text",
+        "th": "ข้อความ",
+        "zh-CN": "文本",
+        "zh-TW": "文字"
+      },
+      "default": "#3d4246"
+    },
+    {
+      "type": "header",
+      "content": {
+        "da": "Sprogvælger",
+        "de": "Sprachauswahl",
+        "en": "Language Selector",
+        "es": "Selector de idioma",
+        "fi": "Kielenvalitsin",
+        "fr": "Sélecteur de langue",
+        "hi": "भाषा चयनकर्ता",
+        "it": "Selettore lingua",
+        "ja": "言語セレクター",
+        "ko": "언어 선택기",
+        "ms": "Pemilih Bahasa",
+        "nb": "Språkvelger",
+        "nl": "Taalkiezer",
+        "pt-BR": "Seletor de idiomas",
+        "pt-PT": "Seletor de Idioma",
+        "sv": "Språkväljare",
+        "th": "ตัวเลือกภาษา",
+        "zh-CN": "语言选择器",
+        "zh-TW": "語言選擇器"
+      },
+      "info": {
+        "da": "Du kan tilføje et sprog ved at gå til dine [sprogindstillinger.](/admin/settings/languages)",
+        "de": "Gehen Sie zu Ihren [Spracheinstellungen](/admin/settings/languages), um eine Sprache hinzuzufügen.",
+        "en": "To add a language, go to your [language settings.](/admin/settings/languages)",
+        "es": "Para agregar un idioma, ve a tu[configuración de idioma](/admin/settings/languages)",
+        "fi": "Lisää kieli siirtymällä [kieliasetuksiin.](/admin/settings/languages)",
+        "fr": "Pour ajouter une langue, allez dans vos [paramètres de langue.](/admin/settings/languages).",
+        "hi": "भाषा जोड़ने के लिए, अपने [language settings.](/admin/settings/languages) पर जाएं",
+        "it": "Per aggiungere una lingua, vai su [impostazioni della lingua.](/admin/settings/languages)",
+        "ja": "言語を追加するには、[言語設定](/admin/settings/languages) に移動します。",
+        "ko": "언어를 추가하려면 [언어 설정.](/admin/settings/languages)(으)로 이동하십시오.",
+        "ms": "Untuk menambah bahasa, pergi ke [tetapan bahasa .](/admin/settings/languages) anda",
+        "nb": "For å legge til et språk, går du til dine [språkinnstillinger.](/admin/settings/languages)",
+        "nl": "Ga naar uw [taalinstellingen.](/admin/settings/languages) om een taal toe te voegen.",
+        "pt-BR": "Para adicionar um idioma, vá para suas [configurações de idioma. ](/admin/settings/languages)",
+        "pt-PT": "Para adicionar um idioma, aceda a [definições de idioma.](/admin/settings/languages)",
+        "sv": "För att lägga till ett språk, gå till dina [språkinställningar.](/admin/settings/languages)",
+        "th": "หากต้องการเพิ่มภาษา ให้ไปที่ [การตั้งค่าภาษา ](/admin/settings/languages) ของคุณ",
+        "zh-CN": "若要添加语言，请转到您的 [语言设置。](/admin/settings/languages)",
+        "zh-TW": "若要新增語言，請前往 [語言設定。](/admin/settings/languages)"
+      }
+    },
+    {
+      "type": "checkbox",
+      "id": "show_locale_selector",
+      "label": {
+        "da": "Vis sprogvælger",
+        "de": "Sprachauswahl anzeigen",
+        "en": "Show language selector",
+        "es": "Mostrar el selector de idioma",
+        "fi": "Näytä kielenvalitsin",
+        "fr": "Afficher le sélecteur de langue",
+        "hi": "मात्रा चयनकर्ता दिखाएं",
+        "it": "Mostra selettore lingua",
+        "ja": "言語セレクターを表示する",
+        "ko": "언어 선택기 표시",
+        "ms": "Tunjukkan pemilih bahasa",
+        "nb": "Vis språkvelger",
+        "nl": "Taalkiezer weergeven",
+        "pt-BR": "Mostrar seletor de idioma",
+        "pt-PT": "Mostrar seletor de idioma",
+        "sv": "Visa språkväljare",
+        "th": "แสดงตัวเลือกภาษา",
+        "zh-CN": "显示语言选择器",
+        "zh-TW": "顯示語言選擇器"
+      },
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": {
+        "da": "Valutavælger",
+        "de": "Währungsauswahl",
+        "en": "Currency Selector",
+        "es": "Selector de moneda",
+        "fi": "Valuutanvalitsin",
+        "fr": "Sélecteur de devise",
+        "hi": "मुद्रा चयनकर्ता",
+        "it": "Selettore di valuta",
+        "ja": "通貨セレクター",
+        "ko": "통화 선택기",
+        "ms": "Pemilih mata wang",
+        "nb": "Valutavelger",
+        "nl": "Valutakiezer",
+        "pt-BR": "Seletor de moeda",
+        "pt-PT": "Seletor de Moeda",
+        "sv": "Valutaväljare",
+        "th": "ตัวเลือกสกุลเงิน",
+        "zh-CN": "货币选择器",
+        "zh-TW": "幣別選擇器"
+      },
+      "info": {
+        "da": "Du kan tilføje en valuta ved at gå til dine [valutaindstillinger.](/admin/settings/payments)",
+        "de": "Gehen Sie zu Ihren [Währungseinstellungen](/admin/settings/payments), um eine Währung hinzuzufügen.",
+        "en": "To add a currency, go to your [currency settings.](/admin/settings/payments)",
+        "es": "Para agregar una moneda, ve a tu[configuración de moneda](/admin/settings/payments)",
+        "fi": "Lisää valuutta siirtymällä [valuutta-asetuksiin.](/admin/settings/payments)",
+        "fr": "Pour ajouter une devise, allez dans vos [paramètres de devise.](/admin/settings/payments).",
+        "hi": "मुद्रा जोड़ने के लिए, अपने [currency settings.](/admin/settings/payments) पर जाएं",
+        "it": "Per aggiungere una valuta, vai su [impostazioni valuta.](/admin/settings/payments)",
+        "ja": "通貨を追加するには、[通貨設定](/admin/settings/payments) に移動します。",
+        "ko": "통화를 추가하려면 [통화 설정.](/admin/settings/payments)(으)로 이동하십시오.",
+        "ms": "Untuk menambah mata wang, pergi ke [tetapan mata wang. ](/admin/settings/payments) anda",
+        "nb": "For å legge til en valuta, går du til [valutainnstillingene.](/admin/settings/payments)",
+        "nl": "Ga naar uw [valuta-instellingen.](/admin/settings/payments) om een valuta toe te voegen.",
+        "pt-BR": "Para adicionar uma moeda, vá para suas [configurações de moeda. ](/admin/settings/payments)",
+        "pt-PT": "Para adicionar uma moeda, aceda às suas [definições de moeda.](/admin/settings/payments)",
+        "sv": "För att lägga till en valuta, gå till [valutainställningar.](/admin/settings/payments)",
+        "th": "หากต้องการเพิ่มสกุลเงิน ให้ไปที่ [การตั้งค่าภาษา ](/admin/settings/payments) ของคุณ",
+        "zh-CN": "若要添加货币，请转到 [货币设置。](/admin/settings/payments)",
+        "zh-TW": "若要新增幣別，請前往 [幣別設定。](/admin/settings/payments)"
+      }
+    },
+    {
+      "type": "checkbox",
+      "id": "show_currency_selector",
+      "label": {
+        "da": "Vis valutavælger",
+        "de": "Währungsauswahl anzeigen",
+        "en": "Show currency selector",
+        "es": "Mostrar el selector de moneda",
+        "fi": "Näytä valuutanvalitsin",
+        "fr": "Afficher le sélecteur de devise",
+        "hi": "मुद्रा चयनकर्ता दिखाएं",
+        "it": "Mostra selettore valuta",
+        "ja": "通貨セレクターを表示する",
+        "ko": "통화 선택기 표시",
+        "ms": "Tunjukkan pemilih mata wang",
+        "nb": "Vis valutavelger",
+        "nl": "Valutakiezer weergeven",
+        "pt-BR": "Mostrar seletor de moeda",
+        "pt-PT": "Mostrar seletor de moeda",
+        "sv": "Visa valutaväljare",
+        "th": "แสดงตัวเลือกสกุลเงิน",
+        "zh-CN": "货币选择器显示",
+        "zh-TW": "顯示幣別選擇器"
+      },
+      "default": true
+    },
+	{
+		"type": "header",
+		"content": "First Menu"
+	},
+	{
+		"type": "text",
+		"id": "menu_1_title",
+		"label": "Menu Title"
+	},
+	{
+		"type": "link_list",
+		"id": "menu1",
+		"label": "First Menu"
+	},
+	{
+		"type": "header",
+		"content": "Second Menu"
+	},
+	{
+		"type": "text",
+		"id": "menu_2_title",
+		"label": "Menu Title"
+	},
+	{
+		"type": "link_list",
+		"id": "menu2",
+		"label": "Second Menu"
+	},
+	{
+		"type": "header",
+		"content": "Newsletter"
+	},
+	{
+		"type": "text",
+		"id": "newsletter_title",
+		"label": "Newsletter Title"
+	},
+	{
+		"type": "textarea",
+		"id": "newsletter_text",
+		"label": "Newsletter Message",
+		"default": "Keep up to date on new products, promotions, and helpful info on how to stay hydrated and healthy."
+	}
+  ]
+}
+{% endschema %}

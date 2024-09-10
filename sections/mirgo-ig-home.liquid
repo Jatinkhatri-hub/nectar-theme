@@ -1,0 +1,86 @@
+<script
+  type="application/json"
+  data-section-type="dynamic-social-widgets"
+  data-section-id="{{ section.id }}"
+>
+</script>
+
+<div class="section-container">
+  <div class="page-width">
+    <div class="section-content">
+      <section class="home-social-widgets">
+
+        {%- if section.settings.title != blank -%}
+        <h2 class="section-title">{{ section.settings.title | escape }}</h2>
+        {%- endif -%}
+        {% if section.settings.desc != false %}
+        {{ section.settings.desc }}
+		{% endif %}
+
+                <section class="home-social-widget home-instagram-widget">
+          <div class="home-instagram-photos"
+               data-instagram-photos
+               data-instagram-photo-count="4">
+            {% for block in section.blocks %}
+            <div class="instagram-photo">
+              <img src="{{ block.settings.ig_photo | img_url: '235x235', crop: 'center' }}">
+            </div>
+            {% endfor %}
+          </div>
+
+        </section>
+
+
+      </section>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Instagram",
+	"class": "mirgo-social-home",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Twitter and Instagram"
+    },
+	{
+      "type": "richtext",
+      "id": "desc",
+      "label": "Description"
+	}
+  ],
+  "blocks": [
+    {
+      "type": "photo",
+      "name": "IG Photos",
+      "settings": [
+        {
+          "type": "url",
+          "id": "ig_link",
+          "label": "Link to Post"
+        },
+		{
+		  "type": "image_picker",
+		  "id": "ig_photo",
+		  "label": "Photo"
+		}
+      ],
+      "limit": 4
+    }
+  ],
+  "presets": [
+    {
+      "category": "Social Media",
+      "name": "Instagram (Static)",
+      "blocks": [
+        { "type": "photo" }
+      ]
+    }
+  ]
+}
+
+{% endschema %}

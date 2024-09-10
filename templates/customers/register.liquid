@@ -1,0 +1,123 @@
+{% section 'mirgo-register-banner' %}
+
+
+<style>
+  
+    .mirgo-banner-color .section-container {
+  	height: 90vh;
+  }
+  
+  .login-box {
+  	padding: 70px;
+    background: #fff;
+    width: 35%;
+  }
+  
+  #LoginHeading {
+  	color: #142445;
+  }
+  
+  .grid__item[class*="--push"] {
+  	margin: 0 auto;
+    width: 70%;
+    padding-left: 0;
+    position: unset;
+    float: unset;
+  }
+  
+  body:not(.template-index) #PageContainer .main-content {
+  	padding-top: 0;
+  }
+  
+ #RegisterForm-FirstName {
+    margin-top: 50px;
+}
+  
+   #RegisterForm-FirstName, #RegisterForm-LastName, #RegisterForm-email, #RegisterForm-password {
+  	border-radius: 30px;
+    padding: 18px 18px;
+    background-color: #f7f7f7;
+    border: none;
+    font-family: "value-regular";
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+  }
+  
+  #RegisterForm-FirstName::placeholder, #RegisterForm-LastName::placeholder, 
+  #RegisterForm-email::placeholder, #RegisterForm-password::placeholder {
+  	color: #8bb8fa;
+    text-transform: uppercase;
+    font-family: "value-bold";
+  }
+  
+  
+  input.btn {
+  	background-color: #cfe3fb;
+    border: #cfe3fb;
+  }
+  
+  
+  @media (max-width: 1024px) {
+    .mirgo-banner-color .section-container {
+    	height: 650px;
+    }
+    
+    .login-box {
+    	width: 60%;
+      	padding: 40px;
+    }
+    
+    #RegisterForm-FirstName {
+    margin-top: 40px;
+	}
+
+  }
+  
+   @media (min-width: 1025px) {
+    .login-box {
+    	padding: 40px 30px 10px 30px;
+    }
+     
+     #RegisterForm-FirstName {
+    margin-top: 25px;
+     }
+  }
+  
+     @media (min-width: 1441px) {
+    .login-box {
+    	padding: 70px;
+    }
+       
+    #RegisterForm-FirstName {
+    margin-top: 50px;
+	}
+  }
+  
+  @media (max-width: 767px) {
+  .mirgo-banner-color .section-container {
+    height: 600px;
+  	} 
+    
+    
+    #LoginHeading {
+    	font-size: 24px;
+      	font-family: "value-bold", san-serif;
+    }
+    
+    .login-box {
+    width: 90%;
+    padding: 2.5rem 1.25rem;
+  }
+    
+     .grid__item[class*="--push"] {
+    width: 90%;
+  	}
+    
+    #RegisterForm-FirstName {
+    margin-top: 30px;
+	}
+  }
+</style>  
+

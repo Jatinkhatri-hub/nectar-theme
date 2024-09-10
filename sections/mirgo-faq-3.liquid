@@ -1,0 +1,67 @@
+<div class="section-container">
+  <div class="page-width">
+    {% if section.blocks.size > 0 %}
+    <div class="section-collapse-container">
+      <div class="faq-title"><h3>Subscription</h3></div>
+      <div class="section-collapse-row">
+        {% for block in section.blocks %}
+        {% if block.settings.collapse_title != blank or block.settings.collapse_desc != blank %}
+        <div class="section-collapse-column">
+          <div class="collapse-header">
+            <h4>{{ block.settings.collapse_title }}</h4>
+            <div class="close">
+              <a href="javascript:void(0)" class="custom-plus"></a>
+            </div>
+          </div>
+          <div class="collapse-content">
+			{{ block.settings.collapse_desc }}
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+    
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "FAQ Items",
+	"class": "mirgo-collapse-details",
+    "settings": [
+		{
+          "type":		"header",
+          "content":	"FAQ Items"
+        }
+	],
+	"blocks":	[
+		{
+			"type":	"text",
+			"name":	"Collapse",
+			"settings":	[
+				{
+					"type":		"header",
+					"content":	"Collapse Block"
+				},
+				{
+					"type":		"text",
+					"id":		"collapse_title",
+					"label":	"Title"
+				},
+				{
+					"type":		"richtext",
+					"id":		"collapse_desc",
+					"label":	"Description"
+				}
+			]
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
