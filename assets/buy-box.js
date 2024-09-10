@@ -8,8 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     buyBox = document.querySelector('.buy-box__btn');
     for(i = 0; i < buyBox.length; i++) {
-      buyBox[i].className = buyBox[i].className.replace
+      buyBox[i].className = buyBox[i].className.replace("active", "");
     }
+    document.ge
   }
 
 });
