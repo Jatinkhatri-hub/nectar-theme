@@ -116,6 +116,7 @@
   flex-direction: column;
   border: 1px solid #0D3063;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .tab-menu {
