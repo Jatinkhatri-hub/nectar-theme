@@ -451,5 +451,6 @@
   color: white;
   font-size: 13px;
   font-weight: 700;
-  fon
+  display: flex;
+  flex-direction: ;
 }
