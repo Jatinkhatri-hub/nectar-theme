@@ -178,4 +178,6 @@
   color: #00A039;
 }
 
-.details
+.details-price__wrapper {
+  display: flex;
+}
