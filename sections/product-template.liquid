@@ -1,4 +1,4 @@
-{{ 'buy-box.css' }}
+{{ 'buy-box.css' |  asset_url |  stylesheet_tag}}
 
 <div class="product-template__container page-width"
   id="ProductSection-{{ section.id }}"
