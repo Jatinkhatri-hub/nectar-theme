@@ -157,7 +157,7 @@
 .tab-content {
   display: none;
   text-align: center;
-  padding: 20px;
+  padding: 6px 10px;
 }
 
 .tab-content.active {
