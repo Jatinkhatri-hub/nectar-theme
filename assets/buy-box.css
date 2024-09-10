@@ -384,6 +384,7 @@
 
 .details__footer {
   padding-block: 10px;
+  gap: 5px;
 }
 
 .details__footer-congrats {
