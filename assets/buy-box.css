@@ -199,7 +199,10 @@
   font-weight: 700;
 }
 
-.details
+.details__package-selector {
+  margin-block: 10px;
+  padding-block: 10px;
+}
 
 .details__package-box {
   display: flex;
