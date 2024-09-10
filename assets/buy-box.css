@@ -211,10 +211,10 @@
 }
 
 .radio__package-box {
-  display: absolute;
+  position: absolute;
   left: 10;
   top: 50%;
-  
+
 }
 
 
