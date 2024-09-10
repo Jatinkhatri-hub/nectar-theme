@@ -4,8 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let i, buyBoxDetails, buyBox;
     buyBoxDetails = document.querySelector('buy-box__details');
     for(i = 0; i < buyBoxDetails.length; i++) {
-      buyBoxDetails[i].style.display
+      buyBoxDetails[i].style.display = "none";
     }
+    
   }
 
 });
