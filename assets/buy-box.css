@@ -201,6 +201,8 @@
 
 
 .details__package-box {
-  d
+  display: flex;
+  flex-direction: row;
+  flex-wra
 }
 
