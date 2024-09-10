@@ -394,7 +394,7 @@
 }
 
 .congrats-text {
-  padding: 10px 7px;
+  padding-block: 10px;
   font-size: 11px;
   color: #0D3063;
 }
