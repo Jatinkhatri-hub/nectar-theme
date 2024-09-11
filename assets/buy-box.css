@@ -491,7 +491,7 @@
 
 
 .desktop-radio {
-  width: ;
+  display: none;
 }
 
 @media screen and (min-width: 789px) {
