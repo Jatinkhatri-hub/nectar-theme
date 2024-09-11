@@ -601,7 +601,8 @@
   .value-points__container {
     display: flex;
     flex-direction: column;
-    a
+    align-items: baseline;
+    gap:
   }
 
   .choose-flavor__btn-wrapper {
