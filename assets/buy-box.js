@@ -208,7 +208,7 @@ function openTab(event, tabName) {
 
 function renderTabContentDesktop (tabName, container) {
   const data = tabData[tabName];
-  container.innerHTML = '';
+ // container.innerHTML = '';
 
   // const content = document.createElement('div');
   // content.innerHTML = ""
