@@ -502,6 +502,7 @@
 
   .radio-header {
     display: flex;
-    flex-direction: ;
+    flex-direction: column;
+    
   }
 }
