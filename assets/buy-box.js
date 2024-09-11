@@ -361,6 +361,8 @@ document.addEventListener('DOMContentLoaded', () => {
       firstRadio.checked = true;
       renderTabContentDesktop('autoShip', firstRadio.closest('.radio-label').querySelector('.radio-content-container'));
     }
+  } else {
+    
   }
 
   //  // Desktop radio buttons event listeners
