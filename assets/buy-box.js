@@ -205,6 +205,9 @@ function openTab(event, tabName) {
   }
 }
 
+
+function reder
+
 document.addEventListener('DOMContentLoaded', () => {
   const tabButtons = document.querySelectorAll('.tab-button');
   tabButtons.forEach(button => {
