@@ -300,7 +300,7 @@ function renderTabContentDesktop(tabName, container) {
       <h6 class="gift-wrapper__title">You've unlocked $23.95 of free gifts!</h6>
       <div class="gift-progress-bar__wrapper">
         <div class="progressBar">
-                      <div class="progress" style="width: 50%;"></div>
+          <div class="progress" style="width: 50%;"></div>
                       </div>
                       <div class="free-shipping__wrapper">
                         <div class="image-wrapper">
