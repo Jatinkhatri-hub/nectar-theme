@@ -625,6 +625,10 @@
     width: 100%;
   }
 
+  .choose-flavor__btn:hover {
+    border: ;
+  }
+
   .delivery-text {
     font-size: 15px;
     color: #0D3063;
