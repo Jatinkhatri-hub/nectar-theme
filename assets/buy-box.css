@@ -598,7 +598,11 @@
     background-color: #E8FFE3;
   }
 
-  .value
+  .value-points__container {
+    display: flex;
+    flex-direction: column;
+    a
+  }
 
   .choose-flavor__btn-wrapper {
     width: 100%;
