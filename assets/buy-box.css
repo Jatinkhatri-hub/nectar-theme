@@ -127,6 +127,8 @@
   overflow: hidden;
 }
 
+.tab-butto
+
 .tab-button {
   background-color: #CBE5FF;
   border: none;
@@ -315,6 +317,7 @@
 
 .gift-progress-bar__wrapper {
   position: relative;
+  width: 100%;
 } 
 
 
