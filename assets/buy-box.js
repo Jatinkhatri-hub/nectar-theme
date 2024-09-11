@@ -289,7 +289,9 @@ function renderTabContentDesktop(tabName, container) {
           <span class="package__badge" style="background-color: ${pkg.badgeColor}; color: ${pkg.textColor};">${pkg.badge}</span>
           <input type="radio" class="radio__package-box">
           <div class='package-details'>
-            <h
+            <h6 class="package-title">${pkg.title}</h6>
+            <p class="package-discount">${pkg.discount}</p>
+            <p class="packet-individual">${pkg.pricePerPacket}</p>
           </div>
         </label>
         `)}
