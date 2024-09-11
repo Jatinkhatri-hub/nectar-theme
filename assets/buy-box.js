@@ -208,7 +208,7 @@ function openTab(event, tabName) {
 
 function rederTabContentDesktop (tabName, container) {
   const data = tabData[tabName];
-  container.innerHTML 
+  container.innerHTML = document
 }
 
 document.addEventListener('DOMContentLoaded', () => {
