@@ -188,7 +188,7 @@ function openTab(event, tabName) {
       const button = document.createElement('button');
       button.className = 'sub-and-save__btn';
       button.innerHTML = `
-          <img src="{{ 'icon-gift.png' | asset_url }}" class="icon-gift">
+          <img src=".." class="icon-gift">
           Tap here to subscribe and save $50.95
       `;
       footer.appendChild(button);
