@@ -314,7 +314,7 @@ function renderTabContentDesktop(tabName, container) {
           </div>
           <span class="gift-title">Nectar Bottle</span>
         </div>
-                    </div>
+        </div>
                  </div>
   `;
   
