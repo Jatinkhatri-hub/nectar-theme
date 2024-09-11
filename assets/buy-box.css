@@ -587,7 +587,9 @@
   }
 
   .details__footer-congrats {
-    background-color: ;
+    background-color: #E8FFE3;
+    display: flex;
+    flex: ;
   }
 
 
