@@ -206,7 +206,7 @@ function openTab(event, tabName) {
 }
 
 
-function rederTabContentDesktop ()
+function rederTabContentDesktop (tabName, )
 
 document.addEventListener('DOMContentLoaded', () => {
   const tabButtons = document.querySelectorAll('.tab-button');
