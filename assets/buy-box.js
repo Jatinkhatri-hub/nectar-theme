@@ -83,8 +83,8 @@ const tabData = {
           },
           {
             badge: 'Most Popular',
-            title: ' Packets',
-            discount: 'Save 30%',
+            title: '90 Packets',
+            discount: 'Save 20%',
             pricePerPacket: '$0.99/Packet',
             badgeColor: '#FFCC00',
             isPopular: false
