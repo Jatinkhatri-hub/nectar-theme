@@ -326,7 +326,7 @@ function renderTabContentDesktop(tabName, container) {
         </div>
         ` : ''}
 
-        ${}
+        ${tabName ==}
 
 
         <div class="value-points__container">
