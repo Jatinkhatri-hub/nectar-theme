@@ -400,11 +400,13 @@
 .footer__icon-wrapper {
   display: flex;
   align-items: center;
+  width: 30px;
 }
 
 .footer-img {
   width: 20px;
   height: 20px;
+  object-fit: contain;
 }
 
 
