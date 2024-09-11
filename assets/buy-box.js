@@ -327,7 +327,7 @@ function renderTabContentDesktop(tabName, container) {
         ` : ''}
     </div>
     <div class="value-points__container">
-      ${data.footerPoints.map}
+      ${data.footerPoints.map(point => )}
     </div>
   `;
   
