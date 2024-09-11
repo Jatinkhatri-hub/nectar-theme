@@ -487,5 +487,7 @@
 
 
 @media screen and (min-width: 789px) {
-  .mobile-tabs
+  .mobile-tabs {
+    display: none;
+  }
 }
