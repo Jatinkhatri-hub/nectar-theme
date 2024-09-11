@@ -117,6 +117,84 @@ const tabData = {
   }
 };
 
+
+function openTab(event, tabName) {
+  // Update active tab button
+  const tabButtons = document.getElementsByClassName("tab-button");
+  for (let i = 0; i < tabButtons.length; i++) {
+      tabButtons[i].classList.remove("active");
+  }
+  if (event) event.currentTarget.classList.add("active");
+
+  // Get the data for the selected tab
+  const data = tabData[tabName];
+
+  // Update header content
+  document.getElementById('headerTitle').textContent = data.headerTitle;
+  document.getElementById('totalPrice').textContent = data.totalPrice;
+  document.getElementById('discountedPrice').textContent = data.discountedPrice;
+
+  // Update package selector
+  const packageSelector = document.getElementById('packageSelector');
+  packageSelector.innerHTML = ''; // Clear previous packages
+  data.packages.forEach(pkg => {
+      const packageBox = document.createElement('div');
+      packageBox.className = 'details__package-box';
+      if (pkg.badge) {
+          const badge = document.createElement('span');
+          badge.className = 'package__badge';
+          badge.textContent = pkg.badge;
+          if (pkg.badgeColor) badge.style.backgroundColor = pkg.badgeColor;
+          packageBox.appendChild(badge);
+      }
+      const radio = document.createElement('input');
+      radio.type = 'radio';
+      radio.className = 'radio__package-box';
+      packageBox.appendChild(radio);
+      const details = document.createElement('div');
+      details.className = 'package-details';
+      details.innerHTML = `
+          <h6 class="package-title">${pkg.title}</h6>
+          <p class="package-discount">${pkg.discount}</p>
+          <p class="packet-individual">${pkg.pricePerPacket}</p>
+      `;
+      packageBox.appendChild(details);
+      packageSelector.appendChild(packageBox);
+  });
+
+  // Update footer points
+  const footer = document.querySelector('.details__footer');
+  footer.innerHTML = ''; // Clear previous footer content
+
+  if (data.showCongrats) {
+      const congratsDiv = document.createElement('div');
+      congratsDiv.className = 'details__footer-congrats';
+      congratsDiv.innerHTML = `
+          <div class="footer__icon-wrapper">{% render 'icon-thumbs-up' %}</div>
+          <p class="congrats-text"><span>Congrats!</span> You’re making proper Hydration and all the benefits that come with it a habit!</p>
+      `;
+      footer.appendChild(congratsDiv);
+  }
+
+  data.footerPoints.forEach(point => {
+      const p = document.createElement('p');
+      p.className = 'footer-value__point';
+      p.innerHTML = `<span>{% render 'icon-tick' %}</span> ${point}`;
+      footer.appendChild(p);
+  });
+
+  // Add a subscription button if needed
+  if (tabName === 'oneTime') {
+      const button = document.createElement('button');
+      button.className = 'sub-and-save__btn';
+      button.innerHTML = `
+          <img src="{{ 'icon-gift.png' | asset_url }}" class="icon-gift">
+          Tap here to subscribe and save $50.95
+      `;
+      footer.appendChild(button);
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
 })
