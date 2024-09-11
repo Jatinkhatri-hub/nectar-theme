@@ -326,7 +326,9 @@ function renderTabContentDesktop(tabName, container) {
         </div>
         ` : ''}
 
-        ${tabName ==}
+        ${tabName == 'oneTime' ? `
+          
+          `}
 
 
         <div class="value-points__container">
