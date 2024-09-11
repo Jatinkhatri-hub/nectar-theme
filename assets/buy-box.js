@@ -308,11 +308,11 @@ function renderTabContentDesktop(tabName, container) {
           </div>
           <span class="gift-title">Free Shipping</span>
         </div>
-                      <div class="free-bottle__wrapper">
-                        <div class="image-wrapper">
-                          <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Bottle_no_BG_2.png?v=1726084588" class="nectar-bottle-img">
-                        </div>
-                        <span class="gift-title">Nectar Bottle</span>
+        <div class="free-bottle__wrapper">
+          <div class="image-wrapper">
+            <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Bottle_no_BG_2.png?v=1726084588" class="nectar-bottle-img">
+          </div>
+          <span class="gift-title">Nectar Bottle</span>
                       </div>
                     </div>
                  </div>
