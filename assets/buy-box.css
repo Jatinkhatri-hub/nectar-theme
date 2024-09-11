@@ -509,6 +509,8 @@
 
   .radio-tab {
     position: absolute;
+    left: 30px;
+    top: 17px
   }
 
   .radio-header-title {
