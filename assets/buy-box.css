@@ -506,5 +506,9 @@
     flex-direction: row;
   }
 
-  .radio-header h
+  .radio-header h6 {
+    display: flex;
+    flex-direction: column;
+    
+  }
 }
