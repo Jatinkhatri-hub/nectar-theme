@@ -589,7 +589,7 @@
   .details__footer-congrats {
     background-color: #E8FFE3;
     display: flex;
-    flex: ;
+    flex-direction: row;
   }
 
 
