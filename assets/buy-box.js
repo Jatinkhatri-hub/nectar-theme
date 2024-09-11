@@ -298,6 +298,15 @@ document.addEventListener('DOMContentLoaded', () => {
    });
 
   // Initialize the first tab
-  openTab(null, 'autoShip');
-
+  // openTab(null, 'autoShip');
+   // Initialize the first tab/radio content
+  if (window.innerWidth >= 768) { // Desktop
+    const firstRadio = document.querySelector('.radio-tab[data-tab="autoShip"]');
+    if (firstRadio) {
+      firstRadio.checked = true;
+      renderTabContentDesktop('autoShip', firstRadio.closest('.radio-label').querySelector('.radio-content-container'));
+    }
+  } else { // Mobile
+    renderTabContentMobile('autoShip');
+  }
 })
