@@ -630,6 +630,10 @@
     color: #0D3063;
     font-family: 'Poppins';
     font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
   }
 
 
