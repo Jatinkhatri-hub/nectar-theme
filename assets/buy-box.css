@@ -553,8 +553,10 @@
   }
 
   .package__badge {
-    
+    font-size: 18px;
   }
+
+  
 
 
 }
