@@ -318,7 +318,7 @@ function renderTabContentDesktop(tabName, container) {
     </div>
     <div class="details__footer>
       <div class="details__footer-congrats">
-        ${}
+        ${data.showCongrats ? 'https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Bottle_no_BG_2.png?v=1726084588'}
       </div>
     </div>
   `;
