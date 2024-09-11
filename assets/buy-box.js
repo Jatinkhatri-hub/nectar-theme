@@ -327,7 +327,9 @@ function renderTabContentDesktop(tabName, container) {
         ` : ''}
 
         ${tabName == 'oneTime' ? `
-          <button class=""></button>
+          <button class="sub-and-save__btn">
+          
+          </button>
           `}
 
 
