@@ -490,6 +490,10 @@
 }
 
 
+.desktop-radio {
+  width: ;
+}
+
 @media screen and (min-width: 789px) {
   .mobile-tabs {
     display: none;
