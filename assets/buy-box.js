@@ -284,6 +284,9 @@ function renderTabContentDesktop(tabName, container) {
 
   container.innerHTML = `
     <div class="details__package-selector" id="packageSelector">
+      ${
+        
+      }
     </div>
   `;
   
