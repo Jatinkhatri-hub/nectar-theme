@@ -126,7 +126,8 @@
   width: 100%;
   overflow: hidden;
   flex-direction: column;
-  
+  border: 1px solid #0D3063;
+  font-family: 'Poppins';
 }
 
 .tab-button-container {
