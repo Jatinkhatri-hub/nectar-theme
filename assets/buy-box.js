@@ -21,3 +21,6 @@
 //   // Initialize the first tab to be active
 //   document.getElementById("Tab1").style.display = "block";
 // });
+
+
+document.addEventListener
