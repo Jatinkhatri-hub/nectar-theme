@@ -155,7 +155,7 @@
 
 /* Tab content styling */
 .tab-content {
-  display: none;
+  display: block;
   text-align: center;
   padding: 6px 10px;
 }
