@@ -285,10 +285,10 @@ function renderTabContentDesktop(tabName, container) {
   container.innerHTML = `
     <div class="details__package-selector" id="packageSelector">
       ${data.packages.map(pkg => `
-        <div class="details__package-box">
+        <label class="details__package-box">
           <span class="package__badge" style="background-color: ${pkg.badgeColor}; color: ${pkg.textColor};">${pkg.badge}</span>
           <input type="radio" class="radio__package-box">
-        </div>
+        </label>
         `)}
     </div>
   `;
