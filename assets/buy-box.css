@@ -496,6 +496,7 @@
   }
 
   .radio-label {
+    border-radius: 16px;
     
   }
 }
