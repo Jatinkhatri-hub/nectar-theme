@@ -500,7 +500,7 @@
   }
 
   .desktop-radio {
-    display: flex;
+    display: block;
   }
 
   .radio-label {
@@ -598,6 +598,10 @@
     background-color: #E8FFE3;
     display: flex;
     flex-direction: row;
+  }
+
+  .sub-and-save__btn {
+    width: 100%;
   }
 
   
