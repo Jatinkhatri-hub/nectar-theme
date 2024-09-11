@@ -345,6 +345,24 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   });
 
+  const desktopRadioButtons = document.querySelectorAll('.radio-tab');
+  desktopRadioButtons.forEach(radio => {
+    radio.addEventListener('change', (event) => {
+      const tabName = event.currentTarget.getAttribute('data-tab');
+      const container = event.currentTarget.closest('.radio-label').querySelector('.radio-content-container');
+      renderTabContentDesktop(tabName, container);
+    });
+  });
+
+  // Initialize the first tab content on load for desktop
+  if (window.innerWidth >= 768) { 
+    const firstRadio = document.querySelector('.radio-tab[data-tab="autoShip"]');
+    if (firstRadio) {
+      firstRadio.checked = true;
+      renderTabContentDesktop('autoShip', firstRadio.closest('.radio-label').querySelector('.radio-content-container'));
+    }
+  }
+
   //  // Desktop radio buttons event listeners
   //  const desktopRadioButtons = document.querySelectorAll('.radio-tab');
   //  desktopRadioButtons.forEach(radio => {
@@ -367,4 +385,4 @@ document.addEventListener('DOMContentLoaded', () => {
   // } else { // Mobile
   //   renderTabContentMobile('autoShip');
   // }
-})
+});
