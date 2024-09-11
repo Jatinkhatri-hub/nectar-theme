@@ -319,7 +319,7 @@ function renderTabContentDesktop(tabName, container) {
     <div class="details__footer>
       <div class="details__footer-congrats">
          ${data.showCongrats ? '<p class="congrats">Congratulations! You qualify for up to 40% Off + Free Gifts!</p>' : ''}
-    </div>
+    
       </div>
     </div>
   `;
