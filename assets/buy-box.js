@@ -35,6 +35,30 @@ const tabData = {
               badgeColor: '#FFCC00',
               isPopular: false
           }
+          {
+            badge: 'Best Value',
+            title: '120 Packets',
+            discount: 'Save 30%',
+            pricePerPacket: '$0.99/Packet',
+            badgeColor: '#FFCC00',
+            isPopular: false
+          },
+          {
+            badge: 'Best Value',
+            title: '120 Packets',
+            discount: 'Save 30%',
+            pricePerPacket: '$0.99/Packet',
+            badgeColor: '#FFCC00',
+            isPopular: false
+          },
+          {
+            badge: 'Best Value',
+            title: '120 Packets',
+            discount: 'Save 30%',
+            pricePerPacket: '$0.99/Packet',
+            badgeColor: '#FFCC00',
+            isPopular: false
+          }
           // Add other package options
       ],
       footerPoints: [
