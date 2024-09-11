@@ -320,11 +320,12 @@
 
 .progressBar {
   height: 14px;
-  width: 85vw;
+  width: 100%;
   border: 0.5px solid #0D3063;
   background: #E8FFE3;
   border-radius: 3px;
   margin-block: 45px;
+  
 }
 
 
