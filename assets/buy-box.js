@@ -328,7 +328,8 @@ function renderTabContentDesktop(tabName, container) {
 
         ${tabName == 'oneTime' ? `
           <button class="sub-and-save__btn">
-          
+            <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/file_4_1.png?v=1726036951" class="icon-gift">
+            Tap here to subscribe and save $50.95
           </button>
           `}
 
