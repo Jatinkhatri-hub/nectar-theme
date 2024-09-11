@@ -499,6 +499,7 @@
     border-radius: 16px;
     border: 1px solid #0D3063;
     padding: 15px 30px;
+    position: relative;
   }
 
   .radio-header {
