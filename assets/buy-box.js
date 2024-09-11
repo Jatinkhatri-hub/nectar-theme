@@ -294,7 +294,7 @@ function renderTabContentDesktop(tabName, container) {
             <p class="packet-individual">${pkg.pricePerPacket}</p>
           </div>
         </label>
-        `)}
+        `).join('')}
     </div>
   `;
   
