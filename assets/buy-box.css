@@ -555,6 +555,7 @@
     width: 215px;
     height: 85px;
     border-radius: 7px;
+    margin: 0;
   }
 
   .package__badge {
