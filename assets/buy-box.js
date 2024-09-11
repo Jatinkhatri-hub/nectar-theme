@@ -328,7 +328,8 @@ function renderTabContentDesktop(tabName, container) {
         <div class="value-points__container">
           ${data.footerPoints.map(point => `<p class="footer-value__point"><span><img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group_1484580410.png?v=1726037646" class="value-point__icon"></span> ${point}</p>`).join('')}
         </div>
-        <
+        <div class="">
+        </div>
     </div>
   `;
   
