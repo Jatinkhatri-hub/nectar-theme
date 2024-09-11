@@ -362,7 +362,7 @@ document.addEventListener('DOMContentLoaded', () => {
       renderTabContentDesktop('autoShip', firstRadio.closest('.radio-label').querySelector('.radio-content-container'));
     }
   } else {
-    
+    openTab(null, 'autoShip');
   }
 
   //  // Desktop radio buttons event listeners
