@@ -283,7 +283,7 @@ function renderTabContentDesktop(tabName, container) {
   container.innerHTML = ''; // Clear previous content
 
   container.innerHTML = `
-    <div class="details__package-selector">
+    <div class="details__package-selector" id="packageSelector">
     </div>
   `;
   
