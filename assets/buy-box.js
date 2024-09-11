@@ -196,5 +196,15 @@ function openTab(event, tabName) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  const tabButtons = document.querySelectorAll('.tab-button');
+  tabButtons.forEach(button => {
+      button.addEventListener('click', (event) => {
+          const tabName = event.currentTarget.getAttribute('data-tab');
+          openTab(event, tabName);
+      });
+  });
+
+  // Initialize the first tab
+  openTab(null, 'autoShip');
 
 })
