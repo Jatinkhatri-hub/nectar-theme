@@ -301,12 +301,12 @@ function renderTabContentDesktop(tabName, container) {
       <div class="gift-progress-bar__wrapper">
         <div class="progressBar">
           <div class="progress" style="width: 50%;"></div>
-                      </div>
-                      <div class="free-shipping__wrapper">
-                        <div class="image-wrapper">
-                          <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group_1484580827_1.png?v=1726084589" class="free-shipping-img">
-                        </div>
-                        <span class="gift-title">Free Shipping</span>
+        </div>
+        <div class="free-shipping__wrapper">
+          <div class="image-wrapper">
+            <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group_1484580827_1.png?v=1726084589" class="free-shipping-img">
+          </div>
+          <span class="gift-title">Free Shipping</span>
                       </div>
                       <div class="free-bottle__wrapper">
                         <div class="image-wrapper">
