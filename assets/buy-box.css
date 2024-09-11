@@ -546,7 +546,9 @@
     font-size: 24px;
   }
 
-  .details__
+  .details__package-box {
+    width: 265px;
+  }
 
 
 }
