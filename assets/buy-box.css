@@ -438,11 +438,12 @@
   display: flex;
   align-items: center;
   font-weight: 600;
+  gap: 10px;
 }
 
 .vaule-point__icon {
   width: 13px;
-  
+  height: 13px;
 }
 
 .footer-value__point span svg {
