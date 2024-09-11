@@ -317,7 +317,7 @@ function renderTabContentDesktop(tabName, container) {
       </div>
     </div>
     <div>
-    
+      
     </div>
   `;
   
