@@ -506,11 +506,15 @@
     flex-direction: row;
   }
 
-  .radio {
+  .radio-header-title {
     display: flex;
     flex-direction: column;
     font-family: 'Poppins';
     font-weight: 600;
+  }
+
+  .radio-header-title span {
+    d
   }
 
 
