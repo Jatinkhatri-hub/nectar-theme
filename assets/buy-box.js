@@ -330,7 +330,7 @@ function renderTabContentDesktop(tabName, container) {
         </div>
         <div class="choose-flavor__btn-wrapper">
           <button class="choose-flavor__btn">Choose Your Flavors</button>
-          <div></div>
+          <div><span><span</div>
         </div>
     </div>
   `;
