@@ -130,7 +130,7 @@ function openTab(event, tabName) {
   const data = tabData[tabName];
 
   // Update header content
-//  document.getElementById('headerTitle').textContent = data.headerTitle;
+  document.getElementById('headerTitle').textContent = data.headerTitle;
   document.getElementById('totalPrice').textContent = data.totalPrice;
   document.getElementById('discountedPrice').textContent = data.discountedPrice;
 
