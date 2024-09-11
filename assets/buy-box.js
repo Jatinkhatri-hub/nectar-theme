@@ -154,7 +154,7 @@ function openTab(event, tabName) {
           badge.className = 'package__badge';
           badge.textContent = pkg.badge;
           if (pkg.badgeColor) badge.style.backgroundColor = pkg.badgeColor;
-          if (pkg.textColor) 
+          if (pkg.textColor) badge.style.color = pkg.textColor;
           packageBox.appendChild(badge);
       }
       const radio = document.createElement('input');
