@@ -34,7 +34,7 @@ const tabData = {
               pricePerPacket: '$0.86/Packet',
               badgeColor: '#FFCC00',
               isPopular: false
-          }
+          },
           {
             badge: 'Most Popular',
             title: '90 Packets',
