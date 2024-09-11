@@ -317,8 +317,8 @@ function renderTabContentDesktop(tabName, container) {
       </div>
     </div>
     <div class="details__footer>
+    ${data.showCongrats ? '' }
       <div class="details__footer-congrats">
-        ${data.showCongrats ? '' }
       </div>
     </div>
   `;
