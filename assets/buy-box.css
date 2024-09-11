@@ -547,7 +547,8 @@
   }
 
   .details__package-selector {
-    gap: 15px;
+    gap: 10px;
+    
   }
 
   .details__package-box {
