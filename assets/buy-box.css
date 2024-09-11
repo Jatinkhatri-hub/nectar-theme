@@ -440,6 +440,11 @@
   font-weight: 600;
 }
 
+.vaule-point__icon {
+  width: 13px;
+  
+}
+
 .footer-value__point span svg {
   margin-right: 7px;
 }
