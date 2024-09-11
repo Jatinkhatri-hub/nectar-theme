@@ -592,6 +592,10 @@
     flex-direction: row;
   }
 
+  .congrats-text {
+    background-color: #E8FFE3;
+  }
+
 
 
 }
