@@ -546,7 +546,9 @@
     font-size: 24px;
   }
 
-  .deat
+  .details__package-selector {
+    
+  }
 
   .details__package-box {
     width: 215px;
