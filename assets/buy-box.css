@@ -600,7 +600,8 @@
 
   .choose-flavor__btn-wrapper {
     width: 100%;
-    display: ;
+    display: flex;
+    flex-direction: column;
   }
 
 
