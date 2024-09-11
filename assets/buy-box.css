@@ -511,7 +511,8 @@
     position: absolute;
     left: 30px;
     top: 17px;
-    width: 
+    width: 25px;
+    height: 25px;
   }
 
   .radio-header-title {
