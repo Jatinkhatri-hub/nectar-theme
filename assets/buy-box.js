@@ -317,14 +317,14 @@ function renderTabContentDesktop(tabName, container) {
       </div>
     </div>
     <div class="details__footer>
+    ${data.showCongrats ? `
       <div class="details__footer-congrats">
-        ${data.showCongrats ? `
           <div class="footer__icon-wrapper">
             <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group.png?v=1726037024" class="footer-img">
           </div>
           <p class="congrats-text"><span>Congrats!</span> You're making proper Hydration and all the benefits that come with it a habit!</p>
+          </div>
         ` : ''}
-      </div>
     </div>
   `;
   
