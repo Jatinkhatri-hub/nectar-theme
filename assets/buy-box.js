@@ -170,7 +170,7 @@ function openTab(event, tabName) {
       const congratsDiv = document.createElement('div');
       congratsDiv.className = 'details__footer-congrats';
       congratsDiv.innerHTML = `
-          <div class="footer__icon-wrapper">{% render 'icon-thumbs-up' %}</div>
+          <div class="footer__icon-wrapper"><img src=""></div>
           <p class="congrats-text"><span>Congrats!</span> You’re making proper Hydration and all the benefits that come with it a habit!</p>
       `;
       footer.appendChild(congratsDiv);
