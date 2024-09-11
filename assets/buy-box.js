@@ -212,9 +212,9 @@ function rederTabContentDesktop (tabName, container) {
 
   // const content = document.createElement('div');
   // content.innerHTML = ""
-  document.getElementById('headerTitle').textContent = data.headerTitle;
-  document.getElementById('totalPrice').textContent = data.totalPrice;
-  document.getElementById('discountedPrice').textContent = data.discountedPrice;
+  // document.getElementById('headerTitle').textContent = data.headerTitle;
+  // document.getElementById('totalPrice').textContent = data.totalPrice;
+  // document.getElementById('discountedPrice').textContent = data.discountedPrice;
 
   // Update package selector
   const packageSelector = document.getElementById('packageSelector');
