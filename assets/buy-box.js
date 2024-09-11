@@ -51,7 +51,7 @@ const tabData = {
             title: '60 Packets',
             discount: 'Save 20%',
             pricePerPacket: '$1.10/Packet',
-            badgeColor: '',
+            badgeColor: 'transparent',
             isPopular: false,
             textColor: ''
           },
