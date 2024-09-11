@@ -206,29 +206,109 @@ function openTab(event, tabName) {
 }
 
 
-function renderTabContentDesktop (tabName, container) {
+// function renderTabContentDesktop (tabName, container) {
+//   const data = tabData[tabName];
+//   container.innerHTML = '';
+
+//   // const content = document.createElement('div');
+//   // content.innerHTML = ""
+//   // document.getElementById('headerTitle').textContent = data.headerTitle;
+//   // document.getElementById('totalPrice').textContent = data.totalPrice;
+//   // document.getElementById('discountedPrice').textContent = data.discountedPrice;
+
+//   // Update package selector
+//   const packageSelector = document.getElementById('packageSelector');
+//   packageSelector.innerHTML = ''; // Clear previous packages
+//   data.packages.forEach(pkg => {
+//       const packageBox = document.createElement('div');
+//       packageBox.className = 'details__package-box';
+//       if (pkg.badge) {
+//           const badge = document.createElement('span');
+//           badge.className = 'package__badge';
+//           badge.textContent = pkg.badge;
+//           if (pkg.badgeColor) badge.style.backgroundColor = pkg.badgeColor;
+//           if (pkg.textColor) badge.style.color = pkg.textColor;
+//           packageBox.appendChild(badge);
+//       }
+//       const radio = document.createElement('input');
+//       radio.type = 'radio';
+//       radio.className = 'radio__package-box';
+//       packageBox.appendChild(radio);
+//       const details = document.createElement('div');
+//       details.className = 'package-details';
+//       details.innerHTML = `
+//           <h6 class="package-title">${pkg.title}</h6>
+//           <p class="package-discount">${pkg.discount}</p>
+//           <p class="packet-individual">${pkg.pricePerPacket}</p>
+//       `;
+//       packageBox.appendChild(details);
+//       packageSelector.appendChild(packageBox);
+//   });
+
+//   // Update footer points
+//   const footer = document.querySelector('.details__footer');
+//   footer.innerHTML = ''; // Clear previous footer content
+
+//   if (data.showCongrats) {
+//       const congratsDiv = document.createElement('div');
+//       congratsDiv.className = 'details__footer-congrats';
+//       congratsDiv.innerHTML = `
+//           <div class="footer__icon-wrapper"><img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group.png?v=1726037024" class="footer-img"></div>
+//           <p class="congrats-text"><span>Congrats!</span> You’re making proper Hydration and all the benefits that come with it a habit!</p>
+//       `;
+//       footer.appendChild(congratsDiv);
+//   }
+
+//   data.footerPoints.forEach(point => {
+//       const p = document.createElement('p');
+//       p.className = 'footer-value__point';
+//       p.innerHTML = `<span><img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group_1484580410.png?v=1726037646" class="value-point__icon"></span> ${point}`;
+//       footer.appendChild(p);
+//   });
+
+//   // Add a subscription button if needed
+//   if (tabName === 'oneTime') {
+//       const button = document.createElement('button');
+//       button.className = 'sub-and-save__btn';
+//       button.innerHTML = `
+//           <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/file_4_1.png?v=1726036951" class="icon-gift">
+//           Tap here to subscribe and save $50.95
+//       `;
+//       footer.appendChild(button);
+//   }
+// }
+
+function renderTabContentDesktop(tabName, container) {
   const data = tabData[tabName];
-  container.innerHTML = '';
+  container.innerHTML = ''; // Clear previous content
 
-  // const content = document.createElement('div');
-  // content.innerHTML = ""
-  // document.getElementById('headerTitle').textContent = data.headerTitle;
-  // document.getElementById('totalPrice').textContent = data.totalPrice;
-  // document.getElementById('discountedPrice').textContent = data.discountedPrice;
+  // Example: Update content dynamically for the selected radio
+  if (data) {
+    // Update header
+    const headerTitle = document.createElement('h6');
+    headerTitle.className = 'radio-header-title';
+    headerTitle.innerHTML = `${data.headerTitle} <span>${data.discountDetails}</span>`;
+    container.parentElement.querySelector('.radio-header-title').innerHTML = headerTitle.innerHTML;
 
-  // Update package selector
-  const packageSelector = document.getElementById('packageSelector');
-  packageSelector.innerHTML = ''; // Clear previous packages
-  data.packages.forEach(pkg => {
+    // Update total and discounted price
+    const totalPrice = container.parentElement.querySelector('#totalPrice');
+    const discountedPrice = container.parentElement.querySelector('#discountedPrice');
+    if (totalPrice) totalPrice.textContent = data.totalPrice;
+    if (discountedPrice) discountedPrice.textContent = data.discountedPrice;
+
+    // Update package selector
+    const packageSelector = container.querySelector('#packageSelector');
+    packageSelector.innerHTML = ''; // Clear previous packages
+    data.packages.forEach(pkg => {
       const packageBox = document.createElement('div');
       packageBox.className = 'details__package-box';
       if (pkg.badge) {
-          const badge = document.createElement('span');
-          badge.className = 'package__badge';
-          badge.textContent = pkg.badge;
-          if (pkg.badgeColor) badge.style.backgroundColor = pkg.badgeColor;
-          if (pkg.textColor) badge.style.color = pkg.textColor;
-          packageBox.appendChild(badge);
+        const badge = document.createElement('span');
+        badge.className = 'package__badge';
+        badge.textContent = pkg.badge;
+        if (pkg.badgeColor) badge.style.backgroundColor = pkg.badgeColor;
+        if (pkg.textColor) badge.style.color = pkg.textColor;
+        packageBox.appendChild(badge);
       }
       const radio = document.createElement('input');
       radio.type = 'radio';
@@ -236,47 +316,45 @@ function renderTabContentDesktop (tabName, container) {
       packageBox.appendChild(radio);
       const details = document.createElement('div');
       details.className = 'package-details';
-      details.innerHTML = `
-          <h6 class="package-title">${pkg.title}</h6>
-          <p class="package-discount">${pkg.discount}</p>
-          <p class="packet-individual">${pkg.pricePerPacket}</p>
-      `;
+      details.innerHTML = `<h6 class="package-title">${pkg.title}</h6><p class="package-discount">${pkg.discount}</p><p class="packet-individual">${pkg.pricePerPacket}</p>`;
       packageBox.appendChild(details);
       packageSelector.appendChild(packageBox);
-  });
+    });
 
-  // Update footer points
-  const footer = document.querySelector('.details__footer');
-  footer.innerHTML = ''; // Clear previous footer content
-
-  if (data.showCongrats) {
-      const congratsDiv = document.createElement('div');
-      congratsDiv.className = 'details__footer-congrats';
-      congratsDiv.innerHTML = `
-          <div class="footer__icon-wrapper"><img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group.png?v=1726037024" class="footer-img"></div>
-          <p class="congrats-text"><span>Congrats!</span> You’re making proper Hydration and all the benefits that come with it a habit!</p>
-      `;
-      footer.appendChild(congratsDiv);
-  }
-
-  data.footerPoints.forEach(point => {
+    // Update footer points
+    const footer = container.querySelector('.details__footer');
+    footer.innerHTML = ''; // Clear previous footer content
+    data.footerPoints.forEach(point => {
       const p = document.createElement('p');
       p.className = 'footer-value__point';
-      p.innerHTML = `<span><img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group_1484580410.png?v=1726037646" class="value-point__icon"></span> ${point}`;
+      p.innerHTML = `<span><img src="icon-url" class="value-point__icon"></span> ${point}`;
       footer.appendChild(p);
-  });
-
-  // Add a subscription button if needed
-  if (tabName === 'oneTime') {
-      const button = document.createElement('button');
-      button.className = 'sub-and-save__btn';
-      button.innerHTML = `
-          <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/file_4_1.png?v=1726036951" class="icon-gift">
-          Tap here to subscribe and save $50.95
-      `;
-      footer.appendChild(button);
+    });
   }
 }
+
+// Initialize events for radio buttons
+document.addEventListener('DOMContentLoaded', () => {
+  const desktopRadioButtons = document.querySelectorAll('.radio-tab');
+  desktopRadioButtons.forEach(radio => {
+    radio.addEventListener('change', (event) => {
+      const tabName = event.currentTarget.getAttribute('data-tab');
+      const container = event.currentTarget.closest('.radio-label').querySelector('.radio-content-container');
+      renderTabContentDesktop(tabName, container);
+    });
+  });
+
+  // Initialize the first tab content on load for desktop
+  if (window.innerWidth >= 768) { 
+    const firstRadio = document.querySelector('.radio-tab[data-tab="autoShip"]');
+    if (firstRadio) {
+      firstRadio.checked = true;
+      renderTabContentDesktop('autoShip', firstRadio.closest('.radio-label').querySelector('.radio-content-container'));
+    }
+  }
+});
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const tabButtons = document.querySelectorAll('.tab-button');
