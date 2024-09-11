@@ -114,8 +114,8 @@
   max-width: 615px;
   display: flex;
   flex-direction: column;
-  border: 1px solid #0D3063;
-  border-radius: 10px;
+  /* border: 1px solid #0D3063;
+  border-radius: 10px; */
   overflow: hidden;
   font-family: 'Poppins', system-ui;
 }
@@ -125,6 +125,7 @@
   justify-content: center;
   width: 100%;
   overflow: hidden;
+  border-radius: 10px;
   flex-direction: column;
   border: 1px solid #0D3063;
   font-family: 'Poppins';
