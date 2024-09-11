@@ -21,8 +21,53 @@
 //   // Initialize the first tab to be active
 //   document.getElementById("Tab1").style.display = "block";
 // });
-
+const tabData = {
+  autoShip: {
+      headerTitle: 'Up to 40% Off + Free Gifts',
+      totalPrice: '$134.95',
+      discountedPrice: '$89.95',
+      packages: [
+          {
+              badge: 'Best Value',
+              title: '120 Packets',
+              discount: 'Save 40%',
+              pricePerPacket: '$0.86/Packet',
+              badgeColor: '#FFCC00',
+              isPopular: false
+          }
+          // Add other package options
+      ],
+      footerPoints: [
+          'Free Shipping With Every Order',
+          'Ships Within 12 Hours',
+          'No Contract - cancel or adjust with ease'
+      ],
+      showCongrats: true
+  },
+  oneTime: {
+      headerTitle: 'Up to 30% Off + Free Gifts',
+      totalPrice: '$134.95',
+      discountedPrice: '$99.95',
+      packages: [
+          {
+              badge: 'Best Value',
+              title: '120 Packets',
+              discount: 'Save 30%',
+              pricePerPacket: '$0.99/Packet',
+              badgeColor: '#FFCC00',
+              isPopular: false
+          }
+          // Add other package options
+      ],
+      footerPoints: [
+          'Happiness Guarantee',
+          'Ships Within 12 Hours',
+          'No Contract - cancel or adjust with ease'
+      ],
+      showCongrats: false
+  }
+};
 
 document.addEventListener('DOMContentLoaded', () => {
-  
+
 })
