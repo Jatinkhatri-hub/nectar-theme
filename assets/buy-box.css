@@ -511,6 +511,7 @@
     flex-direction: column;
     font-family: 'Poppins';
     font-weight: 600;
+    font-size: 20px;
   }
 
   .radio-header-title span {
