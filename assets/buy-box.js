@@ -80,7 +80,7 @@ const tabData = {
             pricePerPacket: '$0.99/Packet',
             badgeColor: '#FFCC00',
             isPopular: false
-        }
+          }
 
           // Add other package options
       ],
