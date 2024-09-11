@@ -326,7 +326,7 @@ function renderTabContentDesktop(tabName, container) {
         </div>
         ` : ''}
     </div>
-    <div class="">
+    <div class="value-points-c">
     
     </div>
   `;
