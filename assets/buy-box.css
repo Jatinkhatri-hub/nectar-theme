@@ -497,6 +497,7 @@
 
   .radio-label {
     border-radius: 16px;
-    
+    border: 1px solid #0D3063;
   }
+  
 }
