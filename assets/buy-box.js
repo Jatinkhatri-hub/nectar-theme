@@ -286,7 +286,7 @@ function renderTabContentDesktop(tabName, container) {
     <div class="details__package-selector" id="packageSelector">
       ${data.packages.map(pkg => `
         <div class="details__package-box">
-          <span></span>
+          <span class="package__badge"></span>
         </div>
         `)}
     </div>
