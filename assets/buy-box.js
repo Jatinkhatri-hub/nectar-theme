@@ -283,7 +283,8 @@ function renderTabContentDesktop(tabName, container) {
   container.innerHTML = ''; // Clear previous content
 
   container.innerHTML = `
-  
+    <div>
+    </div>
   `;
   
   
