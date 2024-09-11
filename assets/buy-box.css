@@ -533,7 +533,9 @@
     color: #0D3063;
   }
 
-  .radio-header
+  .radio-header .details-price__wrapper {
+    
+  }
 
 
 }
