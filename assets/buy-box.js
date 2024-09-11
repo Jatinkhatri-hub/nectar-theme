@@ -316,7 +316,7 @@ function renderTabContentDesktop(tabName, container) {
         </div>
       </div>
     </div>
-    <div>
+    <div class="details__footer>
       
     </div>
   `;
