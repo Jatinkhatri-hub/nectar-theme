@@ -127,7 +127,10 @@
   overflow: hidden;
 }
 
-.tab-butto
+.tab-button-container {
+  display: flex;
+  
+}
 
 .tab-button {
   background-color: #CBE5FF;
