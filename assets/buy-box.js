@@ -210,7 +210,8 @@ function rederTabContentDesktop (tabName, container) {
   const data = tabData[tabName];
   container.innerHTML = '';
 
-  const conte
+  const content = document.createElement('div');
+  content.innerHTML
 }
 
 document.addEventListener('DOMContentLoaded', () => {
