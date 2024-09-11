@@ -282,7 +282,9 @@ function renderTabContentDesktop(tabName, container) {
   const data = tabData[tabName];
   container.innerHTML = ''; // Clear previous content
 
+  container.innerHTML = `
   
+  `;
   
   
 };
