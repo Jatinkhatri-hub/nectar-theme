@@ -573,7 +573,8 @@
   }
 
   .gift-wrapper__title {
-    margin-block: ;
+    margin-block: 10px;
+    font-size: 19px;
   }
 
   .image-wrapper {
