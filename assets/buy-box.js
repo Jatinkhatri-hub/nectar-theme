@@ -43,7 +43,7 @@ const tabData = {
             pricePerPacket: '$0.99/Packet',
             badgeColor: '#F9E450',
             isPopular: true,
-            text
+            textColor: '#'
             
           },
           {
