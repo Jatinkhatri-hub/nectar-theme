@@ -534,7 +534,7 @@
   }
 
   .radio-header .details-price__wrapper {
-    
+    align-items: baseline;
   }
 
 
