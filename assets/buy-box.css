@@ -523,6 +523,7 @@
     font-size: 20px;
     color: #0D3063;
     margin-left: 2rem;
+    gap: 3px;
   }
 
   .radio-header-title span {
