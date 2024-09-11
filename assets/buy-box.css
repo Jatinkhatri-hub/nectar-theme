@@ -626,7 +626,8 @@
   }
 
   .choose-flavor__btn:hover {
-    border: ;
+    background: white;
+    
   }
 
   .delivery-text {
