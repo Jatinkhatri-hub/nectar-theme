@@ -282,56 +282,9 @@ function renderTabContentDesktop(tabName, container) {
   const data = tabData[tabName];
   container.innerHTML = ''; // Clear previous content
 
-  // Example: Update content dynamically for the selected radio
-  if (data) {
-    // Update header
-    const headerTitle = document.createElement('h6');
-    headerTitle.className = 'radio-header-title';
-    headerTitle.innerHTML = `${data.headerTitle} <span>${data.discountDetails}</span>`;
-    container.parentElement.querySelector('.radio-header-title').innerHTML = headerTitle.innerHTML;
-
-    // Update total and discounted price
-    const totalPrice = container.parentElement.querySelector('#totalPrice');
-    const discountedPrice = container.parentElement.querySelector('#discountedPrice');
-    if (totalPrice) totalPrice.textContent = data.totalPrice;
-    if (discountedPrice) discountedPrice.textContent = data.discountedPrice;
-
-    // Update package selector
-    const packageSelector = container.querySelector('#packageSelector');
-    packageSelector.innerHTML = ''; // Clear previous packages
-    data.packages.forEach(pkg => {
-      const packageBox = document.createElement('div');
-      packageBox.className = 'details__package-box';
-      if (pkg.badge) {
-        const badge = document.createElement('span');
-        badge.className = 'package__badge';
-        badge.textContent = pkg.badge;
-        if (pkg.badgeColor) badge.style.backgroundColor = pkg.badgeColor;
-        if (pkg.textColor) badge.style.color = pkg.textColor;
-        packageBox.appendChild(badge);
-      }
-      const radio = document.createElement('input');
-      radio.type = 'radio';
-      radio.className = 'radio__package-box';
-      packageBox.appendChild(radio);
-      const details = document.createElement('div');
-      details.className = 'package-details';
-      details.innerHTML = `<h6 class="package-title">${pkg.title}</h6><p class="package-discount">${pkg.discount}</p><p class="packet-individual">${pkg.pricePerPacket}</p>`;
-      packageBox.appendChild(details);
-      packageSelector.appendChild(packageBox);
-    });
-
-    // Update footer points
-    const footer = container.querySelector('.details__footer');
-    footer.innerHTML = ''; // Clear previous footer content
-    data.footerPoints.forEach(point => {
-      const p = document.createElement('p');
-      p.className = 'footer-value__point';
-      p.innerHTML = `<span><img src="icon-url" class="value-point__icon"></span> ${point}`;
-      footer.appendChild(p);
-    });
-  }
-}
+  
+  
+};
 
 
 
