@@ -508,7 +508,7 @@
   }
 
   .radio-tab {
-    dis
+    position: absolute;
   }
 
   .radio-header-title {
