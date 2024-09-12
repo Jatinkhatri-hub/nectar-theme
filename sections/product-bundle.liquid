@@ -1,17 +1,19 @@
 {{ 'buy-box.css' |  asset_url |  stylesheet_tag }}
 {{ 'bundle-selector.css' |  asset_url |  stylesheet_tag }}
 <script src="{{ 'bundle-selector.js' |  asset_url }}" defer></script>
-
-<div class="product-bundle__wrapper">
-  <div class="product-selector__card">
-    <div class="product-img__wrapper">
-      <img src="{{ 'lime.png' |  asset_url }}" class="product-img">
-    </div>
-    <div class="product-card__info">
-      <h1 class="product-title">Strawberry Lemonade</h1>
-      <button class="product-add__btn">Add+</button>
+<div>
+  <div class="product-bundle__wrapper">
+    <div class="product-selector__card">
+      <div class="product-img__wrapper">
+        <img src="{{ 'lime.png' |  asset_url }}" class="product-img">
+      </div>
+      <div class="product-card__info">
+        <h1 class="product-title">Strawberry Lemonade</h1>
+        <button class="product-add__btn">Add+</button>
+      </div>
     </div>
   </div>
+
 </div>
 
 {% schema %}
