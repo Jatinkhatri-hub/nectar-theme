@@ -519,6 +519,7 @@ document.querySelectorAll('input[name="purchaseType"]').forEach(radio => {
 
 document.querySelector('.choose-flavor__btn').addEventListener('click', function () {
   window.location.href = '/brand-bundle-bdsgucxe'
+  class
  });
 
 
