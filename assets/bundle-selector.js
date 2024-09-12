@@ -49,6 +49,16 @@ document.addEventListener('DOMContentLoaded', function() {
     return card;
   };
 
+  const variantCards = document.querySelectorAll('.bundle-variant__card');
+  variantCards.forEach(card => {
+    const variantId = card.dataset.variantId;
+    const price = parseFloat(card.dataset.variantPrice);
+    state.selectedProducts[variantId] = {
+      quantity: 0,
+      price: price
+    };
+  });
+
 
   const handleIncreaseClick = (variantId) => {
   
