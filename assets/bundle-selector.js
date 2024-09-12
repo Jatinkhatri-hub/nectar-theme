@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     card.innerHTML = `
       <div class="product-img__wrapper">
-        <img src="${variant.}" class="product-img">
+        <img src="${variant.featured_image}" class="product-img">
       </div>
       <div class="product-card__info">
         <h1 class="product-title">Strawberry Lemonade</h1>
