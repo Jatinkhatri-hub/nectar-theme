@@ -559,7 +559,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const buyBox = document.querySelector('.buy-box__wrapper');
 
-  
+  const variantData = buyBox.get
 
   //console.log(buyBox.getAttribute('data-product-variants'));
 
