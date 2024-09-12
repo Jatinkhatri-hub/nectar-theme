@@ -148,7 +148,8 @@ document.addEventListener('DOMContentLoaded', function() {
       const card = createVariantCard(variant);
       container.appendChild(card);
       state.selectedVariants[variant.id] = {
-        quantity
+        quantity: 0,
+        price: 
       }
     });
 
