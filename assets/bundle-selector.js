@@ -266,5 +266,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
   console.log(state);
 
-  console.log(selectedVariants)
+ // console.log(selectedVariants)
 });
