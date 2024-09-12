@@ -479,7 +479,7 @@ if (tabName === 'oneTime') {
 }
 
   const valuePointsWrapper = document.createElement('div');
-  valuePointsWrapper.add.classList()
+  valuePointsWrapper.add.classList('value-points__wrapper');
 
   data.footerPoints.forEach(point => {
     const p = document.createElement('p');
