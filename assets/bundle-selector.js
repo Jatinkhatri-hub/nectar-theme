@@ -212,6 +212,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     state.selectedVariants[variantId].quantity++;
     state.totalSelected++;
+    updateShopNowButton();
     toggleControls(variantId);
     console.log(state.selectedVariants);
 
@@ -225,7 +226,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (state.selectedVariants[variantId].quantity > 0) {
       state.selectedVariants[variantId].quantity--;
     }
-
+    
     state.totalSelected--;
     toggleControls(variantId);
 
