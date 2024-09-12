@@ -2,7 +2,8 @@
 .bundle-selector__wrapper {
   display: flex;
   justify-content: center;
-  align-items: ce;
+  align-items: center;
+  
 }
 
 .product-bundle__wrapper {
