@@ -1,5 +1,5 @@
 function rebuildVariantCards(variantData) {
-  
+  const container = document.getElementById('')
 }
 
 
