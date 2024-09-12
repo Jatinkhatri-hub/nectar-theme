@@ -140,7 +140,7 @@ function updateProgressBar(packageSize) {
     case '60 Packets':
       progress = 50; // Free Shipping unlocked
       // freeShippingWrapper.classList.add('unlocked');
-      freeShippingWrapper.querySelector('img').src = ''
+      freeShippingWrapper.querySelector('img').src = 'https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group_1484580827_1.png?v=1726084589'
       // freeBottleWrapper.classList.remove('unlocked');
       break;
     case '90 Packets':
