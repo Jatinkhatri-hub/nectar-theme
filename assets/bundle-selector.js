@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const card = document.querySelector(`.product-selector__card[data-variant-id="${variantId}"]`);
     card.querySelector('.variant__added-no').innerText = state.selectedVariants[variantId].quantity;
-    card.querySelector('.variant-input').value = selectedVariants[variantId].quantity;
+    card.querySelector('.variant-input').value = state.selectedVariants[variantId].quantity;
   }
 
   // Attach event listeners to buttons
