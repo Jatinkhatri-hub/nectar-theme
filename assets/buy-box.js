@@ -517,7 +517,7 @@ document.querySelectorAll('input[name="purchaseType"]').forEach(radio => {
   radio.addEventListener('change', handleRadioSwitch);
 });
 
-document.querySelector('.choose-flavor__btn').addEventListener('click', () => {
+document.querySelector('.choose-flavor__btn').addEventListener('click', function () {
   window.location.href = '/brand-bundle-bdsgucxe'
  });
 
