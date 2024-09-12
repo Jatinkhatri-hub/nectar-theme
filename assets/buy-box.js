@@ -128,9 +128,31 @@ const tabData = {
 
 function updateProgressBar(packageSize) {
   const progressBar = document.querySelector('.progress');
-  const freeShippingWrapper = document.querySelector('free-shipping__wrapper');
-  const.
-}
+  const freeShippingWrapper = document.querySelector('.free-shipping__wrapper');
+  const freeBottleWrapper = document.querySelector('.free-bottle__wrapper');
+
+  let progress = 0;
+
+  switch (packageSize) {
+    case '30 Packets':
+      progress = 0;
+      break;
+    case '60 Packets':
+      progress = 50; // Free Shipping unlocked
+      freeShippingWrapper.classList.add('unlocked');
+      freeBottleWrapper.classList.remove('unlocked');
+      break;
+    case '90 Packets':
+    case '120 Packets':
+      progress = 100; // Both Free Shipping and Bottle unlocked
+      freeShippingWrapper.classList.add('unlocked');
+      freeBottleWrapper.classList.add('unlocked');
+      break;
+    default:
+      break;
+  }
+
+  progre
 
 
 function openTab(event, tabName) {
