@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let discount = 0;
 
     switch (true) {
-      case 1 s:
+      case 1 :
         discount = 10;
         break;
       case 2:
