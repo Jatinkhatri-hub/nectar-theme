@@ -50,6 +50,7 @@
   width: 140px;
   display: flex;
   align-items: center;
+  margin: 0;
 }
 
 .product-add__btn {
