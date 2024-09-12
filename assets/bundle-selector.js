@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
   function rebuildVariantCards(variantData) {
-    const container = document.querySelector('product-bundle__wrapper');
+    const container = document.querySelector('.product-bundle__wrapper');
   
     container.innerHTML = '';
   
