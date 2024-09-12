@@ -1,7 +1,7 @@
 {{ 'buy-box.css' |  asset_url |  stylesheet_tag }}
 {{ 'bundle-selector.css' |  asset_url |  stylesheet_tag }}
 <script src="{{ 'bundle-selector.js' |  asset_url }}" defer></script>
-<div class="bundle-selector__wrapper">
+<form class="bundle-selector__wrapper">
   <div class="product-bundle__wrapper">
     <div class="product-selector__card">
       <div class="product-img__wrapper">
@@ -18,7 +18,7 @@
     <button class="bundle-atc__btn" type="submit">Select 4 More Packs <span>{% render 'icon-arrow-right-2' %}</span></button>
   </div>
 
-</div>
+</form>
 
 {% schema %}
 {
