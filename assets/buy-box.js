@@ -406,6 +406,8 @@ function renderTabContentDesktop(tabName) {
        </div>
   `;
 
+  
+
   // Render footer points
   const footer = document.createElement('div');
   footer.classList.add('details__footer');
