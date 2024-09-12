@@ -222,7 +222,7 @@ function openTab(event, tabName) {
          </div>
          <div class="free-shipping__wrapper">
            <div class="image-wrapper">
-             <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group_1484580827_1.png?v=1726084589" class="free-shipping-img">
+             <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Frame_1484581370.png?v=1726118319" class="free-shipping-img">
            </div>
            <span class="gift-title">Free Shipping</span>
          </div>
