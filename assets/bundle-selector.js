@@ -1,4 +1,6 @@
-function rebuildVariant
+function rebuildVariantCards(variantData) {
+  
+}
 
 
 
