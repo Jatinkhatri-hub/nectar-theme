@@ -235,7 +235,7 @@ function openTab(event, tabName) {
        </div>
   `;
 
-  container.appendChild(giftWrapper);
+  //container.appendChild(giftWrapper);
 
 
   // Update footer points
@@ -284,7 +284,7 @@ function renderTabContentDesktop(tabName) {
 
   // Render packages
   data.packages.forEach(pkg => {
-    const packageBox = document.createElement('div');
+    const packageBox = document.createElement('label');
     packageBox.className = 'details__package-box';
 
     if (pkg.badge) {
