@@ -446,15 +446,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // });
 
   // Initialize the first tab content on load for desktop
-  // if (window.innerWidth >= 768) { 
-  //   const firstRadio = document.querySelector('.radio-tab[data-tab="autoShip"]');
-  //   if (firstRadio) {
-  //     firstRadio.checked = true;
-  //     renderTabContentDesktop('autoShip', firstRadio.closest('.radio-label').querySelector('.radio-content-container'));
-  //   }
-  // } else {
-  //   openTab(null, 'autoShip');
-  // }
+  if (window.innerWidth >= 768) { 
+    // const firstRadio = document.querySelector('.radio-tab[data-tab="autoShip"]');
+    // if (firstRadio) {
+    //   firstRadio.checked = true;
+    //   renderTabContentDesktop('autoShip', firstRadio.closest('.radio-label').querySelector('.radio-content-container'));
+    // }
+  } else {
+    openTab(null, 'autoShip');
+  }
 
   //  // Desktop radio buttons event listeners
   //  const desktopRadioButtons = document.querySelectorAll('.radio-tab');
