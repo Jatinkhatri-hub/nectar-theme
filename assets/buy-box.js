@@ -186,10 +186,19 @@ function openTab(event, tabName) {
           if (pkg.textColor) badge.style.color = pkg.textColor;
           packageBox.appendChild(badge);
       }
+      // const radio = document.createElement('input');
+      // radio.type = 'radio';
+      // radio.className = 'radio__package-box';
+      // packageBox.appendChild(radio);
+
       const radio = document.createElement('input');
       radio.type = 'radio';
+      radio.name = 'package';
+      radio.value = pkg.title;
       radio.className = 'radio__package-box';
+      radio.addEventListener('change', () => updateProgressBar(pkg.title)); // Update progress bar on selection
       packageBox.appendChild(radio);
+      
       const details = document.createElement('div');
       details.className = 'package-details';
       details.innerHTML = `
