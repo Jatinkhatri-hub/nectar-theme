@@ -521,6 +521,13 @@ if (tabName === 'oneTime') {
     document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
         renderTabContentDesktop('autoShip');
         const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
+        const autoShipContent = document.getElementById('autoShipContent');
+  const oneTimeContent = document.getElementById('oneTimeContent');
+
+  const selectedRadio = document.querySelector('input[name="purchaseType"]:checked');
+
+  // Clear both containers before rendering new content
+  autoShipContent.innerHTML = '';
         autoShipRadio.checked = true;
         const selectedPackage = document.querySelector('input[name="package"]:checked');
         if (selectedPackage) {
