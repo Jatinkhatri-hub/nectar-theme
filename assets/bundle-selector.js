@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', function() {
     } catch (error) {
       console.error('Error adding products to cart:', error);
     } finally {
-      document.querySelector('.bundle-selector__shop-btn').innerText = "Added"
+      document.querySelector('.bundle-atc__btn').innerText = "Added"
     }
   };
 
