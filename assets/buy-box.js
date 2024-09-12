@@ -521,7 +521,7 @@ if (tabName === 'oneTime') {
     document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
 
       
-      renderTabContentDesktop('autoShip');
+      //renderTabContentDesktop('autoShip');
       const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
       
       autoShipRadio.checked = true;
@@ -533,6 +533,16 @@ if (tabName === 'oneTime') {
         //     updatePrices(pack, true);
         //     updateProgressBar(pack);
         // }
+
+        autoShipContent.innerHTML = '';
+  oneTimeContent.innerHTML = '';
+
+  if (selectedRadio.value === 'autoShip') {
+    renderTabContentDesktop('autoShip');
+  } else {
+    renderTabContentDesktop('oneTime');
+  }
+
         document.querySelector('.details__package-selector').scrollIntoView({ behavior: 'smooth' });
     });
 }
