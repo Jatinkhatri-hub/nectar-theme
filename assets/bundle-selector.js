@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const card = document.createElement('div');
     card.classList.add('product-selector__card');
     card.setAttribute('data-variant-id', variant.id);
-    card.setAttribute('data-variant-price', variant.)
+    card.setAttribute('data-variant-price', variant.price);
 
     card.innerHTML = `
       <div class="product-img__wrapper">
@@ -271,7 +271,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Handle increase button click
   function handleIncreaseClick(variantId) {
     if (!state.selectedVariants[variantId]) {
-      state.selectedVariants[variantId] = { quantity: 0, price: 0 };
+      state.selectedVariants[variantId] = { quantity: 0, price: variant. };
     }
     state.selectedVariants[variantId].quantity++;
     state.totalSelected++;
