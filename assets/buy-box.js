@@ -569,15 +569,15 @@ document.addEventListener('DOMContentLoaded', () => {
   
 
   // Retrieve the JSON string for product variants
-const rawVariantsData = buyBox.getAttribute('data-product-variants');
-console.log('Raw variants data:', rawVariantsData); // Log the raw string
+// const rawVariantsData = buyBox.getAttribute('data-product-variants');
+// console.log('Raw variants data:', rawVariantsData); // Log the raw string
 
-// Try parsing the JSON string
-try {
-  const variants = JSON.parse(rawVariantsData);
-  console.log('Parsed variants data:', variants);
-} catch (error) {
-  console.error('Error parsing variants JSON:', error);
-}
+// // Try parsing the JSON string
+// try {
+//   const variants = JSON.parse(rawVariantsData);
+//   console.log('Parsed variants data:', variants);
+// } catch (error) {
+//   console.error('Error parsing variants JSON:', error);
+// }
 
 });
