@@ -294,6 +294,9 @@ document.addEventListener('DOMContentLoaded', function() {
         handleDecreaseClick(variantId);
       });
     });
+
+    document.getElementById('bundle-selector-form').addEventListener('submit', handleFormSubmit);
+
   }
 
   // Rebuild cards with stored variant data
