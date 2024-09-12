@@ -149,6 +149,8 @@ document.addEventListener('DOMContentLoaded', function() {
       container.appendChild(card);
     });
 
+    
+
     // Attach event listeners after rendering the cards
     attachEventListeners();
   }
