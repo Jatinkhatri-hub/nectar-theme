@@ -404,7 +404,7 @@ function renderTabContentDesktop(tabName) {
            <span class="gift-title">Nectar Bottle</span>
          </div>
        </div>
-  `
+  `;
 
   // Render footer points
   const footer = document.createElement('div');
