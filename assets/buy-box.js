@@ -559,6 +559,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const buyBox = document.querySelector('.buy-box__wrapper');
 
+  
+
   //console.log(buyBox.getAttribute('data-product-variants'));
 
   const variants = JSON.parse(variantsData);
