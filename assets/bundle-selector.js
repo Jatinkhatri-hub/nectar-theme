@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
       selectedVariants[variantId].quantity++
       toggleControls(variantId);
 
-      const card = document.querySelector(`.product-select__card[data-variant-id="${variantId}"]`);
+      const card = document.querySelector(`.product-selector__card[data-variant-id="${variantId}"]`);
       card.querySelector('.variant__added-no').innerText = state.selectedProducts[variantId].quantity;
       card.querySelector('.variant-input').value = state.selectedProducts[variantId].quantity;
   
