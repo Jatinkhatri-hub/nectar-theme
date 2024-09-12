@@ -62,10 +62,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const handleIncreaseClick = (variantId) => {
   
-      selectedVariants[va].quantity++
+      selectedVariants[variantId].quantity++
 
-      state.selectedProducts[variantId].quantity++;
-      state.totalSelected++;
+      
       
       toggleControls(variantId);
 
