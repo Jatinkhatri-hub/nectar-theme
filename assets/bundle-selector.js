@@ -183,6 +183,9 @@ document.addEventListener('DOMContentLoaded', function() {
       return total + (product.quantity * product.price);
     }, 0);
 
+    const savingsElement = document.querySelector('.money-saved');
+
+
     // updateSavings();
 
     // const subTotal = (state.subtotal / 100).toFixed(2);
