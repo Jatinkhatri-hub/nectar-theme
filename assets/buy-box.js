@@ -385,7 +385,7 @@ function renderTabContentDesktop(tabName) {
 
   const giftWrapper = document.createElement('div');
   giftWrapper.classList.add('details__gift-wrapper');
-  d
+  giftWrapper.innerHTML = ``
 
   // Render footer points
   const footer = document.createElement('div');
