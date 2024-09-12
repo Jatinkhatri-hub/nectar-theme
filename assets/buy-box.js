@@ -126,7 +126,7 @@ const tabData = {
   }
 };
 
-function updateProgressBar()
+//function updateProgressBar()
 
 
 function openTab(event, tabName) {
