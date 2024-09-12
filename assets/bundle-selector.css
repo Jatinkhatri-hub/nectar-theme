@@ -160,7 +160,9 @@
   border-color: #0D3063;
 }
 
-.active 
+.active:hover {
+  
+}
 
 .disable {
   background: #E4E4E4;
