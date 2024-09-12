@@ -1,4 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
   const storedVariantData = localStorage.getItem('variantData');
-  const storedSelectedVariants =
+  const storedSelectedVariants = localStorage.getItem('se')
 });
