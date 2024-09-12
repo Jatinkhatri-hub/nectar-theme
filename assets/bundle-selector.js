@@ -4,7 +4,7 @@ function rebuildVariantCards(variantData) {
   container.innerHTML = '';
 
   variantData.forEach(variant => {
-
+    const card = create
   });
 }
 
