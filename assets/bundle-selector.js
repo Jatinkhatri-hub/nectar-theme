@@ -147,9 +147,10 @@ document.addEventListener('DOMContentLoaded', function() {
     variantData.forEach(variant => {
       const card = createVariantCard(variant);
       container.appendChild(card);
+      state.se
     });
 
-    
+
 
     // Attach event listeners after rendering the cards
     attachEventListeners();
