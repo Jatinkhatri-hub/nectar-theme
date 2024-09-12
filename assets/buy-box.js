@@ -126,7 +126,7 @@ const tabData = {
   }
 };
 
-//function updateProgressBar()
+function updateProgressBar(package)
 
 
 function openTab(event, tabName) {
@@ -149,7 +149,7 @@ function openTab(event, tabName) {
   const packageSelector = document.getElementById('packageSelector');
   packageSelector.innerHTML = ''; // Clear previous packages
   data.packages.forEach(pkg => {
-      const packageBox = document.createElement('div');
+      const packageBox = document.createElement('label');
       packageBox.className = 'details__package-box';
       if (pkg.badge) {
           const badge = document.createElement('span');
