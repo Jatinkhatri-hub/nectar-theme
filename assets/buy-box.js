@@ -348,9 +348,9 @@ function openTab(event, tabName) {
       footer.appendChild(button);
   }
 
-  if (tabName == 'autoShip') {
-    updatePrices()
-  }
+  // if (tabName == 'autoShip') {
+  //   updatePrices()
+  // }
 }
 
 
