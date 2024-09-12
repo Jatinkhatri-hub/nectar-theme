@@ -295,7 +295,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
 
-    document.getElementById('bundle-selector-form').addEventListener('submit', handleFormSubmit);
+    document.getElementById('bundle-selector__wrapper').addEventListener('submit', handleFormSubmit);
 
   }
 
