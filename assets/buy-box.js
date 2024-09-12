@@ -262,7 +262,7 @@ function openTab(event, tabName) {
       radio.name = 'package';
       radio.value = pkg.title;
       radio.className = 'radio__package-box';
-      radio.addEventListener('change', () => updateProgressBar(pkg.title)); // Update progress bar on selection
+      radio.addEventListener('change', () => {updateProgressBar(pkg.title)}); // Update progress bar on selection
       packageBox.appendChild(radio);
 
       const details = document.createElement('div');
