@@ -487,6 +487,8 @@ if (tabName === 'oneTime') {
     valuePointsWrapper.appendChild(p);
   });
 
+  footer.a
+
 
   const flavorBtnWrapper = document.createElement('div');
   flavorBtnWrapper.classList.add = 'choose-flavor__btn-wrapper'
