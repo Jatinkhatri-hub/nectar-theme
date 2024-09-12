@@ -447,6 +447,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize the first tab content on load for desktop
   if (window.innerWidth >= 768) { 
+    renderTabContentDesktop('autoShip');
     // const firstRadio = document.querySelector('.radio-tab[data-tab="autoShip"]');
     // if (firstRadio) {
     //   firstRadio.checked = true;
