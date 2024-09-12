@@ -133,7 +133,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const state = {
     selectedVariants: {},
     totalSelected: 0,
-    sub
+    subtotals: 0,
+    requiredCount
   }
 
   const selectedVariants = {}; // To keep track of selected variants
