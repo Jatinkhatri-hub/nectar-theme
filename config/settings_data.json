@@ -96,7 +96,7 @@
           "title": "<p>Hydration For<\/p>",
           "description": "\"Afternoon Slumps\", \"Groggy Mornings\", \"Foggy Brains\"",
           "button_label_1": "Shop Now",
-          "button_url_1": "shopify:\/\/products\/crimson-lion",
+          "button_url_1": "shopify:\/\/products\/protein-hydrator",
           "button_label_2": "",
           "button_url_2": "",
           "color_background": "#7bbafa",
@@ -270,36 +270,31 @@
           "1581546308094": {
             "type": "icon",
             "settings": {
-              "title_icon": "Zero Calories & Sugar Free",
-              "icon": "shopify:\/\/shop_images\/zero-blue.png"
+              "title_icon": "Zero Calories & Sugar Free"
             }
           },
           "1581546365309": {
             "type": "icon",
             "settings": {
-              "title_icon": "All Natural & Vegan",
-              "icon": "shopify:\/\/shop_images\/natural.png"
+              "title_icon": "All Natural & Vegan"
             }
           },
           "1581546391956": {
             "type": "icon",
             "settings": {
-              "title_icon": "Non-GMO",
-              "icon": "shopify:\/\/shop_images\/thicker-no-filler_8a5613bc-261b-4550-8008-435ba5222cde.png"
+              "title_icon": "Non-GMO"
             }
           },
           "1581546413106": {
             "type": "icon",
             "settings": {
-              "title_icon": "No Synthetic Fillers",
-              "icon": "shopify:\/\/shop_images\/thicker-no-filler.png"
+              "title_icon": "No Synthetic Fillers"
             }
           },
           "1584466671017": {
             "type": "icon",
             "settings": {
-              "title_icon": "Made in the USA",
-              "icon": "shopify:\/\/shop_images\/usa-bluepng.png"
+              "title_icon": "Made in the USA"
             }
           }
         },
@@ -326,7 +321,6 @@
               "r_list": "",
               "r_button": "",
               "r_link": "",
-              "r_image": "shopify:\/\/shop_images\/Asset_2.png",
               "r_image_text": ""
             }
           },
@@ -338,7 +332,6 @@
               "l_list": "",
               "l_button": "",
               "l_link": "",
-              "l_image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_2.gif",
               "l_image_text": ""
             }
           }
@@ -368,7 +361,6 @@
           "1581608995186": {
             "type": "text",
             "settings": {
-              "icons": "shopify:\/\/shop_images\/potassium_ddd8e59d-1191-40d0-bd62-2dd7922e7a7f.png",
               "grid_title": "Potassium",
               "grid_desc": "<p>Prevents Muscle Cramps<\/p>"
             }
@@ -376,7 +368,6 @@
           "1581609229325": {
             "type": "text",
             "settings": {
-              "icons": "shopify:\/\/shop_images\/calcium_c9587915-c29e-48e8-bdb8-71a73aa5f362.png",
               "grid_title": "Calcium",
               "grid_desc": "<p>Regulates Heart Rhythm<\/p>"
             }
@@ -384,7 +375,6 @@
           "1581609247639": {
             "type": "text",
             "settings": {
-              "icons": "shopify:\/\/shop_images\/magnesium_d07ddfc7-89ef-4409-9d93-d5e4265f6a12.png",
               "grid_title": "Magnesium",
               "grid_desc": "<p>Drives Energy Creation<\/p>"
             }
@@ -392,7 +382,6 @@
           "1581609261072": {
             "type": "text",
             "settings": {
-              "icons": "shopify:\/\/shop_images\/sodium-chloride_bf2e9d2e-b28a-44ea-a38f-518360aed43f.png",
               "grid_title": "Sodium Chloride",
               "grid_desc": "<p>Maintains Fluid Balance<\/p>"
             }
@@ -400,7 +389,6 @@
           "1581609278045": {
             "type": "text",
             "settings": {
-              "icons": "shopify:\/\/shop_images\/crystalized-lemon_56408567-8a11-4658-b486-53ade020137e.png",
               "grid_title": "Organic Fruit",
               "grid_desc": "<p>Refreshing Taste<\/p>"
             }
@@ -408,7 +396,6 @@
           "1581609293620": {
             "type": "text",
             "settings": {
-              "icons": "shopify:\/\/shop_images\/organic-stevia_a024bb44-8a3a-4dae-9c66-6b64e1908b82.png",
               "grid_title": "Organic Stevia",
               "grid_desc": "<p>Light Sweetener<\/p>"
             }
@@ -481,7 +468,6 @@
           "1581618959502": {
             "type": "text",
             "settings": {
-              "team_id": "shopify:\/\/shop_images\/Rachel.png",
               "team_title": "RACHEL P.",
               "team_position": "<p>Cellular Biologist<\/p>"
             }
@@ -489,7 +475,6 @@
           "1581619014046": {
             "type": "text",
             "settings": {
-              "team_id": "shopify:\/\/shop_images\/Zach_copy.png",
               "team_title": "ZACH H. MD",
               "team_position": "<p>Physician<\/p>"
             }
