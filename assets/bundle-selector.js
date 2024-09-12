@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
   function createVariantCard(variant) {
     const card = document.createElement('div');
     card.classList.add('.product-selector__card');
-    
+
+    card
   }
 
 
