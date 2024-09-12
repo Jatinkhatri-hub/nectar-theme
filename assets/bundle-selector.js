@@ -226,8 +226,9 @@ document.addEventListener('DOMContentLoaded', function() {
     if (state.selectedVariants[variantId].quantity > 0) {
       state.selectedVariants[variantId].quantity--;
     }
-    
+
     state.totalSelected--;
+    updateShopNowButton();
     toggleControls(variantId);
 
     const card = document.querySelector(`.product-selector__card[data-variant-id="${variantId}"]`);
