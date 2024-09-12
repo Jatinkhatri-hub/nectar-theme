@@ -53,10 +53,11 @@ document.addEventListener('DOMContentLoaded', function() {
   variantCards.forEach(card => {
     const variantId = card.dataset.variantId;
     selectedVariants[variantId] = {
-      quantity: 0,
-      price: price
+      quantity: 0
     };
   });
+
+  console.log()
 
 
   const handleIncreaseClick = (variantId) => {
