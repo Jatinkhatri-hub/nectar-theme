@@ -60,9 +60,9 @@ document.addEventListener('DOMContentLoaded', function() {
   console.log(selectedVariants);
 
   const toggleControls = (variantId) => {
-    const card = document.querySelector(`.product__card[data-variant-id="${variantId}"]`);
+    const card = document.querySelector(`.product-selector__card[data-variant-id="${variantId}"]`);
     if (state.selectedProducts[variantId].quantity > 0) {
-       card.querySelector('.variant__atb-btn').style.display = 'none';
+       card.querySelector('.product-add__btn').style.display = 'none';
        card.querySelector('.variant__quantity-controls').style.display = 'flex';
     } else {
       card.querySelector('.variant__atb-btn').style.display = 'flex';
