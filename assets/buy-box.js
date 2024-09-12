@@ -610,7 +610,7 @@ document.addEventListener('DOMContentLoaded', () => {
     openTab(null, 'autoShip');
   }
 
-  document.getElementById('flavorSelectionBtn').addEventListener('click', function() {
+  document.getElementById('flavorSelectionBtnDesktop').addEventListener('click', function() {
     // Store data in LocalStorage
     // localStorage.setItem('selectedPackage', selectedPackage);
     // localStorage.setItem('productVariants', JSON.stringify(productVariants));
