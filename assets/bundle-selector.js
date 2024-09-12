@@ -221,8 +221,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Handle decrease button click
   function handleDecreaseClick(variantId) {
-    if (selectedVariants[variantId].quantity > 0) {
-      selectedVariants[variantId].quantity--;
+    if (state.selectedVariants[variantId].quantity > 0) {
+      state.selectedVariants[variantId].quantity--;
     }
     toggleControls(variantId);
 
