@@ -52,6 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const handleIncreaseClick = (variantId) => {
   
+      updateSelectedVariants(variantId)
+
       state.selectedProducts[variantId].quantity++;
       state.totalSelected++;
       
