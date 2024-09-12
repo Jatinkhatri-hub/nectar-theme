@@ -3,7 +3,7 @@ function rebuildVariantCards(variantData) {
 
   container.innerHTML = '';
 
-  var
+  variantData.forEach(var)
 }
 
 
