@@ -552,7 +552,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // localStorage.setItem('productVariants', JSON.stringify(productVariants));
   
     // Navigate to the bundle selection page
-    window.location.href = '/brand-bundle-bdsgucxe'; // Replace with your actual URL
+    window.location.href = '/pages/brand-bundle/brand-bundle-bdsgucxe'; // Replace with your actual URL
   });
 
   
