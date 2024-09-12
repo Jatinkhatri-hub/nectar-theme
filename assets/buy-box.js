@@ -519,16 +519,19 @@ if (tabName === 'oneTime') {
 
   if (document.querySelector('.sub-and-save__btn')) {
     document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
+
+      const autoShipContent = document.getElementById('autoShipContent');
+      const oneTimeContent = document.getElementById('oneTimeContent');
+    
+      const selectedRadio = document.querySelector('input[name="purchaseType"]:checked');
+    
+      // Clear both containers before rendering new content
+      autoShipContent.innerHTML = '';
+      oneTimeContent.innerHTML = '';
+
         renderTabContentDesktop('autoShip');
         const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
-        const autoShipContent = document.getElementById('autoShipContent');
-  const oneTimeContent = document.getElementById('oneTimeContent');
-
-  const selectedRadio = document.querySelector('input[name="purchaseType"]:checked');
-
-  // Clear both containers before rendering new content
-  autoShipContent.innerHTML = '';
-  oneTimeContent.innerHTML = '';
+  
         autoShipRadio.checked = true;
         const selectedPackage = document.querySelector('input[name="package"]:checked');
         if (selectedPackage) {
