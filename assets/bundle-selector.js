@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const storedSelectedVariants = localStorage.getItem
   ('packageRequired');
 
-  let selectedVariants = {};
+  //let selectedVariants = {};
 
   // function updateSelectedVariants(variantId, quantity) {
   //   selectedVariants[variantId] = quantity;
