@@ -165,7 +165,7 @@ function updatePrices(selectedPackage, isAutoship) {
   const buyBoxWrapper = document.querySelector('.buy-box__wrapper');
   const productPrice = buyBoxWrapper.getAttribute('data-product-price');
 
-  
+  let originalPrice = 
 
 
   let basePrice = 100; // Example price for one quantity
