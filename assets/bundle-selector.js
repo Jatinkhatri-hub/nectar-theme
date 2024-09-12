@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="product-card__info">
         <h1 class="product-title">${variant.title}</h1>
         <button class="product-add__btn" data-variant-id="${variant.id}">Add+</button>
-        <div class="variant__quantity-controls" style="display: flex;">
+        <div class="variant__quantity-controls" style="display: none;">
           <button class="variant__decrease-btn">-</button>
           <span class="variant__added-no">0</span>
           <button class="variant__increase-btn">+</button>
