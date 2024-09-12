@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   let selectedVariants = {};
 
-  function update
+  function updateSelectedVariants(variantId, qu)
 
   
   
