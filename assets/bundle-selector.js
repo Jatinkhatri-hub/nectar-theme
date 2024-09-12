@@ -177,6 +177,45 @@ document.addEventListener('DOMContentLoaded', function() {
     return card;
   }
 
+
+  const updateSubtotal = () => {
+    state.subtotal = Object.values(state.selectedProducts).reduce((total, product) => {
+      return total + (product.quantity * product.price);
+    }, 0);
+
+    updateSavings();
+
+    const subTotal = (state.subtotal / 100).toFixed(2);
+    const subtotalAfterSavings = (subTotal - state.savings).toFixed(2);
+
+    if( state.totalSelected >= state.requiredCount) {
+      document.querySelector('.bundle-selector__subtotal-price').innerHTML =`$${subtotalAfterSavings}`
+    } else {
+      document.querySelector('.bundle-selector__subtotal-price').innerText = `$${subTotal}`;
+    }
+    
+  };
+
+  const updateSavings = () => {
+
+    const savingsElement = document.querySelector('.bundle-selector__savings');
+    if (!savingsElement) {
+      console.error('Element .bundle-selector__savings-price not found.');
+      return;
+    }
+
+    if( state.totalSelected >= state.requiredCount ) {
+      const discount = 15;
+      const subTotal = (state.subtotal / 100).toFixed(2);
+      state.savings = ((subTotal / 100) * discount).toFixed(2);
+      document.querySelector('.bundle-selector__savings-price').innerText = `$${state.savings}`
+      savingsElement.style.display = 'flex';
+    } else {
+      savingsElement.style.display = 'none';      
+    }
+  }
+
+
   const updateShopNowButton = () => {
     const shopBtn = document.querySelector('.bundle-atc__btn');
     shopBtn.disabled = (state.totalSelected < state.requiredCount);
