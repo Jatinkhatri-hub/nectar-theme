@@ -444,7 +444,7 @@ if (tabName === 'oneTime') {
   flavorBtnWrapper.classList.add = 'choose-flavor__btn-wrapper'
   flavorBtnWrapper.innerHTML = `
   <button class="choose-flavor__btn">Choose Your Flavors</button>
-//           <div class="delivery-text"><img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group_1484580410.png?v=1726037646" class="value-point__icon"><span>Expected delivery in 3-5 business days<span></div>
+           <div class="delivery-text"><img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group_1484580410.png?v=1726037646" class="value-point__icon"><span>Expected delivery in 3-5 business days<span></div>
   `
 
 
