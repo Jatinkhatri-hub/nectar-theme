@@ -441,7 +441,8 @@ if (tabName === 'oneTime') {
 
 
   const flavorBtnWrapper = document.createElement('div');
-  flavorBtnWrapper.classList.add = 'chooses-flavor__btn'
+  flavorBtnWrapper.classList.add = 'choose-flavor__btn-wrapper'
+  
 
   container.appendChild(footer);
 }
