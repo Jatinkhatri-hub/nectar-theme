@@ -71,7 +71,8 @@
 
 .variant__quantitiy-controls {
   display: flex;
-  flex
+  flex-direction: row;
+  justify-content: center;
 }
 
 .product-add__btn:hover {
