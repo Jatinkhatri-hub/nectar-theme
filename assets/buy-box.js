@@ -263,14 +263,14 @@ function openTab(event, tabName) {
       radio.value = pkg.title;
       radio.className = 'radio__package-box';
       radio.addEventListener('change', () => {
-        updateProgressBar(pkg.title)
+        updateProgressBar(pkg.title);
         const pack = parseInt(pkg.title);
         if ( tabName === "autoShip") {
           updatePrices(pack, true );
         }
         else {
-          updatePrices(pack, false)
-        }
+          updatePrices(pack, false);
+        };
       }); // Update progress bar on selection
       packageBox.appendChild(radio);
 
