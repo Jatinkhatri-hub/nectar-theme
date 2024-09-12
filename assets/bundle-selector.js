@@ -3,7 +3,9 @@ function rebuildVariantCards(variantData) {
 
   container.innerHTML = '';
 
-  variantData.forEach(var)
+  variantData.forEach(variant => {
+
+  });
 }
 
 
