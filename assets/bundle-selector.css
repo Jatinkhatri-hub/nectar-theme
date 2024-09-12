@@ -24,6 +24,10 @@
   align-items: center;
 }
 
+.product-img {
+  
+}
+
 .product-card__info {
   display: flex;
   flex-direction: row;
