@@ -183,16 +183,16 @@ document.addEventListener('DOMContentLoaded', function() {
       return total + (product.quantity * product.price);
     }, 0);
 
-    updateSavings();
+    // updateSavings();
 
-    const subTotal = (state.subtotal / 100).toFixed(2);
-    const subtotalAfterSavings = (subTotal - state.savings).toFixed(2);
+    // const subTotal = (state.subtotal / 100).toFixed(2);
+    // const subtotalAfterSavings = (subTotal - state.savings).toFixed(2);
 
-    if( state.totalSelected >= state.requiredCount) {
-      document.querySelector('.bundle-selector__subtotal-price').innerHTML =`$${subtotalAfterSavings}`
-    } else {
-      document.querySelector('.bundle-selector__subtotal-price').innerText = `$${subTotal}`;
-    }
+    // if( state.totalSelected >= state.requiredCount) {
+    //   document.querySelector('.bundle-selector__subtotal-price').innerHTML =`$${subtotalAfterSavings}`
+    // } else {
+    //   document.querySelector('.bundle-selector__subtotal-price').innerText = `$${subTotal}`;
+    // }
     
   };
 
