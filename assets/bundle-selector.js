@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Toggle controls based on quantity
   function toggleControls(variantId) {
     const card = document.querySelector(`.product-selector__card[data-variant-id="${variantId}"]`);
-    if (selectedVariants[variantId] && selectedVariants[variantId].quantity > 0) {
+    if (state.selectedVariants[variantId] && state.selectedVariants[variantId].quantity > 0) {
       card.querySelector('.product-add__btn').style.display = 'none';
       card.querySelector('.variant__quantity-controls').style.display = 'flex';
     } else {
