@@ -239,5 +239,5 @@ document.addEventListener('DOMContentLoaded', function() {
     rebuildVariantCards(variantData);
   }
 
-  console.log()
+  console.log(selectedVariants)
 });
