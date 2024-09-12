@@ -35,6 +35,7 @@
   font-family: 'Poppins';
   color: #0D3063;
   text-wrap: wrap;
+  width: 140px;
 }
 
 .product-add__btn {
