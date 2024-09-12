@@ -69,7 +69,7 @@
   display: none;
 }
 
-.variant__quantitiy-controls {
+.variant__quantity-controls {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -90,7 +90,7 @@
   font-weight: 500;
   border: none;
   outline: none;
-  
+
 }
 
 .variant__added-no {
