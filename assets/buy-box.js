@@ -520,34 +520,18 @@ if (tabName === 'oneTime') {
   if (document.querySelector('.sub-and-save__btn')) {
     document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
 
-      const autoShipContent = document.getElementById('autoShipContent');
-  const oneTimeContent = document.getElementById('oneTimeContent');
-      
-      //renderTabContentDesktop('autoShip');
-      const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
-      
-      autoShipRadio.checked = true;
-      const selectedRadio = document.querySelector('input[name="purchaseType"]:checked');
-  
-        // const selectedPackage = document.querySelector('input[name="package"]:checked');
-        // if (selectedPackage) {
-        //     const pack = parseInt(selectedPackage.value);
-        //     updatePrices(pack, true);
-        //     updateProgressBar(pack);
-        // }
-
-        autoShipContent.innerHTML = '';
-  oneTimeContent.innerHTML = '';
-
-  if (selectedRadio.value === 'autoShip') {
-    renderTabContentDesktop('autoShip');
-  } else {
-    renderTabContentDesktop('oneTime');
-  }
-
+      renderTabContentDesktop('autoShip');
+        const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
+        autoShipRadio.checked = true;
+        const selectedPackage = document.querySelector('input[name="package"]:checked');
+        if (selectedPackage) {
+            const pack = parseInt(selectedPackage.value);
+            updatePrices(pack, true);
+            updateProgressBar(pack);
+        }
         document.querySelector('.details__package-selector').scrollIntoView({ behavior: 'smooth' });
     });
-}
+  }
 
 }
 
