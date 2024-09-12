@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const subTotal = (state.subtotal / 100).toFixed(2);
     state.savings = ((subTotal / 100) * discount).toFixed(2);
-    document.querySelector('.bundle-selector__savings-price').innerText = `$${state.savings}`
+    document.querySelector('.money-saved').innerText = `$${state.savings}`
 
 
     // updateSavings();
