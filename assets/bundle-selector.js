@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
     return card;
   };
 
-  const variantCards = document.querySelectorAll('.bundle-variant__card');
+  const variantCards = document.querySelectorAll('.product-selector__card');
   variantCards.forEach(card => {
     const variantId = card.dataset.variantId;
     const price = parseFloat(card.dataset.variantPrice);
