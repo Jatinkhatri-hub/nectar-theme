@@ -478,13 +478,13 @@ if (tabName === 'oneTime') {
   footer.appendChild(button);
 }
 
-  const valuePointsWrapper = document.createElement
+  const valuePointsWrapper = document.createElement('div');
 
   data.footerPoints.forEach(point => {
     const p = document.createElement('p');
     p.className = 'footer-value__point';
     p.innerHTML = `<span><img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group_1484580410.png?v=1726037646"  class="value-point__icon"></span> ${point}`;
-    footer.appendChild(p);
+    valuePointsWrapper.appendChild(p);
   });
 
 
