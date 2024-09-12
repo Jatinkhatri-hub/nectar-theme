@@ -51,6 +51,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const variantCards = document.querySelectorAll('.product-selector__card');
   variantCards.forEach(card => {
+    const variantId = card.dataset.variantId;
+    const price = parseFloat(card.dataset.variantPrice);
     state.selectedProducts[variantId] = {
       quantity: 0,
       price: price
