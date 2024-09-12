@@ -365,7 +365,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  overflow: hidden;
 }
 
 .free-shipping-img {
