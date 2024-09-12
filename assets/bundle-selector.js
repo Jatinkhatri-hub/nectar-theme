@@ -157,6 +157,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const card = document.createElement('div');
     card.classList.add('product-selector__card');
     card.setAttribute('data-variant-id', variant.id);
+    card.setAttribute('data-variant-price')
 
     card.innerHTML = `
       <div class="product-img__wrapper">
