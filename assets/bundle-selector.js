@@ -1,3 +1,3 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const storedVariantData = loca
+  const storedVariantData = localStorage.getItem('variantData');
 });
