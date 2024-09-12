@@ -440,7 +440,7 @@ if (tabName === 'oneTime') {
   });
 
 
-  const
+  const flavorBtn
 
   container.appendChild(footer);
 }
