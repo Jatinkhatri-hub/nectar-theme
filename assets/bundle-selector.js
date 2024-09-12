@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 
-  rebuildVariantCards()
+  rebuildVariantCards(storedVariantData);
 
 
 });
