@@ -1,5 +1,7 @@
 
-.bundle-selector
+.bundle-selector__wrapper {
+  width: ;
+}
 
 .product-bundle__wrapper {
   max-width: 400px;
