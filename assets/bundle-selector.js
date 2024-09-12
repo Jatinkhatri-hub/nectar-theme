@@ -184,11 +184,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 0);
 
     const savingsElement = document.querySelector('.money-saved');
-    let dis
+    let discount = 0;
 
     switch (state.totalSelected) {
       case 1:
-        disc
+        discount = 10;
+        
     }
 
     const subTotal = (state.subtotal / 100).toFixed(2);
