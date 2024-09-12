@@ -323,7 +323,7 @@
           
           </div>
 
-          <div class="buy-box__wrapper" data-product-price="{{ product.selected_or_first_available_variant.price | money }}">
+          <div class="buy-box__wrapper" data-product-price="{{ product.variants[0].price | money }}">
             <div class="mobile-tabs" id="mobileTabs">
               <div class="tab-button-container">
                 <button class="tab-button active" data-tab="autoShip">Auto-Ship</button>
