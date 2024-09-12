@@ -47,7 +47,49 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
 
     return card;
-  }
+  };
+
+
+  const handleIncreaseClick = (variantId) => {
+    if (variantId in state.selectedProducts) {
+      state.selectedProducts[variantId].quantity++;
+      state.totalSelected++;
+      updateIndicator();
+      updateSubtotal();
+      updateSavings();
+      updateShopNowButton();
+      toggleControls(variantId);
+
+      const card = document.querySelector(`.bundle-variant__card[data-variant-id="${variantId}"]`);
+      card.querySelector('.variant__added-no').innerText = state.selectedProducts[variantId].quantity;
+      card.querySelector('.variant-input').value = state.selectedProducts[variantId].quantity;
+    } else {
+      console.error(`Variant ID ${variantId} not found in state`);
+    }
+  };
+
+  const handleDecreaseClick = (variantId) => {
+    if (variantId in state.selectedProducts && state.selectedProducts[variantId].quantity > 0) {
+      state.selectedProducts[variantId].quantity--;
+      state.totalSelected--;
+      updateIndicator();
+      updateSubtotal();
+      updateSavings();
+      updateShopNowButton();
+      toggleControls(variantId);
+
+      const card = document.querySelector(`.bundle-variant__card[data-variant-id="${variantId}"]`);
+      card.querySelector('.variant__added-no').innerText = state.selectedProducts[variantId].quantity;
+      card.querySelector('.variant-input').value = state.selectedProducts[variantId].quantity;
+
+      
+    } else {
+      console.error(`Variant ID ${variantId} not found in state or quantity is already 0`);
+    }
+
+  
+
+  };
 
   if (storedVariantData) {
     const variantData = JSON.parse(storedVariantData);
