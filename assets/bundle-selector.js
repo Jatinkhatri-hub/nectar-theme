@@ -5,7 +5,7 @@ function rebuildVariantCards(variantData) {
 
   variantData.forEach(variant => {
     const card = createVariantCard(variant);
-    container
+    container.appendChild(card);
   });
 }
 
