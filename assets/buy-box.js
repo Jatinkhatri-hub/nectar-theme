@@ -525,7 +525,7 @@ if (tabName === 'oneTime') {
       const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
       
       autoShipRadio.checked = true;
-      handleRadioSwitch();
+  
         // const selectedPackage = document.querySelector('input[name="package"]:checked');
         // if (selectedPackage) {
         //     const pack = parseInt(selectedPackage.value);
