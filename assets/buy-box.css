@@ -558,7 +558,9 @@
     display: block;
   }
 
-  .choose-flavor__btn-wrapper
+  .choose-flavor__btn-wrapper.mobile {
+    display: none;
+  }
 
   .radio-label {
     border-radius: 16px;
