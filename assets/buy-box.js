@@ -406,7 +406,7 @@ function renderTabContentDesktop(tabName) {
        </div>
   `;
 
-  container.appendChild()
+  container.appendChild(giftWrapper);
 
   // Render footer points
   const footer = document.createElement('div');
