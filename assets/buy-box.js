@@ -566,6 +566,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const variants = JSON.parse(variantsData);
 
+  localStorage.setItem('variantData')
+
   // console.log(variants);
   
 
