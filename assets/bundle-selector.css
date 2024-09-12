@@ -66,6 +66,7 @@
   color: white;
   border-radius: 7px;
   border: 1px solid #0D3063;
+  display: none;
 }
 
 .product-add__btn:hover {
