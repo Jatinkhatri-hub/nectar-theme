@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     switch (state.totalSelected) {
       case 1:
-        dis
+        disc
     }
 
     const subTotal = (state.subtotal / 100).toFixed(2);
