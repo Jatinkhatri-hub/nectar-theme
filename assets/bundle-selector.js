@@ -238,4 +238,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const variantData = JSON.parse(storedVariantData);
     rebuildVariantCards(variantData);
   }
+
+  console.log()
 });
