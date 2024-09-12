@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.variant__atb-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      const variantId = e.target.closest('.bundle-variant__card').dataset.variantId;
+      const variantId = e.target.closest('.product-selector__card').dataset.variantId;
       handleIncreaseClick(variantId);
     });
   })
