@@ -240,7 +240,7 @@ function updatePrices(selectedPackage, isAutoship) {
 
 }
 
-document.getE
+document.querySelector()
 
 function openTab(event, tabName) {
   // Update active tab button
