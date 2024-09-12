@@ -383,7 +383,7 @@ function renderTabContentDesktop(tabName) {
 
   container.appendChild(packageSelector);
 
-  
+  const gift-wrapper 
 
   // Render footer points
   const footer = document.createElement('div');
