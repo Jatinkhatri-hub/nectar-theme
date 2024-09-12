@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const updateSavings = () => {
 
-    const savingsElement = document.querySelector('.bundle-selector__savings');
+    const savingsElement = document.querySelector('.money-saved');
     if (!savingsElement) {
       console.error('Element .bundle-selector__savings-price not found.');
       return;
