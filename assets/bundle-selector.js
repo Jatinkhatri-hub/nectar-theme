@@ -275,6 +275,7 @@ document.addEventListener('DOMContentLoaded', function() {
     state.selectedVariants[variantId].quantity++;
     state.totalSelected++;
     updateShopNowButton();
+    updateSubtotal();
     toggleControls(variantId);
     console.log(state.selectedVariants);
 
