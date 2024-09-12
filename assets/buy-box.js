@@ -240,7 +240,7 @@ function updatePrices(selectedPackage, isAutoship) {
 
 }
 
-document.querySelector('.choose-flavor__btn')
+document.querySelector('.choose-flavor__btn').addEventListener('click', ())
 
 function openTab(event, tabName) {
   // Update active tab button
