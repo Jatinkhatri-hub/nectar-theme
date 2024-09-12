@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <span class="variant__added-no">0</span>
           <button class="variant__increase-btn">{% render 'icon-plus' %}</button>
           <input type="hidden" class="variant-input" name="{{ variant.id }}" value="0">
-                      </div>
+         </div>
       </div>
     `;
 
