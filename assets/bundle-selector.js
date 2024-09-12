@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   const updateSubtotal = () => {
-    state.subtotal = Object.values(state.selectedProducts).reduce((total, product) => {
+    state.subtotal = Object.values(state.selectedVariants).reduce((total, product) => {
       return total + (product.quantity * product.price);
     }, 0);
 
