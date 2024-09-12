@@ -187,10 +187,10 @@ document.addEventListener('DOMContentLoaded', function() {
     let discount = 0;
 
     switch (true) {
-      case 1 :
+      case 1 === state.totalSelected:
         discount = 10;
         break;
-      case 2:
+      case 2 === state.totalSelected:
         discount = 20;
         break;
       case 3:
