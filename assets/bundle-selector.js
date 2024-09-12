@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
     savings: 0.00
   }
 
-  const selectedVariants = {}; // To keep track of selected variants
+  // const selectedVariants = {}; // To keep track of selected variants
 
   function rebuildVariantCards(variantData) {
     const container = document.querySelector('.product-bundle__wrapper');
