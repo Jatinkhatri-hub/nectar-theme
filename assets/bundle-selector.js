@@ -21,7 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const card = document.createElement('div');
     card.classList.add('.product-selector__card');
 
-    card
+    card.innerHTML = `
+      
+    `;
   }
 
 
