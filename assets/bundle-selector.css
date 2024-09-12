@@ -1,6 +1,8 @@
 
 .bundle-selector__wrapper {
-  width: ;
+  display: flex;
+  justify-content: center;
+  align-items: ce;
 }
 
 .product-bundle__wrapper {
