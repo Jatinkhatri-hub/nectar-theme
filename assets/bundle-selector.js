@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
     shopBtn.disabled = (state.totalSelected < state.requiredCount);
 
     if( state.totalSelected >= state.requiredCount ) {
-      shopBtn.innerText = 'Shop now';
+      shopBtn.innerText = '';
       shopBtn.classList.add('active');
       shopBtn.classList.remove('disable');
     } else {
