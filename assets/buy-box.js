@@ -235,7 +235,7 @@ function updatePrices(selectedPackage, isAutoship) {
   // Update total price if needed in a similar way
   const totalPriceElement = activeRadioLabel.querySelector('.details__total-price');
   if (totalPriceElement) {
-    totalPriceElement.textContent = `$${originalPrice.toFixed(2)}`;
+    totalPriceElement.textContent = `$${basePrice.toFixed(2)}`;
   }
 
 }
