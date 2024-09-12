@@ -25,7 +25,9 @@
 }
 
 .product-img {
-  
+  width: 60px;
+  height: 65px;
+  object-fit: cover;
 }
 
 .product-card__info {
