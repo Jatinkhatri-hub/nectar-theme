@@ -555,7 +555,10 @@ document.addEventListener('DOMContentLoaded', () => {
     window.location.href = '/pages/brand-bundle/brand-bundle-bdsgucxe'; // Replace with your actual URL
   });
 
-  const buyBox = document.querySelector('buy-box')
+  const buyBox = document.querySelector('.buy-box__wrapper');
+
+  
+
 
   
 });
