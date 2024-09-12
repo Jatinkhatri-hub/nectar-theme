@@ -265,8 +265,9 @@ function openTab(event, tabName) {
       radio.addEventListener('change', () => {
         updateProgressBar(pkg.title)
         const pack = parseInt(pkg.title);
-        if ( tabName === "autoShip")
+        if ( tabName === "autoShip") {
           updatePrices(pack, true );
+        }
       }); // Update progress bar on selection
       packageBox.appendChild(radio);
 
