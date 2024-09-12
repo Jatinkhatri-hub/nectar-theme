@@ -341,6 +341,7 @@
 .progress {
   height: 14px;
   background-color: #E8FFE3;
+  width: 0;
 }
 
 
