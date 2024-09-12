@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   const variantCards = document.querySelectorAll('.product-selector__card');
+  const selectedVariants = {};
   variantCards.forEach(card => {
     const variantId = card.dataset.variantId;
     selectedVariants[variantId] = {
