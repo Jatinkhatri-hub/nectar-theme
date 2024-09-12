@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
     variantData.forEach(variant => {
       const card = createVariantCard(variant);
       container.appendChild(card);
-      state.se
+      state.selectedVariants[variant.id] 
     });
 
 
