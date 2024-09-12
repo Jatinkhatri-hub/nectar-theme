@@ -405,7 +405,7 @@ function renderTabContentDesktop(tabName) {
       radio.addEventListener('change', () => {
         updateProgressBar(pkg.title);
         const pack = parseInt(pkg.title);
-        localStorage.sele
+        localStorage.setItem('')
         if ( tabName === "autoShip") {
           updatePrices(pack, true );
         }
