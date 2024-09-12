@@ -295,15 +295,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
 
-
-  const form = document.getElementById('bundle-selector__wrapper');
-  if (form) {
-    form.addEventListener('submit', handleFormSubmit);
-  } else {
-    console.error('Form not found!');
-  }
-
-    // document.getElementById('bundle-selector__wrapper').addEventListener('submit', handleFormSubmit);
+    document.querySelector('bundle-selector__wrapper').addEventListener('submit', handleFormSubmit);
 
   }
 
