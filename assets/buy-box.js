@@ -358,9 +358,7 @@ function openTab(event, tabName) {
 function renderTabContentDesktop(tabName) {
   const data = tabData[tabName];
   const container = document.getElementById(`${tabName}Content`);
-  document.getElementById('headerTitle').textContent = data.headerTitle;
-  document.getElementById('totalPrice').textContent = data.totalPrice;
-  document.getElementById('discountedPrice').textContent = data.discountedPrice;
+  
 
   container.innerHTML = ''; // Clear previous content
 
