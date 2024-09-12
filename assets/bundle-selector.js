@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   let selectedVariants = {};
 
-  function updateSelectedVariants(variantId, quantity) {
-    selectedVariants[variantId] = quantity;
-    console.log(selectedVariants);
-  }
+  // function updateSelectedVariants(variantId, quantity) {
+  //   selectedVariants[variantId] = quantity;
+  //   console.log(selectedVariants);
+  // }
 
   
   
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
   });
 
-  console.log()
+  console.log(selectedVariants);
 
 
   const handleIncreaseClick = (variantId) => {
