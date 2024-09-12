@@ -69,7 +69,10 @@
   display: none;
 }
 
-.variant
+.variant__quantitiy-controls {
+  display: flex;
+  flex
+}
 
 .product-add__btn:hover {
   color: #0D3063;
