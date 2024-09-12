@@ -77,7 +77,10 @@
 }
 
 .variant__quantitiy-controls button {
-  width: ;
+  width: 28px;
+  height: 28px;
+  columns: white;
+  ba
 }
 
 .product-add__btn:hover {
