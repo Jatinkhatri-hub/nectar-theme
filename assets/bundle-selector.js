@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
         <button class="product-add__btn" data-variant-id="${variant.id}">Add+</button>
       </div>
     `;
+
+    return card;
   }
 
 
