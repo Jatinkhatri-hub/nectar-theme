@@ -25,11 +25,10 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="product-img__wrapper">
         <img src="{{ 'lime.png' |  asset_url }}" class="product-img">
       </div>
-    <div class="product-card__info">
-      <h1 class="product-title">Strawberry Lemonade</h1>
-      <button class="product-add__btn">Add+</button>
-    </div>
-
+      <div class="product-card__info">
+        <h1 class="product-title">Strawberry Lemonade</h1>
+        <button class="product-add__btn">Add+</button>
+      </div>
     `;
   }
 
