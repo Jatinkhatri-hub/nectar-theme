@@ -59,6 +59,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
   console.log(selectedVariants);
 
+  const toggleControls = (variantId) => {
+    const card = document.querySelector(`.product__card[data-variant-id="${variantId}"]`);
+    if (state.selectedProducts[variantId].quantity > 0) {
+       card.querySelector('.variant__atb-btn').style.display = 'none';
+       card.querySelector('.variant__quantity-controls').style.display = 'flex';
+    } else {
+      card.querySelector('.variant__atb-btn').style.display = 'flex';
+      card.querySelector('.variant__quantity-controls').style.display = 'none';
+    }
+  };
+
 
   const handleIncreaseClick = (variantId) => {
   
