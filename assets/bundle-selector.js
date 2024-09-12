@@ -17,7 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  function createVariantCard
+  function createVariantCard(variant) {
+    const
+  }
 
 
 
