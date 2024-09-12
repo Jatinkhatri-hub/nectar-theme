@@ -126,6 +126,8 @@ const tabData = {
   }
 };
 
+function updateProgressBar()
+
 
 function openTab(event, tabName) {
   // Update active tab button
