@@ -369,10 +369,7 @@ function openTab(event, tabName) {
 
   if (document.querySelector('.sub-and-save__btn')) {
     document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
-        renderTabContentDesktop('autoShip');
-        const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
-        autoShipRadio.checked = true;
-        const selectedPackage = document.querySelector('input[name="package"]:checked');
+        
         if (selectedPackage) {
             const pack = parseInt(selectedPackage.value);
             updatePrices(pack, true);
