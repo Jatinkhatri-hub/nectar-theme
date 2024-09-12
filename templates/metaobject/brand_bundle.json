@@ -9,8 +9,13 @@
 */
 {
   "sections": {
+    "product_bundle_fyYnmQ": {
+      "type": "product-bundle",
+      "settings": {
+      }
+    }
   },
   "order": [
-
+    "product_bundle_fyYnmQ"
   ]
 }
