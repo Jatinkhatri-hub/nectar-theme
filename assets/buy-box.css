@@ -398,8 +398,9 @@
 
 
 .nectar-bottle-img {
-  width: 75px;
-  height: 75px;
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
 }
 
 .details__footer {
