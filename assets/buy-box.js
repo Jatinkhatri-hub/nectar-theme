@@ -516,6 +516,22 @@ if (tabName === 'oneTime') {
 
 
   container.appendChild(footer);
+
+  if (document.querySelector('.sub-and-save__btn')) {
+    document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
+        renderTabContentDesktop('autoShip');
+        const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
+        autoShipRadio.checked = true;
+        const selectedPackage = document.querySelector('input[name="package"]:checked');
+        if (selectedPackage) {
+            const pack = parseInt(selectedPackage.value);
+            updatePrices(pack, true);
+            updateProgressBar(pack);
+        }
+        document.querySelector('.details__package-selector').scrollIntoView({ behavior: 'smooth' });
+    });
+}
+
 }
 
 // Function to handle switching between radio buttons
