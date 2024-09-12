@@ -196,7 +196,8 @@ document.addEventListener('DOMContentLoaded', function() {
       case 3 === state.totalSelected:
         discount = 30;
         break;
-      case 4
+      case 4 >== state.totalSelected;
+        
       
     }
 
