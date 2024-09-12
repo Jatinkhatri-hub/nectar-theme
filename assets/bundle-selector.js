@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <img src="${variant.featured_image.src}" class="product-img">
       </div>
       <div class="product-card__info">
-        <h1 class="product-title"></h1>
+        <h1 class="product-title">${variant.}</h1>
         <button class="product-add__btn">Add+</button>
       </div>
     `;
