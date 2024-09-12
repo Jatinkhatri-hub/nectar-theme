@@ -546,5 +546,14 @@ document.addEventListener('DOMContentLoaded', () => {
     openTab(null, 'autoShip');
   }
 
+  document.getElementById('flavorSelectionBtn').addEventListener('click', function() {
+    // Store data in LocalStorage
+    // localStorage.setItem('selectedPackage', selectedPackage);
+    // localStorage.setItem('productVariants', JSON.stringify(productVariants));
+  
+    // Navigate to the bundle selection page
+    window.location.href = '/brand-bundle-bdsgucxe'; // Replace with your actual URL
+  });
+
   
 });
