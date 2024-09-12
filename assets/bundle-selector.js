@@ -194,8 +194,10 @@ document.addEventListener('DOMContentLoaded', function() {
         discount = 20;
         break;
       case 3:
-        discount = 10;
+        discount = 30;
         break;
+      case 
+      
     }
 
     const subTotal = (state.subtotal / 100).toFixed(2);
