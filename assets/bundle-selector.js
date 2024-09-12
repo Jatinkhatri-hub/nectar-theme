@@ -295,7 +295,15 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
 
-    document.getElementById('bundle-selector__wrapper').addEventListener('submit', handleFormSubmit);
+
+  const form = document.getElementById('bundle-selector__wrapper');
+  if (form) {
+    form.addEventListener('submit', handleFormSubmit);
+  } else {
+    console.error('Form not found!');
+  }
+
+    // document.getElementById('bundle-selector__wrapper').addEventListener('submit', handleFormSubmit);
 
   }
 
