@@ -609,7 +609,7 @@
 
   .free-shipping-img {
     width: 105px;
-    object-fit: c;
+    object-fit: cover;
   }
 
   .nectar-bottle-img {
