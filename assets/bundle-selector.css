@@ -77,7 +77,7 @@
   width: 95px;
 }
 
-.variant__de {
+.variant__decrease-btn, .vari__decrease-btn {
   width: 28px;
   height: 28px;
   columns: white;
