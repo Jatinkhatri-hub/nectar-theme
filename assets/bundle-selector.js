@@ -22,7 +22,14 @@ document.addEventListener('DOMContentLoaded', function() {
     card.classList.add('.product-selector__card');
 
     card.innerHTML = `
-      
+      <div class="product-img__wrapper">
+        <img src="{{ 'lime.png' |  asset_url }}" class="product-img">
+      </div>
+    <div class="product-card__info">
+      <h1 class="product-title">Strawberry Lemonade</h1>
+      <button class="product-add__btn">Add+</button>
+    </div>
+
     `;
   }
 
