@@ -79,11 +79,6 @@ document.addEventListener('DOMContentLoaded', function() {
       card.querySelector('.variant__added-no').innerText = selectedVariants[variantId].quantity;
       card.querySelector('.variant-input').value = selectedVariants[variantId].quantity;
 
-      
-    
-
-  
-
   };
 
   if (storedVariantData) {
