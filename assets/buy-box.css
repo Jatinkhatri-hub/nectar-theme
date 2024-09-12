@@ -338,7 +338,9 @@
   overflow: hidden;
 }
 
-progress
+.progress {
+  height: ;
+}
 
 
 .free-shipping__wrapper {
