@@ -386,7 +386,7 @@ function renderTabContentDesktop(tabName) {
   const giftWrapper = document.createElement('div');
   giftWrapper.classList.add('details__gift-wrapper');
   giftWrapper.innerHTML = `
-  <h6 class="gift-wrapper__title">You've unlocked $23.95 of free gifts!</h6>
+      <h6 class="gift-wrapper__title">You've unlocked $23.95 of free gifts!</h6>
        <div class="gift-progress-bar__wrapper">
          <div class="progressBar">
            <div class="progress" style="width: 50%;"></div>
@@ -394,16 +394,16 @@ function renderTabContentDesktop(tabName) {
          <div class="free-shipping__wrapper">
            <div class="image-wrapper">
              <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group_1484580827_1.png?v=1726084589" class="free-shipping-img">
-//           </div>
-//           <span class="gift-title">Free Shipping</span>
-//         </div>
-//         <div class="free-bottle__wrapper">
-//           <div class="image-wrapper">
-//             <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Bottle_no_BG_2.png?v=1726084588" class="nectar-bottle-img">
-//           </div>
-//           <span class="gift-title">Nectar Bottle</span>
-//         </div>
-//       </div>
+           </div>
+           <span class="gift-title">Free Shipping</span>
+         </div>
+         <div class="free-bottle__wrapper">
+           <div class="image-wrapper">
+             <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Bottle_no_BG_2.png?v=1726084588" class="nectar-bottle-img">
+           </div>
+           <span class="gift-title">Nectar Bottle</span>
+         </div>
+       </div>
   `
 
   // Render footer points
