@@ -121,6 +121,7 @@
   align-items: center;
   flex-direction: column;
   border-top: 1px solid #5E8FCA36;
+  gap: 
 }
 
 .saving-text {
@@ -128,6 +129,7 @@
   font-weight: 700;
   color:#0D3063;
   font-family: 'Poppins';
+  margin: 0;
 }
 
 .money-saved {
