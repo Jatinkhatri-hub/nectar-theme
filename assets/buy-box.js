@@ -127,7 +127,8 @@ const tabData = {
 };
 
 function updateProgressBar(packageSize) {
-  const progressBar = do
+  const progressBar = document.querySelector('.progress');
+  const 
 }
 
 
