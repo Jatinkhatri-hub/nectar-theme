@@ -478,6 +478,8 @@ if (tabName === 'oneTime') {
   footer.appendChild(button);
 }
 
+  
+
   data.footerPoints.forEach(point => {
     const p = document.createElement('p');
     p.className = 'footer-value__point';
