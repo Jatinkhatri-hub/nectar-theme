@@ -77,7 +77,7 @@
   width: 95px;
 }
 
-.variant__quantitiy-controls button {
+.variant__quantitiy-controls + button {
   width: 28px;
   height: 28px;
   columns: white;
