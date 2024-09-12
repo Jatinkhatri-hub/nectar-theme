@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const handleIncreaseClick = (variantId) => {
   
-      selectedVariants[variantId].quantity++
+      selectedVariants[variantId].quantity++;
       toggleControls(variantId);
 
       const card = document.querySelector(`.product-selector__card[data-variant-id="${variantId}"]`);
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   const handleDecreaseClick = (variantId) => {
-      selectedVariants[variantId].quantity++
+      selectedVariants[variantId].quantity--;
       toggleControls(variantId);
 
       const card = document.querySelector(`.product-selector__card[data-variant-id="${variantId}"]`);
