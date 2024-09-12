@@ -211,6 +211,7 @@ document.addEventListener('DOMContentLoaded', function() {
       state.selectedVariants[variantId] = { quantity: 0 };
     }
     state.selectedVariants[variantId].quantity++;
+    state.
     toggleControls(variantId);
     console.log(state.selectedVariants);
 
