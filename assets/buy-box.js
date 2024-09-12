@@ -152,8 +152,9 @@ function updateProgressBar(packageSize) {
       break;
   }
 
-  progre
-
+ 
+  progressBar.style.width = `${progress}%`;
+}
 
 function openTab(event, tabName) {
   // Update active tab button
