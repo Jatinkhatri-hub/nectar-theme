@@ -63,9 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const handleIncreaseClick = (variantId) => {
   
       selectedVariants[variantId].quantity++
-
-      
-      
       toggleControls(variantId);
 
       const card = document.querySelector(`.bundle-variant__card[data-variant-id="${variantId}"]`);
