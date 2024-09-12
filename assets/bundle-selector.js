@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!state.selectedVariants[variantId]) {
       state.selectedVariants[variantId] = { quantity: 0 };
     }
-    selectedVariants[variantId].quantity++;
+    state.selectedVariants[variantId].quantity++;
     toggleControls(variantId);
     console.log(selectedVariants);
 
