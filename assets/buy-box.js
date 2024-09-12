@@ -569,7 +569,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
 
   // Retrieve the JSON string for product variants
-const rawVariantsData = buyBoxWrapper.getAttribute('data-product-variants');
+const rawVariantsData = buyBox.getAttribute('data-product-variants');
 console.log('Raw variants data:', rawVariantsData); // Log the raw string
 
 // Try parsing the JSON string
