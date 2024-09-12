@@ -293,6 +293,7 @@ document.addEventListener('DOMContentLoaded', function() {
     state.totalSelected--;
     updateShopNowButton();
     toggleControls(variantId);
+    updateSubtotal();
 
     const card = document.querySelector(`.product-selector__card[data-variant-id="${variantId}"]`);
     card.querySelector('.variant__added-no').innerText = state.selectedVariants[variantId].quantity;
