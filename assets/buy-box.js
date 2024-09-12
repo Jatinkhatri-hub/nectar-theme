@@ -269,7 +269,7 @@ function openTab(event, tabName) {
           updatePrices(pack, true );
         }
         else {
-          updatePrices
+          updatePrices(pack, false)
         }
       }); // Update progress bar on selection
       packageBox.appendChild(radio);
