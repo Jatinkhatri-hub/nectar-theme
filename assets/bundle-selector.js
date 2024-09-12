@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.variant__decrease-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault(); // Prevent form submission
-      const variantId = e.target.closest('.b__card').dataset.variantId;
+      const variantId = e.target.closest('.product-selector__card').dataset.variantId;
       handleDecreaseClick(variantId);
     });
   });
