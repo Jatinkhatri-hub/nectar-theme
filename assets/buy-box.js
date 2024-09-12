@@ -557,7 +557,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const buyBox = document.querySelector('.buy-box__wrapper');
 
-  buyBox.getAttribute()
+  buyBox.getAttribute('data-produc-variants')
 
 
   
