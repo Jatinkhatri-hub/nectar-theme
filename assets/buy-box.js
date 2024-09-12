@@ -440,7 +440,8 @@ if (tabName === 'oneTime') {
   });
 
 
-  const flavorBtnWrapper = document.createElement('');
+  const flavorBtnWrapper = document.createElement('div');
+  
 
   container.appendChild(footer);
 }
