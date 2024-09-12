@@ -35,5 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 
+  rebuildVariantCards()
+
 
 });
