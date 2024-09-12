@@ -271,7 +271,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Handle increase button click
   function handleIncreaseClick(variantId) {
     if (!state.selectedVariants[variantId]) {
-      state.selectedVariants[variantId] = { quantity: 0, price: variant. };
+      state.selectedVariants[variantId] = { quantity: 0, price:  };
     }
     state.selectedVariants[variantId].quantity++;
     state.totalSelected++;
