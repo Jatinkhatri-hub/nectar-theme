@@ -92,6 +92,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
   };
 
+  document.querySelectorAll('.variant__increase-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault(); // Prevent form submission
+      const variantId = e.target.closest('.bundle-variant__card').dataset.variantId;
+      handleIncreaseClick(variantId);
+    });
+  });
+
+  document.querySelectorAll('.variant__decrease-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault(); // Prevent form submission
+      const variantId = e.target.closest('.bundle-variant__card').dataset.variantId;
+      handleDecreaseClick(variantId);
+    });
+  });
+
+  document.querySelectorAll('.variant__atb-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const variantId = e.target.closest('.bundle-variant__card').dataset.variantId;
+      handleIncreaseClick(variantId);
+    });
+  })
+
   if (storedVariantData) {
     const variantData = JSON.parse(storedVariantData);
     rebuildVariantCards(variantData);
