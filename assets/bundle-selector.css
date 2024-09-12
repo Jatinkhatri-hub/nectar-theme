@@ -21,5 +21,9 @@
   align-items: center;
 }
 
-.
+.product-card__info {
+  display: flex;
+  flex-direction: row;
+  
+}
 
