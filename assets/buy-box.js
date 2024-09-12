@@ -412,6 +412,16 @@ function renderTabContentDesktop(tabName) {
   const footer = document.createElement('div');
   footer.classList.add('details__footer');
 
+  if (data.showCongrats) {
+    const congratsDiv = document.createElement('div');
+    congratsDiv.className = 'details__footer-congrats';
+    congratsDiv.innerHTML = `
+        <div class="footer__icon-wrapper"><img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group.png?v=1726037024" class="footer-img"></div>
+        <p class="congrats-text"><span>Congrats!</span> You’re making proper Hydration and all the benefits that come with it a habit!</p>
+    `;
+    footer.appendChild(congratsDiv);
+}
+
   data.footerPoints.forEach(point => {
     const p = document.createElement('p');
     p.className = 'footer-value__point';
