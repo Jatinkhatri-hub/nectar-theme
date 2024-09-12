@@ -169,6 +169,22 @@ document.addEventListener('DOMContentLoaded', function() {
     return card;
   }
 
+  const updateShopNowButton = () => {
+    const shopBtn = document.querySelector('.bundle-selector__shop-btn');
+    shopBtn.disabled = (state.totalSelected < state.requiredCount);
+
+    if( state.totalSelected >= state.requiredCount ) {
+      shopBtn.innerText = 'Shop now';
+      shopBtn.classList.add('active');
+      shopBtn.classList.remove('disable');
+    } else {
+      shopBtn.innerText = `Select ${state.requiredCount - state.totalSelected} more packs`;
+      shopBtn.classList.add('disable');
+      shopBtn.classList.remove('active');
+    }
+
+  };
+
   // Toggle controls based on quantity
   function toggleControls(variantId) {
     const card = document.querySelector(`.product-selector__card[data-variant-id="${variantId}"]`);
