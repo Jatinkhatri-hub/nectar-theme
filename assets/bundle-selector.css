@@ -115,7 +115,14 @@
   background: white;
 }
 
-.bundle-selec
+.bundle-selector__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sav
 
 
 
