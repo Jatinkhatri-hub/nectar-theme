@@ -167,6 +167,7 @@ function updatePrices(selectedPackage, isAutoship) {
 
   
 
+
   let basePrice = 100; // Example price for one quantity
   let totalPrice = 0;
   let discountedPrice = 0;
