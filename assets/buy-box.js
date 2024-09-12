@@ -160,6 +160,68 @@ function updateProgressBar(packageSize) {
   progressBar.style.width = `${progress}%`;
 }
 
+function updatePrices(selectedPackage, isAutoship) {
+  // Base price of the product (assuming it's available)
+  let basePrice = 100; // Example price for one quantity
+  let totalPrice = 0;
+  let discountedPrice = 0;
+  let discountPercentage = 0;
+  let quantity = 1;
+
+  // Discount logic based on package selection and autoship/one-time purchase
+  if (isAutoship) {
+    switch (selectedPackage) {
+      case 30:
+        discountPercentage = 10; // 10% discount
+        quantity = 1; // 1 quantity
+        break;
+      case 60:
+        discountPercentage = 20; // 20% discount
+        quantity = 2; // 2 quantities
+        break;
+      case 90:
+        discountPercentage = 30; // 30% discount
+        quantity = 3; // 3 quantities
+        break;
+      case 120:
+        discountPercentage = 40; // 40% discount
+        quantity = 4; // 4 quantities
+        break;
+      default:
+        discountPercentage = 0;
+    }
+  } else {
+    switch (selectedPackage) {
+      case 30:
+        discountPercentage = 0; // No discount
+        quantity = 1;
+        break;
+      case 60:
+        discountPercentage = 10; // 10% discount
+        quantity = 1;
+        break;
+      case 90:
+        discountPercentage = 20; // 20% discount
+        quantity = 1;
+        break;
+      case 120:
+        discountPercentage = 30; // 30% discount
+        quantity = 1;
+        break;
+      default:
+        discountPercentage = 0;
+    }
+  }
+
+  // Calculate the total and discounted prices
+  totalPrice = basePrice * quantity;
+  discountedPrice = totalPrice - (totalPrice * (discountPercentage / 100));
+
+  // Update the prices in the HTML
+  document.getElementById('totalPrice').textContent = `$${totalPrice.toFixed(2)}`;
+  document.getElementById('discountedPrice').textContent = `$${discountedPrice.toFixed(2)}`;
+}
+
 function openTab(event, tabName) {
   // Update active tab button
   const tabButtons = document.getElementsByClassName("tab-button");
