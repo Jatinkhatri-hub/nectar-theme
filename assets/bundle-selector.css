@@ -40,7 +40,10 @@
   font-size: 14px;
   font-weight: 600px;
   font-family: 'Poppins';
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px
 }
 
 
