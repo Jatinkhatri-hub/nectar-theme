@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function updateSelectedVariants(variantId, quantity) {
     selectedVariants[variantId] = quantity;
-    
+    console.log(selectedVariants);
   }
 
   
