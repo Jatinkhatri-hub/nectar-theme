@@ -198,7 +198,7 @@ function openTab(event, tabName) {
       radio.className = 'radio__package-box';
       radio.addEventListener('change', () => updateProgressBar(pkg.title)); // Update progress bar on selection
       packageBox.appendChild(radio);
-      
+
       const details = document.createElement('div');
       details.className = 'package-details';
       details.innerHTML = `
@@ -209,6 +209,33 @@ function openTab(event, tabName) {
       packageBox.appendChild(details);
       packageSelector.appendChild(packageBox);
   });
+
+
+  const giftWrapper = document.createElement('div');
+  giftWrapper.classList.add('details__gift-wrapper');
+  giftWrapper.innerHTML = `
+      <h6 class="gift-wrapper__title">You've unlocked $23.95 of free gifts!</h6>
+       <div class="gift-progress-bar__wrapper">
+         <div class="progressBar">
+           <div class="progress" style="width: 50%;"></div>
+         </div>
+         <div class="free-shipping__wrapper">
+           <div class="image-wrapper">
+             <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group_1484580827_1.png?v=1726084589" class="free-shipping-img">
+           </div>
+           <span class="gift-title">Free Shipping</span>
+         </div>
+         <div class="free-bottle__wrapper">
+           <div class="image-wrapper">
+             <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Bottle_no_BG_2.png?v=1726084588" class="nectar-bottle-img">
+           </div>
+           <span class="gift-title">Nectar Bottle</span>
+         </div>
+       </div>
+  `;
+
+  container.appendChild(giftWrapper);
+
 
   // Update footer points
   const footer = document.querySelector('.details__footer');
