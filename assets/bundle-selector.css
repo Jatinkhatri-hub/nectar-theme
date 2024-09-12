@@ -73,7 +73,10 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
+
+.variant_
 
 .product-add__btn:hover {
   color: #0D3063;
