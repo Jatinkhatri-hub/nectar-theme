@@ -236,6 +236,39 @@ document.addEventListener('DOMContentLoaded', function() {
     card.querySelector('.variant-input').value = state.selectedVariants[variantId].quantity;
   }
 
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const data = {};
+    formData.forEach((value, key) => {
+      if (value > 0) {
+        data[key] = value;
+      }
+    });
+
+    try {
+      const response = await fetch('/cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          items: Object.keys(data).map(variantId => ({
+            id: variantId,
+            quantity: parseInt(data[variantId])
+          }))
+        })
+      });
+      const result = await response.json();
+      console.log('Products added to cart:', result);
+      window.location.href = '/cart';
+    } catch (error) {
+      console.error('Error adding products to cart:', error);
+    } finally {
+      document.querySelector('.bundle-selector__shop-btn').innerText = "Added"
+    }
+  };
+
   // Attach event listeners to buttons
   function attachEventListeners() {
     document.querySelectorAll('.product-add__btn').forEach(btn => {
