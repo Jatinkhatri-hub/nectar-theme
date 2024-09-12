@@ -141,8 +141,9 @@
   font-weight: 700;
   font-family: 'Poppins';
   border-radius: 10px;
-  padding: 13px 45px
-  border: 
+  padding: 13px 45px;
+  cursor: pointer;
+   
 }
 
 
