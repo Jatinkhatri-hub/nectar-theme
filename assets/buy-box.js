@@ -202,15 +202,15 @@ function updatePrices(selectedPackage, isAutoship) {
         break;
       case 60:
         discountPercentage = 10; // 10% discount
-        quantity = 1;
+        quantity = 2;
         break;
       case 90:
         discountPercentage = 20; // 20% discount
-        quantity = 1;
+        quantity = 3;
         break;
       case 120:
         discountPercentage = 30; // 30% discount
-        quantity = 1;
+        quantity = 4;
         break;
       default:
         discountPercentage = 0;
