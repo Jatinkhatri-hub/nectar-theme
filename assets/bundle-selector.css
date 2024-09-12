@@ -80,7 +80,7 @@
 .variant__decrease-btn, .variant__increase-btn {
   width: 28px;
   height: 28px;
-  columns: white;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
