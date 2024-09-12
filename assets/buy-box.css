@@ -595,7 +595,7 @@
   }
 
   .progressBar {
-    mar
+    margin-block: 1 ;
   }
 
   .free-shipping__wrapper {
