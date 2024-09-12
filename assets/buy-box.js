@@ -528,6 +528,7 @@ if (tabName === 'oneTime') {
 
   // Clear both containers before rendering new content
   autoShipContent.innerHTML = '';
+  oneTimeContent.innerHTML = '';
         autoShipRadio.checked = true;
         const selectedPackage = document.querySelector('input[name="package"]:checked');
         if (selectedPackage) {
