@@ -520,7 +520,7 @@ if (tabName === 'oneTime') {
   if (document.querySelector('.sub-and-save__btn')) {
     document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
 
-      
+        handleRadioSwitch();
 
         renderTabContentDesktop('autoShip');
         const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
