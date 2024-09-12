@@ -1,5 +1,6 @@
 function rebuildVariantCards(variantData) {
-  const container = document.getElementById('')
+  const container = document.querySelector('product-bundle__wrapper');
+  
 }
 
 
