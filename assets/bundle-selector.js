@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const storedSelectedVariants = localStorage.getItem
   ('packageRequired');
 
-  
+  let selectedVariants = {};
+
   
   
   function rebuildVariantCards(variantData) {
