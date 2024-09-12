@@ -607,7 +607,10 @@
     height: 130px;
   }
 
-  .
+  .nectar-bottle-img {
+    width: 105px;
+    object-fit: cover;
+  }
 
   .gift-title {
     font-size: 15px;
