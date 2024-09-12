@@ -184,6 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 0);
 
     const savingsElement = document.querySelector('.money-saved');
+    let dis
 
     switch (state.totalSelected) {
       case 1:
