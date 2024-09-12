@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
     selectedVariants: {},
     totalSelected: 0,
     subtotals: 0,
-    requiredCount: pars
+    requiredCount: parseInt(storedSelectedVariants)
   }
 
   const selectedVariants = {}; // To keep track of selected variants
