@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
   if (storedVariantData) {
     const variantData = JSON.parse(storedVariantData);
 
+    rebuildVariantCards(variantData);
   }
-  rebuildVariantCards(storedVariantData);
 
 
 });
