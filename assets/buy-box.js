@@ -383,7 +383,16 @@ function renderTabContentDesktop(tabName) {
       radio.name = 'package';
       radio.value = pkg.title;
       radio.className = 'radio__package-box';
-      radio.addEventListener('change', () => updateProgressBar(pkg.title)); // Update progress bar on selection
+      radio.addEventListener('change', () => {
+        updateProgressBar(pkg.title);
+        const pack = parseInt(pkg.title);
+        if ( tabName === "autoShip") {
+          updatePrices(pack, true );
+        }
+        else {
+          updatePrices(pack, false);
+        };
+      }); // Update progress bar on selection
       packageBox.appendChild(radio);
 
     const details = document.createElement('div');
