@@ -440,7 +440,7 @@ if (tabName === 'oneTime') {
   });
 
 
-  .
+  const
 
   container.appendChild(footer);
 }
