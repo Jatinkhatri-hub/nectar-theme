@@ -268,6 +268,9 @@ function openTab(event, tabName) {
         if ( tabName === "autoShip") {
           updatePrices(pack, true );
         }
+        else {
+          updatePrices
+        }
       }); // Update progress bar on selection
       packageBox.appendChild(radio);
 
