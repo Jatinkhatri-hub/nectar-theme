@@ -241,7 +241,7 @@ function updatePrices(selectedPackage, isAutoship) {
 }
 
 document.querySelector('.choose-flavor__btn').addEventListener('click', () => {
-  window.location.href
+  window.location.href = '/brand-bundle-bdsgucxe'
 })
 
 function openTab(event, tabName) {
