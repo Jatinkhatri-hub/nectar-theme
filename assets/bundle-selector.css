@@ -155,6 +155,10 @@
 }
 
 .active {
+  background: ;
+}
+
+.disable {
   background: #E4E4E4;
   color: #1b1b1b;
   border: 1px solid #E4E4E4;
