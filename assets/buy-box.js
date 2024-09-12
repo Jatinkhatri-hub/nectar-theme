@@ -347,6 +347,79 @@ function renderTabContentDesktop(tabName, container) {
   
 };
 
+function renderTabContentDesktop(tabName) {
+  const data = tabData[tabName];
+  const container = document.getElementById(`${tabName}Content`);
+
+  container.innerHTML = ''; // Clear previous content
+
+  const packageSelector = document.createElement('div');
+  packageSelector.classList.add('details__package-selector');
+
+  // Render packages
+  data.packages.forEach(pkg => {
+    const packageBox = document.createElement('div');
+    packageBox.className = 'details__package-box';
+
+    if (pkg.badge) {
+      const badge = document.createElement('span');
+      badge.className = 'package__badge';
+      badge.textContent = pkg.badge;
+      badge.style.backgroundColor = pkg.badgeColor;
+      badge.style.color = pkg.textColor;
+      packageBox.appendChild(badge);
+    }
+
+    const details = document.createElement('div');
+    details.className = 'package-details';
+    details.innerHTML = `
+      <h6 class="package-title">${pkg.title}</h6>
+      <p class="package-discount">${pkg.discount}</p>
+      <p class="packet-individual">${pkg.pricePerPacket}</p>
+    `;
+    packageBox.appendChild(details);
+    packageSelector.appendChild(packageBox);
+  });
+
+  container.appendChild(packageSelector);
+
+  // Render footer points
+  const footer = document.createElement('div');
+  footer.classList.add('details__footer');
+
+  data.footerPoints.forEach(point => {
+    const p = document.createElement('p');
+    p.className = 'footer-value__point';
+    p.innerHTML = `<span><img src="path_to_icon" class="value-point__icon"></span> ${point}`;
+    footer.appendChild(p);
+  });
+
+  container.appendChild(footer);
+}
+
+// Function to handle switching between radio buttons
+function handleRadioSwitch() {
+  const autoShipContent = document.getElementById('autoShipContent');
+  const oneTimeContent = document.getElementById('oneTimeContent');
+
+  const selectedRadio = document.querySelector('input[name="purchaseType"]:checked');
+
+  // Clear both containers before rendering new content
+  autoShipContent.innerHTML = '';
+  oneTimeContent.innerHTML = '';
+
+  if (selectedRadio.value === 'autoShip') {
+    renderTabContentDesktop('autoShip');
+  } else {
+    renderTabContentDesktop('oneTime');
+  }
+}
+
+// Event listener for the radio buttons
+document.querySelectorAll('input[name="purchaseType"]').forEach(radio => {
+  radio.addEventListener('change', handleRadioSwitch);
+});
+
 
 
 
