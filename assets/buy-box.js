@@ -506,7 +506,7 @@ if (tabName === 'oneTime') {
   const flavorBtnWrapper = document.createElement('div');
   flavorBtnWrapper.classList.add = 'choose-flavor__btn-wrapper'
   flavorBtnWrapper.innerHTML = `
-  <button class="choose-flavor__btn" id="flavorSelectionBtn">Choose Your Flavors</button>
+  <button class="choose-flavor__btn" id="flavorSelectionBtnDesktop">Choose Your Flavors</button>
            <div class="delivery-text"><img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group_1484580410.png?v=1726037646" class="value-point__icon"><span>Expected delivery in 3-5 business days<span></div>
   `;
   footer.appendChild(flavorBtnWrapper);
@@ -619,7 +619,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.location.href = '/pages/brand-bundle/brand-bundle-bdsgucxe'; // Replace with your actual URL
   });
 
-  document.getElementById('flavorSelectionBtnDesktop').addEventListener('click', function() {
+  document.getElementById('flavorSelectionBtnMobile').addEventListener('click', function() {
     // Store data in LocalStorage
     // localStorage.setItem('selectedPackage', selectedPackage);
     // localStorage.setItem('productVariants', JSON.stringify(productVariants));
