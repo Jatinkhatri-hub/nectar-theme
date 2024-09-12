@@ -189,7 +189,10 @@ document.addEventListener('DOMContentLoaded', function() {
     switch (state.totalSelected) {
       case 1:
         discount = 10;
-        
+        break;
+        case 1:
+        discount = 10;
+        break;
     }
 
     const subTotal = (state.subtotal / 100).toFixed(2);
