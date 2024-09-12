@@ -15,6 +15,7 @@
   border: .5px solid #0D3063;
   background-color: #CBE5FF33;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .product-img__wrapper {
