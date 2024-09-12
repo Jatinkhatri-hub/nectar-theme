@@ -161,7 +161,9 @@
 }
 
 .active:hover {
-  
+  background: transparent;
+  color: #0D3063;
+  bo
 }
 
 .disable {
