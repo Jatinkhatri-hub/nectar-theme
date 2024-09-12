@@ -594,7 +594,9 @@
     font-size: 19px;
   }
 
-  .free
+  .free-shipping__wrapper {
+    height: 130px;
+  }
 
   .free-bottle__wrapper {
     height: 130px;
@@ -602,7 +604,7 @@
 
   .image-wrapper {
     width: 105px;
-    height: 120px;
+    height: 130px;
   }
 
   .gift-title {
