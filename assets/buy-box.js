@@ -422,6 +422,16 @@ function renderTabContentDesktop(tabName) {
     footer.appendChild(congratsDiv);
 }
 
+if (tabName === 'oneTime') {
+  const button = document.createElement('button');
+  button.className = 'sub-and-save__btn';
+  button.innerHTML = `
+      <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/file_4_1.png?v=1726036951" class="icon-gift">
+      Tap here to subscribe and save $50.95
+  `;
+  footer.appendChild(button);
+}
+
   data.footerPoints.forEach(point => {
     const p = document.createElement('p');
     p.className = 'footer-value__point';
