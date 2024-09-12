@@ -607,6 +607,11 @@
     height: 130px;
   }
 
+  .free-shipping-img {
+    width: 105px;
+    object-fit: c;
+  }
+
   .nectar-bottle-img {
     width: 105px;
     object-fit: cover;
