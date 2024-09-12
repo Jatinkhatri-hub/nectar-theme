@@ -47,8 +47,12 @@
   background-color: #0D3063;
   color: white;
   border-radius: 7px;
+  
 }
 
-.product-add__btn:
+.product-add__btn:hover {
+  color: #0D3063;
+  background: white;
+}
 
 
