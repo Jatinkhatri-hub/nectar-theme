@@ -129,7 +129,7 @@ const tabData = {
 function updateProgressBar(packageSize) {
   const progressBar = document.querySelector('.progress');
   const freeShippingWrapper = document.querySelector('.free-shipping__wrapper');
-  const freeBottleWrapper = document.querySelector('.free-bottle__wrapper');
+  const freeBottleWrapper = document.querySelector('.free');
 
   let progress = 0;
 
@@ -139,8 +139,8 @@ function updateProgressBar(packageSize) {
       break;
     case '60 Packets':
       progress = 50; // Free Shipping unlocked
-      freeShippingWrapper.classList.add('unlocked');
-      freeBottleWrapper.classList.remove('unlocked');
+      // freeShippingWrapper.classList.add('unlocked');
+      // freeBottleWrapper.classList.remove('unlocked');
       break;
     case '90 Packets':
     case '120 Packets':
