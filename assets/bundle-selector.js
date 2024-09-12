@@ -134,8 +134,8 @@ document.addEventListener('DOMContentLoaded', function() {
     selectedVariants: {},
     totalSelected: 0,
     subtotals: 0,
-    requiredCount: parseInt(storedSelectedVariants) / 30,
-    savings: 0
+    requiredCount: (parseInt(storedSelectedVariants) / 30),
+    savings: 0.00
   }
 
   const selectedVariants = {}; // To keep track of selected variants
