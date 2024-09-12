@@ -128,7 +128,7 @@ const tabData = {
 
 function updateProgressBar(packageSize) {
   const progressBar = document.querySelector('.progress');
-  const freeShippingWrapper = document.querySelector('.free-shipping__wrapper');
+  const freeShippingWrapper = document.querySelector('.free-shipping-img');
   const freeBottleWrapper = document.querySelector('.nectar-bottle-img');
 
   let progress = 0;
