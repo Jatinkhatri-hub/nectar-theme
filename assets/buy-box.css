@@ -609,6 +609,7 @@
 
   .free-shipping-img {
     width: 105px;
+    height: 105;
     object-fit: cover;
   }
 
