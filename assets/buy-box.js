@@ -224,6 +224,20 @@ function updatePrices(selectedPackage, isAutoship) {
   // Update the prices in the HTML
   document.getElementById('totalPrice').textContent = `$${totalPrice.toFixed(2)}`;
   document.getElementById('discountedPrice').textContent = `$${discountedPrice.toFixed(2)}`;
+
+  const activeRadioLabel = document.querySelector(`input[name="purchaseType"]:checked`).closest('.radio-label');
+  const discountedPriceElement = activeRadioLabel.querySelector('.details__discounted-price');
+
+  if (discountedPriceElement) {
+    discountedPriceElement.textContent = `$${discountedPrice.toFixed(2)}`;
+  }
+
+  // Update total price if needed in a similar way
+  const totalPriceElement = activeRadioLabel.querySelector('.details__total-price');
+  if (totalPriceElement) {
+    totalPriceElement.textContent = `$${originalPrice.toFixed(2)}`;
+  }
+
 }
 
 function openTab(event, tabName) {
