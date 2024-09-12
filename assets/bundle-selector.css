@@ -88,6 +88,8 @@
   background-color: #0D3063;
   font-family: 'Poppins';
   font-weight: 500;
+  border: none;
+  outline: none;
 }
 
 .variant__added-no {
