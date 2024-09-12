@@ -278,74 +278,74 @@ function openTab(event, tabName) {
 //   }
 // }
 
-function renderTabContentDesktop(tabName, container) {
-  const data = tabData[tabName];
-  container.innerHTML = ''; // Clear previous content
+// function renderTabContentDesktop(tabName, container) {
+//   const data = tabData[tabName];
+//   container.innerHTML = ''; // Clear previous content
 
-  container.innerHTML = `
-    <div class="details__package-selector" id="packageSelector">
-      ${data.packages.map(pkg => `
-        <label class="details__package-box">
-          <span class="package__badge" style="background-color: ${pkg.badgeColor}; color: ${pkg.textColor};">${pkg.badge}</span>
-          <input type="radio" class="radio__package-box">
-          <div class='package-details'>
-            <h6 class="package-title">${pkg.title}</h6>
-            <p class="package-discount">${pkg.discount}</p>
-            <p class="packet-individual">${pkg.pricePerPacket}</p>
-          </div>
-        </label>
-        `).join('')}
-    </div>
-    <div class="details__gift-wrapper">
-      <h6 class="gift-wrapper__title">You've unlocked $23.95 of free gifts!</h6>
-      <div class="gift-progress-bar__wrapper">
-        <div class="progressBar">
-          <div class="progress" style="width: 50%;"></div>
-        </div>
-        <div class="free-shipping__wrapper">
-          <div class="image-wrapper">
-            <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group_1484580827_1.png?v=1726084589" class="free-shipping-img">
-          </div>
-          <span class="gift-title">Free Shipping</span>
-        </div>
-        <div class="free-bottle__wrapper">
-          <div class="image-wrapper">
-            <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Bottle_no_BG_2.png?v=1726084588" class="nectar-bottle-img">
-          </div>
-          <span class="gift-title">Nectar Bottle</span>
-        </div>
-      </div>
-    </div>
-    <div class="details__footer">
-    ${data.showCongrats ? `
-        <div class="details__footer-congrats">
-          <div class="footer__icon-wrapper">
-            <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group.png?v=1726037024" class="footer-img">
-          </div>
-          <p class="congrats-text"><span>Congrats!</span> You're making proper Hydration and all the benefits that come with it a habit!</p>
-        </div>
-        ` : ''}
+//   container.innerHTML = `
+//     <div class="details__package-selector" id="packageSelector">
+//       ${data.packages.map(pkg => `
+//         <label class="details__package-box">
+//           <span class="package__badge" style="background-color: ${pkg.badgeColor}; color: ${pkg.textColor};">${pkg.badge}</span>
+//           <input type="radio" class="radio__package-box">
+//           <div class='package-details'>
+//             <h6 class="package-title">${pkg.title}</h6>
+//             <p class="package-discount">${pkg.discount}</p>
+//             <p class="packet-individual">${pkg.pricePerPacket}</p>
+//           </div>
+//         </label>
+//         `).join('')}
+//     </div>
+//     <div class="details__gift-wrapper">
+//       <h6 class="gift-wrapper__title">You've unlocked $23.95 of free gifts!</h6>
+//       <div class="gift-progress-bar__wrapper">
+//         <div class="progressBar">
+//           <div class="progress" style="width: 50%;"></div>
+//         </div>
+//         <div class="free-shipping__wrapper">
+//           <div class="image-wrapper">
+//             <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group_1484580827_1.png?v=1726084589" class="free-shipping-img">
+//           </div>
+//           <span class="gift-title">Free Shipping</span>
+//         </div>
+//         <div class="free-bottle__wrapper">
+//           <div class="image-wrapper">
+//             <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Bottle_no_BG_2.png?v=1726084588" class="nectar-bottle-img">
+//           </div>
+//           <span class="gift-title">Nectar Bottle</span>
+//         </div>
+//       </div>
+//     </div>
+//     <div class="details__footer">
+//     ${data.showCongrats ? `
+//         <div class="details__footer-congrats">
+//           <div class="footer__icon-wrapper">
+//             <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group.png?v=1726037024" class="footer-img">
+//           </div>
+//           <p class="congrats-text"><span>Congrats!</span> You're making proper Hydration and all the benefits that come with it a habit!</p>
+//         </div>
+//         ` : ''}
 
-        ${tabName == 'oneTime' ? `
-          <button class="sub-and-save__btn">
-            <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/file_4_1.png?v=1726036951" class="icon-gift">
-            Tap here to subscribe and save $50.95
-          </button>
-          `: ''}
+//         ${tabName == 'oneTime' ? `
+//           <button class="sub-and-save__btn">
+//             <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/file_4_1.png?v=1726036951" class="icon-gift">
+//             Tap here to subscribe and save $50.95
+//           </button>
+//           `: ''}
 
 
-        <div class="value-points__container">
-          ${data.footerPoints.map(point => `<p class="footer-value__point"><span><img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group_1484580410.png?v=1726037646" class="value-point__icon"></span> ${point}</p>`).join('')}
-        </div>
-        <div class="choose-flavor__btn-wrapper">
-          <button class="choose-flavor__btn">Choose Your Flavors</button>
-          <div class="delivery-text"><img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group_1484580410.png?v=1726037646" class="value-point__icon"><span>Expected delivery in 3-5 business days<span></div>
-        </div>
-    </div>
-  `;
+//         <div class="value-points__container">
+//           ${data.footerPoints.map(point => `<p class="footer-value__point"><span><img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group_1484580410.png?v=1726037646" class="value-point__icon"></span> ${point}</p>`).join('')}
+//         </div>
+//         <div class="choose-flavor__btn-wrapper">
+//           <button class="choose-flavor__btn">Choose Your Flavors</button>
+//           <div class="delivery-text"><img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group_1484580410.png?v=1726037646" class="value-point__icon"><span>Expected delivery in 3-5 business days<span></div>
+//         </div>
+//     </div>
+//   `;
   
   
-};
+// };
 
 function renderTabContentDesktop(tabName) {
   const data = tabData[tabName];
