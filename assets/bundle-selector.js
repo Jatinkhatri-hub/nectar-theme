@@ -207,8 +207,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Handle increase button click
   function handleIncreaseClick(variantId) {
-    if (!selectedVariants[variantId]) {
-      selectedVariants[variantId] = { quantity: 0 };
+    if (!state.selectedVariants[variantId]) {
+      state.selectedVariants[variantId] = { quantity: 0 };
     }
     selectedVariants[variantId].quantity++;
     toggleControls(variantId);
