@@ -434,6 +434,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   });
 
+  renderTabContentDesktop('autoShip');
+
   // const desktopRadioButtons = document.querySelectorAll('.radio-tab');
   // desktopRadioButtons.forEach(radio => {
   //   radio.addEventListener('change', (event) => {
