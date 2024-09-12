@@ -212,7 +212,7 @@ function openTab(event, tabName) {
   });
 
 
-  const giftWrapper = document.createElement('div');
+  giftWrapper = document.createElement('div');
   giftWrapper.classList.add('details__gift-wrapper');
   giftWrapper.innerHTML = `
       <h6 class="gift-wrapper__title">You've unlocked $23.95 of free gifts!</h6>
