@@ -126,7 +126,9 @@ const tabData = {
   }
 };
 
-function updateProgressBar(package)
+function updateProgressBar(packageSize) {
+  const progressBar = do
+}
 
 
 function openTab(event, tabName) {
