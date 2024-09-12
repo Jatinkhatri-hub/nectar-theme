@@ -479,6 +479,7 @@ if (tabName === 'oneTime') {
 }
 
   const valuePointsWrapper = document.createElement('div');
+  cla
 
   data.footerPoints.forEach(point => {
     const p = document.createElement('p');
@@ -487,7 +488,7 @@ if (tabName === 'oneTime') {
     valuePointsWrapper.appendChild(p);
   });
 
-  footer.appendChild
+  footer.appendChild(valuePointsWrapper);
 
 
   const flavorBtnWrapper = document.createElement('div');
