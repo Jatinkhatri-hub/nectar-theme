@@ -30,9 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
         <button class="product-add__btn" data-variant-id="${variant.id}">Add+</button>
         <div class="variant__quantity-controls" style="display: none;">
           <button class="variant__decrease-btn">{% render 'icon-minus' %}</button>
-                        <span class="variant__added-no">0</span>
-                        <button class="variant__increase-btn">{% render 'icon-plus' %}</button>
-                        <input type="hidden" class="variant-input" name="{{ variant.id }}" value="0">
+          <span class="variant__added-no">0</span>
+          <button class="variant__increase-btn">{% render 'icon-plus' %}</button>
+          <input type="hidden" class="variant-input" name="{{ variant.id }}" value="0">
                       </div>
       </div>
     `;
