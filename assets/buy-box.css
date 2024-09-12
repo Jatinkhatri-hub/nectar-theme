@@ -652,13 +652,17 @@
     align-items: baseline;
     gap: 10px;
     justify-content: center;
+    margin-bottom: 16px;
   }
 
   .footer-value__point {
     font-size: 16px;
   }
 
-  
+  .value-point__icon {
+    width: 17px;
+    height: 17px;
+  }
 
   .choose-flavor__btn-wrapper {
     width: 100%;
