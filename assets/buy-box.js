@@ -350,6 +350,8 @@ function renderTabContentDesktop(tabName, container) {
 
 
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const tabButtons = document.querySelectorAll('.tab-button');
   tabButtons.forEach(button => {
