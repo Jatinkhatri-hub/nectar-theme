@@ -162,7 +162,7 @@ function updateProgressBar(packageSize) {
 
 function updatePrices(selectedPackage, isAutoship) {
   // Base price of the product (assuming it's available)
-  const productPrice = document.g
+  const productPrice = document.ger
   let basePrice = 100; // Example price for one quantity
   let totalPrice = 0;
   let discountedPrice = 0;
