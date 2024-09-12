@@ -157,7 +157,7 @@
 .active {
   background: #0D3063;
   color: white;
-  bord
+  border: #0D3063;
 }
 
 .disable {
