@@ -518,6 +518,15 @@ document.querySelectorAll('input[name="purchaseType"]').forEach(radio => {
 });
 
 
+document.getElementById('flavorSelectionBtn').addEventListener('click', function() {
+  // Store data in LocalStorage
+  // localStorage.setItem('selectedPackage', selectedPackage);
+  // localStorage.setItem('productVariants', JSON.stringify(productVariants));
+
+  // Navigate to the bundle selection page
+  window.location.href = '/bundle-selection-page'; // Replace with your actual URL
+});
+
 
 
 
