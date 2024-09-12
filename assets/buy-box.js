@@ -526,26 +526,7 @@ document.querySelectorAll('input[name="purchaseType"]').forEach(radio => {
   radio.addEventListener('change', handleRadioSwitch);
 });
 
-// Add event listener to the "Subscribe and Save" button
-document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
-  // Switch to the 'autoShip' tab
-  renderTabContentDesktop('autoShip');
-  
-  // Programmatically select the autoShip radio button
-  const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
-  autoShipRadio.checked = true;
-  
-  // Update the prices and UI based on the autoShip option
-  const selectedPackage = document.querySelector('input[name="package"]:checked');
-  if (selectedPackage) {
-      const pack = parseInt(selectedPackage.value);
-      updatePrices(pack, true); // true indicates this is an auto-ship subscription
-      updateProgressBar(pack);  // Update the progress bar based on the package
-  }
-  
-  // Optionally scroll the user to the package selection area or some visual cue
-  document.querySelector('.details__package-selector').scrollIntoView({ behavior: 'smooth' });
-});
+
 
 
 
@@ -565,6 +546,27 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   renderTabContentDesktop('autoShip');
+
+  // Add event listener to the "Subscribe and Save" button
+document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
+  // Switch to the 'autoShip' tab
+  renderTabContentDesktop('autoShip');
+  
+  // Programmatically select the autoShip radio button
+  const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
+  autoShipRadio.checked = true;
+  
+  // Update the prices and UI based on the autoShip option
+  const selectedPackage = document.querySelector('input[name="package"]:checked');
+  if (selectedPackage) {
+      const pack = parseInt(selectedPackage.value);
+      updatePrices(pack, true); // true indicates this is an auto-ship subscription
+      updateProgressBar(pack);  // Update the progress bar based on the package
+  }
+  
+  // Optionally scroll the user to the package selection area or some visual cue
+  document.querySelector('.details__package-selector').scrollIntoView({ behavior: 'smooth' });
+});
 
   
 
