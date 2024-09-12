@@ -74,6 +74,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: ;
 }
 
 .variant__quantitiy-controls button {
@@ -92,7 +93,7 @@
 .variant__added-no {
   font-family: 'Poppins';
   size: 20px;
-  font-weight: ;
+  font-weight: 600;
 }
 
 
