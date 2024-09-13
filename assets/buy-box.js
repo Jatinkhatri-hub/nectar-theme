@@ -586,6 +586,8 @@ function handleRadioSwitch() {
       `;
       footer.appendChild(congratsDiv);
 
+      autoShipDiv.appendChild
+
 
       // document.querySelector('[data-tab="autoShip"]').appendChild(newDiv);
     }
