@@ -573,34 +573,37 @@ if (tabName === 'oneTime') {
 
   if (document.querySelector('.sub-and-save__btn')) {
     document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
-        // Select the 'autoShip' tab and deselect 'oneTime'
-        renderTabContentDesktop('autoShip');
-        
-        // Deselect the oneTime radio and select the autoShip radio
-        const oneTimeRadio = document.querySelector('input[name="purchaseType"][value="oneTime"]');
-        const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
-        if (oneTimeRadio) oneTimeRadio.checked = false;  // Uncheck oneTime
-        if (autoShipRadio) autoShipRadio.checked = true; // Select autoShip
-        
-        // Clear any data associated with 'oneTime' purchase
-        const oneTimeContent = document.getElementById('oneTimeContent');
-        if (oneTimeContent) {
-            oneTimeContent.innerHTML = ''; // Clear the content for oneTime
-        }
-
-        // Handle auto-ship package selection and progress bar update
-        const selectedPackage = document.querySelector('input[name="package"]:checked');
-        if (selectedPackage) {
-            const pack = parseInt(selectedPackage.value);
-            updatePrices(pack, true); // Update for auto-ship
-            updateProgressBar(pack);  // Update progress bar for auto-ship
-        }
-
-        // Scroll into view
-        document.querySelector('.details__package-selector').scrollIntoView({ behavior: 'smooth' });
+  
+      // Switch to the "Auto-Ship" tab
+      renderTabContentDesktop('autoShip');
+  
+      // Set the "Auto-Ship" radio button as checked
+      const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
+      const oneTimeRadio = document.querySelector('input[name="purchaseType"][value="oneTime"]');
+      if (autoShipRadio) {
+        autoShipRadio.checked = true;  // Select Auto-Ship
+      }
+  
+      // Uncheck the "One-Time" radio button (not necessary but for clarity)
+      if (oneTimeRadio) {
+        oneTimeRadio.checked = false;
+      }
+  
+      // Update the prices and progress bar for the selected package in the Auto-Ship tab
+      const selectedPackage = document.querySelector('input[name="package"]:checked');
+      if (selectedPackage) {
+        const pack = parseInt(selectedPackage.value);
+        updatePrices(pack, true);  // Pass true for "Auto-Ship"
+        updateProgressBar(pack);
+      }
+  
+      // Scroll to the package selector if necessary
+      const packageSelector = document.querySelector('.details__package-selector');
+      if (packageSelector) {
+        packageSelector.scrollIntoView({ behavior: 'smooth' });
+      }
     });
-}
-
+  }
 
 }
 
