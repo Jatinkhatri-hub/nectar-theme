@@ -554,7 +554,7 @@ function handleRadioSwitch() {
   } else {
     renderTabContentDesktop('oneTime');
 
-    if (!autoShipDiv) {
+    if (autoShipDiv) {
       // const newDiv = document.createElement('div');
       // newDiv.id = 'autoShipDiv';
       newDiv = autoShipDiv;
