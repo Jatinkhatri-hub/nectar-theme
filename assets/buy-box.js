@@ -294,6 +294,7 @@ function openTab(event, tabName) {
       radio.addEventListener('change', () => {
         updateProgressBar(pkg.title);
         const pack = parseInt(pkg.title);
+        localStorage.setItem('packageRequired', JSON.stringify(pack));
         document.querySelectorAll('.details__package-box').forEach(box => {
           box.classList.remove('selected');
         });
