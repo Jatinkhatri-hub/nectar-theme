@@ -63,7 +63,6 @@
         "type": "header",
         "settings": {
           "align_logo": "left",
-          "logo": "shopify:\/\/shop_images\/nectar-logo.png",
           "logo_max_width": 135,
           "main_linklist": "main-menu",
           "message": false,
@@ -83,9 +82,9 @@
           "show_locale_selector": true,
           "show_currency_selector": true,
           "menu_1_title": "Shop",
-          "menu1": "shop",
+          "menu1": "",
           "menu_2_title": "About",
-          "menu2": "about",
+          "menu2": "",
           "newsletter_title": "Stay Connected",
           "newsletter_text": "Keep up to date on new products, promotions, and helpful info on how to stay hydrated and healthy."
         }
@@ -97,11 +96,9 @@
           "title": "<p>Hydration For<\/p>",
           "description": "\"Afternoon Slumps\", \"Groggy Mornings\", \"Foggy Brains\"",
           "button_label_1": "Shop Now",
-          "button_url_1": "shopify:\/\/products\/essential-daily-hydration",
+          "button_url_1": "shopify:\/\/products\/essential-daily-energy",
           "button_label_2": "",
           "button_url_2": "",
-          "image_background": "shopify:\/\/shop_images\/Hero_image_9f59e820-491e-4ffe-9d66-e39374dc466a.jpg",
-          "image_background_mob": "shopify:\/\/shop_images\/Mobile_Hero_Image.jpg",
           "color_background": "#7bbafa",
           "font_color": "#ffffff"
         }
@@ -112,29 +109,25 @@
           "1581344645796": {
             "type": "image",
             "settings": {
-              "title_icon": "Natural Energy",
-              "icon": "shopify:\/\/shop_images\/natural_energy_193a84b8-bb1d-4ab3-9bb4-e8fb9a622e4b.png"
+              "title_icon": "Natural Energy"
             }
           },
           "1581344673149": {
             "type": "image",
             "settings": {
-              "title_icon": "Boosted Focus",
-              "icon": "shopify:\/\/shop_images\/boosted_focus_67ebb971-32a2-4679-8101-229f0d46b65d.png"
+              "title_icon": "Boosted Focus"
             }
           },
           "1581344754684": {
             "type": "image",
             "settings": {
-              "title_icon": "Improved Mood",
-              "icon": "shopify:\/\/shop_images\/boosted_mood.png"
+              "title_icon": "Improved Mood"
             }
           },
           "1581344763764": {
             "type": "image",
             "settings": {
-              "title_icon": "Strengthened Immunity",
-              "icon": "shopify:\/\/shop_images\/immunity.png"
+              "title_icon": "Strengthened Immunity"
             }
           }
         },
@@ -159,8 +152,7 @@
               "r_desc": "<p>You've probably heard dehydration is bad for you. Yet, studies show 75% of us are Chronically Dehydrated, resulting in:<\/p>",
               "r_list": "<ul class=\"cross\">\n<li>Fatigue and Lethargy <i>(afternoon slump)<\/i>\n<\/li>\n<li>Mood Disturbance <i>(I just can't)<\/i>\n<\/li>\n<li>Dry and Flushed Skin <i>(no glow)<\/i>\n<\/li>\n<li>Slowed Metabolism <i>(weight gain)<\/i>\n<\/li>\n<\/ul>",
               "r_button": "Meet your body's new best friend",
-              "r_link": "\/products\/essential-daily-hydration",
-              "r_image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_1_720x_3c22d6dc-3f95-45b7-a535-4e6c28668f5b.gif"
+              "r_link": "\/products\/essential-daily-hydration"
             }
           },
           "1585148629254": {
@@ -170,8 +162,7 @@
               "l_desc": "<p>When you're dehydrated, your body needs more than just plain water. Nectar uses the highest quality, research backed electrolytes to help you get more from your water, hydrating you as efficiently as possible.<\/p>",
               "l_list": "<ul class=\"check\">\n<li>2-3x more hydrating than water alone<\/li>\n<li>Only the essentials, none of the B.S.<\/li>\n<li>Zero Sugar, Zero Calories<\/li>\n<\/ul>",
               "l_button": "Explore our ingredients",
-              "l_link": "\/products\/essential-daily-hydration#nectar-ingredients",
-              "l_image": "shopify:\/\/shop_images\/Homepage_Image_2.jpg"
+              "l_link": "\/products\/essential-daily-hydration#nectar-ingredients"
             }
           },
           "f75ad222-75e3-4104-9879-19f48643f04b": {
@@ -181,8 +172,7 @@
               "r_desc": "<p>We get it — subscriptions are scary. But, we want to make proper hydration part of your daily routine. Not feeling it? Cancel any time.<\/p>",
               "r_list": "<ul class=\"checkmark-orange\">\n<li>Free shipping<\/li>\n<li>Control your delivery date<\/li>\n<li>Quick and easy cancellation<\/li>\n<li>Unhappy? It's on us <\/li>\n<\/ul>",
               "r_button": "Shop Now",
-              "r_link": "\/products\/essential-daily-hydration",
-              "r_image": "shopify:\/\/shop_images\/Homepage_Image_3.jpg"
+              "r_link": "\/products\/essential-daily-hydration"
             }
           }
         },
@@ -201,7 +191,6 @@
           "title": "Make Hydration a Habit",
           "desc": "<p>We get it — subscriptions are scary. But, we want to make proper hydration part of your daily routine. Not feeling it? Cancel any time.<\/p>",
           "list": "<ul class=\"check\">\n<li>Free shipping<\/li>\n<li>Control your delivery date<\/li>\n<li>Quick and easy cancellation<\/li>\n<li>Unhappy? It's on us <\/li>\n<\/ul>",
-          "image_background": "shopify:\/\/shop_images\/testimonial-placeholder.png",
           "color_background": "#666666",
           "font_color": "#ffffff"
         }
@@ -247,8 +236,7 @@
         "disabled": true,
         "settings": {
           "title": "Wellness Should be Shared<br>Give $15 — Get $15",
-          "desc": "<p>Send a friend $15 off their ﬁrst order <br\/>and earn $15 in Nectar credit!<\/p>",
-          "background": "shopify:\/\/shop_images\/background-social-new.png"
+          "desc": "<p>Send a friend $15 off their ﬁrst order <br\/>and earn $15 in Nectar credit!<\/p>"
         }
       },
       "product-template": {
@@ -820,8 +808,7 @@
             "settings": {
               "quote": "<p>“I take Nectar every morning to start my day feeling energized.”<\/p>",
               "author": "Jenny N.",
-              "author_title": "Pilates Instructor & Engineer",
-              "quote_image": "shopify:\/\/shop_images\/Jenny_RP.jpg"
+              "author_title": "Pilates Instructor & Engineer"
             }
           },
           "1584469777527-1": {
@@ -829,8 +816,7 @@
             "settings": {
               "quote": "<p>“Nectar is a game changer for staying focused &amp; energized.”<\/p>",
               "author": "Sahil R.",
-              "author_title": "Finance & Partnerships",
-              "quote_image": "shopify:\/\/shop_images\/Sahil_RP.jpg"
+              "author_title": "Finance & Partnerships"
             }
           },
           "1590589357498": {
@@ -838,8 +824,7 @@
             "settings": {
               "quote": "<p>&quot;As a new mom, Nectar has been an amazing addition to my daily routine.&quot;<\/p>",
               "author": "Mallory E.",
-              "author_title": "Boss Mom",
-              "quote_image": "shopify:\/\/shop_images\/Mallory_RP.jpg"
+              "author_title": "Boss Mom"
             }
           },
           "1584469777527-2": {
@@ -847,8 +832,7 @@
             "settings": {
               "quote": "<p> “I love that it’s all natural and zero calorie - it tastes amazing.”<\/p>",
               "author": "April Y.",
-              "author_title": "Product Manager",
-              "quote_image": "shopify:\/\/shop_images\/April_RP.jpg"
+              "author_title": "Product Manager"
             }
           },
           "1584469793331": {
@@ -856,8 +840,7 @@
             "settings": {
               "quote": "<p>“I never relized dehydration was causing my lethargy until I tried Nectar.”<\/p>",
               "author": "Dan S.",
-              "author_title": "Lawyer",
-              "quote_image": "shopify:\/\/shop_images\/Dan_RP.jpg"
+              "author_title": "Lawyer"
             }
           },
           "1588708081449": {
@@ -865,8 +848,7 @@
             "settings": {
               "quote": "<p>“Nectar has become a staple amongst my friend group.”<\/p>",
               "author": "Emily Q.",
-              "author_title": "Developer",
-              "quote_image": "shopify:\/\/shop_images\/Emily_RP.jpg"
+              "author_title": "Developer"
             }
           }
         },
@@ -1336,8 +1318,7 @@
         "type": "conjured-referrals",
         "settings": {
           "title": "Wellness Should be Shared<br>Give $15 — Get $15",
-          "desc": "<p>Send a friend $15 off their ﬁrst order <br\/>and earn $15 in Nectar credit!<\/p>",
-          "background": "shopify:\/\/shop_images\/background-social-new.png"
+          "desc": "<p>Send a friend $15 off their ﬁrst order <br\/>and earn $15 in Nectar credit!<\/p>"
         }
       },
       "mirgo-icon-home": {
@@ -1422,15 +1403,13 @@
           "16129840686cb184ec-0": {
             "type": "photo",
             "settings": {
-              "ig_link": "",
-              "ig_photo": "shopify:\/\/shop_images\/1.png"
+              "ig_link": ""
             }
           },
           "a1d05ec7-42dc-4f34-9a6a-828ee6b0a4f3": {
             "type": "photo",
             "settings": {
-              "ig_link": "",
-              "ig_photo": "shopify:\/\/shop_images\/2.jpg"
+              "ig_link": ""
             }
           },
           "1f57eaf6-1d51-490d-b0a1-bdb682783ae9": {
@@ -1443,8 +1422,7 @@
           "7305d3a2-1443-4e92-bd34-a262bc728c3a": {
             "type": "photo",
             "settings": {
-              "ig_link": "",
-              "ig_photo": "shopify:\/\/shop_images\/4.png"
+              "ig_link": ""
             }
           }
         },
