@@ -528,6 +528,15 @@ if (tabName === 'oneTime') {
       Tap here to subscribe and save $50.95
   `;
   footer.appendChild(button);
+
+  // Add click event to switch to 'autoShip' tab
+  button.addEventListener('click', function() {
+    // Programmatically switch to the 'autoShip' tab
+    const autoShipTabButton = document.querySelector(".tab-button[data-tab='autoShip']");
+    if (autoShipTabButton) {
+      openTab(null, 'autoShip'); // Switch to autoShip tab
+    }
+  });
 }
 
   const valuePointsWrapper = document.createElement('div');
