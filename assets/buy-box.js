@@ -527,8 +527,6 @@ if (tabName === 'oneTime') {
       <img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/file_4_1.png?v=1726036951" class="icon-gift">
       Tap here to subscribe and save $50.95
   `;
-  footer.appendChild(button);
-
   // Add click event to switch to 'autoShip' tab
   button.addEventListener('click', function() {
     // Programmatically switch to the 'autoShip' tab
@@ -538,6 +536,9 @@ if (tabName === 'oneTime') {
     autoShipDiv.innerHTML = '';
     oneTimeContent.innerHTML = '';
   });
+  
+  footer.appendChild(button);
+
 }
 
   const valuePointsWrapper = document.createElement('div');
