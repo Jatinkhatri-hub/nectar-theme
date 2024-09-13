@@ -301,6 +301,23 @@ function openTab(event, tabName) {
           updatePrices(pack, false);
         };
       }); // Update progress bar on selection
+
+      if (index === 0) {
+        radio.checked = true;
+        setTimeout( () => {
+          updateProgressBar(pkg.title); // Initialize the progress bar for the first package
+        }, 2000);
+        const pack = parseInt(pkg.title);
+        localStorage.setItem('packageRequired', JSON.stringify(pack));
+  
+        // Determine if it's Auto-Ship or One-Time
+        if (tabName === "autoShip") {
+          updatePrices(pack, true);
+        } else {
+          updatePrices(pack, false);
+        }
+      }
+
       packageBox.appendChild(radio);
 
       const details = document.createElement('div');
