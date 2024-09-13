@@ -553,69 +553,23 @@ if (tabName === 'oneTime') {
 
 
   container.appendChild(footer);
-// Add event listener to the "Subscribe and Save" button
-if (document.querySelector('.sub-and-save__btn')) {
-  document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
-    // Select the autoShip radio button
-    const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
-    if (autoShipRadio) {
-      autoShipRadio.checked = true;
-      
-      // Manually trigger the change event
-      const event = new Event('change');
-      autoShipRadio.dispatchEvent(event);
-    }
 
-    // Update the tab buttons
-    const tabButtons = document.querySelectorAll('.tab-button');
-    tabButtons.forEach(button => {
-      if (button.getAttribute('data-tab') === 'autoShip') {
-        button.classList.add('active');
-      } else {
-        button.classList.remove('active');
-      }
+
+  if (document.querySelector('.sub-and-save__btn')) {
+    document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
+
+      renderTabContentDesktop('autoShip');
+        const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
+        autoShipRadio.checked = true;
+        const selectedPackage = document.querySelector('input[name="package"]:checked');
+        if (selectedPackage) {
+            const pack = parseInt(selectedPackage.value);
+            updatePrices(pack, true);
+            updateProgressBar(pack);
+        }
+        document.querySelector('.details__package-selector').scrollIntoView({ behavior: 'smooth' });
     });
-
-    // Render autoShip content
-    renderTabContentDesktop('autoShip');
-
-    // Clear one-time content
-    const oneTimeContent = document.getElementById('oneTimeContent');
-    if (oneTimeContent) {
-      oneTimeContent.innerHTML = '';
-    }
-
-    // Update the prices and UI based on the autoShip option
-    const selectedPackage = document.querySelector('input[name="package"]:checked');
-    if (selectedPackage) {
-      const pack = parseInt(selectedPackage.value);
-      updatePrices(pack, true); // true indicates this is an auto-ship subscription
-      updateProgressBar(pack);  // Update the progress bar based on the package
-    }
-
-    // Scroll to the package selection area
-    const packageSelector = document.querySelector('.details__package-selector');
-    if (packageSelector) {
-      packageSelector.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-}
-
-  // if (document.querySelector('.sub-and-save__btn')) {
-  //   document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
-
-  //     renderTabContentDesktop('autoShip');
-  //       const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
-  //       autoShipRadio.checked = true;
-  //       const selectedPackage = document.querySelector('input[name="package"]:checked');
-  //       if (selectedPackage) {
-  //           const pack = parseInt(selectedPackage.value);
-  //           updatePrices(pack, true);
-  //           updateProgressBar(pack);
-  //       }
-  //       document.querySelector('.details__package-selector').scrollIntoView({ behavior: 'smooth' });
-  //   });
-  // }
+  }
 
 }
 
