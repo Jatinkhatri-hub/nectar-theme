@@ -538,6 +538,7 @@ function handleRadioSwitch() {
   const oneTimeContent = document.getElementById('oneTimeContent');
 
   const selectedRadio = document.querySelector('input[name="purchaseType"]:checked');
+  const autoShipDiv
 
   // Clear both containers before rendering new content
   autoShipContent.innerHTML = '';
