@@ -548,7 +548,7 @@ function handleRadioSwitch() {
     renderTabContentDesktop('autoShip');
 
     if(autoShipDiv) {
-      autoShipDiv.remove();
+      autoShipDiv.innerHTML = '';
     }
 
   } else {
