@@ -567,7 +567,8 @@ function handleRadioSwitch() {
       footer.classList.add('details__footer');
 
       const valuePointsWrapper = document.createElement('div');
-      valuePointsWrapper.classList.add('value-points__container radio-closed');
+      valuePointsWrapper.classList.add('value-points__container');
+      valuePointsWrapper.classList.add
 
       radioClosed.forEach(point => {
         const p = document.createElement('p');
