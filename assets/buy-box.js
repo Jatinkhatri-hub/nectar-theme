@@ -536,7 +536,7 @@ if (tabName === 'oneTime') {
     autoShipDiv.innerHTML = '';
     oneTimeContent.innerHTML = '';
   });
-  
+
   footer.appendChild(button);
 
 }
@@ -555,7 +555,7 @@ if (tabName === 'oneTime') {
 
 
   const flavorBtnWrapper = document.createElement('div');
-  flavorBtnWrapper.classList.add = 'choose-flavor__btn-wrapper'
+  flavorBtnWrapper.classList.add = '(choose-flavor__btn-wrapper)'
   flavorBtnWrapper.innerHTML = `
   <button class="choose-flavor__btn" id="flavorSelectionBtnDesktop">Choose Your Flavors</button>
            <div class="delivery-text"><img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group_1484580410.png?v=1726037646" class="value-point__icon"><span>Expected delivery in 3-5 business days<span></div>
