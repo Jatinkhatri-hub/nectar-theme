@@ -553,47 +553,53 @@ if (tabName === 'oneTime') {
 
 
   container.appendChild(footer);
+// Add event listener to the "Subscribe and Save" button
+if (document.querySelector('.sub-and-save__btn')) {
+  document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
+    // Select the autoShip radio button
+    const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
+    if (autoShipRadio) {
+      autoShipRadio.checked = true;
+      
+      // Manually trigger the change event
+      const event = new Event('change');
+      autoShipRadio.dispatchEvent(event);
+    }
 
-  if (document.querySelector('.sub-and-save__btn')) {
-    document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
-      // Switch to the 'autoShip' tab
-      renderTabContentDesktop('autoShip');
-
-      
-      
-      // Programmatically select the autoShip radio button
-      const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
-      if (autoShipRadio) {
-        autoShipRadio.checked = true;
-      }
-      
-      // Clear the one-time content
-      const oneTimeContent = document.getElementById('oneTimeContent');
-      if (oneTimeContent) {
-        oneTimeContent.innerHTML = '';
-      }
-      
-      // Hide the one-time tab (if there's a specific element for it)
-      const oneTimeTab = document.querySelector('[data-tab="oneTime"]');
-      if (oneTimeTab) {
-        oneTimeTab.style.display = 'none';
-      }
-      
-      // Update the prices and UI based on the autoShip option
-      const selectedPackage = document.querySelector('input[name="package"]:checked');
-      if (selectedPackage) {
-        const pack = parseInt(selectedPackage.value);
-        updatePrices(pack, true); // true indicates this is an auto-ship subscription
-        updateProgressBar(pack);  // Update the progress bar based on the package
-      }
-      
-      // Optionally scroll the user to the package selection area or some visual cue
-      const packageSelector = document.querySelector('.details__package-selector');
-      if (packageSelector) {
-        packageSelector.scrollIntoView({ behavior: 'smooth' });
+    // Update the tab buttons
+    const tabButtons = document.querySelectorAll('.tab-button');
+    tabButtons.forEach(button => {
+      if (button.getAttribute('data-tab') === 'autoShip') {
+        button.classList.add('active');
+      } else {
+        button.classList.remove('active');
       }
     });
-  }
+
+    // Render autoShip content
+    renderTabContentDesktop('autoShip');
+
+    // Clear one-time content
+    const oneTimeContent = document.getElementById('oneTimeContent');
+    if (oneTimeContent) {
+      oneTimeContent.innerHTML = '';
+    }
+
+    // Update the prices and UI based on the autoShip option
+    const selectedPackage = document.querySelector('input[name="package"]:checked');
+    if (selectedPackage) {
+      const pack = parseInt(selectedPackage.value);
+      updatePrices(pack, true); // true indicates this is an auto-ship subscription
+      updateProgressBar(pack);  // Update the progress bar based on the package
+    }
+
+    // Scroll to the package selection area
+    const packageSelector = document.querySelector('.details__package-selector');
+    if (packageSelector) {
+      packageSelector.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+}
 
   // if (document.querySelector('.sub-and-save__btn')) {
   //   document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
