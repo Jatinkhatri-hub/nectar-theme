@@ -559,7 +559,7 @@ function handleRadioSwitch() {
       // newDiv.id = 'autoShipDiv';
       newDiv = autoShipDiv;
       newDiv.innerHTML = '<p>Special offer when you don\'t subscribe to Auto-Ship!</p>';
-      .appendChild(newDiv);
+      
       // document.querySelector('[data-tab="autoShip"]').appendChild(newDiv);
     }
 
