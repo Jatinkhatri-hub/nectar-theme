@@ -128,7 +128,8 @@ const tabData = {
 
 const radioClosed = [
   'Free shipping with every order',
-  'No Contact - canel'
+  'No Contact - cancel with ease',
+  ''
 ]
 
 function updateProgressBar(packageSize) {
