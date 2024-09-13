@@ -556,19 +556,58 @@ if (tabName === 'oneTime') {
 
   if (document.querySelector('.sub-and-save__btn')) {
     document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
-
+      // Switch to the 'autoShip' tab
       renderTabContentDesktop('autoShip');
-        const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
+      
+      // Programmatically select the autoShip radio button
+      const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
+      if (autoShipRadio) {
         autoShipRadio.checked = true;
-        const selectedPackage = document.querySelector('input[name="package"]:checked');
-        if (selectedPackage) {
-            const pack = parseInt(selectedPackage.value);
-            updatePrices(pack, true);
-            updateProgressBar(pack);
-        }
-        document.querySelector('.details__package-selector').scrollIntoView({ behavior: 'smooth' });
+      }
+      
+      // Clear the one-time content
+      const oneTimeContent = document.getElementById('oneTimeContent');
+      if (oneTimeContent) {
+        oneTimeContent.innerHTML = '';
+      }
+      
+      // Hide the one-time tab (if there's a specific element for it)
+      const oneTimeTab = document.querySelector('[data-tab="oneTime"]');
+      if (oneTimeTab) {
+        oneTimeTab.style.display = 'none';
+      }
+      
+      // Update the prices and UI based on the autoShip option
+      const selectedPackage = document.querySelector('input[name="package"]:checked');
+      if (selectedPackage) {
+        const pack = parseInt(selectedPackage.value);
+        updatePrices(pack, true); // true indicates this is an auto-ship subscription
+        updateProgressBar(pack);  // Update the progress bar based on the package
+      }
+      
+      // Optionally scroll the user to the package selection area or some visual cue
+      const packageSelector = document.querySelector('.details__package-selector');
+      if (packageSelector) {
+        packageSelector.scrollIntoView({ behavior: 'smooth' });
+      }
     });
   }
+
+  // if (document.querySelector('.sub-and-save__btn')) {
+  //   document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
+
+  //     renderTabContentDesktop('autoShip');
+  //       const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
+  //       autoShipRadio.checked = true;
+  //       const selectedPackage = document.querySelector('input[name="package"]:checked');
+  //       if (selectedPackage) {
+  //           const pack = parseInt(selectedPackage.value);
+  //           updatePrices(pack, true);
+  //           updateProgressBar(pack);
+  //       }
+  //       document.querySelector('.details__package-selector').scrollIntoView({ behavior: 'smooth' });
+  //   });
+  // }
 
 }
 
