@@ -254,9 +254,9 @@ function updatePrices(selectedPackage, isAutoship) {
 function openTab(event, tabName) {
   // Update active tab button
   const tabButtons = document.getElementsByClassName("tab-button");
-  for (let i = 0; i < tabButtons.length; i++) {
-      tabButtons[i].classList.remove("active");
-  }
+  // for (let i = 0; i < tabButtons.length; i++) {
+  //     tabButtons[i].classList.remove("active");
+  // }
   if (event) event.currentTarget.classList.add("active");
 
   // Get the data for the selected tab
