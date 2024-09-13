@@ -593,7 +593,7 @@ if (tabName === 'oneTime') {
         oneTimeRadio.checked = false;
       //  oneTimeContent.innerHTML = '';
       }
-      handleRadioSwitch();
+      //handleRadioSwitch();
   
       // Update the prices and progress bar for the selected package in the Auto-Ship tab
       const selectedPackage = document.querySelector('input[name="package"]:checked');
