@@ -136,6 +136,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   };
 
+  updateShopNowButton();
+
   // Toggle controls based on quantity
   function toggleControls(variantId) {
     const card = document.querySelector(`.product-selector__card[data-variant-id="${variantId}"]`);
