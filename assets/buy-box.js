@@ -576,7 +576,7 @@ function handleRadioSwitch() {
         valuePointsWrapper.appendChild(p);
       });
 
-  footer.appendChild(valuePointsWrapper);
+      footer.appendChild(valuePointsWrapper);
 
 
       // document.querySelector('[data-tab="autoShip"]').appendChild(newDiv);
