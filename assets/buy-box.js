@@ -533,6 +533,7 @@ if (tabName === 'oneTime') {
   button.addEventListener('click', function() {
     // Programmatically switch to the 'autoShip' tab
     renderTabContentDesktop('autoShip');
+    const autoShipDiv = document.getElementById('autoShipDiv');
 
     oneTimeContent.innerHTML = '';
   });
