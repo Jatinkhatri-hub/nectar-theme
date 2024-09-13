@@ -403,7 +403,7 @@ function renderTabContentDesktop(tabName) {
   packageSelector.classList.add('details__package-selector');
 
   // Render packages
-  data.packages.forEach(pkg => {
+  data.packages.forEach((pkg, index) => {
     const packageBox = document.createElement('label');
     packageBox.className = 'details__package-box';
 
