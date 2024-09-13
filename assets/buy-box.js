@@ -24,8 +24,8 @@
 const tabData = {
   autoShip: {
       headerTitle: 'Up to 40% Off + Free Gifts',
-      totalPrice: '$134.95',
-      discountedPrice: '$89.95',
+      totalPrice: '',
+      discountedPrice: '',
       packages: [
           {
               badge: 'Best Value',
