@@ -548,7 +548,7 @@ function handleRadioSwitch() {
     renderTabContentDesktop('autoShip');
 
     if(autoShipDiv) {
-      aut
+      autoShipDiv.remove();
     }
 
   } else {
