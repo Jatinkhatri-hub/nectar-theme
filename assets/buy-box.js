@@ -559,7 +559,7 @@ if (tabName === 'oneTime') {
       // Switch to the 'autoShip' tab
       renderTabContentDesktop('autoShip');
 
-      document.querySelector('#autoShipContent').innerHTML = ''
+      
       
       // Programmatically select the autoShip radio button
       const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
