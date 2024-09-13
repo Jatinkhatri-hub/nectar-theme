@@ -555,21 +555,65 @@ if (tabName === 'oneTime') {
   container.appendChild(footer);
 
 
-  if (document.querySelector('.sub-and-save__btn')) {
-    document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
+  // if (document.querySelector('.sub-and-save__btn')) {
+  //   document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
 
-      renderTabContentDesktop('autoShip');
+  //     renderTabContentDesktop('autoShip');
+  //       const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
+  //       autoShipRadio.checked = true;
+  //       const selectedPackage = document.querySelector('input[name="package"]:checked');
+  //       if (selectedPackage) {
+  //           const pack = parseInt(selectedPackage.value);
+  //           updatePrices(pack, true);
+  //           updateProgressBar(pack);
+  //       }
+  //       document.querySelector('.details__package-selector').scrollIntoView({ behavior: 'smooth' });
+  //   });
+  // }
+
+
+To ensure that when you click the "Subscribe and Save" button, it closes the "One-Time" purchase option and removes all its data, you can follow these steps:
+
+Steps:
+Deselect the One-Time Radio Button: Set the oneTime radio button to unchecked when "Subscribe and Save" is clicked.
+Clear One-Time Content: Ensure that all data or selections associated with the "One-Time" purchase are cleared when switching.
+Switch to Auto-Ship: Programmatically select the "Auto-Ship" radio button and load the corresponding content.
+Reinitialize the Packages: Reapply the logic for progress bar updates and price updates when switching to "Auto-Ship."
+Scroll to View Packages: Ensure the auto-ship section is smoothly scrolled into view after switching.
+Solution Update
+You can modify your existing document.querySelector('.sub-and-save__btn').addEventListener logic as follows:
+
+javascript
+Copy code
+if (document.querySelector('.sub-and-save__btn')) {
+    document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
+        // Select the 'autoShip' tab and deselect 'oneTime'
+        renderTabContentDesktop('autoShip');
+        
+        // Deselect the oneTime radio and select the autoShip radio
+        const oneTimeRadio = document.querySelector('input[name="purchaseType"][value="oneTime"]');
         const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
-        autoShipRadio.checked = true;
+        if (oneTimeRadio) oneTimeRadio.checked = false;  // Uncheck oneTime
+        if (autoShipRadio) autoShipRadio.checked = true; // Select autoShip
+        
+        // Clear any data associated with 'oneTime' purchase
+        const oneTimeContent = document.getElementById('oneTimeContent');
+        if (oneTimeContent) {
+            oneTimeContent.innerHTML = ''; // Clear the content for oneTime
+        }
+
+        // Handle auto-ship package selection and progress bar update
         const selectedPackage = document.querySelector('input[name="package"]:checked');
         if (selectedPackage) {
             const pack = parseInt(selectedPackage.value);
-            updatePrices(pack, true);
-            updateProgressBar(pack);
+            updatePrices(pack, true); // Update for auto-ship
+            updateProgressBar(pack);  // Update progress bar for auto-ship
         }
+
+        // Scroll into view
         document.querySelector('.details__package-selector').scrollIntoView({ behavior: 'smooth' });
     });
-  }
+}
 
 }
 
@@ -659,28 +703,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   renderTabContentDesktop('autoShip');
 
-  // Add event listener to the "Subscribe and Save" button
-
-//   // Add event listener to the "Subscribe and Save" button
-// document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
-//   // Switch to the 'autoShip' tab
-//   renderTabContentDesktop('autoShip');
-  
-//   // Programmatically select the autoShip radio button
-//   const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
-//   autoShipRadio.checked = true;
-  
-//   // Update the prices and UI based on the autoShip option
-//   const selectedPackage = document.querySelector('input[name="package"]:checked');
-//   if (selectedPackage) {
-//       const pack = parseInt(selectedPackage.value);
-//       updatePrices(pack, true); // true indicates this is an auto-ship subscription
-//       updateProgressBar(pack);  // Update the progress bar based on the package
-//   }
-  
-//   // Optionally scroll the user to the package selection area or some visual cue
-//   document.querySelector('.details__package-selector').scrollIntoView({ behavior: 'smooth' });
-// });
 
   
 
