@@ -571,21 +571,7 @@ if (tabName === 'oneTime') {
   //   });
   // }
 
-
-To ensure that when you click the "Subscribe and Save" button, it closes the "One-Time" purchase option and removes all its data, you can follow these steps:
-
-Steps:
-Deselect the One-Time Radio Button: Set the oneTime radio button to unchecked when "Subscribe and Save" is clicked.
-Clear One-Time Content: Ensure that all data or selections associated with the "One-Time" purchase are cleared when switching.
-Switch to Auto-Ship: Programmatically select the "Auto-Ship" radio button and load the corresponding content.
-Reinitialize the Packages: Reapply the logic for progress bar updates and price updates when switching to "Auto-Ship."
-Scroll to View Packages: Ensure the auto-ship section is smoothly scrolled into view after switching.
-Solution Update
-You can modify your existing document.querySelector('.sub-and-save__btn').addEventListener logic as follows:
-
-javascript
-Copy code
-if (document.querySelector('.sub-and-save__btn')) {
+  if (document.querySelector('.sub-and-save__btn')) {
     document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
         // Select the 'autoShip' tab and deselect 'oneTime'
         renderTabContentDesktop('autoShip');
@@ -614,6 +600,7 @@ if (document.querySelector('.sub-and-save__btn')) {
         document.querySelector('.details__package-selector').scrollIntoView({ behavior: 'smooth' });
     });
 }
+
 
 }
 
