@@ -581,7 +581,7 @@ function handleRadioSwitch() {
       const congratsDiv = document.createElement('div');
       congratsDiv.className = 'details__footer-habit';
       congratsDiv.innerHTML = `
-          <div class="footer__icon-wrapper"><img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group.png?v=1726037024" class="footer-img"></div>
+          <div class="footer__icon-wrapper"><img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/research_2374492_1.png?v=1726210046" class="footer-img"></div>
           <p class="congrats-text">Studies show it takes on average 66 days to form a habit. Commit to making Hydration A Habit by subscribing.</p>
       `;
       footer.appendChild(congratsDiv);
