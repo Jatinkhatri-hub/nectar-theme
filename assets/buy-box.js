@@ -576,6 +576,9 @@ if (tabName === 'oneTime') {
   
       // Switch to the "Auto-Ship" tab
       renderTabContentDesktop('autoShip');
+      if(autoShipDiv) {
+        autoShipDiv.innerHTML = '';
+      }
   
       // Set the "Auto-Ship" radio button as checked
       const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
