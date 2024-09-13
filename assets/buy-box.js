@@ -127,7 +127,8 @@ const tabData = {
 };
 
 const radioClosed = [
-  'Free S'
+  'Free shipping with every order',
+  ''
 ]
 
 function updateProgressBar(packageSize) {
