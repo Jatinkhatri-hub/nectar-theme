@@ -582,7 +582,7 @@ function handleRadioSwitch() {
       congratsDiv.className = 'details__footer-habit';
       congratsDiv.innerHTML = `
           <div class="footer__icon-wrapper"><img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group.png?v=1726037024" class="footer-img"></div>
-          <p class="congrats-text"><span>Congrats!</span> You’re making proper Hydration and all the benefits that come with it a habit!</p>
+          <p class="congrats-text">Studies show it takes on average 66 days to form a habit. Commit to making Hydration A Habit by subscribing.</p>
       `;
       footer.appendChild(congratsDiv);
 
