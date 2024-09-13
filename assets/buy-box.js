@@ -318,6 +318,7 @@ function openTab(event, tabName) {
         }, 1000);
         const pack = parseInt(pkg.title);
         localStorage.setItem('packageRequired', JSON.stringify(pack));
+        packageBox.classList.add('selected');
   
         // Determine if it's Auto-Ship or One-Time
         if (tabName === "autoShip") {
