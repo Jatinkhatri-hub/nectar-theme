@@ -5,6 +5,7 @@
   flex-direction: column;
   max-width: 400px;
   margin: auto;
+  padding: 0 1rem;
 }
 
 .product-bundle__wrapper {
