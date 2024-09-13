@@ -390,17 +390,6 @@ function openTab(event, tabName) {
       footer.appendChild(button);
   }
 
-  if (document.querySelector('.sub-and-save__btn')) {
-    document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
-        
-        if (selectedPackage) {
-            const pack = parseInt(selectedPackage.value);
-            updatePrices(pack, true);
-            updateProgressBar(pack);
-        }
-        document.querySelector('.details__package-selector').scrollIntoView({ behavior: 'smooth' });
-    });
-}
 
   // if (tabName == 'autoShip') {
   //   updatePrices()
