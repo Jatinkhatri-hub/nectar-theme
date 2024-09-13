@@ -553,6 +553,8 @@ function handleRadioSwitch() {
 
   } else {
     renderTabContentDesktop('oneTime');
+
+    
   }
 }
 
