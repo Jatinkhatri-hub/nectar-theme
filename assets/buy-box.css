@@ -343,6 +343,9 @@
   background-color: #E8FFE3;
   width: 0;
 }
+.progress {
+  transition: width 0.3s ease;
+}
 
 
 .free-shipping__wrapper {
