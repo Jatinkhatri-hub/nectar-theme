@@ -565,6 +565,12 @@ if (tabName === 'oneTime') {
 
   container.appendChild(footer);
 
+  document.getElementById('flavorSelectionBtnDesktop').addEventListener('click', function() {
+  
+    // Navigate to the bundle selection page
+    window.location.href = '/pages/brand-bundle/brand-bundle-bdsgucxe'; // Replace with your actual URL
+  });
+
 
   // if (document.querySelector('.sub-and-save__btn')) {
   //   document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
@@ -678,7 +684,7 @@ function handleRadioSwitch() {
 
       autoShipDiv.appendChild(footer);
 
-      
+
 
 
       // document.querySelector('[data-tab="autoShip"]').appendChild(newDiv);
@@ -726,11 +732,11 @@ document.addEventListener('DOMContentLoaded', () => {
     openTab(null, 'autoShip');
   }
 
-  document.getElementById('flavorSelectionBtnDesktop').addEventListener('click', function() {
+  // document.getElementById('flavorSelectionBtnDesktop').addEventListener('click', function() {
   
-    // Navigate to the bundle selection page
-    window.location.href = '/pages/brand-bundle/brand-bundle-bdsgucxe'; // Replace with your actual URL
-  });
+  //   // Navigate to the bundle selection page
+  //   window.location.href = '/pages/brand-bundle/brand-bundle-bdsgucxe'; // Replace with your actual URL
+  // });
 
   document.getElementById('flavorSelectionBtnMobile').addEventListener('click', function() {
   
