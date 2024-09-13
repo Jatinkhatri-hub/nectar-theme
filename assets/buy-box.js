@@ -126,6 +126,8 @@ const tabData = {
   }
 };
 
+const radioC
+
 function updateProgressBar(packageSize) {
   const progressBar = document.querySelector('.progress');
   const freeShippingWrapper = document.querySelector('.free-shipping__wrapper');
