@@ -559,7 +559,7 @@ function handleRadioSwitch() {
       // newDiv.id = 'autoShipDiv';
       
       newDiv.innerHTML = '<p>Special offer when you don\'t subscribe to Auto-Ship!</p>';
-      document.querySelector('.desktop-radio:first-child').appendChild(newDiv);
+      document.querySelector('.').appendChild(newDiv);
       // document.querySelector('[data-tab="autoShip"]').appendChild(newDiv);
     }
 
