@@ -574,7 +574,7 @@ if (tabName === 'oneTime') {
   if (document.querySelector('.sub-and-save__btn')) {
     document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
       const autoShipDiv = document.getElementById('autoShipDiv');
-      const oneTimeContent = document.getElementById()
+      const oneTimeContent = document.getElementById('oneTimeContent');
       // Switch to the "Auto-Ship" tab
       renderTabContentDesktop('autoShip');
       if(autoShipDiv) {
@@ -591,6 +591,7 @@ if (tabName === 'oneTime') {
       // Uncheck the "One-Time" radio button (not necessary but for clarity)
       if (oneTimeRadio) {
         oneTimeRadio.checked = false;
+        oneTimeContent.innerHTML
       }
   
       // Update the prices and progress bar for the selected package in the Auto-Ship tab
