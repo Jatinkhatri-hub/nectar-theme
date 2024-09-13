@@ -592,6 +592,7 @@
     color: #0D3063;
     margin-left: 2rem;
     gap: 3px;
+    margin-bottom: 0;
   }
 
   .radio-header-title span {
