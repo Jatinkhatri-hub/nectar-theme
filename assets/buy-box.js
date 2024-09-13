@@ -532,9 +532,7 @@ if (tabName === 'oneTime') {
   // Add click event to switch to 'autoShip' tab
   button.addEventListener('click', function() {
     // Programmatically switch to the 'autoShip' tab
-    if (autoShipTabButton) {
-      openTab(null, 'autoShip'); // Switch to autoShip tab
-    }
+    renderTabContentDesktop('autoShip');
   });
 }
 
