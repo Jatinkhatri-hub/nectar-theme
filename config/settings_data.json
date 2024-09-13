@@ -63,6 +63,7 @@
         "type": "header",
         "settings": {
           "align_logo": "left",
+          "logo": "shopify:\/\/shop_images\/nectar-logo.png",
           "logo_max_width": 135,
           "main_linklist": "main-menu",
           "message": false,
@@ -82,9 +83,9 @@
           "show_locale_selector": true,
           "show_currency_selector": true,
           "menu_1_title": "Shop",
-          "menu1": "",
+          "menu1": "shop",
           "menu_2_title": "About",
-          "menu2": "",
+          "menu2": "about",
           "newsletter_title": "Stay Connected",
           "newsletter_text": "Keep up to date on new products, promotions, and helpful info on how to stay hydrated and healthy."
         }
@@ -96,9 +97,11 @@
           "title": "<p>Hydration For<\/p>",
           "description": "\"Afternoon Slumps\", \"Groggy Mornings\", \"Foggy Brains\"",
           "button_label_1": "Shop Now",
-          "button_url_1": "shopify:\/\/products\/essential-daily-energy",
+          "button_url_1": "shopify:\/\/products\/essential-daily-hydration",
           "button_label_2": "",
           "button_url_2": "",
+          "image_background": "shopify:\/\/shop_images\/Hero_image_9f59e820-491e-4ffe-9d66-e39374dc466a.jpg",
+          "image_background_mob": "shopify:\/\/shop_images\/Mobile_Hero_Image.jpg",
           "color_background": "#7bbafa",
           "font_color": "#ffffff"
         }
@@ -109,25 +112,29 @@
           "1581344645796": {
             "type": "image",
             "settings": {
-              "title_icon": "Natural Energy"
+              "title_icon": "Natural Energy",
+              "icon": "shopify:\/\/shop_images\/natural_energy_193a84b8-bb1d-4ab3-9bb4-e8fb9a622e4b.png"
             }
           },
           "1581344673149": {
             "type": "image",
             "settings": {
-              "title_icon": "Boosted Focus"
+              "title_icon": "Boosted Focus",
+              "icon": "shopify:\/\/shop_images\/boosted_focus_67ebb971-32a2-4679-8101-229f0d46b65d.png"
             }
           },
           "1581344754684": {
             "type": "image",
             "settings": {
-              "title_icon": "Improved Mood"
+              "title_icon": "Improved Mood",
+              "icon": "shopify:\/\/shop_images\/boosted_mood.png"
             }
           },
           "1581344763764": {
             "type": "image",
             "settings": {
-              "title_icon": "Strengthened Immunity"
+              "title_icon": "Strengthened Immunity",
+              "icon": "shopify:\/\/shop_images\/immunity.png"
             }
           }
         },
@@ -152,7 +159,8 @@
               "r_desc": "<p>You've probably heard dehydration is bad for you. Yet, studies show 75% of us are Chronically Dehydrated, resulting in:<\/p>",
               "r_list": "<ul class=\"cross\">\n<li>Fatigue and Lethargy <i>(afternoon slump)<\/i>\n<\/li>\n<li>Mood Disturbance <i>(I just can't)<\/i>\n<\/li>\n<li>Dry and Flushed Skin <i>(no glow)<\/i>\n<\/li>\n<li>Slowed Metabolism <i>(weight gain)<\/i>\n<\/li>\n<\/ul>",
               "r_button": "Meet your body's new best friend",
-              "r_link": "\/products\/essential-daily-hydration"
+              "r_link": "\/products\/essential-daily-hydration",
+              "r_image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_1_720x_3c22d6dc-3f95-45b7-a535-4e6c28668f5b.gif"
             }
           },
           "1585148629254": {
@@ -162,7 +170,8 @@
               "l_desc": "<p>When you're dehydrated, your body needs more than just plain water. Nectar uses the highest quality, research backed electrolytes to help you get more from your water, hydrating you as efficiently as possible.<\/p>",
               "l_list": "<ul class=\"check\">\n<li>2-3x more hydrating than water alone<\/li>\n<li>Only the essentials, none of the B.S.<\/li>\n<li>Zero Sugar, Zero Calories<\/li>\n<\/ul>",
               "l_button": "Explore our ingredients",
-              "l_link": "\/products\/essential-daily-hydration#nectar-ingredients"
+              "l_link": "\/products\/essential-daily-hydration#nectar-ingredients",
+              "l_image": "shopify:\/\/shop_images\/Homepage_Image_2.jpg"
             }
           },
           "f75ad222-75e3-4104-9879-19f48643f04b": {
@@ -172,7 +181,8 @@
               "r_desc": "<p>We get it — subscriptions are scary. But, we want to make proper hydration part of your daily routine. Not feeling it? Cancel any time.<\/p>",
               "r_list": "<ul class=\"checkmark-orange\">\n<li>Free shipping<\/li>\n<li>Control your delivery date<\/li>\n<li>Quick and easy cancellation<\/li>\n<li>Unhappy? It's on us <\/li>\n<\/ul>",
               "r_button": "Shop Now",
-              "r_link": "\/products\/essential-daily-hydration"
+              "r_link": "\/products\/essential-daily-hydration",
+              "r_image": "shopify:\/\/shop_images\/Homepage_Image_3.jpg"
             }
           }
         },
@@ -191,6 +201,7 @@
           "title": "Make Hydration a Habit",
           "desc": "<p>We get it — subscriptions are scary. But, we want to make proper hydration part of your daily routine. Not feeling it? Cancel any time.<\/p>",
           "list": "<ul class=\"check\">\n<li>Free shipping<\/li>\n<li>Control your delivery date<\/li>\n<li>Quick and easy cancellation<\/li>\n<li>Unhappy? It's on us <\/li>\n<\/ul>",
+          "image_background": "shopify:\/\/shop_images\/testimonial-placeholder.png",
           "color_background": "#666666",
           "font_color": "#ffffff"
         }
@@ -236,7 +247,8 @@
         "disabled": true,
         "settings": {
           "title": "Wellness Should be Shared<br>Give $15 — Get $15",
-          "desc": "<p>Send a friend $15 off their ﬁrst order <br\/>and earn $15 in Nectar credit!<\/p>"
+          "desc": "<p>Send a friend $15 off their ﬁrst order <br\/>and earn $15 in Nectar credit!<\/p>",
+          "background": "shopify:\/\/shop_images\/background-social-new.png"
         }
       },
       "product-template": {
@@ -270,31 +282,36 @@
           "1581546308094": {
             "type": "icon",
             "settings": {
-              "title_icon": "Zero Calories & Sugar Free"
+              "title_icon": "Zero Calories & Sugar Free",
+              "icon": "shopify:\/\/shop_images\/zero-blue.png"
             }
           },
           "1581546365309": {
             "type": "icon",
             "settings": {
-              "title_icon": "All Natural & Vegan"
+              "title_icon": "All Natural & Vegan",
+              "icon": "shopify:\/\/shop_images\/natural.png"
             }
           },
           "1581546391956": {
             "type": "icon",
             "settings": {
-              "title_icon": "Non-GMO"
+              "title_icon": "Non-GMO",
+              "icon": "shopify:\/\/shop_images\/thicker-no-filler_8a5613bc-261b-4550-8008-435ba5222cde.png"
             }
           },
           "1581546413106": {
             "type": "icon",
             "settings": {
-              "title_icon": "No Synthetic Fillers"
+              "title_icon": "No Synthetic Fillers",
+              "icon": "shopify:\/\/shop_images\/thicker-no-filler.png"
             }
           },
           "1584466671017": {
             "type": "icon",
             "settings": {
-              "title_icon": "Made in the USA"
+              "title_icon": "Made in the USA",
+              "icon": "shopify:\/\/shop_images\/usa-bluepng.png"
             }
           }
         },
@@ -321,6 +338,7 @@
               "r_list": "",
               "r_button": "",
               "r_link": "",
+              "r_image": "shopify:\/\/shop_images\/Asset_2.png",
               "r_image_text": ""
             }
           },
@@ -332,6 +350,7 @@
               "l_list": "",
               "l_button": "",
               "l_link": "",
+              "l_image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_2.gif",
               "l_image_text": ""
             }
           }
@@ -361,6 +380,7 @@
           "1581608995186": {
             "type": "text",
             "settings": {
+              "icons": "shopify:\/\/shop_images\/potassium_ddd8e59d-1191-40d0-bd62-2dd7922e7a7f.png",
               "grid_title": "Potassium",
               "grid_desc": "<p>Prevents Muscle Cramps<\/p>"
             }
@@ -368,6 +388,7 @@
           "1581609229325": {
             "type": "text",
             "settings": {
+              "icons": "shopify:\/\/shop_images\/calcium_c9587915-c29e-48e8-bdb8-71a73aa5f362.png",
               "grid_title": "Calcium",
               "grid_desc": "<p>Regulates Heart Rhythm<\/p>"
             }
@@ -375,6 +396,7 @@
           "1581609247639": {
             "type": "text",
             "settings": {
+              "icons": "shopify:\/\/shop_images\/magnesium_d07ddfc7-89ef-4409-9d93-d5e4265f6a12.png",
               "grid_title": "Magnesium",
               "grid_desc": "<p>Drives Energy Creation<\/p>"
             }
@@ -382,6 +404,7 @@
           "1581609261072": {
             "type": "text",
             "settings": {
+              "icons": "shopify:\/\/shop_images\/sodium-chloride_bf2e9d2e-b28a-44ea-a38f-518360aed43f.png",
               "grid_title": "Sodium Chloride",
               "grid_desc": "<p>Maintains Fluid Balance<\/p>"
             }
@@ -389,6 +412,7 @@
           "1581609278045": {
             "type": "text",
             "settings": {
+              "icons": "shopify:\/\/shop_images\/crystalized-lemon_56408567-8a11-4658-b486-53ade020137e.png",
               "grid_title": "Organic Fruit",
               "grid_desc": "<p>Refreshing Taste<\/p>"
             }
@@ -396,6 +420,7 @@
           "1581609293620": {
             "type": "text",
             "settings": {
+              "icons": "shopify:\/\/shop_images\/organic-stevia_a024bb44-8a3a-4dae-9c66-6b64e1908b82.png",
               "grid_title": "Organic Stevia",
               "grid_desc": "<p>Light Sweetener<\/p>"
             }
@@ -468,6 +493,7 @@
           "1581618959502": {
             "type": "text",
             "settings": {
+              "team_id": "shopify:\/\/shop_images\/Rachel.png",
               "team_title": "RACHEL P.",
               "team_position": "<p>Cellular Biologist<\/p>"
             }
@@ -475,6 +501,7 @@
           "1581619014046": {
             "type": "text",
             "settings": {
+              "team_id": "shopify:\/\/shop_images\/Zach_copy.png",
               "team_title": "ZACH H. MD",
               "team_position": "<p>Physician<\/p>"
             }
@@ -793,7 +820,8 @@
             "settings": {
               "quote": "<p>“I take Nectar every morning to start my day feeling energized.”<\/p>",
               "author": "Jenny N.",
-              "author_title": "Pilates Instructor & Engineer"
+              "author_title": "Pilates Instructor & Engineer",
+              "quote_image": "shopify:\/\/shop_images\/Jenny_RP.jpg"
             }
           },
           "1584469777527-1": {
@@ -801,7 +829,8 @@
             "settings": {
               "quote": "<p>“Nectar is a game changer for staying focused &amp; energized.”<\/p>",
               "author": "Sahil R.",
-              "author_title": "Finance & Partnerships"
+              "author_title": "Finance & Partnerships",
+              "quote_image": "shopify:\/\/shop_images\/Sahil_RP.jpg"
             }
           },
           "1590589357498": {
@@ -809,7 +838,8 @@
             "settings": {
               "quote": "<p>&quot;As a new mom, Nectar has been an amazing addition to my daily routine.&quot;<\/p>",
               "author": "Mallory E.",
-              "author_title": "Boss Mom"
+              "author_title": "Boss Mom",
+              "quote_image": "shopify:\/\/shop_images\/Mallory_RP.jpg"
             }
           },
           "1584469777527-2": {
@@ -817,7 +847,8 @@
             "settings": {
               "quote": "<p> “I love that it’s all natural and zero calorie - it tastes amazing.”<\/p>",
               "author": "April Y.",
-              "author_title": "Product Manager"
+              "author_title": "Product Manager",
+              "quote_image": "shopify:\/\/shop_images\/April_RP.jpg"
             }
           },
           "1584469793331": {
@@ -825,7 +856,8 @@
             "settings": {
               "quote": "<p>“I never relized dehydration was causing my lethargy until I tried Nectar.”<\/p>",
               "author": "Dan S.",
-              "author_title": "Lawyer"
+              "author_title": "Lawyer",
+              "quote_image": "shopify:\/\/shop_images\/Dan_RP.jpg"
             }
           },
           "1588708081449": {
@@ -833,7 +865,8 @@
             "settings": {
               "quote": "<p>“Nectar has become a staple amongst my friend group.”<\/p>",
               "author": "Emily Q.",
-              "author_title": "Developer"
+              "author_title": "Developer",
+              "quote_image": "shopify:\/\/shop_images\/Emily_RP.jpg"
             }
           }
         },
@@ -1303,7 +1336,8 @@
         "type": "conjured-referrals",
         "settings": {
           "title": "Wellness Should be Shared<br>Give $15 — Get $15",
-          "desc": "<p>Send a friend $15 off their ﬁrst order <br\/>and earn $15 in Nectar credit!<\/p>"
+          "desc": "<p>Send a friend $15 off their ﬁrst order <br\/>and earn $15 in Nectar credit!<\/p>",
+          "background": "shopify:\/\/shop_images\/background-social-new.png"
         }
       },
       "mirgo-icon-home": {
@@ -1388,13 +1422,15 @@
           "16129840686cb184ec-0": {
             "type": "photo",
             "settings": {
-              "ig_link": ""
+              "ig_link": "",
+              "ig_photo": "shopify:\/\/shop_images\/1.png"
             }
           },
           "a1d05ec7-42dc-4f34-9a6a-828ee6b0a4f3": {
             "type": "photo",
             "settings": {
-              "ig_link": ""
+              "ig_link": "",
+              "ig_photo": "shopify:\/\/shop_images\/2.jpg"
             }
           },
           "1f57eaf6-1d51-490d-b0a1-bdb682783ae9": {
@@ -1407,7 +1443,8 @@
           "7305d3a2-1443-4e92-bd34-a262bc728c3a": {
             "type": "photo",
             "settings": {
-              "ig_link": ""
+              "ig_link": "",
+              "ig_photo": "shopify:\/\/shop_images\/4.png"
             }
           }
         },
