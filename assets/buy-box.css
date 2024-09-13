@@ -262,7 +262,9 @@
   bottom: 0;
 }
 
-.radio
+.radio__package-box:checked {
+  background-color: #CBE5FF;
+}
 
 
 .package-details {
