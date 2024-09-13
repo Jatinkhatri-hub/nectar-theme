@@ -534,7 +534,7 @@ if (tabName === 'oneTime') {
     // Programmatically switch to the 'autoShip' tab
     renderTabContentDesktop('autoShip');
     const autoShipDiv = document.getElementById('autoShipDiv');
-
+    autoShipDiv.innerHTML = '';
     oneTimeContent.innerHTML = '';
   });
 }
