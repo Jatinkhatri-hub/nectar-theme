@@ -538,7 +538,7 @@ function handleRadioSwitch() {
   const oneTimeContent = document.getElementById('oneTimeContent');
 
   const selectedRadio = document.querySelector('input[name="purchaseType"]:checked');
-  const autoShipDiv = document.getElementById('autoShipDiv')
+  const autoShipDiv = document.getElementById('autoShipDiv');
 
   // Clear both containers before rendering new content
   autoShipContent.innerHTML = '';
@@ -546,6 +546,11 @@ function handleRadioSwitch() {
 
   if (selectedRadio.value === 'autoShip') {
     renderTabContentDesktop('autoShip');
+
+    if(autoShipDiv) {
+      aut
+    }
+
   } else {
     renderTabContentDesktop('oneTime');
   }
