@@ -571,48 +571,48 @@ if (tabName === 'oneTime') {
   //   });
   // }
 
-  if (document.querySelector('.sub-and-save__btn')) {
-    document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
-      const autoShipDiv = document.getElementById('autoShipDiv');
-      const oneTimeContent = document.getElementById('oneTimeContent');
-      // Switch to the "Auto-Ship" tab
-      renderTabContentDesktop('autoShip');
-      if(autoShipDiv) {
-        autoShipDiv.innerHTML = '';
-      }
+  // if (document.querySelector('.sub-and-save__btn')) {
+  //   document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
+  //     const autoShipDiv = document.getElementById('autoShipDiv');
+  //     const oneTimeContent = document.getElementById('oneTimeContent');
+  //     // Switch to the "Auto-Ship" tab
+  //     renderTabContentDesktop('autoShip');
+  //     if(autoShipDiv) {
+  //       autoShipDiv.innerHTML = '';
+  //     }
   
-      // Set the "Auto-Ship" radio button as checked
-      const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
-      const oneTimeRadio = document.querySelector('input[name="purchaseType"][value="oneTime"]');
-      if (autoShipRadio) {
-        autoShipRadio.checked = true;  // Select Auto-Ship
-        //oneTimeContent.innerHTML = '';
-      }
+  //     // Set the "Auto-Ship" radio button as checked
+  //     const autoShipRadio = document.querySelector('input[name="purchaseType"][value="autoShip"]');
+  //     const oneTimeRadio = document.querySelector('input[name="purchaseType"][value="oneTime"]');
+  //     if (autoShipRadio) {
+  //       autoShipRadio.checked = true;  // Select Auto-Ship
+  //       //oneTimeContent.innerHTML = '';
+  //     }
 
 
   
-      // Uncheck the "One-Time" radio button (not necessary but for clarity)
-      // if (oneTimeRadio) {
-      //   oneTimeRadio.checked = false;
-      // //  oneTimeContent.innerHTML = '';
-      // }
-      //handleRadioSwitch();
+  //     // Uncheck the "One-Time" radio button (not necessary but for clarity)
+  //     // if (oneTimeRadio) {
+  //     //   oneTimeRadio.checked = false;
+  //     // //  oneTimeContent.innerHTML = '';
+  //     // }
+  //     //handleRadioSwitch();
   
-      // Update the prices and progress bar for the selected package in the Auto-Ship tab
-      const selectedPackage = document.querySelector('input[name="package"]:checked');
-      if (selectedPackage) {
-        const pack = parseInt(selectedPackage.value);
-        updatePrices(pack, true);  // Pass true for "Auto-Ship"
-        updateProgressBar(pack);
-      }
+  //     // Update the prices and progress bar for the selected package in the Auto-Ship tab
+  //     const selectedPackage = document.querySelector('input[name="package"]:checked');
+  //     if (selectedPackage) {
+  //       const pack = parseInt(selectedPackage.value);
+  //       updatePrices(pack, true);  // Pass true for "Auto-Ship"
+  //       updateProgressBar(pack);
+  //     }
   
-      // Scroll to the package selector if necessary
-      const packageSelector = document.querySelector('.details__package-selector');
-      if (packageSelector) {
-        packageSelector.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  }
+  //     // Scroll to the package selector if necessary
+  //     const packageSelector = document.querySelector('.details__package-selector');
+  //     if (packageSelector) {
+  //       packageSelector.scrollIntoView({ behavior: 'smooth' });
+  //     }
+  //   });
+  // }
 
 }
 
