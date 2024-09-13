@@ -761,7 +761,9 @@
   }
 
   .details__footer-habit {
-    
+    background-color: #;
+    display: flex;
+    flex-direction: row;
   }
 
 
