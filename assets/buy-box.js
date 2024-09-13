@@ -75,8 +75,8 @@ const tabData = {
   },
   oneTime: {
       headerTitle: 'Up to 30% Off + Free Gifts',
-      totalPrice: '$134.95',
-      discountedPrice: '$99.95',
+      totalPrice: '',
+      discountedPrice: '',
       packages: [
           {
               badge: 'Best Value',
@@ -568,7 +568,7 @@ function handleRadioSwitch() {
 
       const valuePointsWrapper = document.createElement('div');
       valuePointsWrapper.classList.add('value-points__container');
-      valuePointsWrapper.classList.add
+      valuePointsWrapper.classList.add('radio-closed');
 
       radioClosed.forEach(point => {
         const p = document.createElement('p');
