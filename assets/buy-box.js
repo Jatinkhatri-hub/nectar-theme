@@ -435,8 +435,10 @@ function renderTabContentDesktop(tabName) {
 
       if (index === 0) {
         radio.checked = true;
-        setTimeout( () =)
-        updateProgressBar(pkg.title); // Initialize the progress bar for the first package
+        setTimeout( () ={
+          updateProgressBar(pkg.title); // Initialize the progress bar for the first package
+
+        })
         const pack = parseInt(pkg.title);
         localStorage.setItem('packageRequired', JSON.stringify(pack));
   
