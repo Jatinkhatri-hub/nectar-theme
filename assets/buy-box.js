@@ -306,7 +306,7 @@ function openTab(event, tabName) {
         radio.checked = true;
         setTimeout( () => {
           updateProgressBar(pkg.title); // Initialize the progress bar for the first package
-        }, 2000);
+        }, 1000);
         const pack = parseInt(pkg.title);
         localStorage.setItem('packageRequired', JSON.stringify(pack));
   
