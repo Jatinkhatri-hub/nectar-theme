@@ -126,7 +126,7 @@ const tabData = {
   }
 };
 
-const radioC
+const radioClosed = []
 
 function updateProgressBar(packageSize) {
   const progressBar = document.querySelector('.progress');
