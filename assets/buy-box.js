@@ -534,7 +534,7 @@ if (tabName === 'oneTime') {
     // Programmatically switch to the 'autoShip' tab
     renderTabContentDesktop('autoShip');
     const autoShipDiv = document.getElementById('autoShipDiv');
-    const open
+    const oneTimeContent = document.getElementById('')
     autoShipDiv.innerHTML = '';
     oneTimeContent.innerHTML = '';
   });
