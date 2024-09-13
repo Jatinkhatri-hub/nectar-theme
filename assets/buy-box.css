@@ -772,7 +772,8 @@
   }
 
   .value-points__container.radio-closed {
-    padding: ;
+    padding-top: 0;
+    border: none;
     
   }
 
