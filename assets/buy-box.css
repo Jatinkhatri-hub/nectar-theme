@@ -771,8 +771,8 @@
     margin-bottom: 10px;
   }
 
-  .value-points__container .radio-closed {
-  
+  .value-points__container.radio-closed {
+    padding: p;
   }
 
 
