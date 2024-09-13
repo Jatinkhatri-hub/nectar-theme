@@ -474,6 +474,7 @@ function renderTabContentDesktop(tabName) {
         setTimeout( () => {
           updateProgressBar(pkg.title); // Initialize the progress bar for the first package
         }, 1000);
+        packageBox.classList.add('selected');
         const pack = parseInt(pkg.title);
         localStorage.setItem('packageRequired', JSON.stringify(pack));
   
