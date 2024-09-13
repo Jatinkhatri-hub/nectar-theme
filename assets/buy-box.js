@@ -294,6 +294,14 @@ function openTab(event, tabName) {
       radio.addEventListener('change', () => {
         updateProgressBar(pkg.title);
         const pack = parseInt(pkg.title);
+        document.querySelectorAll('.details__package-box').forEach(box => {
+          box.classList.remove('selected');
+        });
+        
+        // Add selected class to the current package box
+        packageBox.classList.add('selected');
+        
+
         if ( tabName === "autoShip") {
           updatePrices(pack, true );
         }
