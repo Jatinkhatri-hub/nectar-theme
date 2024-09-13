@@ -270,7 +270,7 @@ function openTab(event, tabName) {
   // Update package selector
   const packageSelector = document.getElementById('packageSelector');
   packageSelector.innerHTML = ''; // Clear previous packages
-  data.packages.forEach(pkg => {
+  data.packages.forEach((pkg, index) => {
       const packageBox = document.createElement('label');
       packageBox.className = 'details__package-box';
       if (pkg.badge) {
