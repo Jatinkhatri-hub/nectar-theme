@@ -532,7 +532,6 @@ if (tabName === 'oneTime') {
   // Add click event to switch to 'autoShip' tab
   button.addEventListener('click', function() {
     // Programmatically switch to the 'autoShip' tab
-    const autoShipTabButton = document.querySelector(".tab-button[data-tab='autoShip']");
     if (autoShipTabButton) {
       openTab(null, 'autoShip'); // Switch to autoShip tab
     }
