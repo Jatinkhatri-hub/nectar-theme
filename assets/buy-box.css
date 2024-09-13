@@ -655,10 +655,12 @@
   .free-shipping__wrapper {
     height: 130px;
     left: 120px;
+    top: 20px;
   }
 
   .free-bottle__wrapper {
     height: 130px;
+    top: 20px;
   }
 
   .image-wrapper {
