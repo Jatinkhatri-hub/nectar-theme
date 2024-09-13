@@ -693,9 +693,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   document.getElementById('flavorSelectionBtnDesktop').addEventListener('click', function() {
-    // Store data in LocalStorage
-    // localStorage.setItem('selectedPackage', selectedPackage);
-    // localStorage.setItem('productVariants', JSON.stringify(productVariants));
   
     // Navigate to the bundle selection page
     window.location.href = '/pages/brand-bundle/brand-bundle-bdsgucxe'; // Replace with your actual URL
