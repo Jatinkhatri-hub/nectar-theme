@@ -569,7 +569,7 @@ function handleRadioSwitch() {
       const valuePointsWrapper = document.createElement('div');
       valuePointsWrapper.classList.add('value-points__container');
 
-      data.footerPoints.forEach(point => {
+      radioClosed.forEach(point => {
         const p = document.createElement('p');
         p.className = 'footer-value__point';
         p.innerHTML = `<span><img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group_1484580410.png?v=1726037646"  class="value-point__icon"></span> ${point}`;
@@ -579,7 +579,7 @@ function handleRadioSwitch() {
       footer.appendChild(valuePointsWrapper);
 
       const congratsDiv = document.createElement('div');
-      congratsDiv.className = 'details__footer-';
+      congratsDiv.className = 'details__footer-habit';
       congratsDiv.innerHTML = `
           <div class="footer__icon-wrapper"><img src="https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Group.png?v=1726037024" class="footer-img"></div>
           <p class="congrats-text"><span>Congrats!</span> You’re making proper Hydration and all the benefits that come with it a habit!</p>
