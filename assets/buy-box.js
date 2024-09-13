@@ -574,6 +574,7 @@ if (tabName === 'oneTime') {
   if (document.querySelector('.sub-and-save__btn')) {
     document.querySelector('.sub-and-save__btn').addEventListener('click', () => {
       const autoShipDiv = document.getElementById('autoShipDiv');
+      const oneTimeC
       // Switch to the "Auto-Ship" tab
       renderTabContentDesktop('autoShip');
       if(autoShipDiv) {
