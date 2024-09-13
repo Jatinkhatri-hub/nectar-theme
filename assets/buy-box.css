@@ -235,6 +235,8 @@
   border-radius: 4px;
 }
 
+.details__package-box
+
 .details__package-box:hover {
   background: #CBE6FF;
 }
