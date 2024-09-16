@@ -1,26 +1,4 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//   // Ensure openTab function is globally available
-//   window.openTab = function(event, tabName) {
-//     // Get all tab content and hide them
-//     const tabContents = document.getElementsByClassName("tab-content");
-//     for (let i = 0; i < tabContents.length; i++) {
-//       tabContents[i].style.display = "none";
-//     }
 
-//     // Get all tab buttons and remove active class
-//     const tabButtons = document.getElementsByClassName("tab-button");
-//     for (let i = 0; i < tabButtons.length; i++) {
-//       tabButtons[i].className = tabButtons[i].className.replace(" active", "");
-//     }
-
-//     // Show the current tab and add an active class to the button that opened it
-//     document.getElementById(tabName).style.display = "block";
-//     event.currentTarget.className += " active";
-//   };
-
-//   // Initialize the first tab to be active
-//   document.getElementById("Tab1").style.display = "block";
-// });
 const tabData = {
   autoShip: {
       headerTitle: 'Up to 40% Off + Free Gifts',
@@ -143,7 +121,7 @@ function updateProgressBar(packageSize) {
   switch (packageSize) {
     case '30 Packets':
       progress = 0;
-      giftHeading.style.display = 'none'
+      giftHeading.style.display = 'none';
 
       freeShippingWrapper.querySelector('img').src = 'https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Frame_1484581370_3c58fdb8-a0cc-462b-a05f-661094df1554.png?v=1726118773'; 
       freeBottleWrapper.querySelector('img').src = 'https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Frame_1484581369_2a028111-9d2d-484c-b05e-3c58c0c41847.png?v=1726119192';
@@ -159,6 +137,7 @@ function updateProgressBar(packageSize) {
     case '90 Packets':
     case '120 Packets':
       progress = 100; // Both Free Shipping and Bottle unlocked
+      giftHeading.style.display = 'block';
       freeShippingWrapper.querySelector('img').src = 'https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Frame_1484581368_1.png?v=1726119249'; 
 
       freeBottleWrapper.querySelector('img').src = 'https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Frame_1484581369_2.png?v=1726119247'
