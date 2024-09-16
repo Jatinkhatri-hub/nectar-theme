@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
     totalSelected: 0,
     subtotals: 0,
     requiredCount: (parseInt(storedSelectedVariants) / 30),
-    savings: 0.00
+    savings: 0.00,
+    sellingPlanId: localStorage.getItem('sellingPlanId')
   }
 
   // const selectedVariants = {}; // To keep track of selected variants
@@ -202,7 +203,8 @@ document.addEventListener('DOMContentLoaded', function() {
         body: JSON.stringify({
           items: Object.keys(data).map(variantId => ({
             id: variantId,
-            quantity: parseInt(data[variantId])
+            quantity: parseInt(data[variantId]),
+            selling_plan: state.sellingPlanId ? state.sellingPlanId : null
           }))
         })
       });

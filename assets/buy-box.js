@@ -585,6 +585,13 @@ if (tabName === 'oneTime') {
 
   container.appendChild(footer);
 
+  
+
+
+
+
+
+
   document.getElementById('flavorSelectionBtnDesktop').addEventListener('click', function() {
   
     // Navigate to the bundle selection page
