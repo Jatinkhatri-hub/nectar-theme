@@ -554,7 +554,10 @@ if (tabName === 'oneTime') {
     const autoShipDiv = document.getElementById('autoShipDiv');
     const oneTimeContent = document.getElementById('oneTimeContent');
     const autoShipRadio = document.querySelector('[data-tab="autoShip"]');
-    const oneTimeRadio = document.querySelector('[data-tab="autoShip"]');
+    const oneTimeRadio = document.querySelector('[data-tab="oneTime"]');
+    setTimeout( () => {
+
+    }, 500)
     autoShipRadio.checked = true;
     oneTimeRadio.checked = false;
     autoShipDiv.innerHTML = '';
