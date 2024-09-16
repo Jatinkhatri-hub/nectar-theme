@@ -146,6 +146,7 @@ function updateProgressBar(packageSize) {
       freeShippingWrapper.querySelector('img').src = 'https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Frame_1484581370_3c58fdb8-a0cc-462b-a05f-661094df1554.png?v=1726118773'; 
       freeBottleWrapper.querySelector('img').src = 'https://cdn.shopify.com/s/files/1/0852/8553/6031/files/Frame_1484581369_2a028111-9d2d-484c-b05e-3c58c0c41847.png?v=1726119192';
       break;
+      giftWrapper.style.displ
     case '60 Packets':
       progress = 50; // Free Shipping unlocked
       // freeShippingWrapper.classList.add('unlocked');
