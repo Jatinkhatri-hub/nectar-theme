@@ -550,15 +550,15 @@ if (tabName === 'oneTime') {
   // Add click event to switch to 'autoShip' tab
   button.addEventListener('click', function(e) {
     // Programmatically switch to the 'autoShip' tab
-
+    e.stopPropagation();
     renderTabContentDesktop('autoShip');
     const autoShipDiv = document.getElementById('autoShipDiv');
     const oneTimeContent = document.getElementById('oneTimeContent');
     const autoShipRadio = document.querySelector('[data-tab="autoShip"]');
     const oneTimeRadio = document.querySelector('[data-tab="oneTime"]');
+    autoShipRadio.checked = true;
+    oneTimeRadio.checked = false;
     setTimeout( () => {
-      autoShipRadio.checked = true;
-      oneTimeRadio.checked = false;
     }, 500)
     autoShipDiv.innerHTML = '';
     oneTimeContent.innerHTML = '';
