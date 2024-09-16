@@ -555,6 +555,7 @@ if (tabName === 'oneTime') {
     const oneTimeContent = document.getElementById('oneTimeContent');
     const autoShipRadio = document.querySelector('[data-tab="autoShip"]');
     const oneTimeRadio = document.querySelector('[data-tab="autoShip"]');
+    autoShipRadio.checked = true;
     
     autoShipDiv.innerHTML = '';
     oneTimeContent.innerHTML = '';
