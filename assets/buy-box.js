@@ -136,7 +136,7 @@ function updateProgressBar(packageSize) {
   const progressBar = document.querySelector('.progress');
   const freeShippingWrapper = document.querySelector('.free-shipping__wrapper');
   const freeBottleWrapper = document.querySelector('.free-bottle__wrapper');
-  const gift
+  const giftHeading = document.querySelector('.gift')
 
   let progress = 0;
 
