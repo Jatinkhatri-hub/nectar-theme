@@ -548,8 +548,9 @@ if (tabName === 'oneTime') {
       Tap here to subscribe and save $50.95
   `;
   // Add click event to switch to 'autoShip' tab
-  button.addEventListener('click', function() {
+  button.addEventListener('click', function(e) {
     // Programmatically switch to the 'autoShip' tab
+
     renderTabContentDesktop('autoShip');
     const autoShipDiv = document.getElementById('autoShipDiv');
     const oneTimeContent = document.getElementById('oneTimeContent');
