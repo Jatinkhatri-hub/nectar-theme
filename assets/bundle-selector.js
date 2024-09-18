@@ -139,6 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
       shopBtn.innerText = 'Shop now';
       shopBtn.classList.add('active');
       shopBtn.classList.remove('disable');
+      navBarHeader.innerText = `All Done`;
     } else {
       shopBtn.innerText = `Select ${state.requiredCount - state.totalSelected} more packs`;
       navBarHeader.innerText = `Select At Least ${state.requiredCount - state.totalSelected} Packs`;
