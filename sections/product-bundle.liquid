@@ -1,5 +1,5 @@
-{{ 'buy-box.css' |  asset_url |  stylesheet_tag }}
-{{ 'bundle-selector.css' |  asset_url |  stylesheet_tag }}
+{{ 'buy-box.css' | asset_url | stylesheet_tag }}
+{{ 'bundle-selector.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'bundle-selector.js' |  asset_url }}" defer></script>
 
 {%- style -%}
@@ -17,39 +17,42 @@
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding">
-<div class="page-width">
+  <div class="page-width">
 
-
-<form class="bundle-selector__wrapper">
-  <div class="product-bundle__wrapper">
-    <div class="product-selector__card">
-      <div class="product-img__wrapper">
-        <img src="{{ 'lime.png' |  asset_url }}" class="product-img">
+    <div></div>
+    <form class="bundle-selector__wrapper">
+      <div class="product-bundle__wrapper">
+        <div class="product-selector__card">
+          <div class="product-img__wrapper">
+            <img src="{{ 'lime.png' |  asset_url }}" class="product-img">
+          </div>
+          <div class="product-card__info">
+            <h1 class="product-title">Strawberry Lemonade</h1>
+            <button class="product-add__btn">Add+</button>
+          </div>
+        </div>
       </div>
-      <div class="product-card__info">
-        <h1 class="product-title">Strawberry Lemonade</h1>
-        <button class="product-add__btn">Add+</button>
+      <div class="bundle-selector__footer">
+        <p class="saving-text">You're Saving
+          <span class="money-saved"></span>
+        </p>
+        <button class="bundle-atc__btn" type="submit">Select 4 More Packs
+          <span>{% render 'icon-arrow-right-2' %}</span>
+        </button>
       </div>
-    </div>
-  </div>
-  <div class="bundle-selector__footer">
-    <p class="saving-text">You're Saving <span class="money-saved"></span></p>
-    <button class="bundle-atc__btn" type="submit">Select 4 More Packs <span>{% render 'icon-arrow-right-2' %}</span></button>
-  </div>
 
-</form>
-</div>
+    </form>
+  </div>
 </div>
 
 {% schema %}
-{
-  "name": "Product Bundle 2",
-  "settings": [
-    {
+  {
+    "name": "Product Bundle 2",
+    "settings": [
+      {
         "type": "header",
         "content": "Section Padding"
-      },
-      {
+      }, {
         "type": "range",
         "id": "padding_top",
         "min": 0,
@@ -65,15 +68,15 @@
         "max": 100,
         "step": 4,
         "unit": "px",
-        "label": "Padding",
+        "label": "Padding Bottom",
         "default": 36
       }
-    
+
     ],
     "presets": [
       {
         "name": "Product Bundle 2"
       }
     ]
-}
-{% endschema %} 
+  }
+{% endschema %}
