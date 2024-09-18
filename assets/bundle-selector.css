@@ -27,7 +27,7 @@
   width: 26px;
   height: 26px;
   background: #CBE5FF;
-  border
+  border-radius: 50;
 }
 
 .bundle-selector__page-wrapper {
