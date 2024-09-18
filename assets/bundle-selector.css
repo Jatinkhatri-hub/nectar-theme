@@ -396,7 +396,8 @@
 @media screen and (min-width: 789px) {
   
   .bundle-selector__img-wrapper {
-    width: ;
+    max-width: 320px;
+    height: 320px;
   }
 }
 
