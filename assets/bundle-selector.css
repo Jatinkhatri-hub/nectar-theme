@@ -2,7 +2,10 @@
   position: relative;
 }
 
-.section-bun
+.section-bundle__selector-nav-bar {
+  position: absolute;
+  hea
+}
 
 .bundle-selector__page-wrapper {
   display: grid;
