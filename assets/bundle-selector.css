@@ -102,6 +102,10 @@
   line-height: 22.4px;
 }
 
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 0 !important;
+}
+
 
 .bundle-selector__img-wrapper {
   display: flex;
