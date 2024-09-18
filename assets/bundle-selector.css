@@ -135,7 +135,9 @@
 }
 
 .product-bundle__header {
-  max-width: ;
+  max-width: 400px;
+  width: 100%;
+  
 }
 
 .product-bundle__wrapper {
