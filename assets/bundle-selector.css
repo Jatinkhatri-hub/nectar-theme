@@ -396,7 +396,7 @@
 @media screen and (max-width: 789px) {
   
   .bundle-selector__page-wrapper {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .bundle-selector__img-wrapper {
