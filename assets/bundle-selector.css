@@ -19,6 +19,7 @@
   width: 560px;
   height: 490px;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .banner__img {
