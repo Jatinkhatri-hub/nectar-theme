@@ -86,6 +86,10 @@
   justify-content: center;
 }
 
+.review-star__wrapper svg {
+  w
+}
+
 
 .bundle-selector__img-wrapper {
   display: flex;
