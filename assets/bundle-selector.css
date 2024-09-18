@@ -1,6 +1,6 @@
 .bundle-selector__page-wrapper {
   display: grid;
-  grid
+  grid-column: ca;
 }
 
 
