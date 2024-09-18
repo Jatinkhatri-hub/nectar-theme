@@ -585,7 +585,7 @@ if (tabName === 'oneTime') {
   document.getElementById('flavorSelectionBtnDesktop').addEventListener('click', function() {
   
     // Navigate to the bundle selection page
-    window.location.href = '/pages/brand-bundle/brand-bundle-bdsgucxe'; // Replace with your actual URL
+    window.location.href = '/'; // Replace with your actual URL
   });
 
 
