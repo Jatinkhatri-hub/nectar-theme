@@ -391,6 +391,9 @@
   border: 1px solid #E4E4E4;
 }
 
+.bundle-selector__info-wrapper {
+  display: none;
+}
 
 @media screen and (min-width: 789px) {
   
@@ -398,9 +401,6 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .bundle-selector__info-wrapper {
-    display: none;
-  }
 
   .nav-bar__header {
     font-size: 26px;
