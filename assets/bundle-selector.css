@@ -36,8 +36,6 @@
   align-items: center;
   transform: rotate(180deg);
   position: absolute;
-  top: 0;
-  bottom: 0;
   left: 0;
 }
 
