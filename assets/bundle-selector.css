@@ -147,8 +147,10 @@
   font-size: 16px;
   font-weight: 500;
   font-family: 'Poppins';
-  color: ;
+  color: #0D3063;
 }
+
+.header
 
 .product-bundle__wrapper {
   max-width: 400px;
