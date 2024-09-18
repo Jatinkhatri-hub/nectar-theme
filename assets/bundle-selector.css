@@ -401,6 +401,10 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .bundle-selector__info-wrapper {
+    display: flex;
+  }
+
 
   .nav-bar__header {
     font-size: 26px;
