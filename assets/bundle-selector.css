@@ -179,7 +179,7 @@
   max-width: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: baseline;
   margin-top: 10rem;
   gap: 10px;
 }
