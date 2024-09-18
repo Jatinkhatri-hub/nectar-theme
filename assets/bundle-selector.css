@@ -23,6 +23,20 @@
   border-radius: 10px;
 }
 
+.product-review__info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .bundle-selector__img-wrapper {
   display: flex;
   align-items: center;
