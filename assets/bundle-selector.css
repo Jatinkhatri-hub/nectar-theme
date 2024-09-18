@@ -399,19 +399,7 @@
     grid-template-columns: 1fr;
   }
 
-  .bundle-selector__img-wrapper {
-    max-width: 320px;
-    max-height: 320px;
-  }
-
-  .banner__img {
-    width: 320px;
-    height: 320px;
-  }
-
-  .product-review__info-wrapper {
-    width: 200px;
-  }
+  
 }
 
 
