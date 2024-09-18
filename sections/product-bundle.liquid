@@ -19,29 +19,30 @@
 <div class="section-{{ section.id }}-padding">
   <div class="page-width">
 
-    <div></div>
-    <form class="bundle-selector__wrapper">
-      <div class="product-bundle__wrapper">
-        <div class="product-selector__card">
-          <div class="product-img__wrapper">
-            <img src="{{ 'lime.png' |  asset_url }}" class="product-img">
-          </div>
-          <div class="product-card__info">
-            <h1 class="product-title">Strawberry Lemonade</h1>
-            <button class="product-add__btn">Add+</button>
+    <div class="">
+      <form class="bundle-selector__wrapper">
+        <div class="product-bundle__wrapper">
+          <div class="product-selector__card">
+            <div class="product-img__wrapper">
+              <img src="{{ 'lime.png' |  asset_url }}" class="product-img">
+            </div>
+            <div class="product-card__info">
+              <h1 class="product-title">Strawberry Lemonade</h1>
+              <button class="product-add__btn">Add+</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="bundle-selector__footer">
-        <p class="saving-text">You're Saving
-          <span class="money-saved"></span>
-        </p>
-        <button class="bundle-atc__btn" type="submit">Select 4 More Packs
-          <span>{% render 'icon-arrow-right-2' %}</span>
-        </button>
-      </div>
+        <div class="bundle-selector__footer">
+          <p class="saving-text">You're Saving
+            <span class="money-saved"></span>
+          </p>
+          <button class="bundle-atc__btn" type="submit">Select 4 More Packs
+            <span>{% render 'icon-arrow-right-2' %}</span>
+          </button>
+        </div>
 
-    </form>
+      </form>
+    </div>
   </div>
 </div>
 
