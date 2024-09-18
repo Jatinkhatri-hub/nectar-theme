@@ -22,7 +22,7 @@
     <div class="bundle-selector__page-wrapper">
       <div class="bundle-selector__info-wrapper">
         <div class="bundle-selector__img-wrapper">
-          {{ section.settings.banner_image | image_url: width: section.settings.image.width | image_tag: sizes: sizes, widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', class: "banner__img" }}
+          {{ section.settings.image | image_url: width: section.settings.image.width | image_tag: sizes: sizes, widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', class: "banner__img" }}
         </div>
         <div>
 
