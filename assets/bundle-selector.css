@@ -395,6 +395,10 @@
 
 @media screen and (min-width: 789px) {
   
+  .bundle-selector__page-wrapper {
+    grid-template-columns: ;
+  }
+
   .bundle-selector__img-wrapper {
     max-width: 320px;
     max-height: 320px;
