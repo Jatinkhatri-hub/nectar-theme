@@ -155,11 +155,16 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  color: #00A039;
 }
 
 .header-purchased_text span svg {
   width: 18px;
   height: 18px;
+}
+
+.header-purchased_text span svg path {
+  fill: #00A039;
 }
 
 
