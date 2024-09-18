@@ -91,6 +91,11 @@
   height: 22.4px;
 }
 
+.review-description {
+  margin: 0;
+  font-family: ;
+}
+
 
 .bundle-selector__img-wrapper {
   display: flex;
