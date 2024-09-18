@@ -406,7 +406,11 @@
 
   .banner__img {
     width: 320px;
+    height: 320px;
+  }
 
+  .product-review__info-wrapper {
+    width: ;
   }
 }
 
