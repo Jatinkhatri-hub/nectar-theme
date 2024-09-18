@@ -765,7 +765,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const variantsData = buyBox.getAttribute('data-product-variants');
 
-  const productUrl = document.getAttribute('')
+  const productUrl = document.getAttribute('data-product-url');
+  
 
   const variants = JSON.parse(variantsData);
 
