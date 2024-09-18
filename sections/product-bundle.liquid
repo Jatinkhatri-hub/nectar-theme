@@ -104,19 +104,9 @@
     let swiper = new Swiper(swiperClass, {
       slidesPerView: 1,
       spaceBetween: 10,
-      navigation: {
-        nextEl: swiperButtonNextClass,
-        prevEl: swiperButtonPrevClass,
-      },
       pagination: {
         el: swiperPaginationClass,
         clickable: true,
-      },
-      breakpoints: {
-        786: {
-          slidesPerView: 3,
-          spaceBetween: 10,
-        }
       },
       observer: true, 
       observeParents: true,
