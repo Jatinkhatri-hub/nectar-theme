@@ -64,7 +64,8 @@
 }
 
 .icon-tick {
-  dis
+  display: flex;
+  align-items: center;
 }
 
 .icon-tick svg {
