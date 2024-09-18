@@ -157,7 +157,12 @@
   align-items: center;
 }
 
-he
+.header-purchased_text span svg {
+  width: 18px;
+  height: 18px;
+}
+
+
 
 .product-bundle__wrapper {
   max-width: 400px;
