@@ -25,17 +25,30 @@
           {{ section.settings.image | image_url: width: section.settings.image.width | image_tag: sizes: sizes, widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', class: "banner__img" }}
         </div>
         <div class="product-review__wrapper">
-          <div class="collection__list swiper mySwiper mySwiper-{{ section.id }}">
+          <div class="swiper mySwiper mySwiper-{{ section.id }}">
             <div class="swiper-wrapper">
               {% for block in section.blocks %}
-                
-              <div class="product-review__info-wrapper">
-                <div class="review-header">
-                  <div class="review-name__wrapper">
-                    <span></span>
-                  </div>
-                </div>
-              </div>
+                {% case block.type %}
+                  {% when 'review_card' %}
+                    <div class="product-review__info-wrapper">
+                      <div class="review-header">
+                        <div class="review-name__wrapper">
+                          <h6 class="user_name">{{ block.settings.name }}</h6>
+                          <div class="verified-badge">
+                            <span class="icon-tick">{%  render 'icon-tick-2' %} </span>
+                            <span> Verified Customer</span>
+                          </div>
+                        </div>
+                        <div class="review-star__wrapper">
+                          {%  render 'icon-star' %}
+                          {%  render 'icon-star' %}
+                          {%  render 'icon-star' %}
+                          {%  render 'icon-star' %}
+                          {%  render 'icon-star' %}
+                        </div>
+                      </div>
+                    </div>
+                {% endcase %}
               {% endfor %}
             </div>
           </div>
