@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const productUrl = localStorage.getItem('productURL');
 
   const backBtn = document.querySelector('.back-btn');
-  backBtn.setAttribute.href = ""
+  backBtn.setAttribute.href = "productUrl";
 
   const state = {
     selectedVariants: {},
