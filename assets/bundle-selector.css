@@ -59,7 +59,9 @@
   align-items: center;
 }
 
-
+.icon-tick svg {
+  
+}
 
 .bundle-selector__img-wrapper {
   display: flex;
