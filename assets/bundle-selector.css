@@ -31,7 +31,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: ;
+  transform: rotate(180);
 }
 
 .bundle-selector__page-wrapper {
