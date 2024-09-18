@@ -37,7 +37,15 @@
   justify-content: space-between;
 }
 
-.revview
+.review-name__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-name {
+  mar
+}
 
 .bundle-selector__img-wrapper {
   display: flex;
