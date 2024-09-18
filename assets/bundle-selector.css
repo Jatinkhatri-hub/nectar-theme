@@ -157,7 +157,8 @@
   align-items: center;
   color: #00A039;
   font-family: 'Poppins';
-  font-weight: ;
+  font-weight: 600;
+  gap: 10px;
 }
 
 .header-purchased_text span svg {
