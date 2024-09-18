@@ -18,6 +18,7 @@
   justify-content: center;
   width: 560px;
   height: 490px;
+  border-radius: 10px;
 }
 
 .banner__img {
