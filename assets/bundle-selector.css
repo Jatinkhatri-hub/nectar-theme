@@ -21,7 +21,9 @@
 }
 
 .banner__img {
-  width: ;
+  width: 560px;
+  height: 490px;
+  object-fit: cover;
 }
 
 
