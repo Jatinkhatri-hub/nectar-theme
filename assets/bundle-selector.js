@@ -131,7 +131,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const updateShopNowButton = () => {
     const shopBtn = document.querySelector('.bundle-atc__btn');
     shopBtn.disabled = (state.totalSelected < state.requiredCount);
-    const navBarHeader = document.querySelector('.')
+    const navBarHeader = document.querySelector('.nav-bar__header');
+
+    nav
 
     if( state.totalSelected >= state.requiredCount ) {
       shopBtn.innerText = 'Shop now';
