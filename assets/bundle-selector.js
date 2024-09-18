@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const updateShopNowButton = () => {
     const shopBtn = document.querySelector('.bundle-atc__btn');
     shopBtn.disabled = (state.totalSelected < state.requiredCount);
-    const 
+    const headerText = 
 
     if( state.totalSelected >= state.requiredCount ) {
       shopBtn.innerText = 'Shop now';
