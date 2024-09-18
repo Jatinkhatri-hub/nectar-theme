@@ -1668,10 +1668,16 @@
           "color_background": "#ffffff",
           "font_color": "#fff"
         }
+      },
+      "product_bundle_h6Gcy4": {
+        "type": "product-bundle",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
       "1581101332389",
+      "product_bundle_h6Gcy4",
       "1581344582062",
       "1581347333318",
       "1581351803382",
