@@ -141,7 +141,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: baseline;
-  padding
+  border-bottom: 1px solid #;
 }
 
 .header-text__one {
