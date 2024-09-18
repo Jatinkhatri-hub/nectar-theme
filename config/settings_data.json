@@ -91,7 +91,6 @@
       },
       "1581101332389": {
         "type": "mirgo-color-banner",
-        "disabled": true,
         "settings": {
           "hero_size": "hero_large",
           "title": "<p>Hydration For<\/p>",
