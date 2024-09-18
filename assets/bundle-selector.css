@@ -179,8 +179,7 @@
   max-width: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: baseline;
-  margin-top: 10rem;
+  justify-content: flex-start;
   gap: 10px;
 }
 
