@@ -1,6 +1,6 @@
 .bundle-selector__page-wrapper {
   display: grid;
-  grid-column: ca;
+  grid-template-columns: repeat(2, minmax());
 }
 
 
