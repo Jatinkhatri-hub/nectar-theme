@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
     shopBtn.disabled = (state.totalSelected < state.requiredCount);
     const navBarHeader = document.querySelector('.nav-bar__header');
 
-    navBarHeader.innerText = `Select At Least ${state.requiredCount - state.totalSelected} Packs`;
+    
 
     if( state.totalSelected >= state.requiredCount ) {
       shopBtn.innerText = 'Shop now';
@@ -141,6 +141,7 @@ document.addEventListener('DOMContentLoaded', function() {
       shopBtn.classList.remove('disable');
     } else {
       shopBtn.innerText = `Select ${state.requiredCount - state.totalSelected} more packs`;
+      navBarHeader.innerText = `Select At Least ${state.requiredCount - state.totalSelected} Packs`;
       shopBtn.classList.add('disable');
       shopBtn.classList.remove('active');
     }
