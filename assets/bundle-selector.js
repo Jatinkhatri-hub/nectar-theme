@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
     shopBtn.disabled = (state.totalSelected < state.requiredCount);
     const navBarHeader = document.querySelector('.nav-bar__header');
 
-    nav
+    navBarHeader.innerText = `Select At Least `
 
     if( state.totalSelected >= state.requiredCount ) {
       shopBtn.innerText = 'Shop now';
