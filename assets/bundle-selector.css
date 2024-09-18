@@ -54,7 +54,12 @@
   font-family: 'Poppins';
   font-weight: 400;
   font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
 
 .bundle-selector__img-wrapper {
   display: flex;
