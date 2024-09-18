@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const storedVariantData = localStorage.getItem('variantData');
   const storedSelectedVariants = localStorage.getItem('packageRequired');
 
+  const productUrl = loca
+
   const state = {
     selectedVariants: {},
     totalSelected: 0,
