@@ -1671,6 +1671,18 @@
       },
       "product_bundle_h6Gcy4": {
         "type": "product-bundle",
+        "blocks": {
+          "review_card_tQB7Tw": {
+            "type": "review_card",
+            "settings": {
+              "name": "Carla M.",
+              "description": "I absolutely love this product! I drink at least one a day and I feel more hydrated which leads to more energy! I tell the everyone at my work about all of the benefits and my friends, too! No sugar and no crap so it’s totally worth it! Highly recommend!!!"
+            }
+          }
+        },
+        "block_order": [
+          "review_card_tQB7Tw"
+        ],
         "settings": {
           "image": "shopify:\/\/shop_images\/Energy_Main_V1_copy.png",
           "padding_top": 36,
