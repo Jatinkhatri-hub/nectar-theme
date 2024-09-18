@@ -37,7 +37,7 @@
   align-items: center;
   transform: rotate(180deg);
   position: absolute;
-  left: 0;
+  left: 10px;
 }
 
 .back-btn svg path {
