@@ -64,8 +64,9 @@
   height: 13px;
 }
 
-.icon-tick svg path [
-  ba
+.icon-tick svg path {
+  
+}
 ]
 
 .bundle-selector__img-wrapper {
