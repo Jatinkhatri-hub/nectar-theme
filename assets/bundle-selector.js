@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const storedSelectedVariants = localStorage.getItem('packageRequired');
 
   const productUrl = localStorage.getItem('productURL');
+
   
 
   const state = {
