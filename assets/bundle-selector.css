@@ -344,7 +344,6 @@
   border-top: 1px solid #5E8FCA36;
   gap: 4px;
   padding-top: 6px;
-  margin-top: 15px;
   width: 100%;
 }
 
@@ -400,7 +399,7 @@
   }
 
   .bundle-selector__info-wrapper {
-    di
+    display: none;
   }
 }
 
