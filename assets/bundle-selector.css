@@ -10,8 +10,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  gap: 25px;
 }
+
+.product-revi
 
 .bundle-selector__img-wrapper {
   display: flex;
