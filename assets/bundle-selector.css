@@ -21,6 +21,7 @@
   font-size: 18px;
   font-weight: 600;
   font-family: 'Poppins';
+  margin: 0;
 }
 
 .back-btn {
@@ -35,7 +36,7 @@
 }
 
 .back-btn svg path {
-  color: #070D59;
+  fill: #070D59;
 }
 
 .bundle-selector__page-wrapper {
