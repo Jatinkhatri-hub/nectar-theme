@@ -401,6 +401,10 @@
   .bundle-selector__info-wrapper {
     display: none;
   }
+
+  .nav-bar__header {
+    font-size: ;
+  }
 }
 
 
