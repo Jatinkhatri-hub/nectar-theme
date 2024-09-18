@@ -57,6 +57,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #0065DE;
 }
 
 .icon-tick svg {
@@ -65,7 +66,7 @@
 }
 
 .icon-tick svg path {
-  fill: ;
+  fill: #0065DE;
 }
 
 
