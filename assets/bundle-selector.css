@@ -407,7 +407,8 @@
   }
 
   .back-btn {
-    w
+    width: 33px;
+    height: 33px;
   }
 }
 
