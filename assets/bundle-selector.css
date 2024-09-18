@@ -27,7 +27,11 @@
   width: 26px;
   height: 26px;
   background: #CBE5FF;
-  border-radius: 50;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .bundle-selector__page-wrapper {
