@@ -52,7 +52,8 @@
 
 .verified-badge {
   font-family: 'Poppins';
-  font-weight: ;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 .bundle-selector__img-wrapper {
