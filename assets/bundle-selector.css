@@ -4,7 +4,8 @@
 
 .section-bundle__selector-nav-bar {
   position: absolute;
-  hea
+  left: 0;
+  right: 0;
 }
 
 .bundle-selector__page-wrapper {
