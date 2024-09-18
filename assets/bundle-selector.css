@@ -403,7 +403,11 @@
   }
 
   .nav-bar__header {
-    font-size: ;
+    font-size: 26px;
+  }
+
+  .back-btn {
+    w
   }
 }
 
