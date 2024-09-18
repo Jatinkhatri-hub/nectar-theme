@@ -78,7 +78,10 @@
   fill: #0065DE;
 }
 
-.icon-review
+.review-star__wrapper {
+  display: flex;
+  flex
+}
 
 
 .bundle-selector__img-wrapper {
