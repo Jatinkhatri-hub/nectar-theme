@@ -1,4 +1,7 @@
-.bundle-selector
+.bundle-selector__page-wrapper {
+  display: grid;
+  grid
+}
 
 
 .bundle-selector__wrapper {
