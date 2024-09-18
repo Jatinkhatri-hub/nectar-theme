@@ -12,7 +12,8 @@
 }
 
 .nav-bar-container {
-  di
+  display: flex;
+  justify-content: ;
 }
 
 .bundle-selector__page-wrapper {
