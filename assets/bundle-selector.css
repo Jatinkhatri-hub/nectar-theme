@@ -23,12 +23,6 @@
   border-radius: 10px;
 }
 
-.product-review__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: ;
-}
-
 .bundle-selector__img-wrapper {
   display: flex;
   align-items: center;
