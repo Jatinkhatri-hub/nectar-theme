@@ -20,7 +20,8 @@
 .nav-bar__header {
   font-size: 18px;
   font-weight: 600;
-  font-family: '';
+  font-family: 'Poppins';
+  
 }
 
 .bundle-selector__page-wrapper {
