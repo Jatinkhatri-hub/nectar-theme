@@ -132,7 +132,7 @@
   margin: auto;
   padding: 0 1rem;
   width: 100%;
-  
+  gap: 16px;
 }
 
 .product-bundle__header {
