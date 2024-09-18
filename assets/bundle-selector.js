@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const storedVariantData = localStorage.getItem('variantData');
   const storedSelectedVariants = localStorage.getItem('packageRequired');
 
-  const productUrl = localStorage.getItem('productURL');
+  // const productUrl = localStorage.getItem('productURL');
+
+  const productUrl = localStorage.getItem('productURL').replace(/"/g, '');
 
   const backBtn = document.querySelector('.back-btn');
   backBtn.setAttribute('href', productUrl);
